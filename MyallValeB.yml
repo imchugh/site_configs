@@ -1,0 +1,568 @@
+site: MyallValeB
+file_formats:
+  default: CSI
+flux_system: EASYFLUX
+flux_file: MyallValeB_EC_Flux_CSFormat
+variables:
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      H2O_density:
+        instrument: IRGASON
+        units: g/m^3
+        file: MyallValeB_EC_Flux_CSFormat
+  AH_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      H2O_density_SIGMA:
+        instrument: IRGASON
+        units: g/m^3
+        file: MyallValeB_EC_Flux_CSFormat
+  CO2_IRGA_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      CO2_density:
+        instrument: IRGASON
+        units: mg/m^3
+        file: MyallValeB_EC_Flux_CSFormat
+  CO2_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      CO2_density_SIGMA:
+        instrument: IRGASON
+        units: mg/m^3
+        file: MyallValeB_EC_Flux_CSFormat
+  CO2_IRGA_Ct:
+    statistic_type: sum
+    height: 3.2
+    input_variables:
+      CO2_samples:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_Notes
+  Diag_IRGA:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      diag_irga_aggregate:
+        instrument: IRGASON
+        units: dimensionless
+        diag_type: invalid_count
+        file: MyallValeB_EC_Flux_Notes
+  Diag_SONIC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      diag_sonic_aggregate:
+        instrument: IRGASON
+        units: dimensionless
+        diag_type: invalid_count
+        file: MyallValeB_EC_Flux_Notes
+  Fco2:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      FC_mass:
+        instrument: IRGASON
+        units: mg/m^2/s
+        file: MyallValeB_EC_Flux_CSFormat
+  Fco2_Ct:
+    statistic_type: sum
+    height: 3.2
+    input_variables:
+      FC_samples:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fco2_QC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      FC_QC:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fe:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      LE:
+        instrument: IRGASON
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fe_Ct:
+    statistic_type: sum
+    height: 3.2
+    input_variables:
+      LE_samples:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fe_QC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      LE_QC:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fh:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      H:
+        instrument: IRGASON
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fh_Ct:
+    statistic_type: sum
+    height: 3.2
+    input_variables:
+      H_samples:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fh_QC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      H_QC:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fld:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      LW_IN:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Flu:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      LW_OUT:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fm:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TAU:
+        instrument: IRGASON
+        units: kg/m/s^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fm_QC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TAU_QC:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_CSFormat
+  Fn:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      NETRAD:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fsd:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      SW_IN:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fsu:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      SW_OUT:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  AH_IRGA_Ct:
+    statistic_type: sum
+    height: 3.2
+    input_variables:
+      H2O_samples:
+        instrument: IRGASON
+        units: dimensionless
+        file: MyallValeB_EC_Flux_Notes
+  Precip:
+    statistic_type: sum
+    height: 3.2
+    input_variables:
+      P:
+        instrument: RM Young 52203
+        units: mm
+        file: MyallValeB_EC_Flux_CSFormat
+  RH_3.2m1:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      RH_1_1_3:
+        instrument: Vaisala HMP155
+        units: percent
+        file: MyallValeB_EC_Flux_CSFormat
+  SigCO2_IRGA:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      CO2_sig_strgth_Min:
+        instrument: IRGASON
+        units: frac
+        file: MyallValeB_EC_Flux_CSFormat
+  SigH2O_IRGA:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      H2O_sig_strgth_Min:
+        instrument: IRGASON
+        units: frac
+        file: MyallValeB_EC_Flux_CSFormat
+  Ta_3.2m1:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TA_1_1_3:
+        instrument: Vaisala HMP155
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Tpanel:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      T_panel:
+        instrument: Campbell Scientific CR6
+        units: degC
+        file: MyallValeB_EC_Flux_Notes
+  Tstar:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TSTAR:
+        instrument: IRGASON
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      T_SONIC:
+        instrument: IRGASON
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Tv_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      T_SONIC_SIGMA:
+        instrument: IRGASON
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  UxA:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UxH2O_Cov:
+        instrument: IRGASON
+        units: g/m^2/s
+        file: MyallValeB_EC_Flux_Notes
+  UxC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UxCO2_Cov:
+        instrument: IRGASON
+        units: mg/m^2/s
+        file: MyallValeB_EC_Flux_Notes
+  UxT:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TsUx_Cov:
+        instrument: IRGASON
+        units: m.degC/s
+        file: MyallValeB_EC_Flux_Notes
+  UxUy:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UxUy_Cov:
+        instrument: IRGASON
+        units: m^2/s^2
+        file: MyallValeB_EC_Flux_Notes
+  UxUz:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UxUz_Cov:
+        instrument: IRGASON
+        units: m^2/s^2
+        file: MyallValeB_EC_Flux_Notes
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      Ux:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  Ux_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      Ux_SIGMA:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  UyA:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UyH2O_Cov:
+        instrument: IRGASON
+        units: g/m^2/s
+        file: MyallValeB_EC_Flux_Notes
+  UyC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UyCO2_Cov:
+        instrument: IRGASON
+        units: mg/m^2/s
+        file: MyallValeB_EC_Flux_Notes
+  UyT:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TsUy_Cov:
+        instrument: IRGASON
+        units: m.degC/s
+        file: MyallValeB_EC_Flux_Notes
+  UyUz:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UyUz_Cov:
+        instrument: IRGASON
+        units: m^2/s^2
+        file: MyallValeB_EC_Flux_Notes
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      Uy:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  Uy_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      Uy_SIGMA:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  UzA:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UzH2O_Cov:
+        instrument: IRGASON
+        units: g/m^2/s
+        file: MyallValeB_EC_Flux_Notes
+  UzC:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      UzCO2_Cov:
+        instrument: IRGASON
+        units: mg/m^2/s
+        file: MyallValeB_EC_Flux_Notes
+  UzT:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TsUz_Cov:
+        instrument: IRGASON
+        units: m.degC/s
+        file: MyallValeB_EC_Flux_Notes
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      Uz:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  Uz_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      Uz_SIGMA:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  Vbat:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      V_batt:
+        instrument: Campbell Scientific CR6
+        units: V
+        file: MyallValeB_EC_Flux_Notes
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      WD:
+        instrument: IRGASON
+        units: degrees
+        file: MyallValeB_EC_Flux_CSFormat
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      WD_SIGMA:
+        instrument: IRGASON
+        units: degrees
+        file: MyallValeB_EC_Flux_CSFormat
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      WS:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  ps:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      PA:
+        instrument: Vaisala PTB110
+        units: kPa
+        file: MyallValeB_EC_Flux_CSFormat
+  ustar:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      USTAR:
+        instrument: IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_CSFormat
+  Fg_0.16ma:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+      G_plate_1_1_1:
+        instrument: Huxeflux HFP01
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fg_0.16mb:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+      G_plate_1_1_2:
+        instrument: Huxeflux HFP01
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Fg_0.16mc:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+      G_plate_1_1_3:
+        instrument: Huxeflux HFP01
+        units: W/m^2
+        file: MyallValeB_EC_Flux_CSFormat
+  Ts_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      TS_1_1_1:
+        instrument: TCAV
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Ts_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      TS_1_1_2:
+        instrument: TCAV
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Ts_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      TS_1_1_3:
+        instrument: TCAV
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Sws_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      SWC_1_1_1:
+        instrument: Campbell Scientific CS650
+        units: percent
+        file: MyallValeB_EC_Flux_CSFormat
+  Sws_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      SWC_1_1_2:
+        instrument: Campbell Scientific CS650
+        units: percent
+        file: MyallValeB_EC_Flux_CSFormat
+  Sws_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      SWC_1_1_3:
+        instrument: Campbell Scientific CS650
+        units: percent
+        file: MyallValeB_EC_Flux_CSFormat
+  Ta_3.1m:
+    statistic_type: average
+    height: 3.1
+    input_variables:
+      TA_1_1_1:
+        instrument: Campbell Scientific 107-probe
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  Ta_3.2m2:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      TA_1_1_2:
+        instrument: Vaisala PTB110,IRGASON (H2O and T)
+        units: degC
+        file: MyallValeB_EC_Flux_CSFormat
+  RH_3.2m2:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      RH_1_1_1:
+        instrument: 107 probe,Vaisala PTB110,IRGASON
+        units: percent
+        file: MyallValeB_EC_Flux_CSFormat
+  RH_3.2m3:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      RH_1_1_2:
+        instrument: Vaisala PTB110,IRGASON (H2O and T)
+        units: percent
+        file: MyallValeB_EC_Flux_CSFormat

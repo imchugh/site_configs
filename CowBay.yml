@@ -1,0 +1,452 @@
+site: CowBay
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: CowBay_EC_T30min_all
+variables:
+  Sig_IRGA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      SigStr_Li7500_Avg:
+        instrument: Li-7500RS
+        units: percent
+        file: CowBay_EC_T30min_all
+  AH_23m:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ah_HMP_01_Avg:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: CowBay_EC_T30min_all
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ah_Li7500_Avg:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: CowBay_EC_T30min_all
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covAhAh:
+        instrument: Li-7500RS
+        units: g^2/m^6
+        file: CowBay_EC_T30min_all
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Cc_Li7500_Avg:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: CowBay_EC_T30min_all
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covCcCc:
+        instrument: Li-7500RS
+        units: mg^2/m^6
+        file: CowBay_EC_T30min_all
+  Diag_IRGA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Li7500_Warn:
+        instrument: Li-7500RS
+        units: dimensionless
+        file: CowBay_EC_T30min_all
+  Diag_SONIC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      CSAT_Warn:
+        instrument: CSAT3B
+        units: dimensionless
+        file: CowBay_EC_T30min_all
+  Fg_0.1ma1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Fg_HFP01_01_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: CowBay_soil_T30min_all
+  Fg_0.1ma2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Fg_HFP01_02_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: CowBay_soil_T30min_all
+  Fg_0.1mb1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Fg_HFP01_03_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: CowBay_soil_T30min_all
+  Fg_0.1mb2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Fg_HFP01_04_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: CowBay_soil_T30min_all
+  Fld:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fld_NR01_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: CowBay_EC_T30min_all
+  Flu:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Flu_NR01_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: CowBay_EC_T30min_all
+  Fsd:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fsd_NR01_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: CowBay_EC_T30min_all
+  Fsu:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fsu_NR01_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: CowBay_EC_T30min_all
+  Precip:
+    statistic_type: sum
+    height: 2.0
+    input_variables:
+      Rain_Tot:
+        instrument: Campbell Scientific CS700
+        units: mm
+        file: CowBay_EC_T30min_all
+  RH_23m:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Rh_HMP_01_Avg:
+        instrument: Vaisala HMP155
+        units: frac
+        file: CowBay_EC_T30min_all
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_CS616_01_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: CowBay_soil_T30min_all
+  Sws_0.25ma:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_CS616_02_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: CowBay_soil_T30min_all
+  Sws_1.5ma:
+    statistic_type: average
+    height: -1.5
+    input_variables:
+      Sws_CS616_03_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: CowBay_soil_T30min_all
+  Sws_2ma:
+    statistic_type: average
+    height: -2.0
+    input_variables:
+      Sws_CS616_04_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: CowBay_soil_T30min_all
+  Ta_23m:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ta_HC2S3_01_Avg:
+        instrument: Rotronic HC2S3
+        units: degC
+        file: CowBay_EC_T30min_all
+        begin: 2025-06-10 09:00
+        end: 2026-01-20 13:30
+      Ta_HMP_01_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: CowBay_EC_T30min_all
+        begin: 2026-01-20 14:00
+        end: null
+  Ts_0.07ma:
+    statistic_type: average
+    height: -0.06
+    height_range:
+    - -0.04
+    - -0.08
+    input_variables:
+      Ts_TCAV_01_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: CowBay_soil_T30min_all
+  Ts_0.07mb:
+    statistic_type: average
+    height: -0.06
+    height_range:
+    - -0.04
+    - -0.08
+    input_variables:
+      Ts_TCAV_02_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: CowBay_soil_T30min_all
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Tv_CSAT_Avg:
+        instrument: CSAT3B
+        units: degC
+        file: CowBay_EC_T30min_all
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covTvTv:
+        instrument: CSAT3B
+        units: degC^2
+        file: CowBay_EC_T30min_all
+  UxA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: CowBay_EC_T30min_all
+  UxC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: CowBay_EC_T30min_all
+  UxT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: CowBay_EC_T30min_all
+  UxUy:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: CowBay_EC_T30min_all
+  UxUz:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzUx:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: CowBay_EC_T30min_all
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ux_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: CowBay_EC_T30min_all
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covUxUx:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: CowBay_EC_T30min_all
+  UyA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUyAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: CowBay_EC_T30min_all
+  UyC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUyCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: CowBay_EC_T30min_all
+  UyT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUyTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: CowBay_EC_T30min_all
+  UyUz:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: CowBay_EC_T30min_all
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Uy_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: CowBay_EC_T30min_all
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covUyUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: CowBay_EC_T30min_all
+  UzA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: CowBay_EC_T30min_all
+  UzC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: CowBay_EC_T30min_all
+  UzT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: CowBay_EC_T30min_all
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Uz_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: CowBay_EC_T30min_all
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covUzUz:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: CowBay_EC_T30min_all
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      V_CR1kX_Flux_Avg:
+        instrument: Campbell Scientific CR1000X logger
+        units: V
+        file: CowBay_EC_T30min_all
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: CSAT3B
+        units: degrees
+        file: CowBay_EC_T30min_all
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: CowBay_EC_T30min_all
+  ps:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      ps_Li7500_Avg:
+        instrument: Li-7500RS
+        units: kPa
+        file: CowBay_EC_T30min_all
+  Fco2:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fc_Avg:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: CowBay_EC_T30min_all
+  Fh:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fh_Avg:
+        instrument: CSAT3B
+        units: W/m^2
+        file: CowBay_EC_T30min_all
+  Fe:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fe_Avg:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: CowBay_EC_T30min_all
+  ustar:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      ustar_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: CowBay_EC_T30min_all
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Tb_CR1kX_Flux_Avg:
+        instrument: Campbell Scientific CR1000X logger
+        units: degC
+        file: CowBay_EC_T30min_all

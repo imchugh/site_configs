@@ -1,0 +1,541 @@
+site: Yanco
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: Yanco_EC_Calculate
+variables:
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      H2O_Avg:
+        instrument: Li-7500A
+        units: g/m^3
+        file: Yanco_EC_flux
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 6.0
+    input_variables:
+      var_H2O:
+        instrument: Li-7500A
+        units: g^2/m^6
+        file: Yanco_EC_Calculate
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      CO2_mean_Avg:
+        instrument: Li-7500A
+        units: mg/m^3
+        file: Yanco_EC_flux
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 6.0
+    input_variables:
+      var_CO2:
+        instrument: Li-7500A
+        units: mg^2/m^6
+        file: Yanco_EC_Calculate
+  Diag_IRGA:
+    statistic_type: sum
+    height: 6.0
+    input_variables:
+      irga_warnings:
+        instrument: Li-7500A
+        units: dimensionless
+        file: Yanco_EC_Monitoring
+  Diag_SONIC:
+    statistic_type: sum
+    height: 6.0
+    input_variables:
+      csat_warnings:
+        instrument: CSAT3
+        units: dimensionless
+        file: Yanco_EC_Monitoring
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Soil_Heat1:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Soil_Heat2:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Soil_Heat3:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fg_0.08md:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Soil_Heat4:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fg_0.08me:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Soil_Heat5:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fld:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      LWR1:
+        instrument: Kipp and Zonen CGR4
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Flu:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      LWR2:
+        instrument: Kipp and Zonen CGR4
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fsd:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      SWR1:
+        instrument: Kipp and Zonen CMP21
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Fsu:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      SWR2:
+        instrument: Kipp and Zonen CMP21
+        units: W/m^2
+        file: Yanco_Met_AWS_SMTMS_2
+  Precip:
+    statistic_type: sum
+    height: 1.0
+    input_variables:
+      Precipitation_Tot:
+        instrument: Campbell Scientific CS700
+        units: mm
+        file: Yanco_Met_AWS_SMTMS_1
+  ps:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      press_mean_Avg:
+        instrument: Li-7500A
+        units: hPa
+        file: Yanco_EC_flux
+  RH_2m:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      R_Humi1:
+        instrument: Vaisala HMP155
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  RH_4m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      R_Humi2:
+        instrument: Vaisala HMP155
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  RH_8m:
+    statistic_type: average
+    height: 4.0
+    input_variables:
+      R_Humi3:
+        instrument: Vaisala HMP155
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  RH_16m:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      R_Humi4:
+        instrument: Vaisala HMP155
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  Sig_IRGA:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      agc_Avg:
+        instrument: Li-7500A
+        units: percent
+        file: Yanco_EC_Monitoring
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Soil_Water1:
+        instrument: CMT TRIME-PICO32
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  Sws_0.1mb:
+    statistic_type: average
+    height: 0.1
+    input_variables:
+      Soil_Water2:
+        instrument: CMT TRIME-PICO32
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  Sws_0.1mc:
+    statistic_type: average
+    height: 0.1
+    input_variables:
+      Soil_Water3:
+        instrument: CMT TRIME-PICO32
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  Sws_0.1md:
+    statistic_type: average
+    height: 0.1
+    input_variables:
+      Soil_Water4:
+        instrument: CMT TRIME-PICO32
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  Sws_0.1me:
+    statistic_type: average
+    height: 0.1
+    input_variables:
+      Soil_Water5:
+        instrument: CMT TRIME-PICO32
+        units: percent
+        file: Yanco_Met_AWS_SMTMS_2
+  Ta_2m:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      Air_Temp1:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ta_4m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Air_Temp2:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ta_8m:
+    statistic_type: average
+    height: 4.0
+    input_variables:
+      Air_Temp3:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ta_16m:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Air_Temp4:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Tpanel:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      panel_temp_Avg:
+        instrument: Campbell Scientific CR1000
+        units: degC
+        file: Yanco_EC_Monitoring
+  Ts_0.05ma:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - -0.02
+    - -0.08
+    input_variables:
+      Soil_Temp1:
+        instrument: TBC
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ts_0.05mb:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - -0.02
+    - -0.08
+    input_variables:
+      Soil_Temp2:
+        instrument: TBC
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ts_0.05mc:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - -0.02
+    - -0.08
+    input_variables:
+      Soil_Temp3:
+        instrument: TBC
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ts_0.05md:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - -0.02
+    - -0.08
+    input_variables:
+      Soil_Temp4:
+        instrument: TBC
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Ts_0.05me:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - -0.02
+    - -0.08
+    input_variables:
+      Soil_Temp5:
+        instrument: TBC
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      Ts_mean_Avg:
+        instrument: CSAT3
+        units: degC
+        file: Yanco_EC_flux
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 6.0
+    input_variables:
+      var_Ts:
+        instrument: CSAT3
+        units: degC^2
+        file: Yanco_EC_Calculate
+  UxA:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_H2O_Ux:
+        instrument: Li-7500A,CSAT3
+        units: g/m^2/s
+        file: Yanco_EC_Calculate
+  UxC:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_CO2_Ux:
+        instrument: Li-7500A,CSAT3
+        units: mg/m^2/s
+        file: Yanco_EC_Calculate
+  UxT:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_Ts_Ux:
+        instrument: Li-7500A,CSAT3
+        units: m.degC/s
+        file: Yanco_EC_Calculate
+  UxUy:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_Ux_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Yanco_EC_Calculate
+  UxUz:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_Ux_Uz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Yanco_EC_Calculate
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      Ux_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Yanco_EC_flux
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 6.0
+    input_variables:
+      var_Ux:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Yanco_EC_Calculate
+  UyA:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_H2O_Uy:
+        instrument: Li-7500A,CSAT3
+        units: g/m^2/s
+        file: Yanco_EC_Calculate
+  UyC:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_CO2_Uy:
+        instrument: Li-7500A,CSAT3
+        units: mg/m^2/s
+        file: Yanco_EC_Calculate
+  UyT:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_Ts_Uy:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Yanco_EC_Calculate
+  UyUz:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_Uy_Uz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Yanco_EC_Calculate
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      Uy_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Yanco_EC_flux
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 6.0
+    input_variables:
+      var_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Yanco_EC_Calculate
+  UzA:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_H2O_Uz:
+        instrument: Li-7500A,CSAT3
+        units: g/m^2/s
+        file: Yanco_EC_Calculate
+  UzC:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_CO2_Uz:
+        instrument: Li-7500A,CSAT3
+        units: mg/m^2/s
+        file: Yanco_EC_Calculate
+  UzT:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      cov_Ts_Uz:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Yanco_EC_Calculate
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      Uz_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Yanco_EC_flux
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 6.0
+    input_variables:
+      var_Uz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Yanco_EC_Calculate
+  Vbat:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      batt_volt_Min:
+        instrument: Campbell Scientific CR1000
+        units: V
+        file: Yanco_EC_Monitoring
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      wnd_dir_compass:
+        instrument: CSAT3
+        units: degrees
+        file: Yanco_EC_Calculate
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      wnd_spd:
+        instrument: CSAT3
+        units: m/s
+        file: Yanco_EC_Calculate
+  Fco2:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      Fc_wpl:
+        instrument: Li-7500A,CSAT3
+        units: mg/m^2/s
+        file: Yanco_EC_Calculate
+  Fh:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      Hc:
+        instrument: CSAT3
+        units: W/m^2
+        file: Yanco_EC_Calculate
+  Fe:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      LE_wpl:
+        instrument: Li-7500A,CSAT3
+        units: W/m^2
+        file: Yanco_EC_Calculate
+  tau:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      tau:
+        instrument: CSAT3
+        units: kg/m/s^2
+        file: Yanco_EC_Calculate
+  ustar:
+    statistic_type: average
+    height: 6.0
+    input_variables:
+      u_star:
+        instrument: CSAT3
+        units: m/s
+        file: Yanco_EC_Calculate

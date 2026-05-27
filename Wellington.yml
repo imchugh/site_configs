@@ -1,0 +1,654 @@
+site: Wellington
+file_formats:
+  default: CSI
+flux_system: EASYFLUX
+flux_file: Wellington_EC_slow_core
+variables:
+  AC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covCcAh:
+        instrument: Li-7500RS
+        units: mg.g/m^6
+        file: Wellington_EC_slow_core
+  AH_2.5m:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ah_HMP_01_Avg:
+        instrument: HMP155
+        units: g/m^3
+        file: Wellington_EC_slow_core
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ah_7500_filtered:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: Wellington_EC_slow_core
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covAhAh:
+        instrument: Li-7500RS
+        units: g^2/m^6
+        file: Wellington_EC_slow_core
+  AT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covAhTv:
+        instrument: CSAT3B,Li-7500RS
+        units: K.g/m^3
+        file: Wellington_EC_slow_core
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Cc_7500_filtered:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: Wellington_EC_slow_core
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covCcCc:
+        instrument: Li-7500RS
+        units: mg^2/m^6
+        file: Wellington_EC_slow_core
+  CT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covCcTv:
+        instrument: CSAT3B,Li-7500RS
+        units: K.mg/m^3
+        file: Wellington_EC_slow_core
+  Diag_IRGA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      7500_Warn:
+        instrument: Li-7500RS
+        units: dimensionless
+        file: Wellington_EC_slow_core
+  Diag_SONIC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      CSAT_Warn:
+        instrument: CSAT3B
+        units: dimensionless
+        file: Wellington_EC_slow_core
+  EC_0.05ma:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      EC_1:
+        instrument: CS650
+        units: dS/m
+        file: Wellington_EC_slow_core
+  EC_0.05mb:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      EC_2:
+        instrument: CS650
+        units: dS/m
+        file: Wellington_EC_slow_core
+  EC_0.05mc:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      EC_3:
+        instrument: CS650
+        units: dS/m
+        file: Wellington_EC_slow_core
+  EC_0.05md:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      EC_4:
+        instrument: CS650
+        units: dS/m
+        file: Wellington_EC_slow_core
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_Avg(1):
+        instrument: HFP-01
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_Avg(2):
+        instrument: HFP-01
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_Avg(3):
+        instrument: HFP-01
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fg_0.08md:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_Avg(4):
+        instrument: HFP-01
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fld:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fld_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Flu:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Flu_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fn:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fn_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fsd:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fsd_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fsu:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fsu_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Precip:
+    statistic_type: sum
+    height: 2.0
+    input_variables:
+      Rain_Tot:
+        instrument: RIM-7499-BOM
+        units: mm
+        file: Wellington_EC_slow_core
+  RH_2.5m:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      RH_HMP_01_Avg:
+        instrument: HMP155
+        units: frac
+        file: Wellington_EC_slow_core
+  SVP:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      es_HMP_01_Avg:
+        instrument: HMP155
+        units: kPa
+        file: Wellington_EC_slow_core
+  Sig_IRGA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      sig_strn_7500_Avg:
+        instrument: Li-7500RS
+        units: percent
+        file: Wellington_EC_slow_core
+  Sws_0.05ma:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_1:
+        instrument: CS650
+        units: m^3/m^3
+        file: Wellington_EC_slow_core
+  Sws_0.05mb:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_2:
+        instrument: CS650
+        units: m^3/m^3
+        file: Wellington_EC_slow_core
+  Sws_0.05mc:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_3:
+        instrument: CS650
+        units: m^3/m^3
+        file: Wellington_EC_slow_core
+  Sws_0.05md:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_4:
+        instrument: CS650
+        units: m^3/m^3
+        file: Wellington_EC_slow_core
+  Ta_2.5m:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ta_HMP_01_Avg:
+        instrument: HMP155
+        units: degC
+        file: Wellington_EC_slow_core
+  Tbody_RAD:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Tb_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: degC
+        file: Wellington_EC_slow_core
+  Tpanel:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      Tpanel_Avg:
+        instrument: Campbell Scientific CR6 logger
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.05ma:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Ts_CS650_1:
+        instrument: CS650
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.05mb:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Ts_CS650_2:
+        instrument: CS650
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.05mc:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Ts_CS650_3:
+        instrument: CS650
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.05md:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Ts_CS650_4:
+        instrument: CS650
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.04ma:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_TCAV_01_Avg:
+        instrument: TCAV
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.04mb:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_TCAV_02_Avg:
+        instrument: TCAV
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.04mc:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_TCAV_03_Avg:
+        instrument: TCAV
+        units: degC
+        file: Wellington_EC_slow_core
+  Ts_0.04md:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_TCAV_04_Avg:
+        instrument: TCAV
+        units: degC
+        file: Wellington_EC_slow_core
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Tv_CSAT_filtered:
+        instrument: CSAT3B
+        units: degC
+        file: Wellington_EC_slow_core
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covTvTv:
+        instrument: CSAT3B
+        units: degC^2
+        file: Wellington_EC_slow_core
+  UxA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Wellington_EC_slow_core
+  UxC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Wellington_EC_slow_core
+  UxT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Wellington_EC_slow_core
+  UxUy:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Wellington_EC_slow_core
+  UxUz:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzUx:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Wellington_EC_slow_core
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ux_filtered:
+        instrument: CSAT3B
+        units: m/s
+        file: Wellington_EC_slow_core
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covUxUx:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Wellington_EC_slow_core
+  UyA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUyAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Wellington_EC_slow_core
+  UyC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUyCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Wellington_EC_slow_core
+  UyT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUyTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Wellington_EC_slow_core
+  UyUz:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Wellington_EC_slow_core
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Uy_filtered:
+        instrument: CSAT3B
+        units: m/s
+        file: Wellington_EC_slow_core
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covUyUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Wellington_EC_slow_core
+  UzA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Wellington_EC_slow_core
+  UzC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Wellington_EC_slow_core
+  UzT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Wellington_EC_slow_core
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Uz_filtered:
+        instrument: CSAT3B
+        units: m/s
+        file: Wellington_EC_slow_core
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covUzUz:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Wellington_EC_slow_core
+  VP:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      e_HMP_01_Avg:
+        instrument: HMP155
+        units: kPa
+        file: Wellington_EC_slow_core
+  Vbat:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      Vbat_Avg:
+        instrument: Campbell Scientific CR6 logger
+        units: V
+        file: Wellington_EC_slow_core
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: CSAT3B
+        units: degrees
+        file: Wellington_EC_slow_core
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 2.5
+    input_variables:
+      WD_CSAT_Sd:
+        instrument: CSAT3B
+        units: degrees
+        file: Wellington_EC_slow_core
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Wellington_EC_slow_core
+  Ws_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 2.5
+    input_variables:
+      WS_CSAT_Sd:
+        instrument: CSAT3B
+        units: m/s
+        file: Wellington_EC_slow_core
+  ps:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      ps_7500_filtered:
+        instrument: Li7500RS
+        units: kPa
+        file: Wellington_EC_slow_core
+  Rhoa:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      rho_a_Avg:
+        instrument: HMP155
+        units: kg/m^3
+        file: Wellington_EC_slow_core
+  Rhod:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      rho_d_Avg:
+        instrument: HMP155
+        units: kg/m^3
+        file: Wellington_EC_slow_core
+  ustar:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      ustar_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Wellington_EC_slow_core
+  Fco2:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fc_raw_Avg:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Wellington_EC_slow_core
+  Fe:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fe_raw_Avg:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: Wellington_EC_slow_core
+  Fh:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fh_Avg:
+        instrument: CSAT3B
+        units: W/m^2
+        file: Wellington_EC_slow_core

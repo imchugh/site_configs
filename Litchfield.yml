@@ -1,0 +1,521 @@
+site: Litchfield
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: Litchfield_EC_flux
+variables:
+  Sig_IRGA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      agc_Avg:
+        instrument: Li-7500A
+        units: percent
+        file: Litchfield_EC_flux
+  AH_15m:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      h2o_hmp_15_Avg:
+        instrument: Vaisala  HMP-155A
+        units: g/m^3
+        file: Litchfield_EC_flux
+  AH_30m:
+    statistic_type: average
+    height: 32.0
+    input_variables:
+      h2o_hmp_30_Avg:
+        instrument: Vaisala  HMP-155A
+        units: g/m^3
+        file: Litchfield_EC_flux
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      h2o_Avg:
+        instrument: Li-7500A
+        units: g/m^3
+        file: Litchfield_EC_flux
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      cov_h2o_h2o:
+        instrument: Li-7500A
+        units: g^2/m^6
+        file: Litchfield_EC_flux
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      co2_Avg:
+        instrument: Li-7500A
+        units: mg/m^3
+        file: Litchfield_EC_flux
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      cov_co2_co2:
+        instrument: Li-7500A
+        units: mg^2/m^6
+        file: Litchfield_EC_flux
+  Diag_IRGA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      irga_warnings:
+        instrument: Li-7500A
+        units: dimensionless
+        file: Litchfield_EC_flux
+  Diag_SONIC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      csat_warnings:
+        instrument: CSAT3
+        units: dimensionless
+        file: Litchfield_EC_flux
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      hfp_1_Avg:
+        instrument: Huskeflux HFP01
+        units: W/m^2
+        file: Litchfield_soil_Soil
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      hfp_2_Avg:
+        instrument: Huskeflux HFP01
+        units: W/m^2
+        file: Litchfield_soil_Soil
+  Fld:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ldown_30_Avg:
+        instrument: Kipp & Zonen CNR4 Radiometer
+        units: W/m^2
+        file: Litchfield_rad_Rad30m
+  Flu:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Lup_30_Avg:
+        instrument: Kipp & Zonen CNR4 Radiometer
+        units: W/m^2
+        file: Litchfield_rad_Rad30m
+  Fsd:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Kdown_30_Avg:
+        instrument: Kipp & Zonen CNR4 Radiometer
+        units: W/m^2
+        file: Litchfield_rad_Rad30m
+  Fsu:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Kup_30_Avg:
+        instrument: Kipp & Zonen CNR4 Radiometer
+        units: W/m^2
+        file: Litchfield_rad_Rad30m
+  Precip_1:
+    statistic_type: sum
+    height: 1.0
+    input_variables:
+      Rain1_Tot:
+        instrument: Rain gauge,CS702
+        units: mm
+        file: Litchfield_soil_Soil
+  Precip_2:
+    statistic_type: sum
+    height: 1.0
+    input_variables:
+      Rain2_Tot:
+        instrument: Rain gauge,Rimco 8000
+        units: mm
+        file: Litchfield_soil_Soil
+  Sws_1ma:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      swc_T100a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_1mb:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      cs650_100_VWC_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_1.4ma:
+    statistic_type: average
+    height: -1.4
+    input_variables:
+      swc_T140a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_1.4mb:
+    statistic_type: average
+    height: -1.4
+    input_variables:
+      cs650_140_VWC_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_0.2ma:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      swc_T20a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_0.2mb:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      cs650_20_VWC_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_0.5ma:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      swc_T50a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      cs650_50_VWC_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_0.05ma:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      swc_T05a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Sws_0.05mb:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      cs650_05_VWC_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: m^3/m^3
+        file: Litchfield_soil_Soil
+  Ta_15m:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      t_hmp_15_Avg:
+        instrument: Vaisala  HMP-155A
+        units: degC
+        file: Litchfield_EC_flux
+  Ta_30m:
+    statistic_type: average
+    height: 32.0
+    input_variables:
+      t_hmp_30_Avg:
+        instrument: Vaisala  HMP-155A
+        units: degC
+        file: Litchfield_EC_flux
+  Ts_1mb:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      cs650_100_Tsoil_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: degC
+        file: Litchfield_soil_Soil
+  Ts_1.4mb:
+    statistic_type: average
+    height: -1.4
+    input_variables:
+      cs650_140_Tsoil_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: degC
+        file: Litchfield_soil_Soil
+  Ts_0.2mb:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      cs650_20_Tsoil_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: degC
+        file: Litchfield_soil_Soil
+  Ts_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      cs650_50_Tsoil_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: degC
+        file: Litchfield_soil_Soil
+  Ts_0.05mb:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      cs650_05_Tsoil_Avg:
+        instrument: Multi-parameter smart sensor CS650
+        units: degC
+        file: Litchfield_soil_Soil
+  Ts_0.08mb:
+    statistic_type: average
+    height: -0.07
+    height_range:
+    - -0.06
+    - -0.08
+    input_variables:
+      Tsoil_avg:
+        instrument: Campbell Scientific TCAV,Averaging soil thermocouple
+        units: degC
+        file: Litchfield_soil_Soil
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ts_Avg:
+        instrument: CSAT3
+        units: degC
+        file: Litchfield_EC_flux
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      cov_Ts_Ts:
+        instrument: CSAT3
+        units: degC^2
+        file: Litchfield_EC_flux
+  UxA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Ux_h2o:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Litchfield_EC_flux
+  UxC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Ux_co2:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Litchfield_EC_flux
+  UxT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Ux_Ts:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Litchfield_EC_flux
+  UxUy:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Ux_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Litchfield_EC_flux
+  UxUz:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uz_Ux:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Litchfield_EC_flux
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ux_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Litchfield_EC_flux
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      cov_Ux_Ux:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Litchfield_EC_flux
+  UyA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uy_h2o:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Litchfield_EC_flux
+  UyC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uy_co2:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Litchfield_EC_flux
+  UyT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uy_Ts:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Litchfield_EC_flux
+  UyUz:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uz_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Litchfield_EC_flux
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Uy_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Litchfield_EC_flux
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      cov_Uy_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Litchfield_EC_flux
+  UzA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uz_h2o:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Litchfield_EC_flux
+  UzC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uz_co2:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Litchfield_EC_flux
+  UzT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      cov_Uz_Ts:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Litchfield_EC_flux
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Uz_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Litchfield_EC_flux
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      cov_Uz_Uz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Litchfield_EC_flux
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      wnd_dir_compass:
+        instrument: CSAT3
+        units: degrees
+        file: Litchfield_EC_flux
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      wnd_spd:
+        instrument: CSAT3
+        units: m/s
+        file: Litchfield_EC_flux
+  ps:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      press_Avg:
+        instrument: Li-7500A
+        units: kPa
+        file: Litchfield_EC_flux
+  Fco2:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fc_wpl:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Litchfield_EC_flux
+  Fh:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Hs:
+        instrument: CSAT3,Li-7500A
+        units: W/m^2
+        file: Litchfield_EC_flux
+  Fe:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      LE_wpl:
+        instrument: CSAT3,Li-7500A
+        units: W/m^2
+        file: Litchfield_EC_flux
+  ustar:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      u_star:
+        instrument: CSAT3
+        units: m/s
+        file: Litchfield_EC_flux
+  Tpanel:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      panel_temp_Avg:
+        instrument: Campbell Scientific CR6 datalogger
+        units: degC
+        file: Litchfield_EC_flux
+  Vbat:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      batt_volt_Avg:
+        instrument: Campbell Scientific CR6 datalogger
+        units: V
+        file: Litchfield_EC_flux

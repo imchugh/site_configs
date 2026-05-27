@@ -1,0 +1,558 @@
+site: Ridgefield
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: Ridgefield_EC_slow_all
+variables:
+  Sig_IRGA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      AGC_7500_Avg:
+        instrument: Li-7500A
+        units: percent
+        file: Ridgefield_EC_slow_all
+  AH_2.5m:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ah_HMP_Avg:
+        instrument: HMP45
+        units: g/m^3
+        file: Ridgefield_EC_slow_all
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ah_7500_Avg:
+        instrument: Li-7500A
+        units: g/m^3
+        file: Ridgefield_EC_slow_all
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covAhAh:
+        instrument: Li-7500A
+        units: g^2/m^6
+        file: Ridgefield_EC_slow_all
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Cc_7500_Avg:
+        instrument: Li-7500A
+        units: mg/m^3
+        file: Ridgefield_EC_slow_all
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covCcCc:
+        instrument: Li-7500A
+        units: mg^2/m^6
+        file: Ridgefield_EC_slow_all
+  Diag_IRGA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      7500_Warn:
+        instrument: Li-7500A
+        units: dimensionless
+        file: Ridgefield_EC_slow_all
+  Diag_SONIC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      CSAT_Warn:
+        instrument: CSAT3
+        units: dimensionless
+        file: Ridgefield_EC_slow_all
+  Fg_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      HFP_1_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Fg_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      HFP_2_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Fg_0.1mc:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      HFP_3_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Fld:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Ldown_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Flu:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Lup_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Fm:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fm_Avg:
+        instrument: CSAT3
+        units: kg/m/s^2
+        file: Ridgefield_EC_slow_all
+  Fsd:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Kdown_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Fsu:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Kup_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Precip_1.2m:
+    statistic_type: sum
+    height: 1.2
+    input_variables:
+      Rain_Tot:
+        instrument: Hydrylogical services
+        units: mm
+        file: Ridgefield_EC_slow_all
+  Precip_8m:
+    statistic_type: sum
+    height: 8.0
+    input_variables:
+      Rain_Tex_Tot:
+        instrument: Texas Electronics,CS702
+        units: mm
+        file: Ridgefield_EC_slow_all
+  RH_2.5m:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      RH_HMP_Avg:
+        instrument: HMP155
+        units: frac
+        file: Ridgefield_EC_slow_all
+  Sws_0.1md:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_10a_Avg:
+        instrument: CS650
+        units: m^3/m^3
+        file: Ridgefield_soil1_Table1
+  Sws_0.1me:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_10b_Avg:
+        instrument: CS650
+        units: m^3/m^3
+        file: Ridgefield_soil1_Table1
+  Sws_0.1mf:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_10c_Avg:
+        instrument: CS650
+        units: m^3/m^3
+        file: Ridgefield_soil1_Table1
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Soil_Moisture_2:
+        instrument: Stevens Hydra Probe II
+        units: m^3/m^3
+        file: Ridgefield_EC_slow_all
+  Sws_0.2md:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      VWC_20_Avg:
+        instrument: CS650
+        units: m^3/m^3
+        file: Ridgefield_soil1_Table1
+  Sws_0.2ma:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Soil_Moisture_3:
+        instrument: Stevens Hydra Probe II
+        units: m^3/m^3
+        file: Ridgefield_EC_slow_all
+  Sws_0.4md:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      VWC_40_Avg:
+        instrument: CS650
+        units: m^3/m^3
+        file: Ridgefield_soil1_Table1
+  Sws_0.05ma:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Soil_Moisture_1:
+        instrument: Stevens Hydra Probe II
+        units: m^3/m^3
+        file: Ridgefield_EC_slow_all
+  Sws_0.8md:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      VWC_80_Avg:
+        instrument: CS650
+        units: m^3/m^3
+        file: Ridgefield_soil1_Table1
+  Ta_2.5m:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ta_HMP_Avg:
+        instrument: HMP155
+        units: degC
+        file: Ridgefield_EC_slow_all
+  Tpanel:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      Tpanel_Avg:
+        instrument: CR1000X
+        units: degC
+        file: Ridgefield_EC_slow_all
+  Ts_0.1md:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      T_10a_Avg:
+        instrument: CS650
+        units: degC
+        file: Ridgefield_soil1_Table1
+  Ts_0.1me:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      T_10b_Avg:
+        instrument: CS650
+        units: degC
+        file: Ridgefield_soil1_Table1
+  Ts_0.1mf:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      T_10c_Avg:
+        instrument: CS650
+        units: degC
+        file: Ridgefield_soil1_Table1
+  Ts_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Soil_Temperature_C_2:
+        instrument: Stevens Hydra Probe II
+        units: degC
+        file: Ridgefield_EC_slow_all
+  Ts_0.2md:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      T_20_Avg:
+        instrument: CS650
+        units: degC
+        file: Ridgefield_soil1_Table1
+  Ts_0.2ma:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Soil_Temperature_C_3:
+        instrument: Stevens Hydra Probe II
+        units: degC
+        file: Ridgefield_EC_slow_all
+  Ts_0.4md:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      T_40_Avg:
+        instrument: CS650
+        units: degC
+        file: Ridgefield_soil1_Table1
+  Ts_0.05ma:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Soil_Temperature_C_1:
+        instrument: Stevens Hydra Probe II
+        units: degC
+        file: Ridgefield_EC_slow_all
+  Ts_0.8md:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      T_80_Avg:
+        instrument: CS650
+        units: degC
+        file: Ridgefield_soil1_Table1
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Tv_CSAT_Avg:
+        instrument: CSAT3
+        units: degC
+        file: Ridgefield_EC_slow_all
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covTvTv:
+        instrument: CSAT3
+        units: degC^2
+        file: Ridgefield_EC_slow_all
+  UxA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxAh:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Ridgefield_EC_slow_all
+  UxC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxCc:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Ridgefield_EC_slow_all
+  UxT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxTv:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Ridgefield_EC_slow_all
+  UxUy:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUxUy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Ridgefield_EC_slow_all
+  UxUz:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzUx:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Ridgefield_EC_slow_all
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ux_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Ridgefield_EC_slow_all
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covUxUx:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Ridgefield_EC_slow_all
+  UyA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUyAh:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Ridgefield_EC_slow_all
+  UyC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUyCc:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Ridgefield_EC_slow_all
+  UyT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUyTv:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Ridgefield_EC_slow_all
+  UyUz:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzUy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Ridgefield_EC_slow_all
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Uy_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Ridgefield_EC_slow_all
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covUyUy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Ridgefield_EC_slow_all
+  UzA:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzAh:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Ridgefield_EC_slow_all
+  UzC:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzCc:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Ridgefield_EC_slow_all
+  UzT:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      covUzTv:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Ridgefield_EC_slow_all
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Uz_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Ridgefield_EC_slow_all
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 2.5
+    input_variables:
+      covUzUz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Ridgefield_EC_slow_all
+  Vbat_1:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      Vbat_Avg:
+        instrument: CR1000X
+        units: V
+        file: Ridgefield_EC_slow_all
+  Vbat_2:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      BattV_Avg:
+        instrument: CR800
+        units: V
+        file: Ridgefield_soil1_Table1
+  Vbat_3:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      TwrBattV_Avg:
+        instrument: CR200
+        units: V
+        file: Ridgefield_soil1_Table1
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: CSAT3
+        units: degrees
+        file: Ridgefield_EC_slow_all
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Ridgefield_EC_slow_all
+  ps:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      ps_7500_Avg:
+        instrument: Li-7500A
+        units: kPa
+        file: Ridgefield_EC_slow_all
+  ustar:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      ustar_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Ridgefield_EC_slow_all
+  Fco2:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fc_Avg:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Ridgefield_EC_slow_all
+  Fe:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fe_Avg:
+        instrument: CSAT3,Li-7500A
+        units: W/m^2
+        file: Ridgefield_EC_slow_all
+  Fh:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Fh_Avg:
+        instrument: CSAT3
+        units: W/m^2
+        file: Ridgefield_EC_slow_all

@@ -1,0 +1,546 @@
+site: Tumbarumba
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: Tumbarumba_EC_TERNflux
+variables:
+  AH_71m:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      AH_sensor_mean:
+        instrument: HMP155
+        units: g/m^3
+        file: Tumbarumba_EC_TERNflux
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      H2O_mean:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: Tumbarumba_EC_TERNflux
+  AH_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 71.0
+    input_variables:
+      H2O_stdev:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: Tumbarumba_EC_TERNflux
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      CO2_mean:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: Tumbarumba_EC_TERNflux
+  CO2c_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 71.0
+    input_variables:
+      co2_stdev:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: Tumbarumba_EC_TERNflux
+  Diag_IRGA:
+    statistic_type: sum
+    height: 71.0
+    input_variables:
+      irga_samples_Tot:
+        instrument: Li-7500RS
+        units: dimensionless
+        diag_type: valid_count
+        file: Tumbarumba_EC_TERNflux
+  Diag_SONIC:
+    statistic_type: sum
+    height: 71.0
+    input_variables:
+      sonic_samples_Tot:
+        instrument: CSAT3B
+        units: dimensionless
+        diag_type: valid_count
+        file: Tumbarumba_EC_TERNflux
+  Fco2:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Fco2:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  Fe:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Fe:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: Tumbarumba_EC_TERNflux
+  Fh:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Fh:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: Tumbarumba_EC_TERNflux
+  Fg_0.16ma:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+      shf_plate_Avg(1):
+        instrument: Huskeflux HFP01-SC
+        units: W/m^2
+        file: Tumbarumba_soil_soilHFandT
+  Fg_0.16mb:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+      shf_plate_Avg(2):
+        instrument: Huskeflux HFP01-SC
+        units: W/m^2
+        file: Tumbarumba_soil_soilHFandT
+  Fld:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Fld_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Tumbarumba_EC_TERNflux
+  Flu:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Flu_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Tumbarumba_EC_TERNflux
+  Fsd:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Fsd_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Tumbarumba_EC_TERNflux
+  Fsu:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Fsu_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Tumbarumba_EC_TERNflux
+  Precip:
+    statistic_type: sum
+    height: 71.0
+    input_variables:
+      rain_Tot:
+        instrument: Hydrological Services CS700
+        units: mm
+        file: Tumbarumba_EC_TERNflux
+  RH_71m:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      RH_sensor_mean:
+        instrument: HMP155
+        units: percent
+        file: Tumbarumba_EC_TERNflux
+  Sig_IRGA:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      sig_str_irga_Avg:
+        instrument: Li-7500RS
+        units: percent
+        file: Tumbarumba_EC_TERNflux
+  Sws_0.15ma:
+    statistic_type: average
+    height: -0.15
+    height_range:
+    - 0.0
+    - -0.3
+    input_variables:
+      cs650(1,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.05ma:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      cs650(2,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      cs650(3,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.2ma:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      cs650(4,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.3ma:
+    statistic_type: average
+    height: -0.3
+    input_variables:
+      cs650(5,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.5ma:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      cs650(6,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.7ma:
+    statistic_type: average
+    height: -0.7
+    input_variables:
+      cs650(7,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_1.25ma:
+    statistic_type: average
+    height: -1.25
+    height_range:
+    - -1.1
+    - -1.4
+    input_variables:
+      cs650(8,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.15mb:
+    statistic_type: average
+    height: -0.15
+    height_range:
+    - 0.0
+    - -0.3
+    input_variables:
+      cs650(9,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.05mb:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      cs650(10,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      cs650(11,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.2mb:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      cs650(12,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.3mb:
+    statistic_type: average
+    height: -0.3
+    input_variables:
+      cs650(13,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      cs650(14,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_0.7mb:
+    statistic_type: average
+    height: -0.7
+    input_variables:
+      cs650(15,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Sws_1.25mb:
+    statistic_type: average
+    height: -1.25
+    height_range:
+    - -1.1
+    - -1.4
+    input_variables:
+      cs650(16,1):
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Tumbarumba_soil_soilMoisture
+  Ta_71m:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Ta_sensor_mean:
+        instrument: HMP155
+        units: degC
+        file: Tumbarumba_EC_TERNflux
+  Tbody_RAD_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Tb_Avg:
+        instrument: CNR4
+        units: K
+        file: Tumbarumba_EC_TERNflux
+  Tpanel:
+    statistic_type: average
+    height: 70.0
+    input_variables:
+      Tpanel_Avg:
+        instrument: Campbell Scientific CR6 logger
+        units: degC
+        file: Tumbarumba_EC_TERNflux
+  Ts_0.09ma:
+    statistic_type: average
+    height: -0.09
+    height_range:
+    - -0.02
+    - -0.16
+    input_variables:
+      tcav_probe_Avg(1):
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Tumbarumba_soil_soilHFandT
+  Ts_0.09mb:
+    statistic_type: average
+    height: -0.09
+    height_range:
+    - -0.02
+    - -0.16
+    input_variables:
+      tcav_probe_Avg(2):
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Tumbarumba_soil_soilHFandT
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Tsonic_Avg:
+        instrument: CSAT3B
+        units: degC
+        file: Tumbarumba_EC_TERNflux
+  Tv_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 71.0
+    input_variables:
+      Tsonic_stdev:
+        instrument: CSAT3B
+        units: degC
+        file: Tumbarumba_EC_TERNflux
+  ustar:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      u_star:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  UxA:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      H2O_Ux_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  UxC:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      CO2_Ux_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  UxT:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Tsonic_Ux_cov:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Tumbarumba_EC_TERNflux
+  UxUy:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Ux_Uy_cov:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Tumbarumba_EC_TERNflux
+  UxUz:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Ux_Uz_cov:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Tumbarumba_EC_TERNflux
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Ux_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  Ux_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 71.0
+    input_variables:
+      Ux_stdev:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  UyA:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      H2O_Uy_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  UyC:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      CO2_Uy_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  UyT:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Tsonic_Uy_cov:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Tumbarumba_EC_TERNflux
+  UyUz:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Uy_Uz_cov:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Tumbarumba_EC_TERNflux
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Uy_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  Uy_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 71.0
+    input_variables:
+      Uy_stdev:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  UzA:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      H2O_Uz_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  UzC:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      CO2_Uz_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Tumbarumba_EC_TERNflux
+  UzT:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Tsonic_Uz_cov:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Tumbarumba_EC_TERNflux
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      Uz_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  Uz_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 71.0
+    input_variables:
+      Uz_stdev:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  Vbat:
+    statistic_type: average
+    height: 70.0
+    input_variables:
+      Vbat_Avg:
+        instrument: Campbell Scientific CR6 logger
+        units: V
+        file: Tumbarumba_EC_TERNflux
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      wnd_dir_compass:
+        instrument: CSAT3B
+        units: degrees
+        file: Tumbarumba_EC_TERNflux
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      wnd_spd:
+        instrument: CSAT3B
+        units: m/s
+        file: Tumbarumba_EC_TERNflux
+  ps:
+    statistic_type: average
+    height: 71.0
+    input_variables:
+      amb_press_mean:
+        instrument: Li-7500RS
+        units: kPa
+        file: Tumbarumba_EC_TERNflux

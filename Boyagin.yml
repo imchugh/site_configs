@@ -1,0 +1,878 @@
+site: Boyagin
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: Boyagin_EC_slow_all
+variables:
+  AH_23m:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ah_HMP_Avg:
+        instrument: HMP45C
+        units: g/m^3
+        file: Boyagin_EC_slow_all
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ah_7500_Avg:
+        instrument: Li-7500A
+        units: g/m^3
+        file: Boyagin_EC_slow_all
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covAhAh:
+        instrument: Li-7500A
+        units: g^2/m^6
+        file: Boyagin_EC_slow_all
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Cc_7500_Avg:
+        instrument: Li-7500A
+        units: mg/m^3
+        file: Boyagin_EC_slow_all
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covCcCc:
+        instrument: Li-7500A
+        units: mg^2/m^6
+        file: Boyagin_EC_slow_all
+  Diag_IRGA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      7500_Warn:
+        instrument: Li-7500A
+        units: dimensionless
+        file: Boyagin_EC_slow_all
+  Diag_SONIC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      CSAT_Warn:
+        instrument: CSAT3
+        units: dimensionless
+        file: Boyagin_EC_slow_all
+  EC_0.05ma1:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      EC_1_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.05mb1:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      EC_1_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.05ma2:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      EC_2_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.05mb2:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      EC_2_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.1ma1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      EC_3_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.1mb1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      EC_3_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.1ma2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      EC_4_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.1mb2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      EC_4_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_1.1ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      EC_9_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_1.1mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      EC_9_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.2ma1:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      EC_5_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.2mb1:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      EC_5_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.2ma2:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      EC_6_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.2mb2:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      EC_6_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.4ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      EC_7_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.4mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      EC_7_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  EC_0.8ma:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      EC_8_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_N_Twr_gnd_soilEC
+  EC_0.8mb:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      EC_8_Avg:
+        instrument: Campbell Scientific CS616
+        units: dS/m
+        file: Boyagin_soil_S_Twr_gnd_soilEC
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      HFT_Wm2_Avg:
+        instrument: Huskeflux HFP01
+        units: W/m^2
+        file: Boyagin_soil_N_Twr_gnd
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      HFT_Wm2_Avg:
+        instrument: Huskeflux HFP01
+        units: W/m^2
+        file: Boyagin_soil_S_Twr_gnd
+  Fld:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fld_cg2_Avg:
+        instrument: Kipp and Zonen CG2
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  Flu:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Flu_cg2_Avg:
+        instrument: Kipp and Zonen CG2
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  Fn_2:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fn_nrlite_Avg:
+        instrument: Kipp and Zonen NR lite
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  Fpard:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fpard_Avg:
+        instrument: Apogee PAR
+        units: umol/m^2/s
+        file: Boyagin_rad_Rad_30
+  Fparu:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fparu_Avg:
+        instrument: Apogee PAR
+        units: umol/m^2/s
+        file: Boyagin_rad_Rad_30
+  Fsd:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fsd_cm7b_Avg:
+        instrument: Kipp and Zonen CM7B
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  FsdDiff:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fsd_SPN1_diffuse_Avg:
+        instrument: SPN1
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  FsdDir:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fsd_SPN1_direct_Avg:
+        instrument: SPN1
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  Fsd_2:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fsd_SPN1_total_Avg:
+        instrument: SPN1
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  Fsu:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Fsu_cm7b_Avg:
+        instrument: Kipp and Zonen CM7B
+        units: W/m^2
+        file: Boyagin_rad_Rad_30
+  Precip_2:
+    statistic_type: sum
+    height: 1.2
+    input_variables:
+      Rain_Tot:
+        instrument: Hydrological Services CS7000
+        units: mm
+        file: Boyagin_soil_N_Twr_gnd
+  Precip_1:
+    statistic_type: sum
+    height: 31.0
+    input_variables:
+      Rain_Tot:
+        instrument: Hydrological Services CS7000
+        units: mm
+        file: Boyagin_rad_Rad_30
+  RH_23m:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      RH_HMP_Avg:
+        instrument: HMP45C
+        units: frac
+        file: Boyagin_EC_slow_all
+  Sig_IRGA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      AGC_7500_Avg:
+        instrument: Li-7500A
+        units: percent
+        file: Boyagin_EC_slow_all
+  Sws_0.05ma1:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      VWC_1_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.05mb1:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      VWC_1_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.05ma2:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      VWC_2_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.05mb2:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      VWC_2_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.1ma1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_3_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.1mb1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_3_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.1ma2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_4_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.1mb2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      VWC_4_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_1.1ma:
+    statistic_type: average
+    height: -1.1
+    input_variables:
+      VWC_9_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_1.1mb:
+    statistic_type: average
+    height: -1.1
+    input_variables:
+      VWC_9_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.2ma1:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      VWC_5_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.2mb1:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      VWC_5_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.2ma2:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      VWC_6_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.2mb2:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      VWC_6_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.4ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      VWC_7_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.4mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      VWC_7_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Sws_0.8ma:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      VWC_8_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_N_Twr_gnd_Sws
+  Sws_0.8mb:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      VWC_8_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Boyagin_soil_S_Twr_gnd_Sws
+  Ta_23m:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ta_HMP_Avg:
+        instrument: HMP45C
+        units: degC
+        file: Boyagin_EC_slow_all
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Tpanel_Avg:
+        instrument: Campbell Scientific CR3000 logger
+        units: degC
+        file: Boyagin_EC_slow_all
+  Ts_0.05ma1:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Ts_1_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.05mb1:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Ts_1_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.05ma2:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Ts_2_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.05mb2:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Ts_2_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.1ma1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_3_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.1mb1:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_3_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.1ma2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_4_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.1mb2:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_4_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_1.1ma:
+    statistic_type: average
+    height: -1.1
+    input_variables:
+      Ts_9_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_1.1mb:
+    statistic_type: average
+    height: -1.1
+    input_variables:
+      Ts_9_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.2ma1:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_5_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.2mb1:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_5_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.2ma2:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_6_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.2mb2:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_6_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.4ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Ts_7_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.4mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Ts_7_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Ts_0.8ma:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      Ts_8_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_N_Twr_gnd_Ts
+  Ts_0.8mb:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      Ts_8_Avg:
+        instrument: Campbell Scientific CS616
+        units: degC
+        file: Boyagin_soil_S_Twr_gnd_Ts
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Tv_CSAT_Avg:
+        instrument: CSAT3
+        units: degC
+        file: Boyagin_EC_slow_all
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covTvTv:
+        instrument: CSAT3
+        units: degC^2
+        file: Boyagin_EC_slow_all
+  ustar:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      ustar_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Boyagin_EC_slow_all
+  UxA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxAh:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Boyagin_EC_slow_all
+  UxC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxCc:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Boyagin_EC_slow_all
+  UxT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxTv:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Boyagin_EC_slow_all
+  UxUy:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUxUy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Boyagin_EC_slow_all
+  UxUz:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzUx:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Boyagin_EC_slow_all
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Ux_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Boyagin_EC_slow_all
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covUxUx:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Boyagin_EC_slow_all
+  UyA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUyAh:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Boyagin_EC_slow_all
+  UyC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUyCc:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Boyagin_EC_slow_all
+  UyT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUyTv:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Boyagin_EC_slow_all
+  UyUz:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzUy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Boyagin_EC_slow_all
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Uy_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Boyagin_EC_slow_all
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covUyUy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Boyagin_EC_slow_all
+  UzA:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzAh:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: Boyagin_EC_slow_all
+  UzC:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzCc:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Boyagin_EC_slow_all
+  UzT:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      covUzTv:
+        instrument: CSAT3
+        units: m.degC/s
+        file: Boyagin_EC_slow_all
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Uz_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Boyagin_EC_slow_all
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 23.0
+    input_variables:
+      covUzUz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: Boyagin_EC_slow_all
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Vbat_Avg:
+        instrument: Campbell Scientific CR3000 logger
+        units: V
+        file: Boyagin_EC_slow_all
+  Vbat_a:
+    statistic_type: average
+    height: 0.5
+    input_variables:
+      BattV_Min:
+        instrument: Campbell Scientific CR3000 logger North pit
+        units: V
+        file: Boyagin_soil_N_Twr_gnd
+  Vbat_b:
+    statistic_type: average
+    height: 0.5
+    input_variables:
+      BattV_Min:
+        instrument: Campbell Scientific CR3000 logger south pit
+        units: V
+        file: Boyagin_soil_S_Twr_gnd
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: CSAT3
+        units: degrees
+        file: Boyagin_EC_slow_all
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: Boyagin_EC_slow_all
+  ps:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      ps_7500_Avg:
+        instrument: Li-7500A
+        units: kPa
+        file: Boyagin_EC_slow_all
+  Fco2:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fc_Avg:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: Boyagin_EC_slow_all
+  Fe:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fe_Avg:
+        instrument: CSAT3,Li-7500A
+        units: W/m^2
+        file: Boyagin_EC_slow_all
+  Fh:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Fh_Avg:
+        instrument: CSAT3,Li-7500A
+        units: W/m^2
+        file: Boyagin_EC_slow_all

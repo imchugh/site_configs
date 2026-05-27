@@ -1,0 +1,406 @@
+site: SturtPlains
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: SturtPlains_EC_Flux
+variables:
+  Sig_IRGA:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      agc_Avg:
+        instrument: Li-7500A
+        units: percent
+        file: SturtPlains_EC_Flux
+  AH_5m:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      h2o_hmp_5_Avg:
+        instrument: HMP45C
+        units: g/m^3
+        file: SturtPlains_EC_Flux
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      h2o_Avg:
+        instrument: Li-7500A
+        units: g/m^3
+        file: SturtPlains_EC_Flux
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 5.0
+    input_variables:
+      cov_h2o_h2o:
+        instrument: Li-7500A
+        units: g^2/m^6
+        file: SturtPlains_EC_Flux
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      co2_Avg:
+        instrument: Li-7500A
+        units: mg/m^3
+        file: SturtPlains_EC_Flux
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 5.0
+    input_variables:
+      cov_co2_co2:
+        instrument: Li-7500A
+        units: mg^2/m^6
+        file: SturtPlains_EC_Flux
+  Diag_IRGA:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      irga_warnings:
+        instrument: Li-7500A
+        units: dimensionless
+        file: SturtPlains_EC_Flux
+  Diag_SONIC:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      csat_warnings:
+        instrument: CSAT3
+        units: dimensionless
+        file: SturtPlains_EC_Flux
+  Fg_0.08ma1:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      shf(1):
+        instrument: Huskeflux HFP01
+        units: W/m^2
+        file: SturtPlains_EC_EnrgyBal
+  Fg_0.08ma2:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      shf(2):
+        instrument: Huskeflux HFP01
+        units: W/m^2
+        file: SturtPlains_EC_EnrgyBal
+  Fld:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Ldown:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: SturtPlains_EC_EnrgyBal
+  Flu:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Lup:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: SturtPlains_EC_EnrgyBal
+  Fsd:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Kdown:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: SturtPlains_EC_EnrgyBal
+  Fsu:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Kup:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: SturtPlains_EC_EnrgyBal
+  Precip:
+    statistic_type: sum
+    height: 0.6
+    input_variables:
+      Rain_Tot:
+        instrument: Hydrological Services CS700
+        units: mm
+        file: SturtPlains_EC_EnrgyBal
+  Sws_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      cs650_50_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: SturtPlains_EC_EnrgyBal
+  Sws_0.05mb:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      cs650_05_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: SturtPlains_EC_EnrgyBal
+  Ta_5m:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      t_hmp_5_Avg:
+        instrument: HMP45C
+        units: degC
+        file: SturtPlains_EC_Flux
+  Ts_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      cs650_05_Tsoil:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: SturtPlains_EC_EnrgyBal
+  Ts_0.05mb:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      cs650_50_Tsoil:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: SturtPlains_EC_EnrgyBal
+  Ts_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      tcav_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: SturtPlains_EC_EnrgyBal
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Ts_Avg:
+        instrument: CSAT3
+        units: degC
+        file: SturtPlains_EC_Flux
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 5.0
+    input_variables:
+      cov_Ts_Ts:
+        instrument: CSAT3
+        units: degC^2
+        file: SturtPlains_EC_Flux
+  UxA:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Ux_h2o:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: SturtPlains_EC_Flux
+  UxC:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Ux_co2:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: SturtPlains_EC_Flux
+  UxT:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Ux_Ts:
+        instrument: CSAT3
+        units: m.degC/s
+        file: SturtPlains_EC_Flux
+  UxUy:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Ux_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: SturtPlains_EC_Flux
+  UxUz:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uz_Ux:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: SturtPlains_EC_Flux
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Ux_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: SturtPlains_EC_Flux
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 5.0
+    input_variables:
+      cov_Ux_Ux:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: SturtPlains_EC_Flux
+  UyA:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uy_h2o:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: SturtPlains_EC_Flux
+  UyC:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uy_co2:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: SturtPlains_EC_Flux
+  UyT:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uy_Ts:
+        instrument: CSAT3
+        units: m.degC/s
+        file: SturtPlains_EC_Flux
+  UyUz:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uz_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: SturtPlains_EC_Flux
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Uy_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: SturtPlains_EC_Flux
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 5.0
+    input_variables:
+      cov_Uy_Uy:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: SturtPlains_EC_Flux
+  UzA:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uz_h2o:
+        instrument: CSAT3,Li-7500A
+        units: g/m^2/s
+        file: SturtPlains_EC_Flux
+  UzC:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uz_co2:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: SturtPlains_EC_Flux
+  UzT:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      cov_Uz_Ts:
+        instrument: CSAT3
+        units: m.degC/s
+        file: SturtPlains_EC_Flux
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Uz_Avg:
+        instrument: CSAT3
+        units: m/s
+        file: SturtPlains_EC_Flux
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 5.0
+    input_variables:
+      cov_Uz_Uz:
+        instrument: CSAT3
+        units: m^2/s^2
+        file: SturtPlains_EC_Flux
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      wnd_dir_compass:
+        instrument: CSAT3
+        units: degrees
+        file: SturtPlains_EC_Flux
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      wnd_spd:
+        instrument: CSAT3
+        units: m/s
+        file: SturtPlains_EC_Flux
+  ps:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      press_Avg:
+        instrument: Li-7500A
+        units: kPa
+        file: SturtPlains_EC_Flux
+  Tpanel:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      panel_temp_Avg:
+        instrument: Campbell Scientific CR6
+        units: degC
+        file: SturtPlains_EC_Flux
+  Vbat:
+    statistic_type: average
+    height: 1.0
+    input_variables:
+      batt_volt_Avg:
+        instrument: Campbell Scientific CR6
+        units: V
+        file: SturtPlains_EC_Flux
+  Fco2:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Fc_wpl:
+        instrument: CSAT3,Li-7500A
+        units: mg/m^2/s
+        file: SturtPlains_EC_Flux
+  Fe:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      LE_wpl:
+        instrument: CSAT3,Li-7500A
+        units: W/m^2
+        file: SturtPlains_EC_Flux
+  Fh:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      Hs:
+        instrument: CSAT3
+        units: W/m^2
+        file: SturtPlains_EC_Flux
+  ustar:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      u_star:
+        instrument: CSAT3
+        units: m/s
+        file: SturtPlains_EC_Flux

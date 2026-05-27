@@ -1,0 +1,974 @@
+site: Gingin
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: Gingin_EC_slow_flux
+variables:
+  AH_10m:
+    statistic_type: average
+    height: 10.6
+    input_variables:
+      Ah_HMP_10m_Avg:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: Gingin_EC_slow_met
+  AH_15m:
+    statistic_type: average
+    height: 14.7
+    input_variables:
+      Ah_HMP_15m_Avg:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: Gingin_EC_slow_met
+  AH_2m:
+    statistic_type: average
+    height: 1.25
+    input_variables:
+      Ah_HMP_2m_Avg:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: Gingin_EC_slow_met
+  AH_4m:
+    statistic_type: average
+    height: 4.2
+    input_variables:
+      Ah_HMP_4m_Avg:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: Gingin_EC_slow_met
+  AH_7m:
+    statistic_type: average
+    height: 7.4
+    input_variables:
+      Ah_HMP_7m_Avg:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: Gingin_EC_slow_met
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Ah_7500_Avg:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: Gingin_EC_slow_met
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 15.0
+    input_variables:
+      covAhAh:
+        instrument: Li-7500RS
+        units: g^2/m^6
+        file: Gingin_EC_slow_flux
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Cc_7500_Avg:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: Gingin_EC_slow_met
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 15.0
+    input_variables:
+      covCcCc:
+        instrument: Li-7500RS
+        units: mg^2/m^6
+        file: Gingin_EC_slow_flux
+  Diag_IRGA:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      7500_Warn:
+        instrument: Li-7500RS
+        units: dimensionless
+        file: Gingin_EC_slow_flux
+  Diag_SONIC:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      CSAT_Warn:
+        instrument: CSAT3B
+        units: dimensionless
+        file: Gingin_EC_slow_flux
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_CN3_8cm_a_Avg:
+        instrument: Middleton CN3
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_CN3_8cm_b_Avg:
+        instrument: Middleton CN3
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_CN3_8cm_c_Avg:
+        instrument: Middleton CN3
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fld:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Fld_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Gingin_EC_slow_rad
+  Flu:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Flu_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Gingin_EC_slow_rad
+  Fn:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      NRLITE_Wm2_Avg:
+        instrument: Kipp and Zonen NRLite-2
+        units: W/m^2
+        file: Gingin_EC_slow_rad
+  Fsd:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Fsd_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Gingin_EC_slow_rad
+  Fsu:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Fsu_CNR4_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: Gingin_EC_slow_rad
+  Precip:
+    statistic_type: sum
+    height: 0.6
+    input_variables:
+      Rain_Tot:
+        instrument: Hydrological Services CS700
+        units: mm
+        file: Gingin_EC_slow_met
+  RH_10m:
+    statistic_type: average
+    height: 10.6
+    input_variables:
+      RH_HMP_10m_Avg:
+        instrument: Vaisala HMP155
+        units: frac
+        file: Gingin_EC_slow_met
+  RH_15m:
+    statistic_type: average
+    height: 14.7
+    input_variables:
+      RH_HMP_15m_Avg:
+        instrument: Vaisala HMP155
+        units: frac
+        file: Gingin_EC_slow_met
+  RH_2m:
+    statistic_type: average
+    height: 1.25
+    input_variables:
+      RH_HMP_2m_Avg:
+        instrument: Vaisala HMP155
+        units: frac
+        file: Gingin_EC_slow_met
+  RH_4m:
+    statistic_type: average
+    height: 4.2
+    input_variables:
+      RH_HMP_4m_Avg:
+        instrument: Vaisala HMP155
+        units: frac
+        file: Gingin_EC_slow_met
+  RH_7m:
+    statistic_type: average
+    height: 7.4
+    input_variables:
+      RH_HMP_7m_Avg:
+        instrument: Vaisala HMP155
+        units: frac
+        file: Gingin_EC_slow_met
+  Fg_0.08md:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      shf_Avg(1):
+        instrument: Campbell Scientific HFP01SC
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fg_0.08me:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      shf_Avg(2):
+        instrument: Campbell Scientific HFP01SC
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fg_0.08mf:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      shf_Avg(3):
+        instrument: Campbell Scientific HFP01SC
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Sig_IRGA:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      sig_strn_7500_Avg:
+        instrument: Li-7500RS
+        units: percent
+        file: Gingin_EC_slow_flux
+  Swp_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Swp_W253_mux1_Avg(1):
+        instrument: Campbell Scientific W253
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Swp_W253_mux2_Avg(1):
+        instrument: Campbell Scientific W253
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_0.4ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Swp_W253_mux1_Avg(2):
+        instrument: Campbell Scientific W253
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_0.4mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Swp_W253_mux2_Avg(2):
+        instrument: Campbell Scientific W253
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_6m:
+    statistic_type: average
+    height: -6.0
+    input_variables:
+      kPa_Mux2_Avg(1):
+        instrument: Campbell Scientific W229
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_7m:
+    statistic_type: average
+    height: -7.0
+    input_variables:
+      kPa_Mux1_Avg(2):
+        instrument: Campbell Scientific W229
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_8m:
+    statistic_type: average
+    height: -8.0
+    input_variables:
+      kPa_Mux1_Avg(1):
+        instrument: Campbell Scientific W229
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_0.8ma:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      Swp_W253_mux1_Avg(3):
+        instrument: Campbell Scientific W253
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_0.8mb:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      Swp_W253_mux2_Avg(3):
+        instrument: Campbell Scientific W253
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Swp_8.5m:
+    statistic_type: average
+    height: -8.5
+    input_variables:
+      kPa_Mux2_Avg(2):
+        instrument: Campbell Scientific W229
+        units: kPa
+        file: Gingin_soil_Soil_Min30
+  Sws_0.06m:
+    statistic_type: average
+    height: -0.06
+    input_variables:
+      CS650_6cm_VWC_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Gingin_EC_slow_flux
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_616_W_10cm_a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_616_W_10cm_b_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.1mc:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_616_NW_10cm_a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.1md:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_616_NW_10cm_b_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_1.6ma:
+    statistic_type: average
+    height: -1.6
+    input_variables:
+      Sws_616_W_160cm_a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_1.6mb:
+    statistic_type: average
+    height: -1.6
+    input_variables:
+      Sws_616_W_160cm_b_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_1.6mc:
+    statistic_type: average
+    height: -1.6
+    input_variables:
+      Sws_616_NW_160cm_a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_1.6md:
+    statistic_type: average
+    height: -1.6
+    input_variables:
+      Sws_616_NW_160cm_b_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_2ma:
+    statistic_type: average
+    height: -2.0
+    input_variables:
+      Sws_CS650_mux1_2m_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.2ma:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Sws_616_W_20cm_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.2mb:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Sws_616_NW_20cm_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_4ma:
+    statistic_type: average
+    height: -4.0
+    input_variables:
+      Sws_CS650_mux1_4m_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_4mb:
+    statistic_type: average
+    height: -4.0
+    input_variables:
+      Sws_CS650_mux2_4m_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.4ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Sws_616_W_40cm_a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.4mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Sws_616_W_40cm_b_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.4mc:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Sws_616_NW_40cm_a_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.4md:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Sws_616_NW_40cm_b_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_6ma:
+    statistic_type: average
+    height: -6.0
+    input_variables:
+      Sws_CS650_mux1_6m_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_6mb:
+    statistic_type: average
+    height: -6.0
+    input_variables:
+      Sws_CS650_mux2_6m_VWC:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.8ma:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      Sws_616_W_80cm_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Sws_0.8mb:
+    statistic_type: average
+    height: -0.8
+    input_variables:
+      Sws_616_NW_80cm_Avg:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: Gingin_soil_Soil_Min30
+  Ta_10m:
+    statistic_type: average
+    height: 10.6
+    input_variables:
+      Ta_HMP_10m_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Gingin_EC_slow_met
+  Ta_15m:
+    statistic_type: average
+    height: 14.7
+    input_variables:
+      Ta_HMP_15m_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Gingin_EC_slow_met
+  Ta_2m:
+    statistic_type: average
+    height: 1.25
+    input_variables:
+      Ta_HMP_2m_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Gingin_EC_slow_met
+  Ta_4m:
+    statistic_type: average
+    height: 4.2
+    input_variables:
+      Ta_HMP_4m_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Gingin_EC_slow_met
+  Ta_7m:
+    statistic_type: average
+    height: 7.4
+    input_variables:
+      Ta_HMP_7m_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: Gingin_EC_slow_met
+  Ts_0.04ma:
+    statistic_type: average
+    height: -0.04
+    input_variables:
+      Ts_TCAVa_4cm_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Gingin_EC_slow_met
+  Ts_0.04mb:
+    statistic_type: average
+    height: -0.04
+    input_variables:
+      Ts_TCAVb_4cm_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Gingin_EC_slow_met
+  Ts_0.04mc:
+    statistic_type: average
+    height: -0.04
+    input_variables:
+      Ts_T108a_4cm_Avg:
+        instrument: Campbell Scientific T108
+        units: degC
+        file: Gingin_EC_slow_met
+  Ts_0.04md:
+    statistic_type: average
+    height: -0.04
+    input_variables:
+      Ts_T108b_4cm_Avg:
+        instrument: Campbell Scientific T108
+        units: degC
+        file: Gingin_EC_slow_met
+  Ts_0.06m:
+    statistic_type: average
+    height: -0.06
+    input_variables:
+      CS650_6cm_Temp_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Gingin_EC_slow_flux
+  Ts_2m:
+    statistic_type: average
+    height: -2.0
+    input_variables:
+      Sws_CS650_mux1_2m_Temp:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_4m1:
+    statistic_type: average
+    height: -4.0
+    input_variables:
+      Sws_CS650_mux1_4m_Temp:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_4m2:
+    statistic_type: average
+    height: -4.0
+    input_variables:
+      Sws_CS650_mux2_4m_Temp:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_6m1:
+    statistic_type: average
+    height: -6.0
+    input_variables:
+      Sws_CS650_mux1_6m_Temp:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_6m2:
+    statistic_type: average
+    height: -6.0
+    input_variables:
+      Sws_CS650_mux2_6m_Temp:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_T108_mux1_10cm_Avg:
+        instrument: Campbell Scientific 108
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_T108_mux2_10cm_Avg:
+        instrument: Campbell Scientific 108
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_0.2ma:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_T108_mux1_20cm_Avg:
+        instrument: Campbell Scientific 108
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_0.2mb:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_T108_mux2_20cm_Avg:
+        instrument: Campbell Scientific 108
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_0.4ma:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Ts_T108_mux1_40cm_Avg:
+        instrument: Campbell Scientific 108
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Ts_0.4mb:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Ts_T108_mux2_40cm_Avg:
+        instrument: Campbell Scientific 108
+        units: degC
+        file: Gingin_soil_Soil_Min30
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Tv_CSAT_Avg:
+        instrument: CSAT3B
+        units: degC
+        file: Gingin_EC_slow_met
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 15.0
+    input_variables:
+      covTvTv:
+        instrument: CSAT3B
+        units: degC^2
+        file: Gingin_EC_slow_flux
+  UxA:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUxAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Gingin_EC_slow_flux
+  UxC:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUxCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Gingin_EC_slow_flux
+  UxT:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUxTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Gingin_EC_slow_flux
+  UxUy:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUxUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Gingin_EC_slow_flux
+  UxUz:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUzUx:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Gingin_EC_slow_flux
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Ux_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Gingin_EC_slow_met
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 15.0
+    input_variables:
+      covUxUx:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Gingin_EC_slow_flux
+  UyA:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUyAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Gingin_EC_slow_flux
+  UyC:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUyCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Gingin_EC_slow_flux
+  UyT:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUyTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Gingin_EC_slow_flux
+  UyUz:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUzUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Gingin_EC_slow_flux
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Uy_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Gingin_EC_slow_met
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 15.0
+    input_variables:
+      covUyUy:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Gingin_EC_slow_flux
+  UzA:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUzAh:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: Gingin_EC_slow_flux
+  UzC:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUzCc:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Gingin_EC_slow_flux
+  UzT:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      covUzTv:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: Gingin_EC_slow_flux
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Uz_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Gingin_EC_slow_met
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 15.0
+    input_variables:
+      covUzUz:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: Gingin_EC_slow_flux
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: CSAT3B
+        units: degrees
+        file: Gingin_EC_slow_met
+  Wd_10m:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      WD_WS4_10m_Avg:
+        instrument: RM Young WindSonic4
+        units: degrees
+        file: Gingin_EC_slow_met
+  Wd_16m:
+    statistic_type: average
+    height: 15.5
+    input_variables:
+      WD_WS4_16m_Avg:
+        instrument: RM Young WindSonic4
+        units: degrees
+        file: Gingin_EC_slow_met
+  Wd_2m:
+    statistic_type: average
+    height: 1.9
+    input_variables:
+      WD_WS4_2m_Avg:
+        instrument: RM Young WindSonic4
+        units: degrees
+        file: Gingin_EC_slow_met
+  Wd_4m:
+    statistic_type: average
+    height: 4.0
+    input_variables:
+      WD_WS4_4m_Avg:
+        instrument: RM Young WindSonic4
+        units: degrees
+        file: Gingin_EC_slow_met
+  Wd_7m:
+    statistic_type: average
+    height: 7.0
+    input_variables:
+      WD_WS4_7m_Avg:
+        instrument: RM Young WindSonic4
+        units: degrees
+        file: Gingin_EC_slow_met
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Gingin_EC_slow_met
+  Ws_10m:
+    statistic_type: average
+    height: 10.5
+    input_variables:
+      WS_WS4_10m_Avg:
+        instrument: RM Young WindSonic4
+        units: m/s
+        file: Gingin_EC_slow_met
+  Ws_16m:
+    statistic_type: average
+    height: 15.5
+    input_variables:
+      WS_WS4_16m_Avg:
+        instrument: RM Young WindSonic4
+        units: m/s
+        file: Gingin_EC_slow_met
+  Ws_2m:
+    statistic_type: average
+    height: 1.9
+    input_variables:
+      WS_WS4_2m_Avg:
+        instrument: RM Young WindSonic4
+        units: m/s
+        file: Gingin_EC_slow_met
+  Ws_4m:
+    statistic_type: average
+    height: 4.0
+    input_variables:
+      WS_WS4_4m_Avg:
+        instrument: RM Young WindSonic4
+        units: m/s
+        file: Gingin_EC_slow_met
+  Ws_7m:
+    statistic_type: average
+    height: 7.0
+    input_variables:
+      WS_WS4_7m_Avg:
+        instrument: RM Young WindSonic4
+        units: m/s
+        file: Gingin_EC_slow_met
+  ps:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      ps_7500_Avg:
+        instrument: Li-7500RS
+        units: kPa
+        file: Gingin_EC_slow_met
+  Fco2:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Fc_Avg:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: Gingin_EC_slow_flux
+  Fe:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Fe_Avg:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fh:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      Fh_Avg:
+        instrument: CSAT3B
+        units: W/m^2
+        file: Gingin_EC_slow_flux
+  ustar:
+    statistic_type: average
+    height: 15.0
+    input_variables:
+      ustar_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: Gingin_EC_slow_flux
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      CR3000_PTemp_Avg:
+        instrument: Campbell Scientific CR3000
+        units: degC
+        file: Gingin_EC_slow_met
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      CR3000_batt_volt_Avg:
+        instrument: Campbell Scientific CR3000
+        units: V
+        file: Gingin_EC_slow_met

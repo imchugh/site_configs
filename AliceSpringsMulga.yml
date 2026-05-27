@@ -1,0 +1,713 @@
+site: AliceSpringsMulga
+file_formats:
+  default: CSI
+flux_system: TERNFLUX
+flux_file: AliceSpringsMulga_EC_TERNflux
+variables:
+  Fh:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      Fh:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: AliceSpringsMulga_EC_TERNflux
+  ustar:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      u_star:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Tv_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      Tsonic_stdev:
+        instrument: CSAT3B
+        units: degC
+        file: AliceSpringsMulga_EC_TERNflux
+  UxT:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Tsonic_Ux_cov:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UyT:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Tsonic_Uy_cov:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UzT:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Tsonic_Uz_cov:
+        instrument: CSAT3B
+        units: m.degC/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Ux_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      Ux_stdev:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UxUy:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+      Ux_Uy_cov:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: AliceSpringsMulga_EC_TERNflux
+  UxUz:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+      Ux_Uz_cov:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: AliceSpringsMulga_EC_TERNflux
+  Uy_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      Uy_stdev:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UyUz:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+      Uy_Uz_cov:
+        instrument: CSAT3B
+        units: m^2/s^2
+        file: AliceSpringsMulga_EC_TERNflux
+  Uz_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      Uz_stdev:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      wnd_spd:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      wnd_dir_compass:
+        instrument: CSAT3B
+        units: degrees
+        file: AliceSpringsMulga_EC_TERNflux
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      std_wnd_dir:
+        instrument: CSAT3B
+        units: degrees
+        file: AliceSpringsMulga_EC_TERNflux
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Ux_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Uy_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Uz_Avg:
+        instrument: CSAT3B
+        units: m/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Tsonic_Avg:
+        instrument: CSAT3B
+        units: degC
+        file: AliceSpringsMulga_EC_TERNflux
+  Diag_SONIC:
+    statistic_type: sum
+    height: 11.6
+    input_variables:
+      sonic_samples_Tot:
+        instrument: CSAT3B
+        units: dimensionless
+        diag_type: valid_count
+        file: AliceSpringsMulga_EC_TERNflux
+  Fco2:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      Fco2:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  Fe:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      Fe:
+        instrument: CSAT3B,Li-7500RS
+        units: W/m^2
+        file: AliceSpringsMulga_EC_TERNflux
+  CO2c_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      CO2_stdev:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: AliceSpringsMulga_EC_TERNflux
+  UxC:
+    statistic_type: covariance
+    height: 10.0
+    input_variables:
+      CO2_Ux_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UyC:
+    statistic_type: covariance
+    height: 10.0
+    input_variables:
+      CO2_Uy_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UzC:
+    statistic_type: covariance
+    height: 10.0
+    input_variables:
+      CO2_Uz_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: mg/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  AH_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+      H2O_stdev:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: AliceSpringsMulga_EC_TERNflux
+  UxA:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      H2O_Ux_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UyA:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      H2O_Uy_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  UzA:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      H2O_Uz_cov:
+        instrument: CSAT3B,Li-7500RS
+        units: g/m^2/s
+        file: AliceSpringsMulga_EC_TERNflux
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      CO2_mean:
+        instrument: Li-7500RS
+        units: mg/m^3
+        file: AliceSpringsMulga_EC_TERNflux
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      H2O_mean:
+        instrument: Li-7500RS
+        units: g/m^3
+        file: AliceSpringsMulga_EC_TERNflux
+  ps:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      amb_press_mean:
+        instrument: Li-7500RS
+        units: kPa
+        file: AliceSpringsMulga_EC_TERNflux
+  Diag_IRGA:
+    statistic_type: sum
+    height: 11.6
+    input_variables:
+      irga_samples_Tot:
+        instrument: Li-7500RS
+        units: dimensionless
+        diag_type: valid_count
+        file: AliceSpringsMulga_EC_TERNflux
+  Sig_IRGA:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      sig_str_irga_Avg:
+        instrument: Li-7500RS
+        units: percent
+        file: AliceSpringsMulga_EC_TERNflux
+  Ta_11.6m:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Ta_sensor_mean:
+        instrument: Vaisala HMP155
+        units: degC
+        file: AliceSpringsMulga_EC_TERNflux
+  AH_11.6m:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      AH_sensor_mean:
+        instrument: Vaisala HMP155
+        units: g/m^3
+        file: AliceSpringsMulga_EC_TERNflux
+  RH_11.6m:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      RH_sensor_mean:
+        instrument: Vaisala HMP155
+        units: percent
+        file: AliceSpringsMulga_EC_TERNflux
+  Fsd:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Fsd_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: AliceSpringsMulga_EC_TERNflux
+  Fsu:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Fsu_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: AliceSpringsMulga_EC_TERNflux
+  Fld:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Fld_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: AliceSpringsMulga_EC_TERNflux
+  Flu:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Flu_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: W/m^2
+        file: AliceSpringsMulga_EC_TERNflux
+  Tbody_RAD:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+      Tb_Avg:
+        instrument: Kipp and Zonen CNR4
+        units: K
+        file: AliceSpringsMulga_EC_TERNflux
+  Precip:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      rain_Tot:
+        instrument: CS700
+        units: mm
+        file: AliceSpringsMulga_EC_TERNflux
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Tpanel_Avg:
+        instrument: Campbell Scientific CR1000XE
+        units: degC
+        file: AliceSpringsMulga_EC_TERNflux
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Vbat_Avg:
+        instrument: Campbell Scientific CR1000XE
+        units: V
+        file: AliceSpringsMulga_EC_TERNflux
+  Ta_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Ta_sensor_2m_Avg:
+        instrument: Vaisala HMP155
+        units: degC
+        file: AliceSpringsMulga_EC_TERNflux
+  RH_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      RH_sensor_2m_Avg:
+        instrument: Vaisala HMP155
+        units: percent
+        file: AliceSpringsMulga_EC_TERNflux
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_8cma_Avg:
+        instrument: Middleton CN3
+        units: W/m^2
+        file: AliceSpringsMulga_soil_soil_microsites
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_8cmb_Avg:
+        instrument: Middleton CN3
+        units: W/m^2
+        file: AliceSpringsMulga_soil_soil_microsites
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_8cmc_Avg:
+        instrument: Middleton CN3
+        units: W/m^2
+        file: AliceSpringsMulga_soil_soil_microsites
+  Ts_0.04ma:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_8cma_Avg:
+        instrument: Middleton CN3
+        units: degC
+        file: AliceSpringsMulga_soil_soil_microsites
+  Ts_0.04mb:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_8cmb_Avg:
+        instrument: Middleton CN3
+        units: degC
+        file: AliceSpringsMulga_soil_soil_microsites
+  Ts_0.04mc:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+      Ts_8cmc_Avg:
+        instrument: Middleton CN3
+        units: degC
+        file: AliceSpringsMulga_soil_soil_microsites
+  Sws_0.05ma:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_8cma:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_soil_microsites
+  Sws_0.05mb:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_8cmb:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_soil_microsites
+  Sws_0.05mc:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+      Sws_8cmc:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_soil_microsites
+  Sws_1.1ma:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+      Sws_CS610(3):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_1.1md:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+      Sws_CS610(12):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_1.1mb:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+      Sws_CS610(4):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_1.1me:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+      Sws_CS610(19):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_1.1mc:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+      Sws_CS610(8):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_1.1mf:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+      Sws_CS610(15):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2ma:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(2):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2md:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(14):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2mb:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(5):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2me1:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(21):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2me2:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(22):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2mc:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(10):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2mf1:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(17):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2mf2:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+      Sws_CS610(18):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_1.53md:
+    statistic_type: average
+    height: -1.5299999999999998
+    height_range:
+    - -1.43
+    - -1.63
+    input_variables:
+      Sws_CS610(11):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7ma:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+      Sws_CS610(1):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7md:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+      Sws_CS610(13):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7mb:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+      Sws_CS610(6):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7me:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+      Sws_CS610(20):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7mc:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+      Sws_CS610(9):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7mf:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+      Sws_CS610(16):
+        instrument: Campbell Scientific CS605
+        units: m^3/m^3
+        file: AliceSpringsMulga_soil_VWC_Param
