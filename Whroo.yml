@@ -157,7 +157,7 @@ variables:
         units: degC
         file: Whroo_EC_TERNflux
   Diag_SONIC:
-    statistic_type: sum
+    variable_type: counter
     height: 37.0
     input_variables:
       sonic_samples_Tot:
@@ -270,7 +270,7 @@ variables:
         units: kPa
         file: Whroo_EC_TERNflux
   Diag_IRGA:
-    statistic_type: sum
+    variable_type: counter
     height: 37.0
     input_variables:
       irga_samples_Tot:

@@ -45,7 +45,7 @@ variables:
         units: mg/m^3
         file: Tumbarumba_EC_TERNflux
   Diag_IRGA:
-    statistic_type: sum
+    variable_type: counter
     height: 71.0
     input_variables:
       irga_samples_Tot:
@@ -54,7 +54,7 @@ variables:
         diag_type: valid_count
         file: Tumbarumba_EC_TERNflux
   Diag_SONIC:
-    statistic_type: sum
+    variable_type: counter
     height: 71.0
     input_variables:
       sonic_samples_Tot:

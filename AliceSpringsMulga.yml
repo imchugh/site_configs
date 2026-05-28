@@ -157,7 +157,7 @@ variables:
         units: degC
         file: AliceSpringsMulga_EC_TERNflux
   Diag_SONIC:
-    statistic_type: sum
+    variable_type: counter
     height: 11.6
     input_variables:
       sonic_samples_Tot:
@@ -270,7 +270,7 @@ variables:
         units: kPa
         file: AliceSpringsMulga_EC_TERNflux
   Diag_IRGA:
-    statistic_type: sum
+    variable_type: counter
     height: 11.6
     input_variables:
       irga_samples_Tot:

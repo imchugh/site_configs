@@ -77,20 +77,22 @@ variables:
         units: mg^2/m^6
         file: Gingin_EC_slow_flux
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 15.0
     input_variables:
       7500_Warn:
         instrument: Li-7500RS
         units: dimensionless
+        diag_type: invalid_count
         file: Gingin_EC_slow_flux
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 15.0
     input_variables:
       CSAT_Warn:
         instrument: CSAT3B
         units: dimensionless
+        diag_type: invalid_count
         file: Gingin_EC_slow_flux
   Fg_0.08ma:
     statistic_type: average

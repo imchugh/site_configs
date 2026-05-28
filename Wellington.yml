@@ -5,12 +5,12 @@ flux_system: EASYFLUX
 flux_file: Wellington_EC_slow_core
 variables:
   AC:
-    statistic_type: average
+    statistic_type: covariance
     height: 2.5
     input_variables:
       covCcAh:
         instrument: Li-7500RS
-        units: mg.g/m^6
+        units: mg.g/m^3
         file: Wellington_EC_slow_core
   AH_2.5m:
     statistic_type: average
@@ -69,20 +69,22 @@ variables:
         units: K.mg/m^3
         file: Wellington_EC_slow_core
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
       7500_Warn:
         instrument: Li-7500RS
         units: dimensionless
+        diag_type: invalid_count
         file: Wellington_EC_slow_core
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
       CSAT_Warn:
         instrument: CSAT3B
         units: dimensionless
+        diag_type: invalid_count
         file: Wellington_EC_slow_core
   EC_0.05ma:
     statistic_type: average

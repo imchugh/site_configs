@@ -53,20 +53,22 @@ variables:
         units: mg^2/m^6
         file: Ridgefield_EC_slow_all
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
       7500_Warn:
         instrument: Li-7500A
         units: dimensionless
+        diag_type: invalid_count
         file: Ridgefield_EC_slow_all
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
       CSAT_Warn:
         instrument: CSAT3
         units: dimensionless
+        diag_type: invalid_count
         file: Ridgefield_EC_slow_all
   Fg_0.1ma:
     statistic_type: average

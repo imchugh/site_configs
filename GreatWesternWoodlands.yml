@@ -53,20 +53,22 @@ variables:
         units: mg/m^3
         file: GreatWesternWoodlands_EC_flux
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 36.0
     input_variables:
       irga_warnings:
         instrument: Li-7500RS
         units: dimensionless
+        diag_type: invalid_count
         file: GreatWesternWoodlands_EC_flux
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 36.0
     input_variables:
       csat_warnings:
         instrument: CSAT3
         units: dimensionless
+        diag_type: invalid_count
         file: GreatWesternWoodlands_EC_flux
   Fg_0.08ma:
     statistic_type: average

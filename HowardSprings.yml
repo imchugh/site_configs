@@ -157,7 +157,7 @@ variables:
         units: degC
         file: HowardSprings_EC_TERNflux
   Diag_SONIC:
-    statistic_type: sum
+    variable_type: counter
     height: 23.0
     input_variables:
       sonic_samples_Tot:
@@ -214,7 +214,7 @@ variables:
         units: mg/m^2/s
         file: HowardSprings_EC_TERNflux
   AH_IRGA_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 23.0
     input_variables:
       H2O_stdev:
@@ -270,7 +270,7 @@ variables:
         units: kPa
         file: HowardSprings_EC_TERNflux
   Diag_IRGA:
-    statistic_type: sum
+    variable_type: counter
     height: 23.0
     input_variables:
       irga_samples_Tot:

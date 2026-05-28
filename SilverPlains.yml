@@ -13,22 +13,23 @@ variables:
         units: g/m^3
         file: SilverPlains_EC_Flux_CSFormat
   AH_IRGA_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       H2O_density_SIGMA:
         instrument: EC150
         units: g/m^3
         file: SilverPlains_EC_Flux_CSFormat
-  AH_Ct:
-    statistic_type: sum
+  AH_IRGA_Ct:
+    variable_type: counter
     height: 2.5
     input_variables:
       H2O_samples:
         instrument: EC150
         units: dimensionless
+        diag_type: valid_count
         file: SilverPlains_EC_Flux_Notes
-  CO2_IRGA_Av:
+  CO2c_IRGA_Av:
     statistic_type: average
     height: 2.5
     input_variables:
@@ -36,7 +37,7 @@ variables:
         instrument: EC150
         units: mg/m^3
         file: SilverPlains_EC_Flux_CSFormat
-  CO2_IRGA_Sd:
+  CO2c_IRGA_Sd:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
@@ -44,29 +45,32 @@ variables:
         instrument: EC150
         units: mg/m^3
         file: SilverPlains_EC_Flux_CSFormat
-  CO2_Ct:
-    statistic_type: sum
+  CO2c_IRGA_Ct:
+    variable_type: counter
     height: 2.5
     input_variables:
       CO2_samples:
         instrument: EC150
         units: dimensionless
+        diag_type: valid_count
         file: SilverPlains_EC_Flux_Notes
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
-      diag_irga_aggregate:
+      irga_bad_data_f_Tot:
         instrument: EC150
         units: dimensionless
+        diag_type: invalid_count
         file: SilverPlains_EC_Flux_Notes
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
-      diag_sonic_aggregate:
+      sonic_samples:
         instrument: CSAT3A
         units: dimensionless
+        diag_type: valid_count
         file: SilverPlains_EC_Flux_Notes
   Fco2:
     statistic_type: average
@@ -77,15 +81,16 @@ variables:
         units: mg/m^2/s
         file: SilverPlains_EC_Flux_CSFormat
   Fco2_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       FC_samples:
         instrument: CSAT3A,EC150
         units: dimensionless
+        diag_type: valid_count
         file: SilverPlains_EC_Flux_CSFormat
   Fco2_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 2.5
     input_variables:
       FC_QC:
@@ -101,15 +106,16 @@ variables:
         units: W/m^2
         file: SilverPlains_EC_Flux_CSFormat
   Fe_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       LE_samples:
         instrument: EC150,CSAT3A
         units: dimensionless
+        diag_type: valid_count
         file: SilverPlains_EC_Flux_CSFormat
   Fe_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 2.5
     input_variables:
       LE_QC:
@@ -149,15 +155,16 @@ variables:
         units: W/m^2
         file: SilverPlains_EC_Flux_CSFormat
   Fh_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       H_samples:
         instrument: CSAT3A
         units: dimensionless
+        diag_type: valid_count
         file: SilverPlains_EC_Flux_CSFormat
   Fh_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 2.5
     input_variables:
       H_QC:
@@ -189,7 +196,7 @@ variables:
         units: kg/m/s^2
         file: SilverPlains_EC_Flux_CSFormat
   Fm_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 2.5
     input_variables:
       TAU_QC:
@@ -437,7 +444,7 @@ variables:
         units: degC
         file: SilverPlains_EC_Flux_CSFormat
   Tv_SONIC_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       T_SONIC_SIGMA:
@@ -493,7 +500,7 @@ variables:
         units: m/s
         file: SilverPlains_EC_Flux_CSFormat
   Ux_SONIC_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       Ux_SIGMA:
@@ -541,7 +548,7 @@ variables:
         units: m/s
         file: SilverPlains_EC_Flux_CSFormat
   Uy_SONIC_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       Uy_SIGMA:
@@ -581,7 +588,7 @@ variables:
         units: m/s
         file: SilverPlains_EC_Flux_CSFormat
   Uz_SONIC_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       Uz_SIGMA:
@@ -605,7 +612,7 @@ variables:
         units: degrees
         file: SilverPlains_EC_Flux_CSFormat
   Wd_SONIC_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       WD_SIGMA:
@@ -621,7 +628,7 @@ variables:
         units: degrees
         file: SilverPlains_EC_Flux_CSFormat
   Wd_Sd:
-    statistic_type: average
+    statistic_type: standard_deviation
     height: 2.5
     input_variables:
       std_wind_dir:

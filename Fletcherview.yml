@@ -45,20 +45,22 @@ variables:
         units: mg^2/m^6
         file: Fletcherview_EC_slow_core
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 24.5
     input_variables:
       7500_Warn:
         instrument: Li-7500RS
         units: dimensionless
+        diag_type: invalid_count
         file: Fletcherview_EC_slow_core
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 24.5
     input_variables:
       CSAT_Warn:
         instrument: CSAT3B
         units: dimensionless
+        diag_type: invalid_count
         file: Fletcherview_EC_slow_core
   EC_0.05ma:
     statistic_type: average

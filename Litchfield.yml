@@ -61,20 +61,22 @@ variables:
         units: mg^2/m^6
         file: Litchfield_EC_flux
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 23.0
     input_variables:
       irga_warnings:
         instrument: Li-7500A
         units: dimensionless
+        diag_type: invalid_count
         file: Litchfield_EC_flux
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 23.0
     input_variables:
       csat_warnings:
         instrument: CSAT3
         units: dimensionless
+        diag_type: invalid_count
         file: Litchfield_EC_flux
   Fg_0.08ma:
     statistic_type: average

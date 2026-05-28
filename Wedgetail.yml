@@ -21,14 +21,15 @@ variables:
         units: g/m^3
         file: Wedgetail_EC_Flux_CSFormat
   AH_IRGA_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       H2O_samples:
         instrument: EC150
         units: dimensionless
+        diag_type: valid_count
         file: Wedgetail_EC_Flux_Notes
-  CO2_IRGA_Av:
+  CO2c_IRGA_Av:
     statistic_type: average
     height: 2.5
     input_variables:
@@ -36,7 +37,7 @@ variables:
         instrument: EC150
         units: mg/m^3
         file: Wedgetail_EC_Flux_CSFormat
-  CO2_IRGA_Sd:
+  CO2c_IRGA_Sd:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
@@ -44,31 +45,32 @@ variables:
         instrument: EC150
         units: mg/m^3
         file: Wedgetail_EC_Flux_CSFormat
-  CO2_IRGA_Ct:
-    statistic_type: sum
+  CO2c_IRGA_Ct:
+    variable_type: counter
     height: 2.5
     input_variables:
       CO2_samples:
         instrument: EC150
         units: dimensionless
+        diag_type: valid_count
         file: Wedgetail_EC_Flux_Notes
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
-      diag_irga_aggregate:
+      irga_bad_data_f_Tot:
         instrument: EC150
         units: dimensionless
         diag_type: invalid_count
         file: Wedgetail_EC_Flux_Notes
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 2.5
     input_variables:
-      diag_sonic_aggregate:
+      sonic_samples:
         instrument: CSAT3A
         units: dimensionless
-        diag_type: invalid_count
+        diag_type: valid_count
         file: Wedgetail_EC_Flux_Notes
   Fco2:
     statistic_type: average
@@ -79,15 +81,16 @@ variables:
         units: mg/m^2/s
         file: Wedgetail_EC_Flux_CSFormat
   Fco2_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 10.0
     input_variables:
       FC_samples:
         instrument: CSAT3A,EC150
         units: dimensionless
+        diag_type: valid_count
         file: Wedgetail_EC_Flux_CSFormat
   Fco2_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 10.0
     input_variables:
       FC_QC:
@@ -103,15 +106,16 @@ variables:
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fe_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 10.0
     input_variables:
       LE_samples:
         instrument: CSAT3A,EC150
         units: dimensionless
+        diag_type: valid_count
         file: Wedgetail_EC_Flux_CSFormat
   Fe_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 10.0
     input_variables:
       LE_QC:
@@ -127,15 +131,16 @@ variables:
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fh_Ct:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       H_samples:
         instrument: CSAT3A
         units: dimensionless
+        diag_type: valid_count
         file: Wedgetail_EC_Flux_CSFormat
   Fh_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 2.5
     input_variables:
       H_QC:
@@ -167,7 +172,7 @@ variables:
         units: kg/m/s^2
         file: Wedgetail_EC_Flux_CSFormat
   Fm_QC:
-    statistic_type: average
+    variable_type: quality_flag
     height: 2.5
     input_variables:
       TAU_QC:

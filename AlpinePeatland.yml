@@ -157,7 +157,7 @@ variables:
         units: degC
         file: AlpinePeatland_EC_flux
   Diag_SONIC:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       f_CSAT_samples_Tot:
@@ -270,7 +270,7 @@ variables:
         units: kPa
         file: AlpinePeatland_EC_flux
   Diag_IRGA:
-    statistic_type: sum
+    variable_type: counter
     height: 2.5
     input_variables:
       f_EC150_samples_Tot:
@@ -408,10 +408,10 @@ variables:
         file: AlpinePeatland_EC_flux
   Ts_0.09ma:
     statistic_type: average
-    height: -0.018000000000000002
+    height: -0.09
     height_range:
     - -0.02
-    - -0.016
+    - -0.16
     input_variables:
       SoilT_TCAV1_Avg:
         instrument: Campbell Scientific TCAV
@@ -419,10 +419,10 @@ variables:
         file: AlpinePeatland_EC_flux
   Ts_0.09mb:
     statistic_type: average
-    height: -0.018000000000000002
+    height: -0.09
     height_range:
     - -0.02
-    - -0.016
+    - -0.16
     input_variables:
       SoilT_TCAV2_Avg:
         instrument: Campbell Scientific TCAV
@@ -430,10 +430,10 @@ variables:
         file: AlpinePeatland_EC_flux
   Ts_0.18ma:
     statistic_type: average
-    height: -0.018000000000000002
+    height: -0.18
     height_range:
-    - -0.02
-    - -0.016
+    - -0.11
+    - -0.25
     input_variables:
       SoilT_CS1_Avg:
         instrument: Campbell Scientific CS650
@@ -441,10 +441,10 @@ variables:
         file: AlpinePeatland_EC_flux
   Ts_0.18mb:
     statistic_type: average
-    height: -0.018000000000000002
+    height: -0.18
     height_range:
-    - -0.02
-    - -0.016
+    - -0.11
+    - -0.25
     input_variables:
       SoilT_CS2_Avg:
         instrument: Campbell Scientific CS650

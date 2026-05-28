@@ -53,20 +53,22 @@ variables:
         units: mg^2/m^6
         file: SturtPlains_EC_Flux
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 5.0
     input_variables:
       irga_warnings:
         instrument: Li-7500A
         units: dimensionless
+        diag_type: invalid_count
         file: SturtPlains_EC_Flux
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 5.0
     input_variables:
       csat_warnings:
         instrument: CSAT3
         units: dimensionless
+        diag_type: invalid_count
         file: SturtPlains_EC_Flux
   Fg_0.08ma1:
     statistic_type: average

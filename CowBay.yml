@@ -53,20 +53,22 @@ variables:
         units: mg^2/m^6
         file: CowBay_EC_T30min_all
   Diag_IRGA:
-    statistic_type: average
+    variable_type: counter
     height: 23.0
     input_variables:
       Li7500_Warn:
         instrument: Li-7500RS
         units: dimensionless
+        diag_type: invalid_count
         file: CowBay_EC_T30min_all
   Diag_SONIC:
-    statistic_type: average
+    variable_type: counter
     height: 23.0
     input_variables:
       CSAT_Warn:
         instrument: CSAT3B
         units: dimensionless
+        diag_type: invalid_count
         file: CowBay_EC_T30min_all
   Fg_0.1ma1:
     statistic_type: average
@@ -144,10 +146,18 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
+      Rh_HC2S3_01_Avg:
+        instrument: Rotronic HC2S3
+        units: frac
+        file: CowBay_EC_T30min_all
+        begin: 2025-06-10 09:00
+        end: 2026-01-20 13:30    
       Rh_HMP_01_Avg:
         instrument: Vaisala HMP155
         units: frac
         file: CowBay_EC_T30min_all
+        begin: 2026-01-20 14:00
+        end: null
   Sws_0.1ma:
     statistic_type: average
     height: -0.1

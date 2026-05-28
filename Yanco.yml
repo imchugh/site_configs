@@ -37,20 +37,22 @@ variables:
         units: mg^2/m^6
         file: Yanco_EC_Calculate
   Diag_IRGA:
-    statistic_type: sum
+    variable_type: counter
     height: 6.0
     input_variables:
       irga_warnings:
         instrument: Li-7500A
         units: dimensionless
+        diag_type: invalid_count
         file: Yanco_EC_Monitoring
   Diag_SONIC:
-    statistic_type: sum
+    variable_type: counter
     height: 6.0
     input_variables:
       csat_warnings:
         instrument: CSAT3
         units: dimensionless
+        diag_type: invalid_count
         file: Yanco_EC_Monitoring
   Fg_0.08ma:
     statistic_type: average
