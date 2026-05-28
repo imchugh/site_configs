@@ -16,10 +16,18 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
+      Ah_HC2S3_01_Avg:
+        instrument: Rotronic HC2S3
+        units: g/m^3
+        file: CowBay_EC_T30min_all
+        begin: 2025-06-10 09:00
+        end: 2026-01-20 13:30    
       Ah_HMP_01_Avg:
         instrument: Vaisala HMP155
         units: g/m^3
         file: CowBay_EC_T30min_all
+        begin: 2026-01-20 14:00
+        end: null        
   AH_IRGA_Av:
     statistic_type: average
     height: 23.0
