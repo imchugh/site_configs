@@ -9,7 +9,7 @@ variables:
     height: 23.0
     input_variables:
       agc_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: percent
         file: Litchfield_EC_flux
   AH_15m:
@@ -17,7 +17,7 @@ variables:
     height: 15.0
     input_variables:
       h2o_hmp_15_Avg:
-        instrument: Vaisala  HMP-155A
+        instrument: Vaisala HMP155
         units: g/m^3
         file: Litchfield_EC_flux
   AH_30m:
@@ -25,7 +25,7 @@ variables:
     height: 32.0
     input_variables:
       h2o_hmp_30_Avg:
-        instrument: Vaisala  HMP-155A
+        instrument: Vaisala HMP155
         units: g/m^3
         file: Litchfield_EC_flux
   AH_IRGA_Av:
@@ -33,7 +33,7 @@ variables:
     height: 23.0
     input_variables:
       h2o_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g/m^3
         file: Litchfield_EC_flux
   AH_IRGA_Vr:
@@ -41,7 +41,7 @@ variables:
     height: 23.0
     input_variables:
       cov_h2o_h2o:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g^2/m^6
         file: Litchfield_EC_flux
   CO2c_IRGA_Av:
@@ -49,7 +49,7 @@ variables:
     height: 23.0
     input_variables:
       co2_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg/m^3
         file: Litchfield_EC_flux
   CO2c_IRGA_Vr:
@@ -57,7 +57,7 @@ variables:
     height: 23.0
     input_variables:
       cov_co2_co2:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg^2/m^6
         file: Litchfield_EC_flux
   Diag_IRGA:
@@ -65,7 +65,7 @@ variables:
     height: 23.0
     input_variables:
       irga_warnings:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: dimensionless
         diag_type: invalid_count
         file: Litchfield_EC_flux
@@ -74,7 +74,7 @@ variables:
     height: 23.0
     input_variables:
       csat_warnings:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
         file: Litchfield_EC_flux
@@ -83,7 +83,7 @@ variables:
     height: -0.08
     input_variables:
       hfp_1_Avg:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Litchfield_soil_Soil
   Fg_0.08mb:
@@ -91,7 +91,7 @@ variables:
     height: -0.08
     input_variables:
       hfp_2_Avg:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Litchfield_soil_Soil
   Fld:
@@ -99,7 +99,7 @@ variables:
     height: 23.0
     input_variables:
       Ldown_30_Avg:
-        instrument: Kipp & Zonen CNR4 Radiometer
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Litchfield_rad_Rad30m
   Flu:
@@ -107,7 +107,7 @@ variables:
     height: 23.0
     input_variables:
       Lup_30_Avg:
-        instrument: Kipp & Zonen CNR4 Radiometer
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Litchfield_rad_Rad30m
   Fsd:
@@ -115,7 +115,7 @@ variables:
     height: 23.0
     input_variables:
       Kdown_30_Avg:
-        instrument: Kipp & Zonen CNR4 Radiometer
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Litchfield_rad_Rad30m
   Fsu:
@@ -123,7 +123,7 @@ variables:
     height: 23.0
     input_variables:
       Kup_30_Avg:
-        instrument: Kipp & Zonen CNR4 Radiometer
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Litchfield_rad_Rad30m
   Precip_1:
@@ -131,7 +131,7 @@ variables:
     height: 1.0
     input_variables:
       Rain1_Tot:
-        instrument: Rain gauge,CS702
+        instrument: Hydrological Services CS702
         units: mm
         file: Litchfield_soil_Soil
   Precip_2:
@@ -139,7 +139,7 @@ variables:
     height: 1.0
     input_variables:
       Rain2_Tot:
-        instrument: Rain gauge,Rimco 8000
+        instrument: Rimco RIM8000
         units: mm
         file: Litchfield_soil_Soil
   Sws_1ma:
@@ -155,7 +155,7 @@ variables:
     height: -1.0
     input_variables:
       cs650_100_VWC_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Litchfield_soil_Soil
   Sws_1.4ma:
@@ -171,7 +171,7 @@ variables:
     height: -1.4
     input_variables:
       cs650_140_VWC_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Litchfield_soil_Soil
   Sws_0.2ma:
@@ -187,7 +187,7 @@ variables:
     height: -0.2
     input_variables:
       cs650_20_VWC_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Litchfield_soil_Soil
   Sws_0.5ma:
@@ -203,7 +203,7 @@ variables:
     height: -0.5
     input_variables:
       cs650_50_VWC_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Litchfield_soil_Soil
   Sws_0.05ma:
@@ -219,7 +219,7 @@ variables:
     height: -0.05
     input_variables:
       cs650_05_VWC_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Litchfield_soil_Soil
   Ta_15m:
@@ -227,7 +227,7 @@ variables:
     height: 15.0
     input_variables:
       t_hmp_15_Avg:
-        instrument: Vaisala  HMP-155A
+        instrument: Vaisala HMP155
         units: degC
         file: Litchfield_EC_flux
   Ta_30m:
@@ -235,7 +235,7 @@ variables:
     height: 32.0
     input_variables:
       t_hmp_30_Avg:
-        instrument: Vaisala  HMP-155A
+        instrument: Vaisala HMP155
         units: degC
         file: Litchfield_EC_flux
   Ts_1mb:
@@ -243,7 +243,7 @@ variables:
     height: -1.0
     input_variables:
       cs650_100_Tsoil_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Litchfield_soil_Soil
   Ts_1.4mb:
@@ -251,7 +251,7 @@ variables:
     height: -1.4
     input_variables:
       cs650_140_Tsoil_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Litchfield_soil_Soil
   Ts_0.2mb:
@@ -259,7 +259,7 @@ variables:
     height: -0.2
     input_variables:
       cs650_20_Tsoil_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Litchfield_soil_Soil
   Ts_0.5mb:
@@ -267,7 +267,7 @@ variables:
     height: -0.5
     input_variables:
       cs650_50_Tsoil_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Litchfield_soil_Soil
   Ts_0.05mb:
@@ -275,7 +275,7 @@ variables:
     height: -0.05
     input_variables:
       cs650_05_Tsoil_Avg:
-        instrument: Multi-parameter smart sensor CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Litchfield_soil_Soil
   Ts_0.08mb:
@@ -286,7 +286,7 @@ variables:
     - -0.08
     input_variables:
       Tsoil_avg:
-        instrument: Campbell Scientific TCAV,Averaging soil thermocouple
+        instrument: Campbell Scientific TCAV
         units: degC
         file: Litchfield_soil_Soil
   Tv_SONIC_Av:
@@ -294,7 +294,7 @@ variables:
     height: 23.0
     input_variables:
       Ts_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: Litchfield_EC_flux
   Tv_SONIC_Vr:
@@ -302,7 +302,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Ts_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC^2
         file: Litchfield_EC_flux
   UxA:
@@ -310,7 +310,9 @@ variables:
     height: 23.0
     input_variables:
       cov_Ux_h2o:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Litchfield_EC_flux
   UxC:
@@ -318,7 +320,9 @@ variables:
     height: 23.0
     input_variables:
       cov_Ux_co2:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Litchfield_EC_flux
   UxT:
@@ -326,7 +330,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Ux_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Litchfield_EC_flux
   UxUy:
@@ -334,7 +338,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Ux_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Litchfield_EC_flux
   UxUz:
@@ -342,7 +346,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Uz_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Litchfield_EC_flux
   Ux_SONIC_Av:
@@ -350,7 +354,7 @@ variables:
     height: 23.0
     input_variables:
       Ux_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Litchfield_EC_flux
   Ux_SONIC_Vr:
@@ -358,7 +362,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Ux_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Litchfield_EC_flux
   UyA:
@@ -366,7 +370,9 @@ variables:
     height: 23.0
     input_variables:
       cov_Uy_h2o:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Litchfield_EC_flux
   UyC:
@@ -374,7 +380,9 @@ variables:
     height: 23.0
     input_variables:
       cov_Uy_co2:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Litchfield_EC_flux
   UyT:
@@ -382,7 +390,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Uy_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Litchfield_EC_flux
   UyUz:
@@ -390,7 +398,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Uz_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Litchfield_EC_flux
   Uy_SONIC_Av:
@@ -398,7 +406,7 @@ variables:
     height: 23.0
     input_variables:
       Uy_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Litchfield_EC_flux
   Uy_SONIC_Vr:
@@ -406,7 +414,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Uy_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Litchfield_EC_flux
   UzA:
@@ -414,7 +422,9 @@ variables:
     height: 23.0
     input_variables:
       cov_Uz_h2o:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Litchfield_EC_flux
   UzC:
@@ -422,7 +432,9 @@ variables:
     height: 23.0
     input_variables:
       cov_Uz_co2:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Litchfield_EC_flux
   UzT:
@@ -430,7 +442,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Uz_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Litchfield_EC_flux
   Uz_SONIC_Av:
@@ -438,7 +450,7 @@ variables:
     height: 23.0
     input_variables:
       Uz_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Litchfield_EC_flux
   Uz_SONIC_Vr:
@@ -446,7 +458,7 @@ variables:
     height: 23.0
     input_variables:
       cov_Uz_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Litchfield_EC_flux
   Wd_SONIC_Av:
@@ -454,7 +466,7 @@ variables:
     height: 23.0
     input_variables:
       wnd_dir_compass:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degrees
         file: Litchfield_EC_flux
   Ws_SONIC_Av:
@@ -462,7 +474,7 @@ variables:
     height: 23.0
     input_variables:
       wnd_spd:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Litchfield_EC_flux
   ps:
@@ -470,7 +482,7 @@ variables:
     height: 23.0
     input_variables:
       press_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: kPa
         file: Litchfield_EC_flux
   Fco2:
@@ -478,7 +490,9 @@ variables:
     height: 23.0
     input_variables:
       Fc_wpl:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Litchfield_EC_flux
   Fh:
@@ -486,7 +500,7 @@ variables:
     height: 23.0
     input_variables:
       Hs:
-        instrument: CSAT3,Li-7500A
+        instrument: Campbell Scientific CSAT3, LI-COR LI-7500A
         units: W/m^2
         file: Litchfield_EC_flux
   Fe:
@@ -494,7 +508,9 @@ variables:
     height: 23.0
     input_variables:
       LE_wpl:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: W/m^2
         file: Litchfield_EC_flux
   ustar:
@@ -502,7 +518,7 @@ variables:
     height: 23.0
     input_variables:
       u_star:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Litchfield_EC_flux
   Tpanel:
@@ -510,7 +526,7 @@ variables:
     height: 1.0
     input_variables:
       panel_temp_Avg:
-        instrument: Campbell Scientific CR6 datalogger
+        instrument: Campbell Scientific CR6
         units: degC
         file: Litchfield_EC_flux
   Vbat:
@@ -518,6 +534,6 @@ variables:
     height: 1.0
     input_variables:
       batt_volt_Avg:
-        instrument: Campbell Scientific CR6 datalogger
+        instrument: Campbell Scientific CR6
         units: V
         file: Litchfield_EC_flux

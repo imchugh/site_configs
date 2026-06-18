@@ -9,7 +9,7 @@ variables:
     height: 40.0
     input_variables:
       SigStr_Li7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: RobsonCreek_EC_T30min_all
   AH_40m:
@@ -17,7 +17,7 @@ variables:
     height: 40.0
     input_variables:
       Ah_HMP_01_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: g/m^3
         file: RobsonCreek_EC_T30min_all
   AH_IRGA_Av:
@@ -25,7 +25,7 @@ variables:
     height: 40.0
     input_variables:
       Ah_Li7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: RobsonCreek_EC_T30min_all
   AH_IRGA_Vr:
@@ -33,7 +33,7 @@ variables:
     height: 40.0
     input_variables:
       covAhAh:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g^2/m^6
         file: RobsonCreek_EC_T30min_all
   CO2c_IRGA_Av:
@@ -41,7 +41,7 @@ variables:
     height: 40.0
     input_variables:
       Cc_Li7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: RobsonCreek_EC_T30min_all
   CO2c_IRGA_Vr:
@@ -49,7 +49,7 @@ variables:
     height: 40.0
     input_variables:
       covCcCc:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg^2/m^6
         file: RobsonCreek_EC_T30min_all
   Diag_IRGA:
@@ -57,7 +57,7 @@ variables:
     height: 40.0
     input_variables:
       Li7500_Warn:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: invalid_count
         file: RobsonCreek_EC_T30min_all
@@ -66,7 +66,7 @@ variables:
     height: 40.0
     input_variables:
       CSAT_Warn:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: invalid_count
         file: RobsonCreek_EC_T30min_all
@@ -75,7 +75,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_HFP01_01_Avg:
-        instrument: HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: RobsonCreek_soil_T30min_all
   Fg_0.1ma2:
@@ -83,7 +83,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_HFP01_02_Avg:
-        instrument: HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: RobsonCreek_soil_T30min_all
   Fld:
@@ -91,7 +91,7 @@ variables:
     height: 40.0
     input_variables:
       Fld_NR01_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
   Flu:
@@ -99,7 +99,7 @@ variables:
     height: 40.0
     input_variables:
       Flu_NR01_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
   Fsd:
@@ -107,7 +107,7 @@ variables:
     height: 40.0
     input_variables:
       Fsd_NR01_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
   Fsu:
@@ -115,7 +115,7 @@ variables:
     height: 40.0
     input_variables:
       Fsu_NR01_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
   Precip:
@@ -131,7 +131,7 @@ variables:
     height: 40.0
     input_variables:
       Rh_HMP_01_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: frac
         file: RobsonCreek_EC_T30min_all
   Sws_0.1ma:
@@ -171,7 +171,7 @@ variables:
     height: 40.0
     input_variables:
       Ta_HMP_01_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: degC
         file: RobsonCreek_EC_T30min_all
   Ts_0.07ma:
@@ -190,7 +190,7 @@ variables:
     height: 40.0
     input_variables:
       Tv_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC
         file: RobsonCreek_EC_T30min_all
   Tv_SONIC_Vr:
@@ -198,7 +198,7 @@ variables:
     height: 40.0
     input_variables:
       covTvTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC^2
         file: RobsonCreek_EC_T30min_all
   UxA:
@@ -206,7 +206,9 @@ variables:
     height: 40.0
     input_variables:
       covUxAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: RobsonCreek_EC_T30min_all
   UxC:
@@ -214,7 +216,9 @@ variables:
     height: 40.0
     input_variables:
       covUxCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: RobsonCreek_EC_T30min_all
   UxT:
@@ -222,7 +226,7 @@ variables:
     height: 40.0
     input_variables:
       covUxTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: RobsonCreek_EC_T30min_all
   UxUy:
@@ -230,7 +234,7 @@ variables:
     height: 40.0
     input_variables:
       covUxUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
   UxUz:
@@ -238,7 +242,7 @@ variables:
     height: 40.0
     input_variables:
       covUzUx:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
   Ux_SONIC_Av:
@@ -246,7 +250,7 @@ variables:
     height: 40.0
     input_variables:
       Ux_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
   Ux_SONIC_Vr:
@@ -254,7 +258,7 @@ variables:
     height: 40.0
     input_variables:
       covUxUx:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
   UyA:
@@ -262,7 +266,9 @@ variables:
     height: 40.0
     input_variables:
       covUyAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: RobsonCreek_EC_T30min_all
   UyC:
@@ -270,7 +276,9 @@ variables:
     height: 40.0
     input_variables:
       covUyCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: RobsonCreek_EC_T30min_all
   UyT:
@@ -278,7 +286,7 @@ variables:
     height: 40.0
     input_variables:
       covUyTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: RobsonCreek_EC_T30min_all
   UyUz:
@@ -286,7 +294,7 @@ variables:
     height: 40.0
     input_variables:
       covUzUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
   Uy_SONIC_Av:
@@ -294,7 +302,7 @@ variables:
     height: 40.0
     input_variables:
       Uy_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
   Uy_SONIC_Vr:
@@ -302,7 +310,7 @@ variables:
     height: 40.0
     input_variables:
       covUyUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
   UzA:
@@ -310,7 +318,9 @@ variables:
     height: 40.0
     input_variables:
       covUzAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: RobsonCreek_EC_T30min_all
   UzC:
@@ -318,7 +328,9 @@ variables:
     height: 40.0
     input_variables:
       covUzCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: RobsonCreek_EC_T30min_all
   UzT:
@@ -326,7 +338,7 @@ variables:
     height: 40.0
     input_variables:
       covUzTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: RobsonCreek_EC_T30min_all
   Uz_SONIC_Av:
@@ -334,7 +346,7 @@ variables:
     height: 40.0
     input_variables:
       Uz_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
   Uz_SONIC_Vr:
@@ -342,7 +354,7 @@ variables:
     height: 40.0
     input_variables:
       covUzUz:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
   Vbat:
@@ -350,7 +362,7 @@ variables:
     height: 1.5
     input_variables:
       Vlogger_Avg:
-        instrument: Campbell Scientific CR3000 logger
+        instrument: Campbell Scientific CR3000
         units: V
         file: RobsonCreek_EC_T30min_all
   Wd_SONIC_Av:
@@ -358,7 +370,7 @@ variables:
     height: 40.0
     input_variables:
       WD_CSAT_Compass_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degrees
         file: RobsonCreek_EC_T30min_all
   Ws_SONIC_Av:
@@ -366,7 +378,7 @@ variables:
     height: 40.0
     input_variables:
       WS_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
   ps:
@@ -374,7 +386,7 @@ variables:
     height: 40.0
     input_variables:
       ps_Li7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: kPa
         file: RobsonCreek_EC_T30min_all
   Fco2:
@@ -382,7 +394,9 @@ variables:
     height: 40.0
     input_variables:
       Fc_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: RobsonCreek_EC_T30min_all
   Fh:
@@ -390,7 +404,7 @@ variables:
     height: 40.0
     input_variables:
       Fh_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
   Fe:
@@ -398,7 +412,9 @@ variables:
     height: 40.0
     input_variables:
       Fe_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
   ustar:
@@ -406,7 +422,7 @@ variables:
     height: 40.0
     input_variables:
       ustar_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
   Tpanel:
@@ -414,7 +430,7 @@ variables:
     height: 1.5
     input_variables:
       Tpanel_Avg:
-        instrument: Campbell Scientific CR3000 logger
+        instrument: Campbell Scientific CR3000
         units: degC
         file: RobsonCreek_EC_T30min_all
   Tint_SONIC:
@@ -422,7 +438,7 @@ variables:
     height: 40.0
     input_variables:
       Tpcb_CSAT:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC
         file: RobsonCreek_EC_T30min_all
   RHint_SONIC:
@@ -430,7 +446,7 @@ variables:
     height: 40.0
     input_variables:
       RHpcb_CSAT:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: percent
         file: RobsonCreek_EC_T30min_all
   pitch_SONIC:
@@ -438,7 +454,7 @@ variables:
     height: 40.0
     input_variables:
       pitch_CSAT:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: deg
         file: RobsonCreek_EC_T30min_all
   roll_SONIC:
@@ -446,6 +462,6 @@ variables:
     height: 40.0
     input_variables:
       roll_CSAT:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: deg
         file: RobsonCreek_EC_T30min_all

@@ -9,7 +9,7 @@ variables:
     height: 2.0
     input_variables:
       AH_sensor_mean:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: g/m^3
         file: Calperum_EC_TERNflux
   AH_IRGA_Av:
@@ -17,7 +17,7 @@ variables:
     height: 20.0
     input_variables:
       H2O_mean:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Calperum_EC_TERNflux
   AH_IRGA_Sd:
@@ -25,7 +25,7 @@ variables:
     height: 20.0
     input_variables:
       H2O_stdev:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Calperum_EC_TERNflux
   CO2c_IRGA_Av:
@@ -33,7 +33,7 @@ variables:
     height: 20.0
     input_variables:
       CO2_mean:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Calperum_EC_TERNflux
   CO2c_IRGA_Sd:
@@ -41,7 +41,7 @@ variables:
     height: 20.0
     input_variables:
       co2_stdev:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Calperum_EC_TERNflux
   Tcanopy:
@@ -49,7 +49,7 @@ variables:
     height: 1.5
     input_variables:
       Tcanopy_Avg:
-        instrument: Apogee
+        instrument: Apogee Instruments SI111
         units: degC
         file: Calperum_EC_TERNflux
   Diag_IRGA:
@@ -57,7 +57,7 @@ variables:
     height: 20.0
     input_variables:
       irga_samples_Tot:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: valid_count
         file: Calperum_EC_TERNflux
@@ -66,7 +66,7 @@ variables:
     height: 20.0
     input_variables:
       sonic_samples_Tot:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: valid_count
         file: Calperum_EC_TERNflux
@@ -75,7 +75,9 @@ variables:
     height: 20.0
     input_variables:
       Fco2:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Calperum_EC_TERNflux
   Fe:
@@ -83,7 +85,9 @@ variables:
     height: 20.0
     input_variables:
       Fe:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fh:
@@ -91,7 +95,7 @@ variables:
     height: 20.0
     input_variables:
       Fh:
-        instrument: CSAT3B,Li-7500RS
+        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fg_0.08ma:
@@ -99,7 +103,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_01:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fg_0.08mb:
@@ -107,7 +111,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_02:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fg_0.08mc:
@@ -115,7 +119,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_03:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fld:
@@ -123,7 +127,7 @@ variables:
     height: 20.0
     input_variables:
       Fld_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
   Flu:
@@ -131,7 +135,7 @@ variables:
     height: 20.0
     input_variables:
       Flu_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fsd:
@@ -139,7 +143,7 @@ variables:
     height: 20.0
     input_variables:
       Fsd_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fsd_b:
@@ -147,7 +151,7 @@ variables:
     height: 20.0
     input_variables:
       Fsd_aux_Avg:
-        instrument: Li-cor 200X
+        instrument: LI-COR LI-200X
         units: W/m^2
         file: Calperum_EC_TERNflux
   Fsu:
@@ -155,7 +159,7 @@ variables:
     height: 20.0
     input_variables:
       Fsu_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
   Precip:
@@ -163,7 +167,7 @@ variables:
     height: 0.6
     input_variables:
       rain_Tot:
-        instrument: Hydrological Services CS7000
+        instrument: Campbell Scientific CS700
         units: mm
         file: Calperum_EC_TERNflux
   RH_2m:
@@ -171,7 +175,7 @@ variables:
     height: 2.0
     input_variables:
       RH_sensor_mean:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: percent
         file: Calperum_EC_TERNflux
   Sig_IRGA:
@@ -179,7 +183,7 @@ variables:
     height: 20.0
     input_variables:
       sig_str_irga_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: Calperum_EC_TERNflux
   Sws_1ma:
@@ -307,7 +311,7 @@ variables:
     height: 2.0
     input_variables:
       Ta_sensor_mean:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: degC
         file: Calperum_EC_TERNflux
   Tbody_RAD_Av:
@@ -315,7 +319,7 @@ variables:
     height: 20.0
     input_variables:
       Tb_Avg:
-        instrument: CNR4
+        instrument: Kipp&Zonen CNR4
         units: K
         file: Calperum_EC_TERNflux
   Tpanel:
@@ -323,7 +327,7 @@ variables:
     height: 1.5
     input_variables:
       Tpanel_Avg:
-        instrument: Campbell Scientific CR1000X logger
+        instrument: Campbell Scientific CR1000X
         units: degC
         file: Calperum_EC_TERNflux
   Ts_1ma:
@@ -475,7 +479,7 @@ variables:
     height: 20.0
     input_variables:
       Tsonic_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC
         file: Calperum_EC_TERNflux
   Tv_SONIC_Sd:
@@ -483,7 +487,7 @@ variables:
     height: 20.0
     input_variables:
       Tsonic_stdev:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC
         file: Calperum_EC_TERNflux
   ustar:
@@ -491,7 +495,7 @@ variables:
     height: 20.0
     input_variables:
       u_star:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   UxA:
@@ -499,7 +503,9 @@ variables:
     height: 20.0
     input_variables:
       H2O_Ux_cov:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Calperum_EC_TERNflux
   UxC:
@@ -507,7 +513,9 @@ variables:
     height: 20.0
     input_variables:
       CO2_Ux_cov:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Calperum_EC_TERNflux
   UxT:
@@ -515,7 +523,7 @@ variables:
     height: 20.0
     input_variables:
       Tsonic_Ux_cov:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Calperum_EC_TERNflux
   UxUy:
@@ -523,7 +531,7 @@ variables:
     height: 20.0
     input_variables:
       Ux_Uy_cov:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Calperum_EC_TERNflux
   UxUz:
@@ -531,7 +539,7 @@ variables:
     height: 20.0
     input_variables:
       Ux_Uz_cov:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Calperum_EC_TERNflux
   Ux_SONIC_Av:
@@ -539,7 +547,7 @@ variables:
     height: 20.0
     input_variables:
       Ux_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   Ux_SONIC_Sd:
@@ -547,7 +555,7 @@ variables:
     height: 20.0
     input_variables:
       Ux_stdev:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   UyA:
@@ -555,7 +563,9 @@ variables:
     height: 20.0
     input_variables:
       H2O_Uy_cov:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Calperum_EC_TERNflux
   UyC:
@@ -563,7 +573,9 @@ variables:
     height: 20.0
     input_variables:
       CO2_Uy_cov:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Calperum_EC_TERNflux
   UyT:
@@ -571,7 +583,7 @@ variables:
     height: 20.0
     input_variables:
       Tsonic_Uy_cov:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Calperum_EC_TERNflux
   UyUz:
@@ -579,7 +591,7 @@ variables:
     height: 20.0
     input_variables:
       Uy_Uz_cov:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Calperum_EC_TERNflux
   Uy_SONIC_Av:
@@ -587,7 +599,7 @@ variables:
     height: 20.0
     input_variables:
       Uy_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   Uy_SONIC_Sd:
@@ -595,7 +607,7 @@ variables:
     height: 20.0
     input_variables:
       Uy_stdev:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   UzA:
@@ -603,7 +615,9 @@ variables:
     height: 20.0
     input_variables:
       H2O_Uz_cov:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Calperum_EC_TERNflux
   UzC:
@@ -611,7 +625,9 @@ variables:
     height: 20.0
     input_variables:
       CO2_Uz_cov:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Calperum_EC_TERNflux
   UzT:
@@ -619,7 +635,7 @@ variables:
     height: 20.0
     input_variables:
       Tsonic_Uz_cov:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Calperum_EC_TERNflux
   Uz_SONIC_Av:
@@ -627,7 +643,7 @@ variables:
     height: 20.0
     input_variables:
       Uz_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   Uz_SONIC_Sd:
@@ -635,7 +651,7 @@ variables:
     height: 20.0
     input_variables:
       Uz_stdev:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   Vbat:
@@ -643,7 +659,7 @@ variables:
     height: 1.5
     input_variables:
       Vbat_Avg:
-        instrument: Campbell Scientific CR1000X logger
+        instrument: Campbell Scientific CR1000X
         units: V
         file: Calperum_EC_TERNflux
   Vbat_b:
@@ -651,7 +667,7 @@ variables:
     height: 1.5
     input_variables:
       Vbat_Avg:
-        instrument: Campbell Scientific CR1000 logger
+        instrument: Campbell Scientific CR1000
         units: V
         file: Calperum_soil_slow_soil2
   Wd_8m_Av:
@@ -659,7 +675,7 @@ variables:
     height: 8.0
     input_variables:
       Wd_aux_8m:
-        instrument: RM Young
+        instrument: RM Young WindSentry
         units: degrees
         file: Calperum_EC_TERNflux
   Wd_2m_Av:
@@ -667,7 +683,7 @@ variables:
     height: 2.0
     input_variables:
       Wd_aux_2m:
-        instrument: RM Young
+        instrument: RM Young WindSentry
         units: degrees
         file: Calperum_EC_TERNflux
   Wd_SONIC_Av:
@@ -675,7 +691,7 @@ variables:
     height: 20.0
     input_variables:
       wnd_dir_compass:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Calperum_EC_TERNflux
   Ws_8m_Av:
@@ -683,7 +699,7 @@ variables:
     height: 8.0
     input_variables:
       Ws_aux_8m:
-        instrument: RM Young
+        instrument: RM Young WindSentry
         units: m/s
         file: Calperum_EC_TERNflux
   Ws_2m_Av:
@@ -691,7 +707,7 @@ variables:
     height: 2.0
     input_variables:
       Ws_aux_2m:
-        instrument: RM Young
+        instrument: RM Young WindSentry
         units: m/s
         file: Calperum_EC_TERNflux
   Ws_SONIC_Av:
@@ -699,7 +715,7 @@ variables:
     height: 20.0
     input_variables:
       wnd_spd:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
   ps:
@@ -707,6 +723,6 @@ variables:
     height: 20.0
     input_variables:
       amb_press_mean:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: kPa
         file: Calperum_EC_TERNflux

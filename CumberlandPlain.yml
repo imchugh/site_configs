@@ -11,7 +11,7 @@ variables:
     height: 30.0
     input_variables:
       co2_mixing_ratio:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: umol/mol
         file: CumberlandPlain_EP_MASTER
   CO2c_IRGA_Av:
@@ -19,7 +19,7 @@ variables:
     height: 30.0
     input_variables:
       co2_molar_density:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mmol/m^3
         file: CumberlandPlain_EP_MASTER
   CO2c_IRGA_Vr:
@@ -27,7 +27,7 @@ variables:
     height: 30.0
     input_variables:
       co2_var:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mmol^2/m^6
         file: CumberlandPlain_EP_MASTER
   Fco2:
@@ -35,7 +35,9 @@ variables:
     height: 30.0
     input_variables:
       co2_flux:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: umol/m^2/s
         file: CumberlandPlain_EP_MASTER
   Fco2_QC:
@@ -43,7 +45,7 @@ variables:
     height: 30.0
     input_variables:
       qc_co2_flux:
-        instrument: CSAT3B,Li-7500RS
+        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
   Fe:
@@ -51,7 +53,9 @@ variables:
     height: 30.0
     input_variables:
       LE:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: W/m^2
         file: CumberlandPlain_EP_MASTER
   Fe_QC:
@@ -59,7 +63,7 @@ variables:
     height: 30.0
     input_variables:
       qc_LE:
-        instrument: CSAT3B,Li-7500RS
+        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
   Fg_0.08ma:
@@ -83,7 +87,7 @@ variables:
     height: 30.0
     input_variables:
       H:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: CumberlandPlain_EP_MASTER
   Fh_QC:
@@ -91,7 +95,7 @@ variables:
     height: 30.0
     input_variables:
       qc_H:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
   Fld:
@@ -99,7 +103,7 @@ variables:
     height: 30.0
     input_variables:
       Rl_downwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
   Flu:
@@ -107,7 +111,7 @@ variables:
     height: 30.0
     input_variables:
       Rl_upwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
   Fm:
@@ -115,7 +119,7 @@ variables:
     height: 30.0
     input_variables:
       Tau:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: kg/m/s^2
         file: CumberlandPlain_EP_MASTER
   Fm_QC:
@@ -123,7 +127,7 @@ variables:
     height: 30.0
     input_variables:
       qc_Tau:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
   Fn:
@@ -131,7 +135,7 @@ variables:
     height: 30.0
     input_variables:
       Rn_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
   Fsd:
@@ -139,7 +143,7 @@ variables:
     height: 30.0
     input_variables:
       Rs_downwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
   Fsu:
@@ -147,7 +151,7 @@ variables:
     height: 30.0
     input_variables:
       Rs_upwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
   AH_IRGA_Av:
@@ -155,7 +159,7 @@ variables:
     height: 30.0
     input_variables:
       h2o_molar_density:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mmol/m^3
         file: CumberlandPlain_EP_MASTER
   AH_IRGA_Vr:
@@ -163,7 +167,7 @@ variables:
     height: 30.0
     input_variables:
       h2o_var:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mmol^2/m^6
         file: CumberlandPlain_EP_MASTER
   Precip:
@@ -171,7 +175,7 @@ variables:
     height: 0.6
     input_variables:
       rain:
-        instrument: Hydrological Services CS7000
+        instrument: Campbell Scientific CS700
         units: mm
         file: CUP_AUTO_climate
   RH_30m:
@@ -179,7 +183,7 @@ variables:
     height: 30.0
     input_variables:
       RH_HMP_155_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: frac
         file: CUP_AUTO_climate
   RH_7m:
@@ -187,7 +191,7 @@ variables:
     height: 7.0
     input_variables:
       RH_HMP_01_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: frac
         file: CUP_AUTO_climate
   RH_IRGA_Av:
@@ -195,7 +199,7 @@ variables:
     height: 30.0
     input_variables:
       RH:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: CumberlandPlain_EP_MASTER
   CO2Sig_IRGA:
@@ -203,7 +207,7 @@ variables:
     height: 30.0
     input_variables:
       co2_signal_strength_7500_mean:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: CumberlandPlain_EP_MASTER
   Sws_0.2ma:
@@ -249,7 +253,7 @@ variables:
     height: 30.0
     input_variables:
       Ta_HMP_155_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: degC
         file: CUP_AUTO_climate
   Ta_7m:
@@ -257,7 +261,7 @@ variables:
     height: 7.0
     input_variables:
       Ta_HMP_01_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: degC
         file: CUP_AUTO_climate
   Ts_0.08ma:
@@ -281,7 +285,7 @@ variables:
     height: 30.0
     input_variables:
       sonic_temperature:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: K
         file: CumberlandPlain_EP_MASTER
   Tv_SONIC_Vr:
@@ -289,7 +293,7 @@ variables:
     height: 30.0
     input_variables:
       ts_var:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: K^2
         file: CumberlandPlain_EP_MASTER
   U_SONIC_Av:
@@ -297,7 +301,7 @@ variables:
     height: 30.0
     input_variables:
       u_rot:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
   U_SONIC_Vr:
@@ -305,7 +309,7 @@ variables:
     height: 30.0
     input_variables:
       u_var:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: CumberlandPlain_EP_MASTER
   V_SONIC_Av:
@@ -313,7 +317,7 @@ variables:
     height: 30.0
     input_variables:
       v_rot:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
   V_SONIC_Vr:
@@ -321,7 +325,7 @@ variables:
     height: 30.0
     input_variables:
       v_var:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: CumberlandPlain_EP_MASTER
   W_SONIC_Av:
@@ -329,7 +333,7 @@ variables:
     height: 30.0
     input_variables:
       w_rot:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
   W_SONIC_Vr:
@@ -337,7 +341,7 @@ variables:
     height: 30.0
     input_variables:
       w_var:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: CumberlandPlain_EP_MASTER
   Wd_SONIC_Av:
@@ -345,7 +349,7 @@ variables:
     height: 30.0
     input_variables:
       wind_dir:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degrees
         file: CumberlandPlain_EP_MASTER
   Wd_7m_Av:
@@ -353,7 +357,7 @@ variables:
     height: 7.0
     input_variables:
       WD_WS4_Avg:
-        instrument: WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: CUP_AUTO_climate
   Wd_30m_Av:
@@ -361,7 +365,7 @@ variables:
     height: 30.0
     input_variables:
       WD_WS4_02_Avg:
-        instrument: WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: CUP_AUTO_climate
   Ws_SONIC_Av:
@@ -369,7 +373,7 @@ variables:
     height: 30.0
     input_variables:
       wind_speed:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
   Ws_7m_Av:
@@ -377,7 +381,7 @@ variables:
     height: 7.0
     input_variables:
       WS_WS4_Avg:
-        instrument: WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: CUP_AUTO_climate
   Ws_30m_Av:
@@ -385,7 +389,7 @@ variables:
     height: 30.0
     input_variables:
       WS_WS4_02_Avg:
-        instrument: WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: CUP_AUTO_climate
   ps:
@@ -393,7 +397,7 @@ variables:
     height: 30.0
     input_variables:
       air_pressure:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: Pa
         file: CumberlandPlain_EP_MASTER
   ustar:
@@ -401,7 +405,7 @@ variables:
     height: 30.0
     input_variables:
       u*:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
   Vbat:
@@ -417,6 +421,6 @@ variables:
     height: 1.0
     input_variables:
       Tpanel_Avg:
-        instrument: Campbell Scientific CR3001
+        instrument: Campbell Scientific CR3000
         units: degC
         file: CUP_Top_diagnostic

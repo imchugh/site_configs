@@ -9,7 +9,7 @@ variables:
     height: 5.0
     input_variables:
       agc_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: percent
         file: SturtPlains_EC_Flux
   AH_5m:
@@ -17,7 +17,7 @@ variables:
     height: 5.0
     input_variables:
       h2o_hmp_5_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: g/m^3
         file: SturtPlains_EC_Flux
   AH_IRGA_Av:
@@ -25,7 +25,7 @@ variables:
     height: 5.0
     input_variables:
       h2o_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g/m^3
         file: SturtPlains_EC_Flux
   AH_IRGA_Vr:
@@ -33,7 +33,7 @@ variables:
     height: 5.0
     input_variables:
       cov_h2o_h2o:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g^2/m^6
         file: SturtPlains_EC_Flux
   CO2c_IRGA_Av:
@@ -41,7 +41,7 @@ variables:
     height: 5.0
     input_variables:
       co2_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg/m^3
         file: SturtPlains_EC_Flux
   CO2c_IRGA_Vr:
@@ -49,7 +49,7 @@ variables:
     height: 5.0
     input_variables:
       cov_co2_co2:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg^2/m^6
         file: SturtPlains_EC_Flux
   Diag_IRGA:
@@ -57,7 +57,7 @@ variables:
     height: 5.0
     input_variables:
       irga_warnings:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: dimensionless
         diag_type: invalid_count
         file: SturtPlains_EC_Flux
@@ -66,7 +66,7 @@ variables:
     height: 5.0
     input_variables:
       csat_warnings:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
         file: SturtPlains_EC_Flux
@@ -75,7 +75,7 @@ variables:
     height: -0.08
     input_variables:
       shf(1):
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
   Fg_0.08ma2:
@@ -83,7 +83,7 @@ variables:
     height: -0.08
     input_variables:
       shf(2):
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
   Fld:
@@ -91,7 +91,7 @@ variables:
     height: 5.0
     input_variables:
       Ldown:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
   Flu:
@@ -99,7 +99,7 @@ variables:
     height: 5.0
     input_variables:
       Lup:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
   Fsd:
@@ -107,7 +107,7 @@ variables:
     height: 5.0
     input_variables:
       Kdown:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
   Fsu:
@@ -115,7 +115,7 @@ variables:
     height: 5.0
     input_variables:
       Kup:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
   Precip:
@@ -123,7 +123,7 @@ variables:
     height: 0.6
     input_variables:
       Rain_Tot:
-        instrument: Hydrological Services CS700
+        instrument: Campbell Scientific CS700
         units: mm
         file: SturtPlains_EC_EnrgyBal
   Sws_0.5mb:
@@ -147,7 +147,7 @@ variables:
     height: 5.0
     input_variables:
       t_hmp_5_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: degC
         file: SturtPlains_EC_Flux
   Ts_0.5mb:
@@ -179,7 +179,7 @@ variables:
     height: 5.0
     input_variables:
       Ts_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: SturtPlains_EC_Flux
   Tv_SONIC_Vr:
@@ -187,7 +187,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Ts_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC^2
         file: SturtPlains_EC_Flux
   UxA:
@@ -195,7 +195,9 @@ variables:
     height: 5.0
     input_variables:
       cov_Ux_h2o:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: SturtPlains_EC_Flux
   UxC:
@@ -203,7 +205,9 @@ variables:
     height: 5.0
     input_variables:
       cov_Ux_co2:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: SturtPlains_EC_Flux
   UxT:
@@ -211,7 +215,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Ux_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: SturtPlains_EC_Flux
   UxUy:
@@ -219,7 +223,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Ux_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: SturtPlains_EC_Flux
   UxUz:
@@ -227,7 +231,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Uz_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: SturtPlains_EC_Flux
   Ux_SONIC_Av:
@@ -235,7 +239,7 @@ variables:
     height: 5.0
     input_variables:
       Ux_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: SturtPlains_EC_Flux
   Ux_SONIC_Vr:
@@ -243,7 +247,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Ux_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: SturtPlains_EC_Flux
   UyA:
@@ -251,7 +255,9 @@ variables:
     height: 5.0
     input_variables:
       cov_Uy_h2o:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: SturtPlains_EC_Flux
   UyC:
@@ -259,7 +265,9 @@ variables:
     height: 5.0
     input_variables:
       cov_Uy_co2:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: SturtPlains_EC_Flux
   UyT:
@@ -267,7 +275,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Uy_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: SturtPlains_EC_Flux
   UyUz:
@@ -275,7 +283,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Uz_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: SturtPlains_EC_Flux
   Uy_SONIC_Av:
@@ -283,7 +291,7 @@ variables:
     height: 5.0
     input_variables:
       Uy_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: SturtPlains_EC_Flux
   Uy_SONIC_Vr:
@@ -291,7 +299,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Uy_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: SturtPlains_EC_Flux
   UzA:
@@ -299,7 +307,9 @@ variables:
     height: 5.0
     input_variables:
       cov_Uz_h2o:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: SturtPlains_EC_Flux
   UzC:
@@ -307,7 +317,9 @@ variables:
     height: 5.0
     input_variables:
       cov_Uz_co2:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: SturtPlains_EC_Flux
   UzT:
@@ -315,7 +327,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Uz_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: SturtPlains_EC_Flux
   Uz_SONIC_Av:
@@ -323,7 +335,7 @@ variables:
     height: 5.0
     input_variables:
       Uz_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: SturtPlains_EC_Flux
   Uz_SONIC_Vr:
@@ -331,7 +343,7 @@ variables:
     height: 5.0
     input_variables:
       cov_Uz_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: SturtPlains_EC_Flux
   Wd_SONIC_Av:
@@ -339,7 +351,7 @@ variables:
     height: 5.0
     input_variables:
       wnd_dir_compass:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degrees
         file: SturtPlains_EC_Flux
   Ws_SONIC_Av:
@@ -347,7 +359,7 @@ variables:
     height: 5.0
     input_variables:
       wnd_spd:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: SturtPlains_EC_Flux
   ps:
@@ -355,7 +367,7 @@ variables:
     height: 5.0
     input_variables:
       press_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: kPa
         file: SturtPlains_EC_Flux
   Tpanel:
@@ -379,7 +391,9 @@ variables:
     height: 5.0
     input_variables:
       Fc_wpl:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: SturtPlains_EC_Flux
   Fe:
@@ -387,7 +401,9 @@ variables:
     height: 5.0
     input_variables:
       LE_wpl:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: W/m^2
         file: SturtPlains_EC_Flux
   Fh:
@@ -395,7 +411,7 @@ variables:
     height: 5.0
     input_variables:
       Hs:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: SturtPlains_EC_Flux
   ustar:
@@ -403,6 +419,6 @@ variables:
     height: 5.0
     input_variables:
       u_star:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: SturtPlains_EC_Flux

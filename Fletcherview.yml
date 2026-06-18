@@ -9,7 +9,7 @@ variables:
     height: 24.5
     input_variables:
       Ah_HMP_01_Avg:
-        instrument: HMP155a
+        instrument: Vaisala HMP155
         units: g/m^3
         file: Fletcherview_EC_slow_core
   AH_IRGA_Av:
@@ -17,7 +17,7 @@ variables:
     height: 24.5
     input_variables:
       Ah_7500_filtered:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Fletcherview_EC_slow_core
   AH_IRGA_Vr:
@@ -25,7 +25,7 @@ variables:
     height: 24.5
     input_variables:
       covAhAh:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g^2/m^6
         file: Fletcherview_EC_slow_core
   CO2c_IRGA_Av:
@@ -33,7 +33,7 @@ variables:
     height: 24.5
     input_variables:
       Cc_7500_filtered:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Fletcherview_EC_slow_core
   CO2c_IRGA_Vr:
@@ -41,7 +41,7 @@ variables:
     height: 24.5
     input_variables:
       covCcCc:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg^2/m^6
         file: Fletcherview_EC_slow_core
   Diag_IRGA:
@@ -49,7 +49,7 @@ variables:
     height: 24.5
     input_variables:
       7500_Warn:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: invalid_count
         file: Fletcherview_EC_slow_core
@@ -58,7 +58,7 @@ variables:
     height: 24.5
     input_variables:
       CSAT_Warn:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: invalid_count
         file: Fletcherview_EC_slow_core
@@ -70,7 +70,7 @@ variables:
     - -0.1
     input_variables:
       EC_2:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: dS/m
         file: Fletcherview_soil_slow_soil
   EC_0.05mb:
@@ -81,7 +81,7 @@ variables:
     - -0.1
     input_variables:
       EC_4:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: dS/m
         file: Fletcherview_soil_slow_soil
   EC_0.05mc:
@@ -92,7 +92,7 @@ variables:
     - -0.1
     input_variables:
       EC_1:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: dS/m
         file: Fletcherview_soil_slow_soil
   EC_0.05md:
@@ -103,7 +103,7 @@ variables:
     - -0.1
     input_variables:
       EC_3:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: dS/m
         file: Fletcherview_soil_slow_soil
   Fg_0.08ma:
@@ -111,7 +111,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_Avg(2):
-        instrument: HFP-01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Fletcherview_soil_slow_soil
   Fg_0.08mb:
@@ -119,7 +119,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_Avg(4):
-        instrument: HFP-01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Fletcherview_soil_slow_soil
   Fg_0.08mc:
@@ -127,7 +127,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_Avg(1):
-        instrument: HFP-01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Fletcherview_soil_slow_soil
   Fg_0.08md:
@@ -135,7 +135,7 @@ variables:
     height: -0.08
     input_variables:
       Fg_Avg(3):
-        instrument: HFP-01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Fletcherview_soil_slow_soil
   Fld:
@@ -143,7 +143,7 @@ variables:
     height: 24.5
     input_variables:
       Fld_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Fletcherview_EC_slow_core
   Flu:
@@ -151,7 +151,7 @@ variables:
     height: 24.5
     input_variables:
       Flu_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Fletcherview_EC_slow_core
   Fn:
@@ -159,7 +159,7 @@ variables:
     height: 24.5
     input_variables:
       Fn_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Fletcherview_EC_slow_core
   Fsd:
@@ -167,7 +167,7 @@ variables:
     height: 24.5
     input_variables:
       Fsd_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Fletcherview_EC_slow_core
   Fsu:
@@ -175,7 +175,7 @@ variables:
     height: 24.5
     input_variables:
       Fsu_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Fletcherview_EC_slow_core
   Precip:
@@ -183,7 +183,7 @@ variables:
     height: 2.0
     input_variables:
       Rain_Tot:
-        instrument: RIM-7499-BOM
+        instrument: Rimco RIM-7499-BOM
         units: mm
         file: Fletcherview_soil_slow_soil
   RH_25m:
@@ -191,7 +191,7 @@ variables:
     height: 24.5
     input_variables:
       RH_HMP_01_Avg:
-        instrument: HMP155a
+        instrument: Vaisala HMP155
         units: frac
         file: Fletcherview_EC_slow_core
   SVP:
@@ -199,7 +199,7 @@ variables:
     height: 24.5
     input_variables:
       es_HMP_01_Avg:
-        instrument: 24.5m
+        instrument: Vaisala HMP155
         units: kPa
         file: Fletcherview_EC_slow_core
   Sig_IRGA:
@@ -207,7 +207,7 @@ variables:
     height: 24.5
     input_variables:
       sig_strn_7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: Fletcherview_EC_slow_core
   Sws_0.05ma:
@@ -218,7 +218,7 @@ variables:
     - -0.1
     input_variables:
       Sws_2:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Fletcherview_soil_slow_soil
   Sws_0.05mb:
@@ -229,7 +229,7 @@ variables:
     - -0.1
     input_variables:
       Sws_4:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Fletcherview_soil_slow_soil
   Sws_0.05mc:
@@ -240,7 +240,7 @@ variables:
     - -0.1
     input_variables:
       Sws_1:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Fletcherview_soil_slow_soil
   Sws_0.05md:
@@ -251,7 +251,7 @@ variables:
     - -0.1
     input_variables:
       Sws_3:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Fletcherview_soil_slow_soil
   Ta_25m:
@@ -259,7 +259,7 @@ variables:
     height: 24.5
     input_variables:
       Ta_HMP_01_Avg:
-        instrument: HMP155a
+        instrument: Vaisala HMP155
         units: degC
         file: Fletcherview_EC_slow_core
   Tbody_RAD:
@@ -267,7 +267,7 @@ variables:
     height: 24.5
     input_variables:
       Tb_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: degC
         file: Fletcherview_EC_slow_core
   Tpanel:
@@ -275,7 +275,7 @@ variables:
     height: 24.5
     input_variables:
       Tpanel_Avg:
-        instrument: Campbell Scientific CR6 logger
+        instrument: Campbell Scientific CR6
         units: degC
         file: Fletcherview_EC_slow_core
   Tpanel_2:
@@ -283,7 +283,7 @@ variables:
     height: 1.5
     input_variables:
       Tpanel_CR1000_Avg:
-        instrument: Campbell Scientific CR1000 logger
+        instrument: Campbell Scientific CR1000
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.05ma:
@@ -294,7 +294,7 @@ variables:
     - -0.1
     input_variables:
       Ts_CS650_2:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.05mb:
@@ -305,7 +305,7 @@ variables:
     - -0.1
     input_variables:
       Ts_CS650_4:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.05mc:
@@ -316,7 +316,7 @@ variables:
     - -0.1
     input_variables:
       Ts_CS650_1:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.05md:
@@ -327,7 +327,7 @@ variables:
     - -0.1
     input_variables:
       Ts_CS650_3:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.04ma:
@@ -338,7 +338,7 @@ variables:
     - -0.06
     input_variables:
       Ts_TCAV_02_Avg:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.04mb:
@@ -349,7 +349,7 @@ variables:
     - -0.06
     input_variables:
       Ts_TCAV_04_Avg:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.04mc:
@@ -360,7 +360,7 @@ variables:
     - -0.06
     input_variables:
       Ts_TCAV_01_Avg:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: Fletcherview_soil_slow_soil
   Ts_0.04md:
@@ -371,7 +371,7 @@ variables:
     - -0.06
     input_variables:
       Ts_TCAV_03_Avg:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: Fletcherview_soil_slow_soil
   Tv_SONIC_Av:
@@ -379,7 +379,7 @@ variables:
     height: 24.5
     input_variables:
       Tv_CSAT_filtered:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC
         file: Fletcherview_EC_slow_core
   Tv_SONIC_Vr:
@@ -387,7 +387,7 @@ variables:
     height: 24.5
     input_variables:
       covTvTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC^2
         file: Fletcherview_EC_slow_core
   UxA:
@@ -395,7 +395,9 @@ variables:
     height: 24.5
     input_variables:
       covUxAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Fletcherview_EC_slow_core
   UxC:
@@ -403,7 +405,9 @@ variables:
     height: 24.5
     input_variables:
       covUxCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Fletcherview_EC_slow_core
   UxT:
@@ -411,7 +415,7 @@ variables:
     height: 24.5
     input_variables:
       covUxTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Fletcherview_EC_slow_core
   UxUy:
@@ -419,7 +423,7 @@ variables:
     height: 24.5
     input_variables:
       covUxUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
   UxUz:
@@ -427,7 +431,7 @@ variables:
     height: 24.5
     input_variables:
       covUzUx:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
   Ux_SONIC_Av:
@@ -435,7 +439,7 @@ variables:
     height: 24.5
     input_variables:
       Ux_filtered:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Fletcherview_EC_slow_core
   Ux_SONIC_Vr:
@@ -443,7 +447,7 @@ variables:
     height: 24.5
     input_variables:
       covUxUx:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
   UyA:
@@ -451,7 +455,9 @@ variables:
     height: 24.5
     input_variables:
       covUyAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Fletcherview_EC_slow_core
   UyC:
@@ -459,7 +465,9 @@ variables:
     height: 24.5
     input_variables:
       covUyCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Fletcherview_EC_slow_core
   UyT:
@@ -467,7 +475,7 @@ variables:
     height: 24.5
     input_variables:
       covUyTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Fletcherview_EC_slow_core
   UyUz:
@@ -475,7 +483,7 @@ variables:
     height: 24.5
     input_variables:
       covUzUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
   Uy_SONIC_Av:
@@ -483,7 +491,7 @@ variables:
     height: 24.5
     input_variables:
       Uy_filtered:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Fletcherview_EC_slow_core
   Uy_SONIC_Vr:
@@ -491,7 +499,7 @@ variables:
     height: 24.5
     input_variables:
       covUyUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
   UzA:
@@ -499,7 +507,9 @@ variables:
     height: 24.5
     input_variables:
       covUzAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Fletcherview_EC_slow_core
   UzC:
@@ -507,7 +517,9 @@ variables:
     height: 24.5
     input_variables:
       covUzCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Fletcherview_EC_slow_core
   UzT:
@@ -515,7 +527,7 @@ variables:
     height: 24.5
     input_variables:
       covUzTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Fletcherview_EC_slow_core
   Uz_SONIC_Av:
@@ -523,7 +535,7 @@ variables:
     height: 24.5
     input_variables:
       Uz_filtered:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Fletcherview_EC_slow_core
   Uz_SONIC_Vr:
@@ -531,7 +543,7 @@ variables:
     height: 24.5
     input_variables:
       covUzUz:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
   VP:
@@ -539,7 +551,7 @@ variables:
     height: 24.5
     input_variables:
       e_HMP_01_Avg:
-        instrument: 24.5m
+        instrument: Vaisala HMP155
         units: kPa
         file: Fletcherview_EC_slow_core
   Vbat:
@@ -547,7 +559,7 @@ variables:
     height: 24.5
     input_variables:
       Vbat_Avg:
-        instrument: Campbell Scientific CR6 logger
+        instrument: Campbell Scientific CR6
         units: V
         file: Fletcherview_EC_slow_core
   Vbat_2:
@@ -555,7 +567,7 @@ variables:
     height: 1.5
     input_variables:
       Vbat_CR1000_Avg:
-        instrument: Campbell Scientific CR1000 logger
+        instrument: Campbell Scientific CR1000
         units: V
         file: Fletcherview_soil_slow_soil
   Wd_SONIC_Av:
@@ -563,7 +575,7 @@ variables:
     height: 24.5
     input_variables:
       WD_CSAT_Compass_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Fletcherview_EC_slow_core
   Wd_SONIC_Sd:
@@ -571,7 +583,7 @@ variables:
     height: 24.5
     input_variables:
       WD_CSAT_Sd:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Fletcherview_EC_slow_core
   Ws_SONIC_Av:
@@ -579,7 +591,7 @@ variables:
     height: 24.5
     input_variables:
       WS_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Fletcherview_EC_slow_core
   Ws_SONIC_Sd:
@@ -587,7 +599,7 @@ variables:
     height: 24.5
     input_variables:
       WS_CSAT_Sd:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Fletcherview_EC_slow_core
   ps:
@@ -595,7 +607,7 @@ variables:
     height: 23.0
     input_variables:
       ps_7500_filtered:
-        instrument: Li7500RS
+        instrument: LI-COR LI-7500RS
         units: kPa
         file: Fletcherview_EC_slow_core
   Fco2:
@@ -603,7 +615,9 @@ variables:
     height: 24.5
     input_variables:
       Fc_raw_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Fletcherview_EC_slow_core
   Fe:
@@ -611,7 +625,9 @@ variables:
     height: 24.5
     input_variables:
       Fe_raw_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: W/m^2
         file: Fletcherview_EC_slow_core
   Fh:
@@ -619,7 +635,7 @@ variables:
     height: 24.5
     input_variables:
       Fh_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
         units: W/m^2
         file: Fletcherview_EC_slow_core
   ustar:
@@ -627,6 +643,6 @@ variables:
     height: 24.5
     input_variables:
       ustar_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Fletcherview_EC_slow_core

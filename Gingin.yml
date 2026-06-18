@@ -49,7 +49,7 @@ variables:
     height: 15.0
     input_variables:
       Ah_7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Gingin_EC_slow_met
   AH_IRGA_Vr:
@@ -57,7 +57,7 @@ variables:
     height: 15.0
     input_variables:
       covAhAh:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g^2/m^6
         file: Gingin_EC_slow_flux
   CO2c_IRGA_Av:
@@ -65,7 +65,7 @@ variables:
     height: 15.0
     input_variables:
       Cc_7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Gingin_EC_slow_met
   CO2c_IRGA_Vr:
@@ -73,7 +73,7 @@ variables:
     height: 15.0
     input_variables:
       covCcCc:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg^2/m^6
         file: Gingin_EC_slow_flux
   Diag_IRGA:
@@ -81,7 +81,7 @@ variables:
     height: 15.0
     input_variables:
       7500_Warn:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: invalid_count
         file: Gingin_EC_slow_flux
@@ -90,7 +90,7 @@ variables:
     height: 15.0
     input_variables:
       CSAT_Warn:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: invalid_count
         file: Gingin_EC_slow_flux
@@ -123,7 +123,7 @@ variables:
     height: 15.0
     input_variables:
       Fld_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Gingin_EC_slow_rad
   Flu:
@@ -131,7 +131,7 @@ variables:
     height: 15.0
     input_variables:
       Flu_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Gingin_EC_slow_rad
   Fn:
@@ -139,7 +139,7 @@ variables:
     height: 15.0
     input_variables:
       NRLITE_Wm2_Avg:
-        instrument: Kipp and Zonen NRLite-2
+        instrument: Kipp&Zonen NR Lite2
         units: W/m^2
         file: Gingin_EC_slow_rad
   Fsd:
@@ -147,7 +147,7 @@ variables:
     height: 15.0
     input_variables:
       Fsd_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Gingin_EC_slow_rad
   Fsu:
@@ -155,7 +155,7 @@ variables:
     height: 15.0
     input_variables:
       Fsu_CNR4_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Gingin_EC_slow_rad
   Precip:
@@ -163,7 +163,7 @@ variables:
     height: 0.6
     input_variables:
       Rain_Tot:
-        instrument: Hydrological Services CS700
+        instrument: Campbell Scientific CS700
         units: mm
         file: Gingin_EC_slow_met
   RH_10m:
@@ -211,7 +211,7 @@ variables:
     height: -0.08
     input_variables:
       shf_Avg(1):
-        instrument: Campbell Scientific HFP01SC
+        instrument: Hukseflux HFP01SC
         units: W/m^2
         file: Gingin_EC_slow_flux
   Fg_0.08me:
@@ -219,7 +219,7 @@ variables:
     height: -0.08
     input_variables:
       shf_Avg(2):
-        instrument: Campbell Scientific HFP01SC
+        instrument: Hukseflux HFP01SC
         units: W/m^2
         file: Gingin_EC_slow_flux
   Fg_0.08mf:
@@ -227,7 +227,7 @@ variables:
     height: -0.08
     input_variables:
       shf_Avg(3):
-        instrument: Campbell Scientific HFP01SC
+        instrument: Hukseflux HFP01SC
         units: W/m^2
         file: Gingin_EC_slow_flux
   Sig_IRGA:
@@ -235,7 +235,7 @@ variables:
     height: 15.0
     input_variables:
       sig_strn_7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: Gingin_EC_slow_flux
   Swp_0.1ma:
@@ -243,7 +243,7 @@ variables:
     height: -0.1
     input_variables:
       Swp_W253_mux1_Avg(1):
-        instrument: Campbell Scientific W253
+        instrument: Campbell Scientific 253
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_0.1mb:
@@ -251,7 +251,7 @@ variables:
     height: -0.1
     input_variables:
       Swp_W253_mux2_Avg(1):
-        instrument: Campbell Scientific W253
+        instrument: Campbell Scientific 253
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_0.4ma:
@@ -259,7 +259,7 @@ variables:
     height: -0.4
     input_variables:
       Swp_W253_mux1_Avg(2):
-        instrument: Campbell Scientific W253
+        instrument: Campbell Scientific 253
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_0.4mb:
@@ -267,7 +267,7 @@ variables:
     height: -0.4
     input_variables:
       Swp_W253_mux2_Avg(2):
-        instrument: Campbell Scientific W253
+        instrument: Campbell Scientific 253
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_6m:
@@ -275,7 +275,7 @@ variables:
     height: -6.0
     input_variables:
       kPa_Mux2_Avg(1):
-        instrument: Campbell Scientific W229
+        instrument: Campbell Scientific 229
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_7m:
@@ -283,7 +283,7 @@ variables:
     height: -7.0
     input_variables:
       kPa_Mux1_Avg(2):
-        instrument: Campbell Scientific W229
+        instrument: Campbell Scientific 229
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_8m:
@@ -291,7 +291,7 @@ variables:
     height: -8.0
     input_variables:
       kPa_Mux1_Avg(1):
-        instrument: Campbell Scientific W229
+        instrument: Campbell Scientific 229
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_0.8ma:
@@ -299,7 +299,7 @@ variables:
     height: -0.8
     input_variables:
       Swp_W253_mux1_Avg(3):
-        instrument: Campbell Scientific W253
+        instrument: Campbell Scientific 253
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_0.8mb:
@@ -307,7 +307,7 @@ variables:
     height: -0.8
     input_variables:
       Swp_W253_mux2_Avg(3):
-        instrument: Campbell Scientific W253
+        instrument: Campbell Scientific 253
         units: kPa
         file: Gingin_soil_Soil_Min30
   Swp_8.5m:
@@ -315,7 +315,7 @@ variables:
     height: -8.5
     input_variables:
       kPa_Mux2_Avg(2):
-        instrument: Campbell Scientific W229
+        instrument: Campbell Scientific 229
         units: kPa
         file: Gingin_soil_Soil_Min30
   Sws_0.06m:
@@ -555,7 +555,7 @@ variables:
     height: -0.04
     input_variables:
       Ts_T108a_4cm_Avg:
-        instrument: Campbell Scientific T108
+        instrument: Campbell Scientific 108
         units: degC
         file: Gingin_EC_slow_met
   Ts_0.04md:
@@ -563,7 +563,7 @@ variables:
     height: -0.04
     input_variables:
       Ts_T108b_4cm_Avg:
-        instrument: Campbell Scientific T108
+        instrument: Campbell Scientific 108
         units: degC
         file: Gingin_EC_slow_met
   Ts_0.06m:
@@ -667,7 +667,7 @@ variables:
     height: 15.0
     input_variables:
       Tv_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC
         file: Gingin_EC_slow_met
   Tv_SONIC_Vr:
@@ -675,7 +675,7 @@ variables:
     height: 15.0
     input_variables:
       covTvTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degC^2
         file: Gingin_EC_slow_flux
   UxA:
@@ -683,7 +683,9 @@ variables:
     height: 15.0
     input_variables:
       covUxAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Gingin_EC_slow_flux
   UxC:
@@ -691,7 +693,9 @@ variables:
     height: 15.0
     input_variables:
       covUxCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Gingin_EC_slow_flux
   UxT:
@@ -699,7 +703,7 @@ variables:
     height: 15.0
     input_variables:
       covUxTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Gingin_EC_slow_flux
   UxUy:
@@ -707,7 +711,7 @@ variables:
     height: 15.0
     input_variables:
       covUxUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Gingin_EC_slow_flux
   UxUz:
@@ -715,7 +719,7 @@ variables:
     height: 15.0
     input_variables:
       covUzUx:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Gingin_EC_slow_flux
   Ux_SONIC_Av:
@@ -723,7 +727,7 @@ variables:
     height: 15.0
     input_variables:
       Ux_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Gingin_EC_slow_met
   Ux_SONIC_Vr:
@@ -731,7 +735,7 @@ variables:
     height: 15.0
     input_variables:
       covUxUx:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Gingin_EC_slow_flux
   UyA:
@@ -739,7 +743,9 @@ variables:
     height: 15.0
     input_variables:
       covUyAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Gingin_EC_slow_flux
   UyC:
@@ -747,7 +753,9 @@ variables:
     height: 15.0
     input_variables:
       covUyCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Gingin_EC_slow_flux
   UyT:
@@ -755,7 +763,7 @@ variables:
     height: 15.0
     input_variables:
       covUyTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Gingin_EC_slow_flux
   UyUz:
@@ -763,7 +771,7 @@ variables:
     height: 15.0
     input_variables:
       covUzUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Gingin_EC_slow_flux
   Uy_SONIC_Av:
@@ -771,7 +779,7 @@ variables:
     height: 15.0
     input_variables:
       Uy_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Gingin_EC_slow_met
   Uy_SONIC_Vr:
@@ -779,7 +787,7 @@ variables:
     height: 15.0
     input_variables:
       covUyUy:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Gingin_EC_slow_flux
   UzA:
@@ -787,7 +795,9 @@ variables:
     height: 15.0
     input_variables:
       covUzAh:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: Gingin_EC_slow_flux
   UzC:
@@ -795,7 +805,9 @@ variables:
     height: 15.0
     input_variables:
       covUzCc:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Gingin_EC_slow_flux
   UzT:
@@ -803,7 +815,7 @@ variables:
     height: 15.0
     input_variables:
       covUzTv:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Gingin_EC_slow_flux
   Uz_SONIC_Av:
@@ -811,7 +823,7 @@ variables:
     height: 15.0
     input_variables:
       Uz_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Gingin_EC_slow_met
   Uz_SONIC_Vr:
@@ -819,7 +831,7 @@ variables:
     height: 15.0
     input_variables:
       covUzUz:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Gingin_EC_slow_flux
   Wd_SONIC_Av:
@@ -827,7 +839,7 @@ variables:
     height: 15.0
     input_variables:
       WD_CSAT_Compass_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Gingin_EC_slow_met
   Wd_10m:
@@ -835,7 +847,7 @@ variables:
     height: 10.0
     input_variables:
       WD_WS4_10m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: Gingin_EC_slow_met
   Wd_16m:
@@ -843,7 +855,7 @@ variables:
     height: 15.5
     input_variables:
       WD_WS4_16m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: Gingin_EC_slow_met
   Wd_2m:
@@ -851,7 +863,7 @@ variables:
     height: 1.9
     input_variables:
       WD_WS4_2m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: Gingin_EC_slow_met
   Wd_4m:
@@ -859,7 +871,7 @@ variables:
     height: 4.0
     input_variables:
       WD_WS4_4m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: Gingin_EC_slow_met
   Wd_7m:
@@ -867,7 +879,7 @@ variables:
     height: 7.0
     input_variables:
       WD_WS4_7m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: degrees
         file: Gingin_EC_slow_met
   Ws_SONIC_Av:
@@ -875,7 +887,7 @@ variables:
     height: 15.0
     input_variables:
       WS_CSAT_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Gingin_EC_slow_met
   Ws_10m:
@@ -883,7 +895,7 @@ variables:
     height: 10.5
     input_variables:
       WS_WS4_10m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: Gingin_EC_slow_met
   Ws_16m:
@@ -891,7 +903,7 @@ variables:
     height: 15.5
     input_variables:
       WS_WS4_16m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: Gingin_EC_slow_met
   Ws_2m:
@@ -899,7 +911,7 @@ variables:
     height: 1.9
     input_variables:
       WS_WS4_2m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: Gingin_EC_slow_met
   Ws_4m:
@@ -907,7 +919,7 @@ variables:
     height: 4.0
     input_variables:
       WS_WS4_4m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: Gingin_EC_slow_met
   Ws_7m:
@@ -915,7 +927,7 @@ variables:
     height: 7.0
     input_variables:
       WS_WS4_7m_Avg:
-        instrument: RM Young WindSonic4
+        instrument: Gill Windsonic4
         units: m/s
         file: Gingin_EC_slow_met
   ps:
@@ -923,7 +935,7 @@ variables:
     height: 15.0
     input_variables:
       ps_7500_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: kPa
         file: Gingin_EC_slow_met
   Fco2:
@@ -931,7 +943,9 @@ variables:
     height: 15.0
     input_variables:
       Fc_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: Gingin_EC_slow_flux
   Fe:
@@ -939,7 +953,9 @@ variables:
     height: 15.0
     input_variables:
       Fe_Avg:
-        instrument: CSAT3B,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: W/m^2
         file: Gingin_EC_slow_flux
   Fh:
@@ -947,7 +963,7 @@ variables:
     height: 15.0
     input_variables:
       Fh_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Gingin_EC_slow_flux
   ustar:
@@ -955,7 +971,7 @@ variables:
     height: 15.0
     input_variables:
       ustar_Avg:
-        instrument: CSAT3B
+        instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Gingin_EC_slow_flux
   Tpanel:

@@ -9,7 +9,7 @@ variables:
     height: 23.0
     input_variables:
       Ah_HMP_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: g/m^3
         file: Boyagin_EC_slow_all
   AH_IRGA_Av:
@@ -17,7 +17,7 @@ variables:
     height: 23.0
     input_variables:
       Ah_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g/m^3
         file: Boyagin_EC_slow_all
   AH_IRGA_Vr:
@@ -25,7 +25,7 @@ variables:
     height: 23.0
     input_variables:
       covAhAh:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g^2/m^6
         file: Boyagin_EC_slow_all
   CO2c_IRGA_Av:
@@ -33,7 +33,7 @@ variables:
     height: 23.0
     input_variables:
       Cc_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg/m^3
         file: Boyagin_EC_slow_all
   CO2c_IRGA_Vr:
@@ -41,7 +41,7 @@ variables:
     height: 23.0
     input_variables:
       covCcCc:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg^2/m^6
         file: Boyagin_EC_slow_all
   Diag_IRGA:
@@ -49,7 +49,7 @@ variables:
     height: 23.0
     input_variables:
       7500_Warn:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: dimensionless
         diag_type: invalid_count
         file: Boyagin_EC_slow_all
@@ -58,7 +58,7 @@ variables:
     height: 23.0
     input_variables:
       CSAT_Warn:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
         file: Boyagin_EC_slow_all
@@ -211,7 +211,7 @@ variables:
     height: -0.08
     input_variables:
       HFT_Wm2_Avg:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Boyagin_soil_N_Twr_gnd
   Fg_0.08mb:
@@ -219,7 +219,7 @@ variables:
     height: -0.08
     input_variables:
       HFT_Wm2_Avg:
-        instrument: Huskeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: Boyagin_soil_S_Twr_gnd
   Fld:
@@ -227,7 +227,7 @@ variables:
     height: 30.0
     input_variables:
       Fld_cg2_Avg:
-        instrument: Kipp and Zonen CG2
+        instrument: Kipp&Zonen CG2
         units: W/m^2
         file: Boyagin_rad_Rad_30
   Flu:
@@ -235,7 +235,7 @@ variables:
     height: 30.0
     input_variables:
       Flu_cg2_Avg:
-        instrument: Kipp and Zonen CG2
+        instrument: Kipp&Zonen CG2
         units: W/m^2
         file: Boyagin_rad_Rad_30
   Fn_2:
@@ -243,7 +243,7 @@ variables:
     height: 30.0
     input_variables:
       Fn_nrlite_Avg:
-        instrument: Kipp and Zonen NR lite
+        instrument: Kipp&Zonen NR Lite
         units: W/m^2
         file: Boyagin_rad_Rad_30
   Fpard:
@@ -251,7 +251,7 @@ variables:
     height: 30.0
     input_variables:
       Fpard_Avg:
-        instrument: Apogee PAR
+        instrument: Apogee Instruments SQ110
         units: umol/m^2/s
         file: Boyagin_rad_Rad_30
   Fparu:
@@ -259,7 +259,7 @@ variables:
     height: 30.0
     input_variables:
       Fparu_Avg:
-        instrument: Apogee PAR
+        instrument: Apogee Instruments SQ110
         units: umol/m^2/s
         file: Boyagin_rad_Rad_30
   Fsd:
@@ -267,7 +267,7 @@ variables:
     height: 30.0
     input_variables:
       Fsd_cm7b_Avg:
-        instrument: Kipp and Zonen CM7B
+        instrument: Kipp&Zonen CM7B
         units: W/m^2
         file: Boyagin_rad_Rad_30
   FsdDiff:
@@ -275,7 +275,7 @@ variables:
     height: 30.0
     input_variables:
       Fsd_SPN1_diffuse_Avg:
-        instrument: SPN1
+        instrument: Delta-T Devices SPN1
         units: W/m^2
         file: Boyagin_rad_Rad_30
   FsdDir:
@@ -283,7 +283,7 @@ variables:
     height: 30.0
     input_variables:
       Fsd_SPN1_direct_Avg:
-        instrument: SPN1
+        instrument: Delta-T Devices SPN1
         units: W/m^2
         file: Boyagin_rad_Rad_30
   Fsd_2:
@@ -291,7 +291,7 @@ variables:
     height: 30.0
     input_variables:
       Fsd_SPN1_total_Avg:
-        instrument: SPN1
+        instrument: Delta-T Devices SPN1
         units: W/m^2
         file: Boyagin_rad_Rad_30
   Fsu:
@@ -299,7 +299,7 @@ variables:
     height: 30.0
     input_variables:
       Fsu_cm7b_Avg:
-        instrument: Kipp and Zonen CM7B
+        instrument: Kipp&Zonen CM7B
         units: W/m^2
         file: Boyagin_rad_Rad_30
   Precip_2:
@@ -307,7 +307,7 @@ variables:
     height: 1.2
     input_variables:
       Rain_Tot:
-        instrument: Hydrological Services CS7000
+        instrument: Campbell Scientific CS700
         units: mm
         file: Boyagin_soil_N_Twr_gnd
   Precip_1:
@@ -315,7 +315,7 @@ variables:
     height: 31.0
     input_variables:
       Rain_Tot:
-        instrument: Hydrological Services CS7000
+        instrument: Campbell Scientific CS700
         units: mm
         file: Boyagin_rad_Rad_30
   RH_23m:
@@ -323,7 +323,7 @@ variables:
     height: 23.0
     input_variables:
       RH_HMP_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: frac
         file: Boyagin_EC_slow_all
   Sig_IRGA:
@@ -331,7 +331,7 @@ variables:
     height: 23.0
     input_variables:
       AGC_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: percent
         file: Boyagin_EC_slow_all
   Sws_0.05ma1:
@@ -483,7 +483,7 @@ variables:
     height: 23.0
     input_variables:
       Ta_HMP_Avg:
-        instrument: HMP45C
+        instrument: Vaisala HMP45C
         units: degC
         file: Boyagin_EC_slow_all
   Tpanel:
@@ -491,7 +491,7 @@ variables:
     height: 1.5
     input_variables:
       Tpanel_Avg:
-        instrument: Campbell Scientific CR3000 logger
+        instrument: Campbell Scientific CR3000
         units: degC
         file: Boyagin_EC_slow_all
   Ts_0.05ma1:
@@ -643,7 +643,7 @@ variables:
     height: 23.0
     input_variables:
       Tv_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: Boyagin_EC_slow_all
   Tv_SONIC_Vr:
@@ -651,7 +651,7 @@ variables:
     height: 23.0
     input_variables:
       covTvTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC^2
         file: Boyagin_EC_slow_all
   ustar:
@@ -659,7 +659,7 @@ variables:
     height: 23.0
     input_variables:
       ustar_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Boyagin_EC_slow_all
   UxA:
@@ -667,7 +667,9 @@ variables:
     height: 23.0
     input_variables:
       covUxAh:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Boyagin_EC_slow_all
   UxC:
@@ -675,7 +677,9 @@ variables:
     height: 23.0
     input_variables:
       covUxCc:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Boyagin_EC_slow_all
   UxT:
@@ -683,7 +687,7 @@ variables:
     height: 23.0
     input_variables:
       covUxTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Boyagin_EC_slow_all
   UxUy:
@@ -691,7 +695,7 @@ variables:
     height: 23.0
     input_variables:
       covUxUy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Boyagin_EC_slow_all
   UxUz:
@@ -699,7 +703,7 @@ variables:
     height: 23.0
     input_variables:
       covUzUx:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Boyagin_EC_slow_all
   Ux_SONIC_Av:
@@ -707,7 +711,7 @@ variables:
     height: 23.0
     input_variables:
       Ux_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Boyagin_EC_slow_all
   Ux_SONIC_Vr:
@@ -715,7 +719,7 @@ variables:
     height: 23.0
     input_variables:
       covUxUx:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Boyagin_EC_slow_all
   UyA:
@@ -723,7 +727,9 @@ variables:
     height: 23.0
     input_variables:
       covUyAh:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Boyagin_EC_slow_all
   UyC:
@@ -731,7 +737,9 @@ variables:
     height: 23.0
     input_variables:
       covUyCc:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Boyagin_EC_slow_all
   UyT:
@@ -739,7 +747,7 @@ variables:
     height: 23.0
     input_variables:
       covUyTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Boyagin_EC_slow_all
   UyUz:
@@ -747,7 +755,7 @@ variables:
     height: 23.0
     input_variables:
       covUzUy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Boyagin_EC_slow_all
   Uy_SONIC_Av:
@@ -755,7 +763,7 @@ variables:
     height: 23.0
     input_variables:
       Uy_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Boyagin_EC_slow_all
   Uy_SONIC_Vr:
@@ -763,7 +771,7 @@ variables:
     height: 23.0
     input_variables:
       covUyUy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Boyagin_EC_slow_all
   UzA:
@@ -771,7 +779,9 @@ variables:
     height: 23.0
     input_variables:
       covUzAh:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Boyagin_EC_slow_all
   UzC:
@@ -779,7 +789,9 @@ variables:
     height: 23.0
     input_variables:
       covUzCc:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Boyagin_EC_slow_all
   UzT:
@@ -787,7 +799,7 @@ variables:
     height: 23.0
     input_variables:
       covUzTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Boyagin_EC_slow_all
   Uz_SONIC_Av:
@@ -795,7 +807,7 @@ variables:
     height: 23.0
     input_variables:
       Uz_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Boyagin_EC_slow_all
   Uz_SONIC_Vr:
@@ -803,7 +815,7 @@ variables:
     height: 23.0
     input_variables:
       covUzUz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Boyagin_EC_slow_all
   Vbat:
@@ -811,7 +823,7 @@ variables:
     height: 1.5
     input_variables:
       Vbat_Avg:
-        instrument: Campbell Scientific CR3000 logger
+        instrument: Campbell Scientific CR3000
         units: V
         file: Boyagin_EC_slow_all
   Vbat_a:
@@ -819,7 +831,7 @@ variables:
     height: 0.5
     input_variables:
       BattV_Min:
-        instrument: Campbell Scientific CR3000 logger North pit
+        instrument: Campbell Scientific CR3000
         units: V
         file: Boyagin_soil_N_Twr_gnd
   Vbat_b:
@@ -827,7 +839,7 @@ variables:
     height: 0.5
     input_variables:
       BattV_Min:
-        instrument: Campbell Scientific CR3000 logger south pit
+        instrument: Campbell Scientific CR3000
         units: V
         file: Boyagin_soil_S_Twr_gnd
   Wd_SONIC_Av:
@@ -835,7 +847,7 @@ variables:
     height: 23.0
     input_variables:
       WD_CSAT_Compass_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degrees
         file: Boyagin_EC_slow_all
   Ws_SONIC_Av:
@@ -843,7 +855,7 @@ variables:
     height: 23.0
     input_variables:
       WS_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Boyagin_EC_slow_all
   ps:
@@ -851,7 +863,7 @@ variables:
     height: 23.0
     input_variables:
       ps_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: kPa
         file: Boyagin_EC_slow_all
   Fco2:
@@ -859,7 +871,9 @@ variables:
     height: 23.0
     input_variables:
       Fc_Avg:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Boyagin_EC_slow_all
   Fe:
@@ -867,7 +881,9 @@ variables:
     height: 23.0
     input_variables:
       Fe_Avg:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: W/m^2
         file: Boyagin_EC_slow_all
   Fh:
@@ -875,6 +891,6 @@ variables:
     height: 23.0
     input_variables:
       Fh_Avg:
-        instrument: CSAT3,Li-7500A
+        instrument: Campbell Scientific CSAT3, LI-COR LI-7500A
         units: W/m^2
         file: Boyagin_EC_slow_all

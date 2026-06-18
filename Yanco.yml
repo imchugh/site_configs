@@ -9,7 +9,7 @@ variables:
     height: 6.0
     input_variables:
       H2O_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g/m^3
         file: Yanco_EC_flux
   AH_IRGA_Vr:
@@ -17,7 +17,7 @@ variables:
     height: 6.0
     input_variables:
       var_H2O:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g^2/m^6
         file: Yanco_EC_Calculate
   CO2c_IRGA_Av:
@@ -25,7 +25,7 @@ variables:
     height: 6.0
     input_variables:
       CO2_mean_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg/m^3
         file: Yanco_EC_flux
   CO2c_IRGA_Vr:
@@ -33,7 +33,7 @@ variables:
     height: 6.0
     input_variables:
       var_CO2:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg^2/m^6
         file: Yanco_EC_Calculate
   Diag_IRGA:
@@ -41,7 +41,7 @@ variables:
     height: 6.0
     input_variables:
       irga_warnings:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: dimensionless
         diag_type: invalid_count
         file: Yanco_EC_Monitoring
@@ -50,7 +50,7 @@ variables:
     height: 6.0
     input_variables:
       csat_warnings:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
         file: Yanco_EC_Monitoring
@@ -99,7 +99,7 @@ variables:
     height: 10.0
     input_variables:
       LWR1:
-        instrument: Kipp and Zonen CGR4
+        instrument: Kipp&Zonen CGR4
         units: W/m^2
         file: Yanco_Met_AWS_SMTMS_2
   Flu:
@@ -107,7 +107,7 @@ variables:
     height: 10.0
     input_variables:
       LWR2:
-        instrument: Kipp and Zonen CGR4
+        instrument: Kipp&Zonen CGR4
         units: W/m^2
         file: Yanco_Met_AWS_SMTMS_2
   Fsd:
@@ -115,7 +115,7 @@ variables:
     height: 10.0
     input_variables:
       SWR1:
-        instrument: Kipp and Zonen CMP21
+        instrument: Kipp&Zonen CMP21
         units: W/m^2
         file: Yanco_Met_AWS_SMTMS_2
   Fsu:
@@ -123,7 +123,7 @@ variables:
     height: 10.0
     input_variables:
       SWR2:
-        instrument: Kipp and Zonen CMP21
+        instrument: Kipp&Zonen CMP21
         units: W/m^2
         file: Yanco_Met_AWS_SMTMS_2
   Precip:
@@ -139,7 +139,7 @@ variables:
     height: 6.0
     input_variables:
       press_mean_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: hPa
         file: Yanco_EC_flux
   RH_2m:
@@ -179,7 +179,7 @@ variables:
     height: 6.0
     input_variables:
       agc_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: percent
         file: Yanco_EC_Monitoring
   Sws_0.1ma:
@@ -187,7 +187,7 @@ variables:
     height: -0.1
     input_variables:
       Soil_Water1:
-        instrument: CMT TRIME-PICO32
+        instrument: CMT TRIME-PICO 32
         units: percent
         file: Yanco_Met_AWS_SMTMS_2
   Sws_0.1mb:
@@ -195,7 +195,7 @@ variables:
     height: 0.1
     input_variables:
       Soil_Water2:
-        instrument: CMT TRIME-PICO32
+        instrument: CMT TRIME-PICO 32
         units: percent
         file: Yanco_Met_AWS_SMTMS_2
   Sws_0.1mc:
@@ -203,7 +203,7 @@ variables:
     height: 0.1
     input_variables:
       Soil_Water3:
-        instrument: CMT TRIME-PICO32
+        instrument: CMT TRIME-PICO 32
         units: percent
         file: Yanco_Met_AWS_SMTMS_2
   Sws_0.1md:
@@ -211,7 +211,7 @@ variables:
     height: 0.1
     input_variables:
       Soil_Water4:
-        instrument: CMT TRIME-PICO32
+        instrument: CMT TRIME-PICO 32
         units: percent
         file: Yanco_Met_AWS_SMTMS_2
   Sws_0.1me:
@@ -219,7 +219,7 @@ variables:
     height: 0.1
     input_variables:
       Soil_Water5:
-        instrument: CMT TRIME-PICO32
+        instrument: CMT TRIME-PICO 32
         units: percent
         file: Yanco_Met_AWS_SMTMS_2
   Ta_2m:
@@ -270,7 +270,7 @@ variables:
     - -0.08
     input_variables:
       Soil_Temp1:
-        instrument: TBC
+        instrument: Campbell Scientific 107
         units: degC
         file: Yanco_Met_AWS_SMTMS_2
   Ts_0.05mb:
@@ -281,7 +281,7 @@ variables:
     - -0.08
     input_variables:
       Soil_Temp2:
-        instrument: TBC
+        instrument: Campbell Scientific 107
         units: degC
         file: Yanco_Met_AWS_SMTMS_2
   Ts_0.05mc:
@@ -292,7 +292,7 @@ variables:
     - -0.08
     input_variables:
       Soil_Temp3:
-        instrument: TBC
+        instrument: Campbell Scientific 107
         units: degC
         file: Yanco_Met_AWS_SMTMS_2
   Ts_0.05md:
@@ -303,7 +303,7 @@ variables:
     - -0.08
     input_variables:
       Soil_Temp4:
-        instrument: TBC
+        instrument: Campbell Scientific 107
         units: degC
         file: Yanco_Met_AWS_SMTMS_2
   Ts_0.05me:
@@ -314,7 +314,7 @@ variables:
     - -0.08
     input_variables:
       Soil_Temp5:
-        instrument: TBC
+        instrument: Campbell Scientific 107
         units: degC
         file: Yanco_Met_AWS_SMTMS_2
   Tv_SONIC_Av:
@@ -322,7 +322,7 @@ variables:
     height: 6.0
     input_variables:
       Ts_mean_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: Yanco_EC_flux
   Tv_SONIC_Vr:
@@ -330,7 +330,7 @@ variables:
     height: 6.0
     input_variables:
       var_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC^2
         file: Yanco_EC_Calculate
   UxA:
@@ -338,7 +338,9 @@ variables:
     height: 6.0
     input_variables:
       cov_H2O_Ux:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: g/m^2/s
         file: Yanco_EC_Calculate
   UxC:
@@ -346,7 +348,9 @@ variables:
     height: 6.0
     input_variables:
       cov_CO2_Ux:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   UxT:
@@ -354,7 +358,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Ts_Ux:
-        instrument: Li-7500A,CSAT3
+        instrument: LI-COR LI-7500A, Campbell Scientific CSAT3
         units: m.degC/s
         file: Yanco_EC_Calculate
   UxUy:
@@ -362,7 +366,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Ux_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Yanco_EC_Calculate
   UxUz:
@@ -370,7 +374,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Ux_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Yanco_EC_Calculate
   Ux_SONIC_Av:
@@ -378,7 +382,7 @@ variables:
     height: 6.0
     input_variables:
       Ux_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Yanco_EC_flux
   Ux_SONIC_Vr:
@@ -386,7 +390,7 @@ variables:
     height: 6.0
     input_variables:
       var_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Yanco_EC_Calculate
   UyA:
@@ -394,7 +398,9 @@ variables:
     height: 6.0
     input_variables:
       cov_H2O_Uy:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: g/m^2/s
         file: Yanco_EC_Calculate
   UyC:
@@ -402,7 +408,9 @@ variables:
     height: 6.0
     input_variables:
       cov_CO2_Uy:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   UyT:
@@ -410,7 +418,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Ts_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Yanco_EC_Calculate
   UyUz:
@@ -418,7 +426,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Uy_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Yanco_EC_Calculate
   Uy_SONIC_Av:
@@ -426,7 +434,7 @@ variables:
     height: 6.0
     input_variables:
       Uy_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Yanco_EC_flux
   Uy_SONIC_Vr:
@@ -434,7 +442,7 @@ variables:
     height: 6.0
     input_variables:
       var_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Yanco_EC_Calculate
   UzA:
@@ -442,7 +450,9 @@ variables:
     height: 6.0
     input_variables:
       cov_H2O_Uz:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: g/m^2/s
         file: Yanco_EC_Calculate
   UzC:
@@ -450,7 +460,9 @@ variables:
     height: 6.0
     input_variables:
       cov_CO2_Uz:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   UzT:
@@ -458,7 +470,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Ts_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Yanco_EC_Calculate
   Uz_SONIC_Av:
@@ -466,7 +478,7 @@ variables:
     height: 6.0
     input_variables:
       Uz_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Yanco_EC_flux
   Uz_SONIC_Vr:
@@ -474,7 +486,7 @@ variables:
     height: 6.0
     input_variables:
       var_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Yanco_EC_Calculate
   Vbat:
@@ -490,7 +502,7 @@ variables:
     height: 6.0
     input_variables:
       wnd_dir_compass:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degrees
         file: Yanco_EC_Calculate
   Ws_SONIC_Av:
@@ -498,7 +510,7 @@ variables:
     height: 6.0
     input_variables:
       wnd_spd:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Yanco_EC_Calculate
   Fco2:
@@ -506,7 +518,9 @@ variables:
     height: 6.0
     input_variables:
       Fc_wpl:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   Fh:
@@ -514,7 +528,7 @@ variables:
     height: 6.0
     input_variables:
       Hc:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: Yanco_EC_Calculate
   Fe:
@@ -522,7 +536,9 @@ variables:
     height: 6.0
     input_variables:
       LE_wpl:
-        instrument: Li-7500A,CSAT3
+        instrument:
+          sonic_anemometer: LI-COR LI-7500A
+          irga: Campbell Scientific CSAT3
         units: W/m^2
         file: Yanco_EC_Calculate
   tau:
@@ -530,7 +546,7 @@ variables:
     height: 6.0
     input_variables:
       tau:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: kg/m/s^2
         file: Yanco_EC_Calculate
   ustar:
@@ -538,6 +554,6 @@ variables:
     height: 6.0
     input_variables:
       u_star:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Yanco_EC_Calculate

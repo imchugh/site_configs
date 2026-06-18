@@ -9,7 +9,7 @@ variables:
     height: 36.0
     input_variables:
       agc_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: percent
         file: GreatWesternWoodlands_EC_flux
   AH_36m:
@@ -17,7 +17,7 @@ variables:
     height: 36.0
     input_variables:
       h2o_hmp_mean:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: g/m^3
         file: GreatWesternWoodlands_EC_flux
   AH_IRGA_Av:
@@ -25,7 +25,7 @@ variables:
     height: 36.0
     input_variables:
       h2o_Avg:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: GreatWesternWoodlands_EC_flux
   AH_IRGA_Sd:
@@ -33,7 +33,7 @@ variables:
     height: 36.0
     input_variables:
       stdev_h2o:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: g/m^3
         file: GreatWesternWoodlands_EC_flux
   CO2c_IRGA_Av:
@@ -41,7 +41,7 @@ variables:
     height: 36.0
     input_variables:
       co2_mean:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: GreatWesternWoodlands_EC_flux
   CO2c_IRGA_Sd:
@@ -49,7 +49,7 @@ variables:
     height: 36.0
     input_variables:
       stdev_co2:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: GreatWesternWoodlands_EC_flux
   Diag_IRGA:
@@ -57,7 +57,7 @@ variables:
     height: 36.0
     input_variables:
       irga_warnings:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: invalid_count
         file: GreatWesternWoodlands_EC_flux
@@ -66,7 +66,7 @@ variables:
     height: 36.0
     input_variables:
       csat_warnings:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
         file: GreatWesternWoodlands_EC_flux
@@ -99,7 +99,7 @@ variables:
     height: 36.0
     input_variables:
       Rl_downwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: GreatWesternWoodlands_EC_flux
   Flu:
@@ -107,7 +107,7 @@ variables:
     height: 36.0
     input_variables:
       Rl_upwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: GreatWesternWoodlands_EC_flux
   Fsd:
@@ -115,7 +115,7 @@ variables:
     height: 36.0
     input_variables:
       Rs_downwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: GreatWesternWoodlands_EC_flux
   Fsu:
@@ -123,7 +123,7 @@ variables:
     height: 36.0
     input_variables:
       Rs_upwell_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: GreatWesternWoodlands_EC_flux
   Precip:
@@ -131,7 +131,7 @@ variables:
     height: 0.4
     input_variables:
       Rainfall_Tot:
-        instrument: Hydrological Services CS7000
+        instrument: Campbell Scientific CS700
         units: mm
         file: GreatWesternWoodlands_EC_flux
   RH_2m:
@@ -139,7 +139,7 @@ variables:
     height: 2.0
     input_variables:
       rh_hmp_lower:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: percent
         file: GreatWesternWoodlands_EC_flux
   Sws_0.1ma:
@@ -281,7 +281,7 @@ variables:
     height: 2.0
     input_variables:
       t_hmp_lower:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: degC
         file: GreatWesternWoodlands_EC_flux
   Ta_36m:
@@ -289,7 +289,7 @@ variables:
     height: 36.0
     input_variables:
       t_hmp_mean:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: degC
         file: GreatWesternWoodlands_EC_flux
   Ts_0.1ma:
@@ -313,7 +313,7 @@ variables:
     height: 36.0
     input_variables:
       Ts_mean:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: GreatWesternWoodlands_EC_flux
   Tv_SONIC_Sd:
@@ -321,7 +321,7 @@ variables:
     height: 36.0
     input_variables:
       stdev_Ts:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: GreatWesternWoodlands_EC_flux
   UxA:
@@ -329,7 +329,9 @@ variables:
     height: 36.0
     input_variables:
       cov_h2o_Ux:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: GreatWesternWoodlands_EC_flux
   UxC:
@@ -337,7 +339,9 @@ variables:
     height: 36.0
     input_variables:
       cov_co2_Ux:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: GreatWesternWoodlands_EC_flux
   UxT:
@@ -345,7 +349,7 @@ variables:
     height: 36.0
     input_variables:
       cov_Ts_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: GreatWesternWoodlands_EC_flux
   UxUy:
@@ -353,7 +357,7 @@ variables:
     height: 36.0
     input_variables:
       cov_Ux_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: GreatWesternWoodlands_EC_flux
   UxUz:
@@ -361,7 +365,7 @@ variables:
     height: 36.0
     input_variables:
       cov_Ux_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: GreatWesternWoodlands_EC_flux
   Ux_SONIC_Av:
@@ -369,7 +373,7 @@ variables:
     height: 36.0
     input_variables:
       Ux_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   Ux_SONIC_Sd:
@@ -377,7 +381,7 @@ variables:
     height: 36.0
     input_variables:
       stdev_Ux:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   UyA:
@@ -385,7 +389,9 @@ variables:
     height: 36.0
     input_variables:
       cov_h2o_Uy:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: GreatWesternWoodlands_EC_flux
   UyC:
@@ -393,7 +399,9 @@ variables:
     height: 36.0
     input_variables:
       cov_co2_Uy:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: GreatWesternWoodlands_EC_flux
   UyT:
@@ -401,7 +409,7 @@ variables:
     height: 36.0
     input_variables:
       cov_Ts_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: GreatWesternWoodlands_EC_flux
   UyUz:
@@ -409,7 +417,7 @@ variables:
     height: 36.0
     input_variables:
       cov_Uy_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: GreatWesternWoodlands_EC_flux
   Uy_SONIC_Av:
@@ -417,7 +425,7 @@ variables:
     height: 36.0
     input_variables:
       Uy_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   Uy_SONIC_Sd:
@@ -425,7 +433,7 @@ variables:
     height: 36.0
     input_variables:
       stdev_Uy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   UzA:
@@ -433,7 +441,9 @@ variables:
     height: 36.0
     input_variables:
       cov_h2o_Uz:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: g/m^2/s
         file: GreatWesternWoodlands_EC_flux
   UzC:
@@ -441,7 +451,9 @@ variables:
     height: 36.0
     input_variables:
       cov_co2_Uz:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: GreatWesternWoodlands_EC_flux
   UzT:
@@ -449,7 +461,7 @@ variables:
     height: 36.0
     input_variables:
       cov_Ts_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: GreatWesternWoodlands_EC_flux
   Uz_SONIC_Av:
@@ -457,7 +469,7 @@ variables:
     height: 36.0
     input_variables:
       Uz_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   Uz_SONIC_Sd:
@@ -465,7 +477,7 @@ variables:
     height: 36.0
     input_variables:
       stdev_Uz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   Vbat:
@@ -473,7 +485,7 @@ variables:
     height: 1.5
     input_variables:
       batt_volt_Avg:
-        instrument: Campbell Scientific CR3000 logger
+        instrument: Campbell Scientific CR3000
         units: V
         file: GreatWesternWoodlands_EC_flux
   Wd_SONIC_Av:
@@ -481,7 +493,7 @@ variables:
     height: 36.0
     input_variables:
       wnd_dir_compass:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degrees
         file: GreatWesternWoodlands_EC_flux
   Ws_SONIC_Av:
@@ -489,7 +501,7 @@ variables:
     height: 36.0
     input_variables:
       wind_speed:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   ps:
@@ -497,7 +509,7 @@ variables:
     height: 36.0
     input_variables:
       press_mean:
-        instrument: Li-7500RS
+        instrument: LI-COR LI-7500RS
         units: kPa
         file: GreatWesternWoodlands_EC_flux
   Fco2:
@@ -505,7 +517,9 @@ variables:
     height: 36.0
     input_variables:
       Fc_wpl:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: mg/m^2/s
         file: GreatWesternWoodlands_EC_flux
   Fh:
@@ -513,7 +527,7 @@ variables:
     height: 36.0
     input_variables:
       Hs:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: GreatWesternWoodlands_EC_flux
   Fe:
@@ -521,7 +535,9 @@ variables:
     height: 36.0
     input_variables:
       LE_wpl:
-        instrument: CSAT3,Li-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500RS
         units: W/m^2
         file: GreatWesternWoodlands_EC_flux
   ustar:
@@ -529,7 +545,7 @@ variables:
     height: 36.0
     input_variables:
       u_star:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: GreatWesternWoodlands_EC_flux
   Tpanel:
@@ -537,6 +553,6 @@ variables:
     height: 1.5
     input_variables:
       panel_temp_Avg:
-        instrument: Campbell Scientific CR3000 logger
+        instrument: Campbell Scientific CR3000
         units: degC
         file: GreatWesternWoodlands_EC_flux

@@ -9,7 +9,7 @@ variables:
     height: 2.5
     input_variables:
       H2O_density:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: g/m^3
         file: Wedgetail_EC_Flux_CSFormat
   AH_IRGA_Sd:
@@ -17,7 +17,7 @@ variables:
     height: 2.5
     input_variables:
       H2O_density_SIGMA:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: g/m^3
         file: Wedgetail_EC_Flux_CSFormat
   AH_IRGA_Ct:
@@ -25,7 +25,7 @@ variables:
     height: 2.5
     input_variables:
       H2O_samples:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
         file: Wedgetail_EC_Flux_Notes
@@ -34,7 +34,7 @@ variables:
     height: 2.5
     input_variables:
       CO2_density:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: mg/m^3
         file: Wedgetail_EC_Flux_CSFormat
   CO2c_IRGA_Sd:
@@ -42,7 +42,7 @@ variables:
     height: 2.5
     input_variables:
       CO2_density_SIGMA:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: mg/m^3
         file: Wedgetail_EC_Flux_CSFormat
   CO2c_IRGA_Ct:
@@ -50,7 +50,7 @@ variables:
     height: 2.5
     input_variables:
       CO2_samples:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
         file: Wedgetail_EC_Flux_Notes
@@ -59,7 +59,7 @@ variables:
     height: 2.5
     input_variables:
       irga_bad_data_f_Tot:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: dimensionless
         diag_type: invalid_count
         file: Wedgetail_EC_Flux_Notes
@@ -68,7 +68,7 @@ variables:
     height: 2.5
     input_variables:
       sonic_samples:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: dimensionless
         diag_type: valid_count
         file: Wedgetail_EC_Flux_Notes
@@ -77,7 +77,9 @@ variables:
     height: 10.0
     input_variables:
       FC_mass:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: mg/m^2/s
         file: Wedgetail_EC_Flux_CSFormat
   Fco2_Ct:
@@ -85,7 +87,7 @@ variables:
     height: 10.0
     input_variables:
       FC_samples:
-        instrument: CSAT3A,EC150
+        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
         file: Wedgetail_EC_Flux_CSFormat
@@ -94,7 +96,7 @@ variables:
     height: 10.0
     input_variables:
       FC_QC:
-        instrument: CSAT3A,EC150
+        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
         units: dimensionless
         file: Wedgetail_EC_Flux_CSFormat
   Fe:
@@ -102,7 +104,9 @@ variables:
     height: 10.0
     input_variables:
       LE:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fe_Ct:
@@ -110,7 +114,7 @@ variables:
     height: 10.0
     input_variables:
       LE_samples:
-        instrument: CSAT3A,EC150
+        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
         file: Wedgetail_EC_Flux_CSFormat
@@ -119,7 +123,7 @@ variables:
     height: 10.0
     input_variables:
       LE_QC:
-        instrument: CSAT3A,EC150
+        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
         units: dimensionless
         file: Wedgetail_EC_Flux_CSFormat
   Fh:
@@ -127,7 +131,7 @@ variables:
     height: 2.5
     input_variables:
       H:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fh_Ct:
@@ -135,7 +139,7 @@ variables:
     height: 2.5
     input_variables:
       H_samples:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: dimensionless
         diag_type: valid_count
         file: Wedgetail_EC_Flux_CSFormat
@@ -144,7 +148,7 @@ variables:
     height: 2.5
     input_variables:
       H_QC:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: dimensionless
         file: Wedgetail_EC_Flux_CSFormat
   Fld:
@@ -152,7 +156,7 @@ variables:
     height: 2.5
     input_variables:
       LW_IN:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Flu:
@@ -160,7 +164,7 @@ variables:
     height: 2.5
     input_variables:
       LW_OUT:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fm:
@@ -168,7 +172,7 @@ variables:
     height: 2.5
     input_variables:
       TAU:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: kg/m/s^2
         file: Wedgetail_EC_Flux_CSFormat
   Fm_QC:
@@ -176,7 +180,7 @@ variables:
     height: 2.5
     input_variables:
       TAU_QC:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: dimensionless
         file: Wedgetail_EC_Flux_CSFormat
   Fn_RAD:
@@ -184,7 +188,7 @@ variables:
     height: 2.5
     input_variables:
       NETRAD:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fsd:
@@ -192,7 +196,7 @@ variables:
     height: 2.5
     input_variables:
       SW_IN:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Fsu:
@@ -200,7 +204,7 @@ variables:
     height: 2.5
     input_variables:
       SW_OUT:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Wedgetail_EC_Flux_CSFormat
   Precip:
@@ -224,7 +228,7 @@ variables:
     height: 2.5
     input_variables:
       CO2_sig_strgth_Min:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: frac
         file: Wedgetail_EC_Flux_CSFormat
   SigH2O_IRGA:
@@ -232,7 +236,7 @@ variables:
     height: 2.5
     input_variables:
       H2O_sig_strgth_Min:
-        instrument: EC150
+        instrument: Campbell Scientific EC150
         units: frac
         file: Wedgetail_EC_Flux_CSFormat
   Ta_2.5m1:
@@ -256,7 +260,7 @@ variables:
     height: 2.5
     input_variables:
       TSTAR:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   Tv_SONIC_Av:
@@ -264,7 +268,7 @@ variables:
     height: 2.5
     input_variables:
       T_SONIC:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   Tv_SONIC_Sd:
@@ -272,7 +276,7 @@ variables:
     height: 2.5
     input_variables:
       T_SONIC_SIGMA:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   UxA:
@@ -280,7 +284,9 @@ variables:
     height: 10.0
     input_variables:
       UxH2O_Cov:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: g/m^2/s
         file: Wedgetail_EC_Flux_Notes
   UxC:
@@ -288,7 +294,9 @@ variables:
     height: 10.0
     input_variables:
       UxCO2_Cov:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: mg/m^2/s
         file: Wedgetail_EC_Flux_Notes
   UxT:
@@ -296,7 +304,7 @@ variables:
     height: 2.5
     input_variables:
       TsUx_Cov:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: Wedgetail_EC_Flux_Notes
   UxUy:
@@ -304,7 +312,7 @@ variables:
     height: 2.5
     input_variables:
       UxUy_Cov:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: Wedgetail_EC_Flux_Notes
   UxUz:
@@ -312,7 +320,7 @@ variables:
     height: 2.5
     input_variables:
       UxUz_Cov:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: Wedgetail_EC_Flux_Notes
   Ux_SONIC_Av:
@@ -320,7 +328,7 @@ variables:
     height: 2.5
     input_variables:
       Ux:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   Ux_SONIC_Sd:
@@ -328,7 +336,7 @@ variables:
     height: 2.5
     input_variables:
       Ux_SIGMA:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   UyA:
@@ -336,7 +344,9 @@ variables:
     height: 10.0
     input_variables:
       UyH2O_Cov:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: g/m^2/s
         file: Wedgetail_EC_Flux_Notes
   UyC:
@@ -344,7 +354,9 @@ variables:
     height: 10.0
     input_variables:
       UyCO2_Cov:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: mg/m^2/s
         file: Wedgetail_EC_Flux_Notes
   UyT:
@@ -352,7 +364,7 @@ variables:
     height: 2.5
     input_variables:
       TsUy_Cov:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: Wedgetail_EC_Flux_Notes
   UyUz:
@@ -360,7 +372,7 @@ variables:
     height: 2.5
     input_variables:
       UyUz_Cov:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: Wedgetail_EC_Flux_Notes
   Uy_SONIC_Av:
@@ -368,7 +380,7 @@ variables:
     height: 2.5
     input_variables:
       Uy:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   Uy_SONIC_Sd:
@@ -376,7 +388,7 @@ variables:
     height: 2.5
     input_variables:
       Uy_SIGMA:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   UzA:
@@ -384,7 +396,9 @@ variables:
     height: 10.0
     input_variables:
       UzH2O_Cov:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: g/m^2/s
         file: Wedgetail_EC_Flux_Notes
   UzC:
@@ -392,7 +406,9 @@ variables:
     height: 10.0
     input_variables:
       UzCO2_Cov:
-        instrument: CSAT3A,EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: mg/m^2/s
         file: Wedgetail_EC_Flux_Notes
   UzT:
@@ -400,7 +416,7 @@ variables:
     height: 2.5
     input_variables:
       TsUz_Cov:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: Wedgetail_EC_Flux_Notes
   Uz_SONIC_Av:
@@ -408,7 +424,7 @@ variables:
     height: 2.5
     input_variables:
       Uz:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   Uz_SONIC_Sd:
@@ -416,7 +432,7 @@ variables:
     height: 2.5
     input_variables:
       Uz_SIGMA:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   Vbat:
@@ -432,7 +448,7 @@ variables:
     height: 2.5
     input_variables:
       WD:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: degrees
         file: Wedgetail_EC_Flux_CSFormat
   Wd_SONIC_Sd:
@@ -440,7 +456,7 @@ variables:
     height: 2.5
     input_variables:
       WD_SIGMA:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: degrees
         file: Wedgetail_EC_Flux_CSFormat
   Ws_SONIC_Av:
@@ -448,7 +464,7 @@ variables:
     height: 2.5
     input_variables:
       WS:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   ps:
@@ -464,7 +480,7 @@ variables:
     height: 2.5
     input_variables:
       USTAR:
-        instrument: CSAT3A
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: Wedgetail_EC_Flux_CSFormat
   Fg_0.08ma:
@@ -480,7 +496,7 @@ variables:
     height: -0.08
     input_variables:
       TS_1_1_1:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   Ts_0.1mb:
@@ -488,7 +504,7 @@ variables:
     height: -0.1
     input_variables:
       TS_CS65X_1_1_1:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   Ts_0.3mb:
@@ -496,7 +512,7 @@ variables:
     height: -0.3
     input_variables:
       TS_CS65X_1_1_2:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   Sws_0.1mb:
@@ -520,7 +536,7 @@ variables:
     height: 2.5
     input_variables:
       TA_1_1_1:
-        instrument: Campbell Scientific 107-probe
+        instrument: Campbell Scientific 107
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   Ta_2.5m3:
@@ -528,7 +544,7 @@ variables:
     height: 2.5
     input_variables:
       TA_1_1_2:
-        instrument: Vaisala PTB110,IRGASON (H2O and T)
+        instrument: Vaisala PTB110, Campbell Scientific IRGASON
         units: degC
         file: Wedgetail_EC_Flux_CSFormat
   RH_2.5m2:
@@ -536,7 +552,7 @@ variables:
     height: 2.5
     input_variables:
       RH_1_1_1:
-        instrument: 107 probe,Vaisala PTB110,IRGASON
+        instrument: Campbell Scientific 107, Vaisala PTB110, Campbell Scientific IRGASON
         units: percent
         file: Wedgetail_EC_Flux_CSFormat
   RH_2.5m3:
@@ -544,6 +560,6 @@ variables:
     height: 2.5
     input_variables:
       RH_1_1_2:
-        instrument: Vaisala PTB110,IRGASON (H2O and T)
+        instrument: Vaisala PTB110, Campbell Scientific IRGASON
         units: percent
         file: Wedgetail_EC_Flux_CSFormat

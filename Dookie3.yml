@@ -9,7 +9,7 @@ variables:
     height: 2.95
     input_variables:
       Fh:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: Dookie3_EC_TERNflux
   ustar:
@@ -17,7 +17,7 @@ variables:
     height: 2.95
     input_variables:
       u_star:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   Tv_SONIC_Sd:
@@ -25,7 +25,7 @@ variables:
     height: 2.95
     input_variables:
       Tsonic_stdev:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degC
         file: Dookie3_EC_TERNflux
   UxT:
@@ -33,7 +33,7 @@ variables:
     height: 2.95
     input_variables:
       Tsonic_Ux_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Dookie3_EC_TERNflux
   UyT:
@@ -41,7 +41,7 @@ variables:
     height: 2.95
     input_variables:
       Tsonic_Uy_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Dookie3_EC_TERNflux
   UzT:
@@ -49,7 +49,7 @@ variables:
     height: 2.95
     input_variables:
       Tsonic_Uz_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Dookie3_EC_TERNflux
   Ux_SONIC_Sd:
@@ -57,7 +57,7 @@ variables:
     height: 2.95
     input_variables:
       Ux_stdev:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   UxUy:
@@ -65,7 +65,7 @@ variables:
     height: 2.95
     input_variables:
       Ux_Uy_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Dookie3_EC_TERNflux
   UxUz:
@@ -73,7 +73,7 @@ variables:
     height: 2.95
     input_variables:
       Ux_Uz_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Dookie3_EC_TERNflux
   Uy_SONIC_Sd:
@@ -81,7 +81,7 @@ variables:
     height: 2.95
     input_variables:
       Uy_stdev:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   UyUz:
@@ -89,7 +89,7 @@ variables:
     height: 2.95
     input_variables:
       Uy_Uz_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Dookie3_EC_TERNflux
   Uz_SONIC_Sd:
@@ -97,7 +97,7 @@ variables:
     height: 2.95
     input_variables:
       Uz_stdev:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   Ws_SONIC_Av:
@@ -105,7 +105,7 @@ variables:
     height: 2.95
     input_variables:
       wnd_spd:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   Wd_SONIC_Av:
@@ -113,7 +113,7 @@ variables:
     height: 2.95
     input_variables:
       wnd_dir_compass:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degrees
         file: Dookie3_EC_TERNflux
   Wd_SONIC_Sd:
@@ -121,7 +121,7 @@ variables:
     height: 2.95
     input_variables:
       std_wnd_dir:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degrees
         file: Dookie3_EC_TERNflux
   Ux_SONIC_Av:
@@ -129,7 +129,7 @@ variables:
     height: 2.95
     input_variables:
       Ux_Avg:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   Uy_SONIC_Av:
@@ -137,7 +137,7 @@ variables:
     height: 2.95
     input_variables:
       Uy_Avg:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   Uz_SONIC_Av:
@@ -145,7 +145,7 @@ variables:
     height: 2.95
     input_variables:
       Uz_Avg:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie3_EC_TERNflux
   Tv_SONIC_Av:
@@ -153,7 +153,7 @@ variables:
     height: 2.95
     input_variables:
       Tsonic_Avg:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degC
         file: Dookie3_EC_TERNflux
   Diag_SONIC:
@@ -161,7 +161,7 @@ variables:
     height: 2.95
     input_variables:
       sonic_samples_Tot:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: Dookie3_EC_TERNflux
@@ -170,7 +170,7 @@ variables:
     height: 2.95
     input_variables:
       Fco2:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie3_EC_TERNflux
   Fe:
@@ -178,7 +178,7 @@ variables:
     height: 2.95
     input_variables:
       Fe:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: Dookie3_EC_TERNflux
   CO2c_IRGA_Sd:
@@ -186,7 +186,7 @@ variables:
     height: 2.95
     input_variables:
       CO2_stdev:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: Dookie3_EC_TERNflux
   UxC:
@@ -194,7 +194,7 @@ variables:
     height: 2.95
     input_variables:
       CO2_Ux_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie3_EC_TERNflux
   UyC:
@@ -202,7 +202,7 @@ variables:
     height: 2.95
     input_variables:
       CO2_Uy_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie3_EC_TERNflux
   UzC:
@@ -210,7 +210,7 @@ variables:
     height: 2.95
     input_variables:
       CO2_Uz_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie3_EC_TERNflux
   AH_IRGA_Sd:
@@ -218,7 +218,7 @@ variables:
     height: 2.95
     input_variables:
       H2O_stdev:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: Dookie3_EC_TERNflux
   UxA:
@@ -226,7 +226,7 @@ variables:
     height: 2.95
     input_variables:
       H2O_Ux_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Dookie3_EC_TERNflux
   UyA:
@@ -234,7 +234,7 @@ variables:
     height: 2.95
     input_variables:
       H2O_Uy_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Dookie3_EC_TERNflux
   UzA:
@@ -242,7 +242,7 @@ variables:
     height: 2.95
     input_variables:
       H2O_Uz_cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Dookie3_EC_TERNflux
   CO2c_IRGA_Av:
@@ -250,7 +250,7 @@ variables:
     height: 2.95
     input_variables:
       CO2_mean:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: Dookie3_EC_TERNflux
   AH_IRGA_Av:
@@ -258,7 +258,7 @@ variables:
     height: 2.95
     input_variables:
       H2O_mean:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: Dookie3_EC_TERNflux
   ps:
@@ -266,7 +266,7 @@ variables:
     height: 2.95
     input_variables:
       amb_press_mean:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: kPa
         file: Dookie3_EC_TERNflux
   Diag_IRGA:
@@ -274,7 +274,7 @@ variables:
     height: 2.95
     input_variables:
       irga_samples_Tot:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: Dookie3_EC_TERNflux
@@ -283,7 +283,7 @@ variables:
     height: 2.95
     input_variables:
       CO2_sig_strgth_mean:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: frac
         file: Dookie3_EC_TERNflux
   SigH2O_IRGA:
@@ -291,7 +291,7 @@ variables:
     height: 2.95
     input_variables:
       H2O_sig_strgth_mean:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: frac
         file: Dookie3_EC_TERNflux
   Ta_2.95m:
@@ -323,7 +323,7 @@ variables:
     height: 2.95
     input_variables:
       Fsd_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie3_EC_TERNflux
   Fsu:
@@ -331,7 +331,7 @@ variables:
     height: 2.95
     input_variables:
       Fsu_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie3_EC_TERNflux
   Fld:
@@ -339,7 +339,7 @@ variables:
     height: 2.95
     input_variables:
       Fld_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie3_EC_TERNflux
   Flu:
@@ -347,7 +347,7 @@ variables:
     height: 2.95
     input_variables:
       Flu_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie3_EC_TERNflux
   Tbody_RAD:
@@ -355,7 +355,7 @@ variables:
     height: 2.95
     input_variables:
       Tbody_RAD_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: K
         file: Dookie3_EC_TERNflux
   Precip:
@@ -363,7 +363,7 @@ variables:
     height: 1.5
     input_variables:
       rain_Tot:
-        instrument: CS700
+        instrument: HyQuest Solutions CS700
         units: mm
         file: Dookie3_EC_TERNflux
   Tpanel:

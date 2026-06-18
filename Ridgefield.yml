@@ -9,7 +9,7 @@ variables:
     height: 2.5
     input_variables:
       AGC_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: percent
         file: Ridgefield_EC_slow_all
   AH_2.5m:
@@ -17,7 +17,7 @@ variables:
     height: 2.5
     input_variables:
       Ah_HMP_Avg:
-        instrument: HMP45
+        instrument: Vaisala HMP45C
         units: g/m^3
         file: Ridgefield_EC_slow_all
   AH_IRGA_Av:
@@ -25,7 +25,7 @@ variables:
     height: 2.5
     input_variables:
       Ah_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g/m^3
         file: Ridgefield_EC_slow_all
   AH_IRGA_Vr:
@@ -33,7 +33,7 @@ variables:
     height: 2.5
     input_variables:
       covAhAh:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: g^2/m^6
         file: Ridgefield_EC_slow_all
   CO2c_IRGA_Av:
@@ -41,7 +41,7 @@ variables:
     height: 2.5
     input_variables:
       Cc_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg/m^3
         file: Ridgefield_EC_slow_all
   CO2c_IRGA_Vr:
@@ -49,7 +49,7 @@ variables:
     height: 2.5
     input_variables:
       covCcCc:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: mg^2/m^6
         file: Ridgefield_EC_slow_all
   Diag_IRGA:
@@ -57,7 +57,7 @@ variables:
     height: 2.5
     input_variables:
       7500_Warn:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: dimensionless
         diag_type: invalid_count
         file: Ridgefield_EC_slow_all
@@ -66,7 +66,7 @@ variables:
     height: 2.5
     input_variables:
       CSAT_Warn:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
         file: Ridgefield_EC_slow_all
@@ -99,7 +99,7 @@ variables:
     height: 8.0
     input_variables:
       Ldown_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Ridgefield_EC_slow_all
   Flu:
@@ -107,7 +107,7 @@ variables:
     height: 8.0
     input_variables:
       Lup_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Ridgefield_EC_slow_all
   Fm:
@@ -115,7 +115,7 @@ variables:
     height: 2.5
     input_variables:
       Fm_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: kg/m/s^2
         file: Ridgefield_EC_slow_all
   Fsd:
@@ -123,7 +123,7 @@ variables:
     height: 8.0
     input_variables:
       Kdown_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Ridgefield_EC_slow_all
   Fsu:
@@ -131,7 +131,7 @@ variables:
     height: 8.0
     input_variables:
       Kup_Avg:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Ridgefield_EC_slow_all
   Precip_1.2m:
@@ -139,7 +139,7 @@ variables:
     height: 1.2
     input_variables:
       Rain_Tot:
-        instrument: Hydrylogical services
+        instrument: Campbell Scientific CS700
         units: mm
         file: Ridgefield_EC_slow_all
   Precip_8m:
@@ -147,7 +147,7 @@ variables:
     height: 8.0
     input_variables:
       Rain_Tex_Tot:
-        instrument: Texas Electronics,CS702
+        instrument: Texas Electronics TE525MM, Hydrological Services CS702
         units: mm
         file: Ridgefield_EC_slow_all
   RH_2.5m:
@@ -155,7 +155,7 @@ variables:
     height: 2.5
     input_variables:
       RH_HMP_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: frac
         file: Ridgefield_EC_slow_all
   Sws_0.1md:
@@ -163,7 +163,7 @@ variables:
     height: -0.1
     input_variables:
       VWC_10a_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Ridgefield_soil1_Table1
   Sws_0.1me:
@@ -171,7 +171,7 @@ variables:
     height: -0.1
     input_variables:
       VWC_10b_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Ridgefield_soil1_Table1
   Sws_0.1mf:
@@ -179,7 +179,7 @@ variables:
     height: -0.1
     input_variables:
       VWC_10c_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Ridgefield_soil1_Table1
   Sws_0.1ma:
@@ -187,7 +187,7 @@ variables:
     height: -0.1
     input_variables:
       Soil_Moisture_2:
-        instrument: Stevens Hydra Probe II
+        instrument: Stevens HydraProbe II
         units: m^3/m^3
         file: Ridgefield_EC_slow_all
   Sws_0.2md:
@@ -195,7 +195,7 @@ variables:
     height: -0.2
     input_variables:
       VWC_20_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Ridgefield_soil1_Table1
   Sws_0.2ma:
@@ -203,7 +203,7 @@ variables:
     height: -0.2
     input_variables:
       Soil_Moisture_3:
-        instrument: Stevens Hydra Probe II
+        instrument: Stevens HydraProbe II
         units: m^3/m^3
         file: Ridgefield_EC_slow_all
   Sws_0.4md:
@@ -211,7 +211,7 @@ variables:
     height: -0.4
     input_variables:
       VWC_40_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Ridgefield_soil1_Table1
   Sws_0.05ma:
@@ -219,7 +219,7 @@ variables:
     height: -0.05
     input_variables:
       Soil_Moisture_1:
-        instrument: Stevens Hydra Probe II
+        instrument: Stevens HydraProbe II
         units: m^3/m^3
         file: Ridgefield_EC_slow_all
   Sws_0.8md:
@@ -227,7 +227,7 @@ variables:
     height: -0.8
     input_variables:
       VWC_80_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Ridgefield_soil1_Table1
   Ta_2.5m:
@@ -235,7 +235,7 @@ variables:
     height: 2.5
     input_variables:
       Ta_HMP_Avg:
-        instrument: HMP155
+        instrument: Vaisala HMP155
         units: degC
         file: Ridgefield_EC_slow_all
   Tpanel:
@@ -243,7 +243,7 @@ variables:
     height: 1.0
     input_variables:
       Tpanel_Avg:
-        instrument: CR1000X
+        instrument: Campbell Scientific CR1000X
         units: degC
         file: Ridgefield_EC_slow_all
   Ts_0.1md:
@@ -251,7 +251,7 @@ variables:
     height: -0.1
     input_variables:
       T_10a_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Ridgefield_soil1_Table1
   Ts_0.1me:
@@ -259,7 +259,7 @@ variables:
     height: -0.1
     input_variables:
       T_10b_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Ridgefield_soil1_Table1
   Ts_0.1mf:
@@ -267,7 +267,7 @@ variables:
     height: -0.1
     input_variables:
       T_10c_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Ridgefield_soil1_Table1
   Ts_0.1ma:
@@ -275,7 +275,7 @@ variables:
     height: -0.1
     input_variables:
       Soil_Temperature_C_2:
-        instrument: Stevens Hydra Probe II
+        instrument: Stevens HydraProbe II
         units: degC
         file: Ridgefield_EC_slow_all
   Ts_0.2md:
@@ -283,7 +283,7 @@ variables:
     height: -0.2
     input_variables:
       T_20_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Ridgefield_soil1_Table1
   Ts_0.2ma:
@@ -291,7 +291,7 @@ variables:
     height: -0.2
     input_variables:
       Soil_Temperature_C_3:
-        instrument: Stevens Hydra Probe II
+        instrument: Stevens HydraProbe II
         units: degC
         file: Ridgefield_EC_slow_all
   Ts_0.4md:
@@ -299,7 +299,7 @@ variables:
     height: -0.4
     input_variables:
       T_40_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Ridgefield_soil1_Table1
   Ts_0.05ma:
@@ -307,7 +307,7 @@ variables:
     height: -0.05
     input_variables:
       Soil_Temperature_C_1:
-        instrument: Stevens Hydra Probe II
+        instrument: Stevens HydraProbe II
         units: degC
         file: Ridgefield_EC_slow_all
   Ts_0.8md:
@@ -315,7 +315,7 @@ variables:
     height: -0.8
     input_variables:
       T_80_Avg:
-        instrument: CS650
+        instrument: Campbell Scientific CS650
         units: degC
         file: Ridgefield_soil1_Table1
   Tv_SONIC_Av:
@@ -323,7 +323,7 @@ variables:
     height: 2.5
     input_variables:
       Tv_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC
         file: Ridgefield_EC_slow_all
   Tv_SONIC_Vr:
@@ -331,7 +331,7 @@ variables:
     height: 2.5
     input_variables:
       covTvTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degC^2
         file: Ridgefield_EC_slow_all
   UxA:
@@ -339,7 +339,9 @@ variables:
     height: 2.5
     input_variables:
       covUxAh:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Ridgefield_EC_slow_all
   UxC:
@@ -347,7 +349,9 @@ variables:
     height: 2.5
     input_variables:
       covUxCc:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Ridgefield_EC_slow_all
   UxT:
@@ -355,7 +359,7 @@ variables:
     height: 2.5
     input_variables:
       covUxTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Ridgefield_EC_slow_all
   UxUy:
@@ -363,7 +367,7 @@ variables:
     height: 2.5
     input_variables:
       covUxUy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
   UxUz:
@@ -371,7 +375,7 @@ variables:
     height: 2.5
     input_variables:
       covUzUx:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
   Ux_SONIC_Av:
@@ -379,7 +383,7 @@ variables:
     height: 2.5
     input_variables:
       Ux_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Ridgefield_EC_slow_all
   Ux_SONIC_Vr:
@@ -387,7 +391,7 @@ variables:
     height: 2.5
     input_variables:
       covUxUx:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
   UyA:
@@ -395,7 +399,9 @@ variables:
     height: 2.5
     input_variables:
       covUyAh:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Ridgefield_EC_slow_all
   UyC:
@@ -403,7 +409,9 @@ variables:
     height: 2.5
     input_variables:
       covUyCc:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Ridgefield_EC_slow_all
   UyT:
@@ -411,7 +419,7 @@ variables:
     height: 2.5
     input_variables:
       covUyTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Ridgefield_EC_slow_all
   UyUz:
@@ -419,7 +427,7 @@ variables:
     height: 2.5
     input_variables:
       covUzUy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
   Uy_SONIC_Av:
@@ -427,7 +435,7 @@ variables:
     height: 2.5
     input_variables:
       Uy_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Ridgefield_EC_slow_all
   Uy_SONIC_Vr:
@@ -435,7 +443,7 @@ variables:
     height: 2.5
     input_variables:
       covUyUy:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
   UzA:
@@ -443,7 +451,9 @@ variables:
     height: 2.5
     input_variables:
       covUzAh:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Ridgefield_EC_slow_all
   UzC:
@@ -451,7 +461,9 @@ variables:
     height: 2.5
     input_variables:
       covUzCc:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Ridgefield_EC_slow_all
   UzT:
@@ -459,7 +471,7 @@ variables:
     height: 2.5
     input_variables:
       covUzTv:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Ridgefield_EC_slow_all
   Uz_SONIC_Av:
@@ -467,7 +479,7 @@ variables:
     height: 2.5
     input_variables:
       Uz_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Ridgefield_EC_slow_all
   Uz_SONIC_Vr:
@@ -475,7 +487,7 @@ variables:
     height: 2.5
     input_variables:
       covUzUz:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
   Vbat_1:
@@ -483,7 +495,7 @@ variables:
     height: 1.0
     input_variables:
       Vbat_Avg:
-        instrument: CR1000X
+        instrument: Campbell Scientific CR1000X
         units: V
         file: Ridgefield_EC_slow_all
   Vbat_2:
@@ -491,7 +503,7 @@ variables:
     height: 1.0
     input_variables:
       BattV_Avg:
-        instrument: CR800
+        instrument: Campbell Scientific CR800
         units: V
         file: Ridgefield_soil1_Table1
   Vbat_3:
@@ -499,7 +511,7 @@ variables:
     height: 1.0
     input_variables:
       TwrBattV_Avg:
-        instrument: CR200
+        instrument: Campbell Scientific CR200
         units: V
         file: Ridgefield_soil1_Table1
   Wd_SONIC_Av:
@@ -507,7 +519,7 @@ variables:
     height: 2.5
     input_variables:
       WD_CSAT_Compass_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: degrees
         file: Ridgefield_EC_slow_all
   Ws_SONIC_Av:
@@ -515,7 +527,7 @@ variables:
     height: 2.5
     input_variables:
       WS_CSAT_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Ridgefield_EC_slow_all
   ps:
@@ -523,7 +535,7 @@ variables:
     height: 1.0
     input_variables:
       ps_7500_Avg:
-        instrument: Li-7500A
+        instrument: LI-COR LI-7500A
         units: kPa
         file: Ridgefield_EC_slow_all
   ustar:
@@ -531,7 +543,7 @@ variables:
     height: 2.5
     input_variables:
       ustar_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m/s
         file: Ridgefield_EC_slow_all
   Fco2:
@@ -539,7 +551,9 @@ variables:
     height: 2.5
     input_variables:
       Fc_Avg:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Ridgefield_EC_slow_all
   Fe:
@@ -547,7 +561,9 @@ variables:
     height: 2.5
     input_variables:
       Fe_Avg:
-        instrument: CSAT3,Li-7500A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: W/m^2
         file: Ridgefield_EC_slow_all
   Fh:
@@ -555,6 +571,6 @@ variables:
     height: 2.5
     input_variables:
       Fh_Avg:
-        instrument: CSAT3
+        instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: Ridgefield_EC_slow_all

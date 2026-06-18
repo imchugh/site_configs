@@ -9,7 +9,7 @@ variables:
     height: 3.2
     input_variables:
       H2O_density:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: MyallValeB_EC_Flux_CSFormat
   AH_IRGA_Sd:
@@ -17,7 +17,7 @@ variables:
     height: 3.2
     input_variables:
       H2O_density_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: MyallValeB_EC_Flux_CSFormat
   CO2c_IRGA_Av:
@@ -25,7 +25,7 @@ variables:
     height: 3.2
     input_variables:
       CO2_density:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: MyallValeB_EC_Flux_CSFormat
   CO2c_IRGA_Sd:
@@ -33,7 +33,7 @@ variables:
     height: 3.2
     input_variables:
       CO2_density_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: MyallValeB_EC_Flux_CSFormat
   CO2c_IRGA_Ct:
@@ -41,7 +41,7 @@ variables:
     height: 3.2
     input_variables:
       CO2_samples:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: MyallValeB_EC_Flux_Notes
@@ -50,7 +50,7 @@ variables:
     height: 3.2
     input_variables:
       irga_bad_data_f_Tot:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: invalid_count
         file: MyallValeB_EC_Flux_Notes
@@ -59,7 +59,7 @@ variables:
     height: 3.2
     input_variables:
       sonic_samples:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: MyallValeB_EC_Flux_Notes
@@ -68,7 +68,7 @@ variables:
     height: 3.2
     input_variables:
       FC_mass:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: MyallValeB_EC_Flux_CSFormat
   Fco2_Ct:
@@ -76,7 +76,7 @@ variables:
     height: 3.2
     input_variables:
       FC_samples:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: MyallValeB_EC_Flux_CSFormat
@@ -85,7 +85,7 @@ variables:
     height: 3.2
     input_variables:
       FC_QC:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         file: MyallValeB_EC_Flux_CSFormat
   Fe:
@@ -93,7 +93,7 @@ variables:
     height: 3.2
     input_variables:
       LE:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fe_Ct:
@@ -101,7 +101,7 @@ variables:
     height: 3.2
     input_variables:
       LE_samples:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: MyallValeB_EC_Flux_CSFormat
@@ -110,7 +110,7 @@ variables:
     height: 3.2
     input_variables:
       LE_QC:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         file: MyallValeB_EC_Flux_CSFormat
   Fh:
@@ -118,7 +118,7 @@ variables:
     height: 3.2
     input_variables:
       H:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fh_Ct:
@@ -126,7 +126,7 @@ variables:
     height: 3.2
     input_variables:
       H_samples:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: MyallValeB_EC_Flux_CSFormat
@@ -135,7 +135,7 @@ variables:
     height: 3.2
     input_variables:
       H_QC:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         file: MyallValeB_EC_Flux_CSFormat
   Fld:
@@ -143,7 +143,7 @@ variables:
     height: 3.2
     input_variables:
       LW_IN:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Flu:
@@ -151,7 +151,7 @@ variables:
     height: 3.2
     input_variables:
       LW_OUT:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fm:
@@ -159,7 +159,7 @@ variables:
     height: 3.2
     input_variables:
       TAU:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: kg/m/s^2
         file: MyallValeB_EC_Flux_CSFormat
   Fm_QC:
@@ -167,7 +167,7 @@ variables:
     height: 3.2
     input_variables:
       TAU_QC:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         file: MyallValeB_EC_Flux_CSFormat
   Fn:
@@ -175,7 +175,7 @@ variables:
     height: 3.2
     input_variables:
       NETRAD:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fsd:
@@ -183,7 +183,7 @@ variables:
     height: 3.2
     input_variables:
       SW_IN:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fsu:
@@ -191,7 +191,7 @@ variables:
     height: 3.2
     input_variables:
       SW_OUT:
-        instrument: Kipp and Zonen CNR4
+        instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   AH_IRGA_Ct:
@@ -199,7 +199,7 @@ variables:
     height: 3.2
     input_variables:
       H2O_samples:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
         file: MyallValeB_EC_Flux_Notes
@@ -224,7 +224,7 @@ variables:
     height: 3.2
     input_variables:
       CO2_sig_strgth_Min:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: frac
         file: MyallValeB_EC_Flux_CSFormat
   SigH2O_IRGA:
@@ -232,7 +232,7 @@ variables:
     height: 3.2
     input_variables:
       H2O_sig_strgth_Min:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: frac
         file: MyallValeB_EC_Flux_CSFormat
   Ta_3.2m1:
@@ -256,7 +256,7 @@ variables:
     height: 3.2
     input_variables:
       TSTAR:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   Tv_SONIC_Av:
@@ -264,7 +264,7 @@ variables:
     height: 3.2
     input_variables:
       T_SONIC:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   Tv_SONIC_Sd:
@@ -272,7 +272,7 @@ variables:
     height: 3.2
     input_variables:
       T_SONIC_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   UxA:
@@ -280,7 +280,7 @@ variables:
     height: 3.2
     input_variables:
       UxH2O_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: MyallValeB_EC_Flux_Notes
   UxC:
@@ -288,7 +288,7 @@ variables:
     height: 3.2
     input_variables:
       UxCO2_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: MyallValeB_EC_Flux_Notes
   UxT:
@@ -296,7 +296,7 @@ variables:
     height: 3.2
     input_variables:
       TsUx_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: MyallValeB_EC_Flux_Notes
   UxUy:
@@ -304,7 +304,7 @@ variables:
     height: 3.2
     input_variables:
       UxUy_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: MyallValeB_EC_Flux_Notes
   UxUz:
@@ -312,7 +312,7 @@ variables:
     height: 3.2
     input_variables:
       UxUz_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: MyallValeB_EC_Flux_Notes
   Ux_SONIC_Av:
@@ -320,7 +320,7 @@ variables:
     height: 3.2
     input_variables:
       Ux:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   Ux_SONIC_Sd:
@@ -328,7 +328,7 @@ variables:
     height: 3.2
     input_variables:
       Ux_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   UyA:
@@ -336,7 +336,7 @@ variables:
     height: 3.2
     input_variables:
       UyH2O_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: MyallValeB_EC_Flux_Notes
   UyC:
@@ -344,7 +344,7 @@ variables:
     height: 3.2
     input_variables:
       UyCO2_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: MyallValeB_EC_Flux_Notes
   UyT:
@@ -352,7 +352,7 @@ variables:
     height: 3.2
     input_variables:
       TsUy_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: MyallValeB_EC_Flux_Notes
   UyUz:
@@ -360,7 +360,7 @@ variables:
     height: 3.2
     input_variables:
       UyUz_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: MyallValeB_EC_Flux_Notes
   Uy_SONIC_Av:
@@ -368,7 +368,7 @@ variables:
     height: 3.2
     input_variables:
       Uy:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   Uy_SONIC_Sd:
@@ -376,7 +376,7 @@ variables:
     height: 3.2
     input_variables:
       Uy_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   UzA:
@@ -384,7 +384,7 @@ variables:
     height: 3.2
     input_variables:
       UzH2O_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: MyallValeB_EC_Flux_Notes
   UzC:
@@ -392,7 +392,7 @@ variables:
     height: 3.2
     input_variables:
       UzCO2_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: MyallValeB_EC_Flux_Notes
   UzT:
@@ -400,7 +400,7 @@ variables:
     height: 3.2
     input_variables:
       TsUz_Cov:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: MyallValeB_EC_Flux_Notes
   Uz_SONIC_Av:
@@ -408,7 +408,7 @@ variables:
     height: 3.2
     input_variables:
       Uz:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   Uz_SONIC_Sd:
@@ -416,7 +416,7 @@ variables:
     height: 3.2
     input_variables:
       Uz_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   Vbat:
@@ -432,7 +432,7 @@ variables:
     height: 3.2
     input_variables:
       WD:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degrees
         file: MyallValeB_EC_Flux_CSFormat
   Wd_SONIC_Sd:
@@ -440,7 +440,7 @@ variables:
     height: 3.2
     input_variables:
       WD_SIGMA:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: degrees
         file: MyallValeB_EC_Flux_CSFormat
   Ws_SONIC_Av:
@@ -448,7 +448,7 @@ variables:
     height: 3.2
     input_variables:
       WS:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   ps:
@@ -464,7 +464,7 @@ variables:
     height: 3.2
     input_variables:
       USTAR:
-        instrument: IRGASON
+        instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
   Fg_0.16ma:
@@ -472,7 +472,7 @@ variables:
     height: -0.16
     input_variables:
       G_plate_1_1_1:
-        instrument: Huxeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fg_0.16mb:
@@ -480,7 +480,7 @@ variables:
     height: -0.16
     input_variables:
       G_plate_1_1_2:
-        instrument: Huxeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Fg_0.16mc:
@@ -488,7 +488,7 @@ variables:
     height: -0.16
     input_variables:
       G_plate_1_1_3:
-        instrument: Huxeflux HFP01
+        instrument: Hukseflux HFP01
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
   Ts_0.08ma:
@@ -496,7 +496,7 @@ variables:
     height: -0.08
     input_variables:
       TS_1_1_1:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   Ts_0.08mb:
@@ -504,7 +504,7 @@ variables:
     height: -0.08
     input_variables:
       TS_1_1_2:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   Ts_0.08mc:
@@ -512,7 +512,7 @@ variables:
     height: -0.08
     input_variables:
       TS_1_1_3:
-        instrument: TCAV
+        instrument: Campbell Scientific TCAV
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   Sws_0.08ma:
@@ -544,7 +544,7 @@ variables:
     height: 3.1
     input_variables:
       TA_1_1_1:
-        instrument: Campbell Scientific 107-probe
+        instrument: Campbell Scientific 107
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   Ta_3.2m2:
@@ -552,7 +552,7 @@ variables:
     height: 3.2
     input_variables:
       TA_1_1_2:
-        instrument: Vaisala PTB110,IRGASON (H2O and T)
+        instrument: Vaisala PTB110, Campbell Scientific IRGASON
         units: degC
         file: MyallValeB_EC_Flux_CSFormat
   RH_3.2m2:
@@ -560,7 +560,7 @@ variables:
     height: 3.2
     input_variables:
       RH_1_1_1:
-        instrument: 107 probe,Vaisala PTB110,IRGASON
+        instrument: Campbell Scientific 107, Vaisala PTB110, Campbell Scientific IRGASON
         units: percent
         file: MyallValeB_EC_Flux_CSFormat
   RH_3.2m3:
@@ -568,6 +568,6 @@ variables:
     height: 3.2
     input_variables:
       RH_1_1_2:
-        instrument: Vaisala PTB110,IRGASON (H2O and T)
+        instrument: Vaisala PTB110, Campbell Scientific IRGASON
         units: percent
         file: MyallValeB_EC_Flux_CSFormat
