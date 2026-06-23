@@ -552,7 +552,9 @@ variables:
     height: 3.2
     input_variables:
       TA_1_1_2:
-        instrument: Vaisala PTB110, Campbell Scientific IRGASON
+        instrument:
+          atmospheric_pressure: Vaisala PTB110
+          sonic_anemometer: Campbell Scientific IRGASON
         units: degC
         file: MyallValeA_EC_Flux_CSFormat
   RH_3.2m2:
@@ -560,7 +562,10 @@ variables:
     height: 3.2
     input_variables:
       RH_1_1_1:
-        instrument: Campbell Scientific 107, Vaisala PTB110, Campbell Scientific IRGASON
+        instrument:
+          temperature: Campbell Scientific 107
+          atmospheric_pressure: Vaisala PTB110
+          sonic_anemometer: Campbell Scientific IRGASON
         units: percent
         file: MyallValeA_EC_Flux_CSFormat
   RH_3.2m3:
@@ -568,6 +573,8 @@ variables:
     height: 3.2
     input_variables:
       RH_1_1_2:
-        instrument: Vaisala PTB110, Campbell Scientific IRGASON
+        instrument:
+          atmospheric_pressure: Vaisala PTB110
+          sonic_anemometer: Campbell Scientific IRGASON
         units: percent
         file: MyallValeA_EC_Flux_CSFormat
