@@ -1,6 +1,6 @@
 site: AlpinePeatland
 file_formats:
-  default: CSI
+  AlpinePeatland_EC_flux: CSI
 flux_system: TERNFLUX
 flux_file: AlpinePeatland_EC_flux
 variables:
@@ -371,7 +371,7 @@ variables:
     height: 2.5
     input_variables:
       rain:
-        instrument: HyQuest Solutions CS700
+        instrument: Campbell Scientific CS700
         units: mm
         file: AlpinePeatland_EC_flux
   Tpanel:

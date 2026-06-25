@@ -1,6 +1,7 @@
 site: Whroo
 file_formats:
-  default: CSI
+  Whroo_EC_TERNflux: CSI
+  Whroo_soil_Table1: CSI
 flux_system: TERNFLUX
 flux_file: Whroo_EC_TERNflux
 variables:
@@ -363,7 +364,7 @@ variables:
     height: 37.0
     input_variables:
       rain_Tot:
-        instrument: HyQuest Solutions CS700
+        instrument: Campbell Scientific CS700
         units: mm
         file: Whroo_EC_TERNflux
   Tpanel:

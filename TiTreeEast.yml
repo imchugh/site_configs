@@ -1,6 +1,6 @@
 site: TiTreeEast
 file_formats:
-  default: CSI
+  TiTreeEast_EC_TERNflux: CSI
 flux_system: TERNFLUX
 flux_file: TiTreeEast_EC_TERNflux
 variables:
@@ -9,7 +9,7 @@ variables:
     height: 10.0
     input_variables:
       Fh:
-        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
+        instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: TiTreeEast_EC_TERNflux
   ustar:
@@ -371,7 +371,7 @@ variables:
     height: 1.5
     input_variables:
       rain_Tot:
-        instrument: HyQuest Solutions CS700
+        instrument: Campbell Scientific CS700
         units: mm
         file: TiTreeEast_EC_TERNflux
   Tpanel:

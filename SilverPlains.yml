@@ -1,6 +1,7 @@
 site: SilverPlains
 file_formats:
-  default: CSI
+  SilverPlains_EC_Flux_CSFormat: CSI
+  SilverPlains_EC_Flux_Notes: CSI
 flux_system: EASYFLUX
 flux_file: SilverPlains_EC_Flux_CSFormat
 variables:
@@ -87,7 +88,9 @@ variables:
     height: 2.5
     input_variables:
       FC_samples:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
         file: SilverPlains_EC_Flux_CSFormat
@@ -96,7 +99,9 @@ variables:
     height: 2.5
     input_variables:
       FC_QC:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: dimensionless
         file: SilverPlains_EC_Flux_CSFormat
   Fe:
@@ -114,7 +119,9 @@ variables:
     height: 2.5
     input_variables:
       LE_samples:
-        instrument: Campbell Scientific EC150, Campbell Scientific CSAT3A
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
         file: SilverPlains_EC_Flux_CSFormat
@@ -123,7 +130,9 @@ variables:
     height: 2.5
     input_variables:
       LE_QC:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC150
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC150
         units: dimensionless
         file: SilverPlains_EC_Flux_CSFormat
   Fg_0.08ma:
@@ -236,7 +245,7 @@ variables:
     height: 2.0
     input_variables:
       PPF_Avg(1):
-        instrument: Apogee Instruments SQ110
+        instrument: Apogee Instruments SQ-110-SS
         units: umol/m^2/s
         file: SilverPlains_EC_Flux_CSFormat
   Fparu:
@@ -244,7 +253,7 @@ variables:
     height: 2.5
     input_variables:
       PPF_Avg(2):
-        instrument: Apogee Instruments SQ110
+        instrument: Apogee Instruments SQ-110-SS
         units: umol/m^2/s
         file: SilverPlains_EC_Flux_CSFormat
   Precip:

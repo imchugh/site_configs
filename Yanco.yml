@@ -1,6 +1,10 @@
 site: Yanco
 file_formats:
-  default: CSI
+  Yanco_EC_Calculate: CSI
+  Yanco_EC_Monitoring: CSI
+  Yanco_EC_flux: CSI
+  Yanco_Met_AWS_SMTMS_1: CSI
+  Yanco_Met_AWS_SMTMS_2: CSI
 flux_system: TERNFLUX
 flux_file: Yanco_EC_Calculate
 variables:
@@ -358,7 +362,7 @@ variables:
     height: 6.0
     input_variables:
       cov_Ts_Ux:
-        instrument: LI-COR LI-7500A, Campbell Scientific CSAT3
+        instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: Yanco_EC_Calculate
   UxUy:

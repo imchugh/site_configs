@@ -1,6 +1,7 @@
 site: RobsonCreek
 file_formats:
-  default: CSI
+  RobsonCreek_EC_T30min_all: CSI
+  RobsonCreek_soil_T30min_all: CSI
 flux_system: TERNFLUX
 flux_file: RobsonCreek_EC_T30min_all
 variables:

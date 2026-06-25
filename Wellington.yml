@@ -1,6 +1,6 @@
 site: Wellington
 file_formats:
-  default: CSI
+  Wellington_EC_slow_core: CSI
 flux_system: EASYFLUX
 flux_file: Wellington_EC_slow_core
 variables:

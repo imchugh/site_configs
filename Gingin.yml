@@ -1,6 +1,9 @@
 site: Gingin
 file_formats:
-  default: CSI
+  Gingin_EC_slow_flux: CSI
+  Gingin_EC_slow_met: CSI
+  Gingin_EC_slow_rad: CSI
+  Gingin_soil_Soil_Min30: CSI
 flux_system: TERNFLUX
 flux_file: Gingin_EC_slow_flux
 variables:

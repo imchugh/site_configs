@@ -1,6 +1,8 @@
 site: Litchfield
 file_formats:
-  default: CSI
+  Litchfield_EC_flux: CSI
+  Litchfield_rad_Rad30m: CSI
+  Litchfield_soil_Soil: CSI
 flux_system: TERNFLUX
 flux_file: Litchfield_EC_flux
 variables:
@@ -500,7 +502,7 @@ variables:
     height: 23.0
     input_variables:
       Hs:
-        instrument: Campbell Scientific CSAT3, LI-COR LI-7500A
+        instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: Litchfield_EC_flux
   Fe:

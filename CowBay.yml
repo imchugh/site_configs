@@ -1,6 +1,7 @@
 site: CowBay
 file_formats:
-  default: CSI
+  CowBay_EC_T30min_all: CSI
+  CowBay_soil_T30min_all: CSI
 flux_system: TERNFLUX
 flux_file: CowBay_EC_T30min_all
 variables:

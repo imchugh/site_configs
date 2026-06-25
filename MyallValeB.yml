@@ -1,6 +1,7 @@
 site: MyallValeB
 file_formats:
-  default: CSI
+  MyallValeB_EC_Flux_CSFormat: CSI
+  MyallValeB_EC_Flux_Notes: CSI
 flux_system: EASYFLUX
 flux_file: MyallValeB_EC_Flux_CSFormat
 variables:

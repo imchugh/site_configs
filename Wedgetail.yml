@@ -1,6 +1,7 @@
 site: Wedgetail
 file_formats:
-  default: CSI
+  Wedgetail_EC_Flux_CSFormat: CSI
+  Wedgetail_EC_Flux_Notes: CSI
 flux_system: TERNFLUX
 flux_file: Wedgetail_EC_Flux_CSFormat
 variables:

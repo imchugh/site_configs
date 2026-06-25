@@ -1,6 +1,6 @@
 site: GreatWesternWoodlands
 file_formats:
-  default: CSI
+  GreatWesternWoodlands_EC_flux: CSI
 flux_system: TERNFLUX
 flux_file: GreatWesternWoodlands_EC_flux
 variables:

@@ -1,6 +1,7 @@
 site: SturtPlains
 file_formats:
-  default: CSI
+  SturtPlains_EC_EnrgyBal: CSI
+  SturtPlains_EC_Flux: CSI
 flux_system: TERNFLUX
 flux_file: SturtPlains_EC_Flux
 variables:

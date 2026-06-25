@@ -1,6 +1,6 @@
 site: Dookie1
 file_formats:
-  default: CSI
+  Dookie1_EC_TERNflux: CSI
 flux_system: TERNFLUX
 flux_file: Dookie1_EC_TERNflux
 variables:
@@ -363,7 +363,7 @@ variables:
     height: 1.5
     input_variables:
       rain_Tot:
-        instrument: HyQuest Solutions CS700
+        instrument: Campbell Scientific CS700
         units: mm
         file: Dookie1_EC_TERNflux
   Tpanel:

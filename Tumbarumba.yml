@@ -1,6 +1,8 @@
 site: Tumbarumba
 file_formats:
-  default: CSI
+  Tumbarumba_EC_TERNflux: CSI
+  Tumbarumba_soil_soilHFandT: CSI
+  Tumbarumba_soil_soilMoisture: CSI
 flux_system: TERNFLUX
 flux_file: Tumbarumba_EC_TERNflux
 variables:
@@ -87,7 +89,7 @@ variables:
     height: 71.0
     input_variables:
       Fh:
-        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
+        instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Tumbarumba_EC_TERNflux
   Fg_0.16ma:

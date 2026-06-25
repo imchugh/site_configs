@@ -1,6 +1,7 @@
 site: SnowGum
 file_formats:
-  default: CSI
+  SnowGum_EC_Flux_CSFormat: CSI
+  SnowGum_EC_Flux_Notes: CSI
 flux_system: EASYFLUX
 flux_file: SnowGum_EC_Flux_CSFormat
 variables:
@@ -87,7 +88,9 @@ variables:
     height: 10.0
     input_variables:
       FC_samples:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC155
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC155
         units: dimensionless
         diag_type: valid_count
         file: SnowGum_EC_Flux_CSFormat
@@ -96,7 +99,9 @@ variables:
     height: 10.0
     input_variables:
       FC_QC:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC155
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC155
         units: dimensionless
         file: SnowGum_EC_Flux_CSFormat
   Fe:
@@ -114,7 +119,9 @@ variables:
     height: 10.0
     input_variables:
       LE_samples:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC155
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC155
         units: dimensionless
         diag_type: valid_count
         file: SnowGum_EC_Flux_CSFormat
@@ -123,7 +130,9 @@ variables:
     height: 10.0
     input_variables:
       LE_QC:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC155
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC155
         units: dimensionless
         file: SnowGum_EC_Flux_CSFormat
   Fh:
@@ -456,7 +465,9 @@ variables:
     height: 10.0
     input_variables:
       TsUz_Cov:
-        instrument: Campbell Scientific CSAT3A, Campbell Scientific EC155
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3A
+          irga: Campbell Scientific EC155
         units: m.degC/s
         file: SnowGum_EC_Flux_Notes
   Uz_SONIC_Av:

@@ -1,8 +1,9 @@
 site: CumberlandPlain
 file_formats:
-  default: CSI
-  overrides:
-    CumberlandPlain_EP_MASTER: LICOR
+  CUP_AUTO_climate: CSI
+  CUP_AUTO_soil: CSI
+  CUP_Top_diagnostic: CSI
+  CumberlandPlain_EP_MASTER: LICOR
 flux_system: SMARTFLUX
 flux_file: CumberlandPlain_EP_MASTER
 variables:
@@ -45,7 +46,9 @@ variables:
     height: 30.0
     input_variables:
       qc_co2_flux:
-        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
   Fe:
@@ -63,7 +66,9 @@ variables:
     height: 30.0
     input_variables:
       qc_LE:
-        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500RS
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
   Fg_0.08ma:

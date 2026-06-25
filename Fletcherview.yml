@@ -1,6 +1,7 @@
 site: Fletcherview
 file_formats:
-  default: CSI
+  Fletcherview_EC_slow_core: CSI
+  Fletcherview_soil_slow_soil: CSI
 flux_system: TERNFLUX
 flux_file: Fletcherview_EC_slow_core
 variables:
@@ -635,7 +636,7 @@ variables:
     height: 24.5
     input_variables:
       Fh_Avg:
-        instrument: Campbell Scientific CSAT3B, LI-COR LI-7500RS
+        instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Fletcherview_EC_slow_core
   ustar:

@@ -1,6 +1,7 @@
 site: Ridgefield
 file_formats:
-  default: CSI
+  Ridgefield_EC_slow_all: CSI
+  Ridgefield_soil1_Table1: CSI
 flux_system: TERNFLUX
 flux_file: Ridgefield_EC_slow_all
 variables:
@@ -147,7 +148,7 @@ variables:
     height: 8.0
     input_variables:
       Rain_Tex_Tot:
-        instrument: Texas Electronics TE525MM, Hydrological Services CS702
+        instrument: Texas Electronics TE525MM
         units: mm
         file: Ridgefield_EC_slow_all
   RH_2.5m:

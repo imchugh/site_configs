@@ -1,6 +1,15 @@
 site: Boyagin
 file_formats:
-  default: CSI
+  Boyagin_EC_slow_all: CSI
+  Boyagin_rad_Rad_30: CSI
+  Boyagin_soil_N_Twr_gnd: CSI
+  Boyagin_soil_N_Twr_gnd_Sws: CSI
+  Boyagin_soil_N_Twr_gnd_Ts: CSI
+  Boyagin_soil_N_Twr_gnd_soilEC: CSI
+  Boyagin_soil_S_Twr_gnd: CSI
+  Boyagin_soil_S_Twr_gnd_Sws: CSI
+  Boyagin_soil_S_Twr_gnd_Ts: CSI
+  Boyagin_soil_S_Twr_gnd_soilEC: CSI
 flux_system: TERNFLUX
 flux_file: Boyagin_EC_slow_all
 variables:
@@ -251,7 +260,7 @@ variables:
     height: 30.0
     input_variables:
       Fpard_Avg:
-        instrument: Apogee Instruments SQ110
+        instrument: Apogee Instruments SQ-110-SS
         units: umol/m^2/s
         file: Boyagin_rad_Rad_30
   Fparu:
@@ -259,7 +268,7 @@ variables:
     height: 30.0
     input_variables:
       Fparu_Avg:
-        instrument: Apogee Instruments SQ110
+        instrument: Apogee Instruments SQ-110-SS
         units: umol/m^2/s
         file: Boyagin_rad_Rad_30
   Fsd:
@@ -891,6 +900,6 @@ variables:
     height: 23.0
     input_variables:
       Fh_Avg:
-        instrument: Campbell Scientific CSAT3, LI-COR LI-7500A
+        instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: Boyagin_EC_slow_all
