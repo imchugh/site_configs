@@ -1,0 +1,55 @@
+variable_attrs:
+  height:
+    is_optional: False
+    type: int | float
+    description: mean instrument deployment height / depth in m
+    controlled: to type
+  units: 
+    is_optional: False
+    type: str
+    description: units (generally SI) for canonical quantity standard name (where defined in Climate Forecasting conventions; otherwise locally defined)
+    controlled: by external reference
+    control_reference: https://cfconventions.org/
+  standard_name:
+    is_optional: False
+    type: str
+    description: canonical quantity standard name (where defined in Climate Forecasting conventions; otherwise locally defined)
+    controlled: by external reference
+    control_reference: https://cfconventions.org/
+  long_name: 
+    is_optional: False
+    type: str
+    description: canonical quantity long name - locally defined
+    controlled: by local reference
+    control_reference: TBC
+  instrument:
+    is_optional: False
+    type: str | [str,]
+    description: TERN controlled vocabulary name for instrument(s); multiple instruments comma-separated
+    controlled: by local reference
+    control_reference: https://linkeddata.tern.org.au/prez/tern-cv/v/vocab/trn-cv:a3088b5c-622d-4e25-8a75-4c4961b0dfe8
+  instrument_uri:
+    is_optional: False
+    type: str | [str,]
+    description: TERN controlled vocabulary URI for instrument(s); multiple instrument URIs comma-separated
+    controlled: by local reference
+    control_reference: https://linkeddata.tern.org.au/prez/tern-cv/v/vocab/trn-cv:a3088b5c-622d-4e25-8a75-4c4961b0dfe8
+  statistic_type:
+    is_optional: False
+    type: str
+    description: statistic type of variable (average, standard_deviation, sum, variance)
+    controlled: True
+    control_reference: TBC    
+  height_range:
+    is_optional: True
+    type: int | float, int | float
+    description: vertical deployment height / depth range in m; must consist of precisely two values, nearest distance (to ground surface) first, furthest distance last (negative signed)
+    controlled: to type / length / order
+  instrument_history:
+    is_optional: True
+    type: str | [str,]
+    description: list of any prior instruments - and respective deployment dates - that contributed measurements.
+    format: '(instrument1,start_date,end_date)|(instrument2,start_date,end_date)' Instrument must be member of controlled vocabulary. Date format must be ISO 8601 -> YYYY-MM-DDThh:mm:ss
+    controlled: to format
+    control_reference: https://www.iso.org/iso-8601-date-and-time-format.html
+  

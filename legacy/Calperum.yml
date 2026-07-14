@@ -1,0 +1,721 @@
+site: Calperum
+file_formats:
+  Calperum_EC_slow_met: CSI
+  Calperum_EC_slow_flux: CSI
+  Calperum_EC_slow_rad: CSI
+  Calperum_soil_slow_soil2: CSI
+  Calperum_EC_slow_soil: CSI
+  Calperum_EC_slow_extras: CSI
+flux_system: LEGACY
+flux_file: Calperum_EC_slow_flux
+variables:
+  AH_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Ah_HMP_01_Avg:
+        instrument: Vaisala HMP45C
+        units: g/m^3
+        file: Calperum_EC_slow_met
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Ah_7500_Avg:
+        instrument: LI-COR LI-7500
+        units: g/m^3
+        file: Calperum_EC_slow_met
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 20.0
+    input_variables:
+      covAhAh:
+        instrument: LI-COR LI-7500
+        units: g^2/m^6
+        file: Calperum_EC_slow_flux
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Cc_7500_Avg:
+        instrument: LI-COR LI-7500
+        units: mg/m^3
+        file: Calperum_EC_slow_met
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 20.0
+    input_variables:
+      covCcCc:
+        instrument: LI-COR LI-7500
+        units: mg^2/m^6
+        file: Calperum_EC_slow_flux
+  Tcanopy:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Tt_SI131_Avg:
+        instrument: Apogee Instruments SI-111-SS
+        units: degC
+        file: Calperum_EC_slow_extras
+  Diag_IRGA:
+    variable_type: counter
+    height: 20.0
+    input_variables:
+      7500_Warn:
+        instrument: LI-COR LI-7500
+        units: dimensionless
+        diag_type: invalid_count
+        file: Calperum_EC_slow_flux
+  Diag_SONIC:
+    variable_type: counter
+    height: 20.0
+    input_variables:
+      CSAT_Warn:
+        instrument: Campbell Scientific CSAT3B
+        units: dimensionless
+        diag_type: invalid_count
+        file: Calperum_EC_slow_flux
+  Fco2:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Fc_Avg:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: mg/m^2/s
+        file: Calperum_EC_slow_flux
+  Fe:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Fe_Avg:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: W/m^2
+        file: Calperum_EC_slow_flux
+  Fh:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Fh_Avg:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: W/m^2
+        file: Calperum_EC_slow_flux
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_HFP01_01_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Calperum_EC_slow_soil
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_HFP01_02_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Calperum_EC_slow_soil
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Fg_HFP01_03_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Calperum_EC_slow_soil
+  Fld:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Fld_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: Calperum_EC_slow_rad
+  Flu:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Flu_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: Calperum_EC_slow_rad
+  Fsd:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Fsd_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: Calperum_EC_slow_rad
+  Fsd_b:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      SlrW_Avg:
+        instrument: LI-COR LI-200X
+        units: W/m^2
+        file: Calperum_EC_slow_extras
+  Fsu:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Fsu_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: Calperum_EC_slow_rad
+  Precip:
+    statistic_type: sum
+    height: 0.6
+    input_variables:
+      Rain_Tot:
+        instrument: Campbell Scientific CS700
+        units: mm
+        file: Calperum_EC_slow_met
+  RH_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      RH_HMP_01_Avg:
+        instrument: Vaisala HMP45C
+        units: frac
+        file: Calperum_EC_slow_met
+  Sig_IRGA:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      sig_strn_7500_Avg:
+        instrument: LI-COR LI-7500
+        units: percent
+        file: Calperum_EC_slow_flux
+  Sws_1ma:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_VWC1000_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_1mb:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_VWC1000_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_1mc:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_VWC1000_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_VWC100_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_VWC100_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.1mc:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_VWC100_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_1.8ma:
+    statistic_type: average
+    height: -1.8
+    input_variables:
+      Sws_VWC1800_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_1.8mb:
+    statistic_type: average
+    height: -1.8
+    input_variables:
+      Sws_VWC1800_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_1.8mc:
+    statistic_type: average
+    height: -1.8
+    input_variables:
+      Sws_VWC1800_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.25ma:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_VWC250_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.25mb:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_VWC250_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.25mc:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_VWC250_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.5ma:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_VWC500_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_VWC500_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Sws_0.5mc:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_VWC500_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: m^3/m^3
+        file: Calperum_soil_slow_soil2
+  Ta_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Ta_HMP_01_Avg:
+        instrument: Vaisala HMP45C
+        units: degC
+        file: Calperum_EC_slow_met
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Tpanel_Avg:
+        instrument: Campbell Scientific CR3000
+        units: degC
+        file: Calperum_EC_slow_met
+  Ts_1ma:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_T1000_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_1mb:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_T1000_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_1mc:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_T1000_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_T100_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.1mb:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_T100_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.1mc:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_T100_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_1.8ma:
+    statistic_type: average
+    height: -1.8
+    input_variables:
+      Sws_T1800_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_1.8mb:
+    statistic_type: average
+    height: -1.8
+    input_variables:
+      Sws_T1800_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_1.8mc:
+    statistic_type: average
+    height: -1.8
+    input_variables:
+      Sws_T1800_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.25ma:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_T250_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.25mb:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_T250_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.25mc:
+    statistic_type: average
+    height: -0.25
+    input_variables:
+      Sws_T250_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.5ma:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_T500_A_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.5mb:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_T500_B_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.5mc:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_T500_C_Avg:
+        instrument: Campbell Scientific CS650
+        units: degC
+        file: Calperum_soil_slow_soil2
+  Ts_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Ts_TCAV_01_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Calperum_EC_slow_soil
+  Ts_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Ts_TCAV_02_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Calperum_EC_slow_soil
+  Ts_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+      Ts_TCAV_03_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Calperum_EC_slow_soil
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Tv_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: degC
+        file: Calperum_EC_slow_met
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 20.0
+    input_variables:
+      covTvTv:
+        instrument: Campbell Scientific CSAT3B
+        units: degC^2
+        file: Calperum_EC_slow_flux
+  UxA:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUxAh:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: g/m^2/s
+        file: Calperum_EC_slow_flux
+  UxC:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUxCc:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: mg/m^2/s
+        file: Calperum_EC_slow_flux
+  UxT:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUxTv:
+        instrument: Campbell Scientific CSAT3B
+        units: m.degC/s
+        file: Calperum_EC_slow_flux
+  UxUy:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUxUy:
+        instrument: Campbell Scientific CSAT3B
+        units: m^2/s^2
+        file: Calperum_EC_slow_flux
+  UxUz:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUzUx:
+        instrument: Campbell Scientific CSAT3B
+        units: m^2/s^2
+        file: Calperum_EC_slow_flux
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Ux_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: m/s
+        file: Calperum_EC_slow_met
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 20.0
+    input_variables:
+      covUxUx:
+        instrument: Campbell Scientific CSAT3B
+        units: m^2/s^2
+        file: Calperum_EC_slow_flux
+  UyA:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUyAh:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: g/m^2/s
+        file: Calperum_EC_slow_flux
+  UyC:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUyCc:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: mg/m^2/s
+        file: Calperum_EC_slow_flux
+  UyT:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUyTv:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: m.degC/s
+        file: Calperum_EC_slow_flux
+  UyUz:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUzUy:
+        instrument: Campbell Scientific CSAT3B
+        units: m^2/s^2
+        file: Calperum_EC_slow_flux
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Uy_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: m/s
+        file: Calperum_EC_slow_met
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 20.0
+    input_variables:
+      covUyUy:
+        instrument: Campbell Scientific CSAT3B
+        units: m^2/s^2
+        file: Calperum_EC_slow_flux
+  UzA:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUzAh:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: g/m^2/s
+        file: Calperum_EC_slow_flux
+  UzC:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUzCc:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3B
+          irga: LI-COR LI-7500
+        units: mg/m^2/s
+        file: Calperum_EC_slow_flux
+  UzT:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      covUzTv:
+        instrument: Campbell Scientific CSAT3B
+        units: m.degC/s
+        file: Calperum_EC_slow_flux
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      Uz_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: m/s
+        file: Calperum_EC_slow_met
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 20.0
+    input_variables:
+      covUzUz:
+        instrument: Campbell Scientific CSAT3B
+        units: m^2/s^2
+        file: Calperum_EC_slow_flux
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Vbat_Avg:
+        instrument: Campbell Scientific CR3000
+        units: V
+        file: Calperum_EC_slow_met
+  Vbat_b:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Vbat_Min:
+        instrument: Campbell Scientific CR1000
+        units: V
+        file: Calperum_soil_slow_soil2
+  Wd_8m_Av:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Wind_Dir_mean@7m:
+        instrument: RM Young WindSentry
+        units: degrees
+        file: Calperum_EC_slow_extras
+  Wd_2m_Av:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Wind_Dir_mean@2m:
+        instrument: RM Young WindSentry
+        units: degrees
+        file: Calperum_EC_slow_extras
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: degrees
+        file: Calperum_EC_slow_met
+  Ws_8m_Av:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Wind_speed_m/s@7m:
+        instrument: RM Young WindSentry
+        units: m/s
+        file: Calperum_EC_slow_extras
+  Ws_2m_Av:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Wind_speed_m/s@2m:
+        instrument: RM Young WindSentry
+        units: m/s
+        file: Calperum_EC_slow_extras
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: m/s
+        file: Calperum_EC_slow_met
+  ps:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      ps_7500_Avg:
+        instrument: LI-COR LI-7500
+        units: kPa
+        file: Calperum_EC_slow_met

@@ -1,0 +1,443 @@
+site: TiTreeEast
+file_formats:
+  TiTreeEast_EC_slow_core: CSI
+flux_system: LEGACY
+flux_file: TiTreeEast_EC_slow_core
+variables:
+  Sig_IRGA:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      AGC_7500_Avg:
+        instrument: LI-COR LI-7500A
+        units: percent
+        file: TiTreeEast_EC_slow_core
+  AH_9.8m:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Ah_HMP_01_Avg:
+        instrument: Vaisala HMP45C
+        units: g/m^3
+        file: TiTreeEast_EC_slow_core
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Ah_7500_Avg:
+        instrument: LI-COR LI-7500A
+        units: g/m^3
+        file: TiTreeEast_EC_slow_core
+  AH_IRGA_Vr:
+    statistic_type: variance
+    height: 9.8
+    input_variables:
+      covAhAh:
+        instrument: LI-COR LI-7500A
+        units: g^2/m^6
+        file: TiTreeEast_EC_slow_core
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Cc_7500_Avg:
+        instrument: LI-COR LI-7500A
+        units: mg/m^3
+        file: TiTreeEast_EC_slow_core
+  CO2c_IRGA_Vr:
+    statistic_type: variance
+    height: 9.8
+    input_variables:
+      covCcCc:
+        instrument: LI-COR LI-7500A
+        units: mg^2/m^6
+        file: TiTreeEast_EC_slow_core
+  Diag_IRGA:
+    variable_type: counter
+    height: 9.8
+    input_variables:
+      7500_Warn:
+        instrument: LI-COR LI-7500A
+        units: dimensionless
+        diag_type: invalid_count
+        file: TiTreeEast_EC_slow_core
+  Diag_SONIC:
+    variable_type: counter
+    height: 9.8
+    input_variables:
+      CSAT_Warn:
+        instrument: Campbell Scientific CSAT3
+        units: dimensionless
+        diag_type: invalid_count
+        file: TiTreeEast_EC_slow_core
+  Fg_0.16ma:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+      Fg_01_Avg:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  Fld:
+    statistic_type: average
+    height: 9.9
+    input_variables:
+      Fld_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  Flu:
+    statistic_type: average
+    height: 9.9
+    input_variables:
+      Flu_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  Fsd:
+    statistic_type: average
+    height: 9.9
+    input_variables:
+      Fsd_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  Fsu:
+    statistic_type: average
+    height: 9.9
+    input_variables:
+      Fsu_CNR4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  Precip:
+    statistic_type: sum
+    height: 2.0
+    input_variables:
+      Rain_Tot:
+        instrument: Rimco RIM-7499-BOM
+        units: mm
+        file: TiTreeEast_EC_slow_core
+  RH_9.8m:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      RH_HMP_01_Avg:
+        instrument: Vaisala HMP45C
+        units: frac
+        file: TiTreeEast_EC_slow_core
+  RH_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      RH_HMP_2m_Avg:
+        instrument: Vaisala HMP45C
+        units: frac
+        file: TiTreeEast_EC_slow_core
+  Sws_0.1ma:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_616_01:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: TiTreeEast_EC_slow_core
+  Sws_0.35ma:
+    statistic_type: average
+    height: -0.35
+    input_variables:
+      Sws_616_02:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: TiTreeEast_EC_slow_core
+  Sws_0.6ma:
+    statistic_type: average
+    height: -0.6
+    input_variables:
+      Sws_616_03:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: TiTreeEast_EC_slow_core
+  Sws_0.85ma:
+    statistic_type: average
+    height: -0.85
+    input_variables:
+      Sws_616_04:
+        instrument: Campbell Scientific CS616
+        units: m^3/m^3
+        file: TiTreeEast_EC_slow_core
+  Ta_9.8m:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Ta_HMP_01_Avg:
+        instrument: Vaisala HMP45C
+        units: degC
+        file: TiTreeEast_EC_slow_core
+  Ta_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      Ta_HMP_2m_Avg:
+        instrument: Vaisala HMP45C
+        units: degC
+        file: TiTreeEast_EC_slow_core
+  Ts_0.1ma:
+    statistic_type: average
+    height: -0.1
+    height_range:
+    - -0.02
+    - -0.18
+    input_variables:
+      Ts_TCAV_01_Avg:
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: TiTreeEast_EC_slow_core
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Tv_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: degC
+        file: TiTreeEast_EC_slow_core
+  Tv_SONIC_Vr:
+    statistic_type: variance
+    height: 9.8
+    input_variables:
+      covTvTv:
+        instrument: Campbell Scientific CSAT3
+        units: degC^2
+        file: TiTreeEast_EC_slow_core
+  UxA:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUxAh:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: g/m^2/s
+        file: TiTreeEast_EC_slow_core
+  UxC:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUxCc:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: mg/m^2/s
+        file: TiTreeEast_EC_slow_core
+  UxT:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUxTv:
+        instrument: Campbell Scientific CSAT3
+        units: m.degC/s
+        file: TiTreeEast_EC_slow_core
+  UxUy:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUxUy:
+        instrument: Campbell Scientific CSAT3
+        units: m^2/s^2
+        file: TiTreeEast_EC_slow_core
+  UxUz:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUzUx:
+        instrument: Campbell Scientific CSAT3
+        units: m^2/s^2
+        file: TiTreeEast_EC_slow_core
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Ux_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: m/s
+        file: TiTreeEast_EC_slow_core
+  Ux_SONIC_Vr:
+    statistic_type: variance
+    height: 9.8
+    input_variables:
+      covUxUx:
+        instrument: Campbell Scientific CSAT3
+        units: m^2/s^2
+        file: TiTreeEast_EC_slow_core
+  UyA:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUyAh:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: g/m^2/s
+        file: TiTreeEast_EC_slow_core
+  UyC:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUyCc:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: mg/m^2/s
+        file: TiTreeEast_EC_slow_core
+  UyT:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUyTv:
+        instrument: Campbell Scientific CSAT3
+        units: m.degC/s
+        file: TiTreeEast_EC_slow_core
+  UyUz:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUzUy:
+        instrument: Campbell Scientific CSAT3
+        units: m^2/s^2
+        file: TiTreeEast_EC_slow_core
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Uy_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: m/s
+        file: TiTreeEast_EC_slow_core
+  Uy_SONIC_Vr:
+    statistic_type: variance
+    height: 9.8
+    input_variables:
+      covUyUy:
+        instrument: Campbell Scientific CSAT3
+        units: m^2/s^2
+        file: TiTreeEast_EC_slow_core
+  UzA:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUzAh:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: g/m^2/s
+        file: TiTreeEast_EC_slow_core
+  UzC:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUzCc:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: mg/m^2/s
+        file: TiTreeEast_EC_slow_core
+  UzT:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      covUzTv:
+        instrument: Campbell Scientific CSAT3
+        units: m.degC/s
+        file: TiTreeEast_EC_slow_core
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Uz_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: m/s
+        file: TiTreeEast_EC_slow_core
+  Uz_SONIC_Vr:
+    statistic_type: variance
+    height: 9.8
+    input_variables:
+      covUzUz:
+        instrument: Campbell Scientific CSAT3
+        units: m^2/s^2
+        file: TiTreeEast_EC_slow_core
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Vbat_Avg:
+        instrument: Campbell Scientific CR3000
+        units: V
+        file: TiTreeEast_EC_slow_core
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      WD_CSAT_Compass_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: degrees
+        file: TiTreeEast_EC_slow_core
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      WS_CSAT_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: m/s
+        file: TiTreeEast_EC_slow_core
+  ps:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      ps_7500_Avg:
+        instrument: LI-COR LI-7500A
+        units: kPa
+        file: TiTreeEast_EC_slow_core
+  Fco2:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Fc_raw_Avg:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: mg/m^2/s
+        file: TiTreeEast_EC_slow_core
+  Fh:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Fh_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  Fe:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      Fe_raw_Avg:
+        instrument:
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
+        units: W/m^2
+        file: TiTreeEast_EC_slow_core
+  ustar:
+    statistic_type: average
+    height: 9.8
+    input_variables:
+      ustar_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: m/s
+        file: TiTreeEast_EC_slow_core
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+      Tpanel_Avg:
+        instrument: Campbell Scientific CR3000
+        units: degC
+        file: TiTreeEast_EC_slow_core

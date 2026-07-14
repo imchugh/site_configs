@@ -414,9 +414,9 @@ variables:
         instrument: Hukseflux HFP01
         units: W/m^2
         file: TiTreeEast_EC_TERNflux
-  Ts_0.1ma:
+  Ts_0.09ma:
     statistic_type: average
-    height: -0.09
+    height: -0.1
     height_range:
     - -0.02
     - -0.16
