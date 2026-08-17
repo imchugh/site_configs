@@ -343,8 +343,8 @@ variables:
     input_variables:
       cov_H2O_Ux:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Yanco_EC_Calculate
   UxC:
@@ -353,8 +353,8 @@ variables:
     input_variables:
       cov_CO2_Ux:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   UxT:
@@ -403,8 +403,8 @@ variables:
     input_variables:
       cov_H2O_Uy:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Yanco_EC_Calculate
   UyC:
@@ -413,8 +413,8 @@ variables:
     input_variables:
       cov_CO2_Uy:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   UyT:
@@ -455,8 +455,8 @@ variables:
     input_variables:
       cov_H2O_Uz:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: g/m^2/s
         file: Yanco_EC_Calculate
   UzC:
@@ -465,8 +465,8 @@ variables:
     input_variables:
       cov_CO2_Uz:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   UzT:
@@ -523,8 +523,8 @@ variables:
     input_variables:
       Fc_wpl:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: mg/m^2/s
         file: Yanco_EC_Calculate
   Fh:
@@ -541,8 +541,8 @@ variables:
     input_variables:
       LE_wpl:
         instrument:
-          sonic_anemometer: LI-COR LI-7500A
-          irga: Campbell Scientific CSAT3
+          sonic_anemometer: Campbell Scientific CSAT3
+          irga: LI-COR LI-7500A
         units: W/m^2
         file: Yanco_EC_Calculate
   tau:
