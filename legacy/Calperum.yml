@@ -489,6 +489,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: degC^2
         file: Calperum_EC_slow_flux
+  ustar:
+    statistic_type: average
+    height: 20.0
+    input_variables:
+      ustar_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: m/s
+        file: Calperum_EC_slow_flux
   UxA:
     statistic_type: average
     height: 20.0
