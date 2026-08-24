@@ -671,6 +671,14 @@ variables:
         instrument: Campbell Scientific CR1000
         units: V
         file: Calperum_soil_slow_soil2
+        begin: 2021-09-16 13:00
+        end: 2025-09-02 14:00
+      Vbat_Min:
+        instrument: Campbell Scientific CR1000
+        units: V
+        file: Calperum_soil_slow_soil2
+        begin: 2025-09-02 14:30
+        end: null     
   Wd_8m_Av:
     statistic_type: average
     height: 8.0
