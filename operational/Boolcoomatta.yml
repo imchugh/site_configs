@@ -6,7 +6,7 @@ flux_file: Boolcoomatta_EC_TERNflux
 variables:
   Fh:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Fh:
         instrument: Campbell Scientific IRGASON
@@ -14,7 +14,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   ustar:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       u_star:
         instrument: Campbell Scientific IRGASON
@@ -22,7 +22,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Tv_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       Tsonic_stdev:
         instrument: Campbell Scientific IRGASON
@@ -30,7 +30,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UxT:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Tsonic_Ux_cov:
         instrument: Campbell Scientific IRGASON
@@ -38,7 +38,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UyT:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Tsonic_Uy_cov:
         instrument: Campbell Scientific IRGASON
@@ -46,7 +46,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UzT:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Tsonic_Uz_cov:
         instrument: Campbell Scientific IRGASON
@@ -54,7 +54,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Ux_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       Ux_stdev:
         instrument: Campbell Scientific IRGASON
@@ -62,7 +62,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UxUy:
     statistic_type: covariance
-    height: 2.95
+    height: 6.55
     input_variables:
       Ux_Uy_cov:
         instrument: Campbell Scientific IRGASON
@@ -70,7 +70,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UxUz:
     statistic_type: covariance
-    height: 2.95
+    height: 6.55
     input_variables:
       Ux_Uz_cov:
         instrument: Campbell Scientific IRGASON
@@ -78,7 +78,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Uy_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       Uy_stdev:
         instrument: Campbell Scientific IRGASON
@@ -86,7 +86,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UyUz:
     statistic_type: covariance
-    height: 2.95
+    height: 6.55
     input_variables:
       Uy_Uz_cov:
         instrument: Campbell Scientific IRGASON
@@ -94,7 +94,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Uz_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       Uz_stdev:
         instrument: Campbell Scientific IRGASON
@@ -102,7 +102,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Ws_SONIC_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       wnd_spd:
         instrument: Campbell Scientific IRGASON
@@ -110,7 +110,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Wd_SONIC_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       wnd_dir_compass:
         instrument: Campbell Scientific IRGASON
@@ -118,7 +118,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Wd_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       std_wnd_dir:
         instrument: Campbell Scientific IRGASON
@@ -126,7 +126,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Ux_SONIC_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Ux_Avg:
         instrument: Campbell Scientific IRGASON
@@ -134,7 +134,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Uy_SONIC_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Uy_Avg:
         instrument: Campbell Scientific IRGASON
@@ -142,7 +142,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Uz_SONIC_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Uz_Avg:
         instrument: Campbell Scientific IRGASON
@@ -150,7 +150,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Tv_SONIC_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Tsonic_Avg:
         instrument: Campbell Scientific IRGASON
@@ -158,7 +158,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Diag_SONIC:
     variable_type: counter
-    height: 2.95
+    height: 6.55
     input_variables:
       sonic_samples_Tot:
         instrument: Campbell Scientific IRGASON
@@ -167,7 +167,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Fco2:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Fco2:
         instrument: Campbell Scientific IRGASON
@@ -175,7 +175,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Fe:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Fe:
         instrument: Campbell Scientific IRGASON
@@ -183,7 +183,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   CO2c_IRGA_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       CO2_stdev:
         instrument: Campbell Scientific IRGASON
@@ -191,7 +191,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UxC:
     statistic_type: covariance
-    height: 2.95
+    height: 6.55
     input_variables:
       CO2_Ux_cov:
         instrument: Campbell Scientific IRGASON
@@ -199,7 +199,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UyC:
     statistic_type: covariance
-    height: 2.95
+    height: 6.55
     input_variables:
       CO2_Uy_cov:
         instrument: Campbell Scientific IRGASON
@@ -207,7 +207,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UzC:
     statistic_type: covariance
-    height: 2.95
+    height: 6.55
     input_variables:
       CO2_Uz_cov:
         instrument: Campbell Scientific IRGASON
@@ -215,7 +215,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   AH_IRGA_Sd:
     statistic_type: standard_deviation
-    height: 2.95
+    height: 6.55
     input_variables:
       H2O_stdev:
         instrument: Campbell Scientific IRGASON
@@ -223,7 +223,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UxA:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       H2O_Ux_cov:
         instrument: Campbell Scientific IRGASON
@@ -231,7 +231,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UyA:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       H2O_Uy_cov:
         instrument: Campbell Scientific IRGASON
@@ -239,7 +239,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   UzA:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       H2O_Uz_cov:
         instrument: Campbell Scientific IRGASON
@@ -247,7 +247,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   CO2c_IRGA_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       CO2_mean:
         instrument: Campbell Scientific IRGASON
@@ -255,7 +255,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   AH_IRGA_Av:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       H2O_mean:
         instrument: Campbell Scientific IRGASON
@@ -263,7 +263,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   ps:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       amb_press_mean:
         instrument: Campbell Scientific IRGASON
@@ -271,7 +271,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Diag_IRGA:
     variable_type: counter
-    height: 2.95
+    height: 6.55
     input_variables:
       irga_samples_Tot:
         instrument: Campbell Scientific IRGASON
@@ -280,7 +280,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   SigCO2_IRGA:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       CO2_sig_strgth_mean:
         instrument: Campbell Scientific IRGASON
@@ -288,31 +288,31 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   SigH2O_IRGA:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       H2O_sig_strgth_mean:
         instrument: Campbell Scientific IRGASON
         units: frac
         file: Boolcoomatta_EC_TERNflux
-  Ta_2.95m:
+  Ta_6.55m:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       Ta_sensor_mean:
         instrument: Vaisala HMP155
         units: degC
         file: Boolcoomatta_EC_TERNflux
-  AH_2.95m:
+  AH_6.55m:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       AH_sensor_mean:
         instrument: Vaisala HMP155
         units: g/m^3
         file: Boolcoomatta_EC_TERNflux
-  RH_2.95m:
+  RH_6.55m:
     statistic_type: average
-    height: 2.95
+    height: 6.55
     input_variables:
       RH_sensor_mean:
         instrument: Vaisala HMP155
@@ -320,7 +320,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Fsd:
     statistic_type: average
-    height: 2.95
+    height: 3.77
     input_variables:
       Fsd_Avg:
         instrument: Kipp&Zonen CNR4
@@ -328,7 +328,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Fsu:
     statistic_type: average
-    height: 2.95
+    height: 3.77
     input_variables:
       Fsu_Avg:
         instrument: Kipp&Zonen CNR4
@@ -336,7 +336,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Fld:
     statistic_type: average
-    height: 2.95
+    height: 3.77
     input_variables:
       Fld_Avg:
         instrument: Kipp&Zonen CNR4
@@ -344,7 +344,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Flu:
     statistic_type: average
-    height: 2.95
+    height: 3.77
     input_variables:
       Flu_Avg:
         instrument: Kipp&Zonen CNR4
@@ -352,7 +352,7 @@ variables:
         file: Boolcoomatta_EC_TERNflux
   Tbody_RAD:
     statistic_type: average
-    height: 2.95
+    height: 3.77
     input_variables:
       Tbody_RAD_Avg:
         instrument: Kipp&Zonen CNR4
@@ -382,22 +382,38 @@ variables:
         instrument: Campbell Scientific CR1000XE
         units: V
         file: Boolcoomatta_EC_TERNflux
-  Fg_0.14ma:
+  Fg_0.18ma:
     statistic_type: average
-    height: -0.14
+    height: -0.18
     input_variables:
       Fg_01:
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Boolcoomatta_EC_TERNflux
-  Fg_0.14mb:
+  Fg_0.18mb:
     statistic_type: average
-    height: -0.14
+    height: -0.18
     input_variables:
       Fg_02:
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Boolcoomatta_EC_TERNflux
+  Fg_0.18mc:
+    statistic_type: average
+    height: -0.18
+    input_variables:
+      Fg_03:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Boolcoomatta_EC_TERNflux
+  Fg_0.18md:
+    statistic_type: average
+    height: -0.18
+    input_variables:
+      Fg_04:
+        instrument: Hukseflux HFP01
+        units: W/m^2
+        file: Boolcoomatta_EC_TERNflux        
   Sws_0.16ma:
     statistic_type: average
     height: -0.16
@@ -406,15 +422,15 @@ variables:
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Boolcoomatta_EC_TERNflux
-  Sws_0.6ma:
+  Sws_0.16mb:
     statistic_type: average
-    height: -0.6
+    height: -0.16
     input_variables:
       sws_cs650_Avg(2):
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Boolcoomatta_EC_TERNflux
-  Sws_0.16mb:
+  Sws_0.16mc:
     statistic_type: average
     height: -0.16
     input_variables:
@@ -422,33 +438,199 @@ variables:
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Boolcoomatta_EC_TERNflux
-  Sws_0.54mb:
+  Sws_0.16md:
     statistic_type: average
-    height: -0.54
+    height: -0.16
     input_variables:
       sws_cs650_Avg(4):
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Boolcoomatta_EC_TERNflux
-  Ts_0.23ma:
+  Sws_0.05me:
     statistic_type: average
-    height: -0.23
-    height_range:
-    - -0.14
-    - -0.32
+    height: -0.05
     input_variables:
-      Tsoil_mean(1):
+      Sws_5cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_0.1me:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Sws_10cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_0.2me:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Sws_20cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_0.3me:
+    statistic_type: average
+    height: -0.3
+    input_variables:
+      Sws_30cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_0.4me:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Sws_40cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_0.5me:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Sws_50cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux      
+  Sws_0.6me:
+    statistic_type: average
+    height: -0.6
+    input_variables:
+      Sws_60cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_0.75me:
+    statistic_type: average
+    height: -0.75
+    input_variables:
+      Sws_75cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Sws_1me:
+    statistic_type: average
+    height: -1.0
+    input_variables:
+      Sws_100cm_Avg:
+        instrument: Campbell Scientific SoilVue 10
+        units: m^3/m^3
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.1ma:
+    statistic_type: average
+    height: -0.1
+    height_range:
+    - -0.05
+    - -0.16
+    input_variables:
+      Tsoil_mean(1): 
         instrument: Campbell Scientific TCAV
         units: degC
         file: Boolcoomatta_EC_TERNflux
-  Ts_0.23mb:
+  Ts_0.1mb:
     statistic_type: average
-    height: -0.23
+    height: -0.1
     height_range:
-    - -0.14
-    - -0.32
+    - -0.05
+    - -0.16
     input_variables:
-      Tsoil_mean(2):
+      Tsoil_mean(2): 
         instrument: Campbell Scientific TCAV
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.1mc:
+    statistic_type: average
+    height: -0.1
+    height_range:
+    - -0.05
+    - -0.16
+    input_variables:
+      Tsoil_mean(3): 
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.1md:
+    statistic_type: average
+    height: -0.1
+    height_range:
+    - -0.05
+    - -0.16
+    input_variables:
+      Tsoil_mean(4): 
+        instrument: Campbell Scientific TCAV
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.05me:
+    statistic_type: average
+    height: -0.05
+    input_variables:
+      Ts_5cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.1me:
+    statistic_type: average
+    height: -0.1
+    input_variables:
+      Ts_10cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.2me:
+    statistic_type: average
+    height: -0.2
+    input_variables:
+      Ts_20cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.3me:
+    statistic_type: average
+    height: -0.3
+    input_variables:
+      Ts_30cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.4me:
+    statistic_type: average
+    height: -0.4
+    input_variables:
+      Ts_40cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.5me:
+    statistic_type: average
+    height: -0.5
+    input_variables:
+      Ts_50cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.6me:
+    statistic_type: average
+    height: -0.6
+    input_variables:
+      Ts_60cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_0.75me:
+    statistic_type: average
+    height: -0.75
+    input_variables:
+      Ts_75cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
+        units: degC
+        file: Boolcoomatta_EC_TERNflux
+  Ts_1me:
+    statistic_type: average
+    height: -1
+    input_variables:
+      Ts_100cm_Avg: 
+        instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Boolcoomatta_EC_TERNflux
