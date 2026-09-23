@@ -1,0 +1,19 @@
+# L2 QC config for CumberlandPlain -- deltas from configs/qc/_range_defaults.yml only.
+# Source: L2_autogen_CumberlandPlain.txt (PyFluxPro control file), converted by script.
+# NOT PORTED: ['Fco2_EP', 'Fco2_EP_QC', 'Fe_EP', 'Fe_EP_QC', 'Fh_EP', 'Fh_EP_QC', 'Fm_EP', 'Fm_EP_QC'] -- see _range_defaults.yml's Diag note.
+# RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av
+
+AH_IRGA_Av:  # default (0, 35)
+  range_check: {lower: 0, upper: 30}
+AH_IRGA_Sd:  # default (0, 10)
+  range_check: {lower: 0, upper: 2}
+Sig_IRGA:  # default (0, 102.5)
+  range_check: {lower: 75, upper: 110}
+Fld:  # default (250, 700)
+  range_check: {lower: 200, upper: 700}
+Flu:  # default (300, 700)
+  range_check: {lower: 200, upper: 700}
+Tv_SONIC_Sd:  # default (0, 2.236)
+  range_check: {lower: 0, upper: 3}
+ps:  # default (95, 105)
+  range_check: {lower: 91.05, upper: 111.05}

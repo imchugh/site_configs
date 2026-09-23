@@ -1,0 +1,31 @@
+# L2 QC config for MyallValeB -- deltas from configs/qc/_range_defaults.yml only.
+# Source: L2_autogen_MyallValeB.txt (PyFluxPro control file), converted by script.
+# NOT PORTED: ['AH_IRGA_Ct', 'CO2_IRGA_Ct', 'Diag_IRGA', 'Diag_SONIC', 'Fco2_EF', 'Fco2_EF_Ct', 'Fco2_EF_QC', 'Fe_EF', 'Fe_EF_Ct', 'Fe_EF_QC', 'Fh_EF', 'Fh_EF_Ct', 'Fh_EF_QC', 'Fm_EF', 'Fm_EF_QC'] -- see _range_defaults.yml's Diag note.
+# RENAMED: CO2Sig_IRGA->SigCO2_IRGA, CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, H2OSig_IRGA->SigH2O_IRGA
+
+AH_IRGA_Av:  # default (0, 35)
+  range_check: {lower: 0, upper: 30}
+AH_IRGA_Sd:  # default (0, 10)
+  range_check: {lower: 0, upper: 2}
+CO2c_IRGA_Sd:  # default (0, 50)
+  range_check: {lower: 0, upper: 25}
+Fld:  # default (250, 700)
+  range_check: {lower: 200, upper: 700}
+Flu:  # default (300, 700)
+  range_check: {lower: 200, upper: 700}
+SigCO2_IRGA:  # default (0, 102.5)
+  range_check: {lower: 75, upper: 110}
+SigH2O_IRGA:  # default (0, 102.5)
+  range_check: {lower: 75, upper: 110}
+Tv_SONIC_Sd:  # default (0, 2.236)
+  range_check: {lower: 0, upper: 3}
+Ux_SONIC_Sd:  # default (0, 3.162)
+  range_check: {lower: 0, upper: 3}
+Uy_SONIC_Sd:  # default (0, 3.162)
+  range_check: {lower: 0, upper: 3}
+Uz_SONIC_Sd:  # default (0, 1.414)
+  range_check: {lower: 0, upper: 1.5}
+Wd_SONIC_Sd:
+  range_check: {lower: 0, upper: 360}
+ps:  # default (95, 105)
+  range_check: {lower: 88.25, upper: 108.25}

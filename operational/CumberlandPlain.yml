@@ -207,7 +207,7 @@ variables:
         instrument: LI-COR LI-7500RS
         units: percent
         file: CumberlandPlain_EP_MASTER
-  CO2Sig_IRGA:
+  Sig_IRGA:
     statistic_type: average
     height: 30.0
     input_variables:

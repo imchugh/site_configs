@@ -510,22 +510,6 @@ variables:
         instrument: Campbell Scientific CR6
         units: V
         file: SnowGum_EC_Flux_Notes
-  W_SONIC_Av:
-    statistic_type: average
-    height: 14.0
-    input_variables:
-      W:
-        instrument: Campbell Scientific CSAT3A
-        units: m/s
-        file: SnowGum_EC_Flux_CSFormat
-  W_SONIC_Sd:
-    statistic_type: standard_deviation
-    height: 14.0
-    input_variables:
-      W_SIGMA:
-        instrument: Campbell Scientific CSAT3A
-        units: m/s
-        file: SnowGum_EC_Flux_CSFormat
   Wd_SONIC_Av:
     statistic_type: average
     height: 14.0
