@@ -20,7 +20,10 @@ Fld:  # default (250, 700)
 Flu:  # default (300, 700)
   range_check: {lower: 200, upper: 700}
 Sig_IRGA:  # default (0, 102.5)
-  range_check: {lower: 80, upper: 101}
+  # Lower bound 60 (PyFluxPro's 80 would mask all of 2026): Yanco's raw agc_Avg is
+  # healthy at ~94 to 2025-12-09 and ~63 from 2025-12-11 (IRGA change). One bound
+  # serves both eras; poor states (<60) coincide with bad fluxes in both.
+  range_check: {lower: 60, upper: 101}
 Tv_SONIC_Sd:  # default (0, 2.236)
   range_check: {lower: 0, upper: 3}
 Ux_SONIC_Sd:  # default (0, 3.162)
