@@ -3,35 +3,3 @@
 # NOT PORTED: ['Diag_IRGA', 'Diag_SONIC', 'Fg_0.08mc', 'Fg_0.08md'] -- see _range_defaults.yml's Diag note.
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fco2_DL->Fco2, Fe_DL->Fe, Fh_DL->Fh
 
-AH_23m:  # default (0, 35)
-  range_check: {lower: 0, upper: 30}
-AH_2m:  # default (0, 35)
-  range_check: {lower: 0, upper: 30}
-AH_IRGA_Av:  # default (0, 35)
-  range_check: {lower: 0, upper: 30}
-AH_IRGA_Sd:  # default (0, 10)
-  range_check: {lower: 0, upper: 2}
-CO2c_IRGA_Sd:  # default (0, 50)
-  range_check: {lower: 0, upper: 25}
-Fco2:  # default (-50, 30)
-  range_check: {lower: -50, upper: 50}
-Fe:  # default (-200, 1000)
-  range_check: {lower: -100, upper: 600}
-Fh:  # default (-200, 1000)
-  range_check: {lower: -100, upper: 600}
-Fld:  # default (250, 700)
-  range_check: {lower: 200, upper: 700}
-Flu:  # default (300, 700)
-  range_check: {lower: 200, upper: 700}
-Sig_IRGA:  # default (0, 102.5)
-  range_check: {lower: 80, upper: 101}
-Tv_SONIC_Sd:  # default (0, 2.236)
-  range_check: {lower: 0, upper: 3}
-Ux_SONIC_Sd:  # default (0, 3.162)
-  range_check: {lower: 0, upper: 3}
-Uy_SONIC_Sd:  # default (0, 3.162)
-  range_check: {lower: 0, upper: 3}
-Uz_SONIC_Sd:  # default (0, 1.414)
-  range_check: {lower: 0, upper: 1.5}
-ps:  # default (95, 105)
-  range_check: {lower: 90.5, upper: 110.5}
