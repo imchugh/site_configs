@@ -1,7 +1,7 @@
 site: Wellington
 file_formats:
   Wellington_EC_slow_core: CSI
-flux_system: EASYFLUX
+flux_system: TERNFLUX
 flux_file: Wellington_EC_slow_core
 variables:
   AC:
