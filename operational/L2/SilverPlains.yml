@@ -5,8 +5,6 @@
 
 Fg_0.08mc:  # default (-100, 150)
   range_check: {lower: -200, upper: 200}
-ps:  # default (95, 105)
-  range_check: {lower: 80.3, upper: 100.3}
 # Logger flux QC flags -- EasyFlux 1-9 flag scheme: reject 8 and 9
 Fco2:
   flag_check: {source: [Fco2_QC], reject: [8, 9]}

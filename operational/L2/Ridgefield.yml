@@ -7,5 +7,3 @@ Fm:
   range_check: {lower: -2, upper: 2}
 Sig_IRGA:  # default (80, 102.5)
   range_check: {lower: 70, upper: 101}
-ps:  # default (95, 105)
-  range_check: {lower: 87.175, upper: 107.175}

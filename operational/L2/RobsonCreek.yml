@@ -3,5 +3,3 @@
 # NOT PORTED: ['Diag_IRGA', 'Diag_SONIC', 'Fg_0.1ma', 'Fg_0.1mb', 'Ts_0.05ma', 'Ts_0.05mb'] -- see _range_defaults.yml's Diag note.
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fco2_DL->Fco2, Fe_DL->Fe, Fh_DL->Fh, Sws_0.1m->Sws_0.1ma, Sws_0.25m->Sws_0.25ma, Sws_1.5m->Sws_1.5ma, Sws_2m->Sws_2ma
 
-ps:  # default (95, 105)
-  range_check: {lower: 82.425, upper: 102.425}
