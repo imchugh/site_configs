@@ -29,3 +29,12 @@ Wd_SONIC_Sd:
   range_check: {lower: 0, upper: 360}
 ps:  # default (95, 105)
   range_check: {lower: 71.1, upper: 91.1}
+# Logger flux QC flags -- EasyFlux 1-9 flag scheme: reject 8 and 9
+Fco2:
+  flag_check: {source: [Fco2_QC], reject: [8, 9]}
+Fe:
+  flag_check: {source: [Fe_QC], reject: [8, 9]}
+Fh:
+  flag_check: {source: [Fh_QC], reject: [8, 9]}
+Fm:
+  flag_check: {source: [Fm_QC], reject: [8, 9]}
