@@ -247,14 +247,6 @@ variables:
         instrument: Kipp&Zonen CG2
         units: W/m^2
         file: Boyagin_rad_Rad_30
-  Fn_2:
-    statistic_type: average
-    height: 30.0
-    input_variables:
-      Fn_nrlite_Avg:
-        instrument: Kipp&Zonen NR Lite
-        units: W/m^2
-        file: Boyagin_rad_Rad_30
   Fpard:
     statistic_type: average
     height: 30.0

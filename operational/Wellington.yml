@@ -182,14 +182,6 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Wellington_EC_slow_core
-  Fn:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      Fn_CNR4_Avg:
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: Wellington_EC_slow_core
   Fsd:
     statistic_type: average
     height: 2.5

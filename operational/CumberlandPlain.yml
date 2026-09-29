@@ -135,14 +135,6 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
-  Fn:
-    statistic_type: average
-    height: 30.0
-    input_variables:
-      Rn_Avg:
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: CUP_AUTO_climate
   Fsd:
     statistic_type: average
     height: 30.0

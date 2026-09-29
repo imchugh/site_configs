@@ -171,14 +171,6 @@ variables:
         instrument: Campbell Scientific IRGASON
         units: dimensionless
         file: MyallValeB_EC_Flux_CSFormat
-  Fn:
-    statistic_type: average
-    height: 3.2
-    input_variables:
-      NETRAD:
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: MyallValeB_EC_Flux_CSFormat
   Fsd:
     statistic_type: average
     height: 3.2
