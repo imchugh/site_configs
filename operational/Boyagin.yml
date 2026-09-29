@@ -303,7 +303,7 @@ variables:
         instrument: Kipp&Zonen CM7B
         units: W/m^2
         file: Boyagin_rad_Rad_30
-  Precip_2:
+  Precip_1.2m:
     statistic_type: sum
     height: 1.2
     input_variables:
@@ -311,7 +311,7 @@ variables:
         instrument: Campbell Scientific CS700
         units: mm
         file: Boyagin_soil_N_Twr_gnd
-  Precip_1:
+  Precip_31m:
     statistic_type: sum
     height: 31.0
     input_variables:
@@ -851,6 +851,14 @@ variables:
         instrument: Campbell Scientific CSAT3
         units: degrees
         file: Boyagin_EC_slow_all
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 23
+    input_variables:
+      WD_CSAT_Sd:
+        instrument: Campbell Scientific CSAT3
+        units: degrees
+        file: Boyagin_EC_slow_all
   Ws_SONIC_Av:
     statistic_type: average
     height: 23.0
@@ -894,4 +902,12 @@ variables:
       Fh_Avg:
         instrument: Campbell Scientific CSAT3
         units: W/m^2
+        file: Boyagin_EC_slow_all
+  Fm:
+    statistic_type: average
+    height: 23
+    input_variables:
+      Fm_Avg:
+        instrument: Campbell Scientific CSAT3
+        units: kg/m/s^2
         file: Boyagin_EC_slow_all

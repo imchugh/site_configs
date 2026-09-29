@@ -425,6 +425,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: CowBay_EC_T30min_all
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 23
+    input_variables:
+      WD_CSAT_Sd:
+        instrument: Campbell Scientific CSAT3B
+        units: degrees
+        file: CowBay_EC_T30min_all
   Ws_SONIC_Av:
     statistic_type: average
     height: 23.0
@@ -458,6 +466,14 @@ variables:
       Fh_Avg:
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
+        file: CowBay_EC_T30min_all
+  Fm:
+    statistic_type: average
+    height: 23
+    input_variables:
+      Fm_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: kg/m/s^2
         file: CowBay_EC_T30min_all
   Fe:
     statistic_type: average

@@ -471,6 +471,14 @@ variables:
         instrument: Campbell Scientific CSAT3
         units: degrees
         file: Litchfield_EC_flux
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 23
+    input_variables:
+      std_wnd_dir:
+        instrument: Campbell Scientific CSAT3
+        units: degrees
+        file: Litchfield_EC_flux
   Ws_SONIC_Av:
     statistic_type: average
     height: 23.0
@@ -504,6 +512,14 @@ variables:
       Hs:
         instrument: Campbell Scientific CSAT3
         units: W/m^2
+        file: Litchfield_EC_flux
+  Fm:
+    statistic_type: average
+    height: 23
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3
+        units: kg/m/s^2
         file: Litchfield_EC_flux
   Fe:
     statistic_type: average

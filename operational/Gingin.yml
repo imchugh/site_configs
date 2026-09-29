@@ -837,6 +837,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Gingin_EC_slow_met
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 15
+    input_variables:
+      WD_CSAT_Sd:
+        instrument: Campbell Scientific CSAT3B
+        units: degrees
+        file: Gingin_EC_slow_met
   Wd_10m:
     statistic_type: average
     height: 10.0
@@ -960,6 +968,14 @@ variables:
       Fh_Avg:
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
+        file: Gingin_EC_slow_flux
+  Fm:
+    statistic_type: average
+    height: 15
+    input_variables:
+      Fm_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: kg/m/s^2
         file: Gingin_EC_slow_flux
   ustar:
     statistic_type: average

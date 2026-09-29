@@ -12,6 +12,22 @@ variables:
         instrument: Campbell Scientific CSAT3A
         units: W/m^2
         file: AlpinePeatland_EC_flux
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      Ts_Avg:
+        instrument: Campbell Scientific CSAT3A
+        units: degC
+        file: AlpinePeatland_EC_flux
+  Fm:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3A
+        units: kg/m/s^2
+        file: AlpinePeatland_EC_flux
   ustar:
     statistic_type: average
     height: 2.5
@@ -147,14 +163,6 @@ variables:
       Uz_Avg:
         instrument: Campbell Scientific CSAT3A
         units: m/s
-        file: AlpinePeatland_EC_flux
-  Tv_SONIC:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      Ts_Avg:
-        instrument: Campbell Scientific CSAT3A
-        units: degC
         file: AlpinePeatland_EC_flux
   Diag_SONIC:
     variable_type: counter

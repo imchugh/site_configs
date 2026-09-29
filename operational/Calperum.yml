@@ -99,6 +99,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Calperum_EC_TERNflux
+  Fm:
+    statistic_type: average
+    height: 20
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3B
+        units: kg/m/s^2
+        file: Calperum_EC_TERNflux
   Fg_0.08ma:
     statistic_type: average
     height: -0.08
@@ -663,22 +671,6 @@ variables:
         instrument: Campbell Scientific CR1000X
         units: V
         file: Calperum_EC_TERNflux
-  Vbat_b:
-    statistic_type: average
-    height: 1.5
-    input_variables:
-      Vbat_Avg:
-        instrument: Campbell Scientific CR1000
-        units: V
-        file: Calperum_soil_slow_soil2
-        begin: 2021-09-16 13:00
-        end: 2025-09-02 14:00
-      Vbat_Min:
-        instrument: Campbell Scientific CR1000
-        units: V
-        file: Calperum_soil_slow_soil2
-        begin: 2025-09-02 14:30
-        end: null     
   Wd_8m_Av:
     statistic_type: average
     height: 8.0
@@ -700,6 +692,14 @@ variables:
     height: 20.0
     input_variables:
       wnd_dir_compass:
+        instrument: Campbell Scientific CSAT3B
+        units: degrees
+        file: Calperum_EC_TERNflux
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 20
+    input_variables:
+      std_wnd_dir:
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Calperum_EC_TERNflux

@@ -496,6 +496,14 @@ variables:
         instrument: Campbell Scientific CSAT3
         units: degrees
         file: GreatWesternWoodlands_EC_flux
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 36
+    input_variables:
+      std_wnd_dir:
+        instrument: Campbell Scientific CSAT3
+        units: degrees
+        file: GreatWesternWoodlands_EC_flux
   Ws_SONIC_Av:
     statistic_type: average
     height: 36.0
@@ -529,6 +537,14 @@ variables:
       Hs:
         instrument: Campbell Scientific CSAT3
         units: W/m^2
+        file: GreatWesternWoodlands_EC_flux
+  Fm:
+    statistic_type: average
+    height: 36
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3
+        units: kg/m/s^2
         file: GreatWesternWoodlands_EC_flux
   Fe:
     statistic_type: average

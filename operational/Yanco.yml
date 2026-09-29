@@ -535,6 +535,14 @@ variables:
         instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: Yanco_EC_Calculate
+  Fm:
+    statistic_type: average
+    height: 6
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3
+        units: kg/m/s^2
+        file: Yanco_EC_Calculate
   Fe:
     statistic_type: average
     height: 6.0
@@ -544,14 +552,6 @@ variables:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
         units: W/m^2
-        file: Yanco_EC_Calculate
-  tau:
-    statistic_type: average
-    height: 6.0
-    input_variables:
-      tau:
-        instrument: Campbell Scientific CSAT3
-        units: kg/m/s^2
         file: Yanco_EC_Calculate
   ustar:
     statistic_type: average

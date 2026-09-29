@@ -14,6 +14,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: AliceSpringsMulga_EC_TERNflux
+  Fm:
+    statistic_type: average
+    height: 10
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3B
+        units: kg/m/s^2
+        file: AliceSpringsMulga_EC_TERNflux
   ustar:
     statistic_type: average
     height: 11.6

@@ -91,6 +91,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: WombatStateForest_EC_TERNflux
+  Fm:
+    statistic_type: average
+    height: 41
+    input_variables:
+      tau:
+        instrument: Campbell Scientific CSAT3B
+        units: kg/m/s^2
+        file: WombatStateForest_EC_TERNflux
   Fg_0.13ma:
     statistic_type: average
     height: -0.13
@@ -530,6 +538,14 @@ variables:
     height: 41.0
     input_variables:
       wnd_dir_compass:
+        instrument: Campbell Scientific CSAT3B
+        units: degrees
+        file: WombatStateForest_EC_TERNflux
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 41
+    input_variables:
+      std_wnd_dir:
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: WombatStateForest_EC_TERNflux

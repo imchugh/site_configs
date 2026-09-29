@@ -631,6 +631,14 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Fletcherview_EC_slow_core
+  Fm:
+    statistic_type: average
+    height: 24.5
+    input_variables:
+      Fm_Avg:
+        instrument: Campbell Scientific CSAT3B
+        units: kg/m/s^2
+        file: Fletcherview_EC_slow_core
   ustar:
     statistic_type: average
     height: 24.5
