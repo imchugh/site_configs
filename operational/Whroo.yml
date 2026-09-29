@@ -399,14 +399,6 @@ variables:
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Whroo_soil_Table1
-  Fg_0.08mc:
-    statistic_type: average
-    height: -0.08
-    input_variables:
-      Fg_8cmc_Avg:
-        instrument: Hukseflux HFP01
-        units: W/m^2
-        file: Whroo_soil_Table1
   Fg_0.08md:
     statistic_type: average
     height: -0.08
