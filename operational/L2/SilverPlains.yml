@@ -5,6 +5,11 @@
 
 Fg_0.08mc:  # default (-100, 150)
   range_check: {lower: -200, upper: 200}
+  # First fleet use of mad_filter -- catches the 2026-05-28 transient spike
+  # (381, 1064 W/m^2) that a fixed range can't bound without also clipping
+  # genuine summer swings. Watch this site before considering it a Fg default.
+  mad_filter:
+    reference_var: Fsd
 # Logger flux QC flags -- EasyFlux 1-9 flag scheme: reject 8 and 9
 Fco2:
   flag_check: {source: [Fco2_QC], reject: [8, 9]}
