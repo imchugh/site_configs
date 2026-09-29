@@ -8,3 +8,11 @@ Sig_IRGA:  # default (80, 102.5)
   # healthy at ~94 to 2025-12-09 and ~63 from 2025-12-11 (IRGA change). One bound
   # serves both eras; poor states (<60) coincide with bad fluxes in both.
   range_check: {lower: 60, upper: 101}
+# Pasture site, no canopy -- persistent, timing-correlated Fg swings exceed the
+# default (-100, 150), same regime as Boolcoomatta/Dookie (2026-09-29 audit).
+Fg_0.08mc:  # default (-100, 150)
+  range_check: {lower: -200, upper: 200}
+Fg_0.08md:  # default (-100, 150)
+  range_check: {lower: -200, upper: 200}
+Fg_0.08me:  # default (-100, 150)
+  range_check: {lower: -200, upper: 200}

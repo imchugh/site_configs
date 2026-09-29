@@ -3,5 +3,11 @@
 # NOT PORTED: ['Diag_IRGA', 'Diag_SONIC'] -- see _range_defaults.yml's Diag note.
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fco2_DL->Fco2, Fe_DL->Fe, Fh_DL->Fh, RH->RH_25m
 
+# Sparse open-savanna canopy -- persistent, timing-correlated Fg swings exceed
+# the default (-100, 150), same regime as Boolcoomatta/Dookie (2026-09-29 audit).
+Fg_0.08ma:  # default (-100, 150)
+  range_check: {lower: -200, upper: 200}
+Fg_0.08md:  # default (-100, 150)
+  range_check: {lower: -200, upper: 200}
 Ws_SONIC_Sd:
   range_check: {lower: 0, upper: 20}
