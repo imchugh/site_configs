@@ -3,3 +3,7 @@
 # NOT PORTED: ['Diag_IRGA', 'Diag_SONIC'] -- see _range_defaults.yml's Diag note.
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fco2_DL->Fco2, Fe_DL->Fe, Fh_DL->Fh, Tv_SONIC_Av->Tv_SONIC
 
+# High elevation (1650m) -- clear-sky radiative cooling genuinely dips below the
+# default (200, 700), same regime as WombatStateForest (2026-09-29 audit).
+Fld:  # default (200, 700)
+  range_check: {lower: 150, upper: 700}
