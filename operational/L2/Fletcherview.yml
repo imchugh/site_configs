@@ -9,5 +9,3 @@ Fg_0.08ma:  # default (-100, 150)
   range_check: {lower: -200, upper: 200}
 Fg_0.08md:  # default (-100, 150)
   range_check: {lower: -200, upper: 200}
-Ws_SONIC_Sd:
-  range_check: {lower: 0, upper: 20}
