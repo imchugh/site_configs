@@ -412,6 +412,54 @@ variables:
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: MyallValeB_EC_Flux_CSFormat
+  U_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      U:
+        instrument: Campbell Scientific IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_Notes
+  U_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      U_SIGMA:
+        instrument: Campbell Scientific IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_Notes
+  V_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      V:
+        instrument: Campbell Scientific IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_Notes
+  V_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      V_SIGMA:
+        instrument: Campbell Scientific IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_Notes
+  W_SONIC_Av:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      W:
+        instrument: Campbell Scientific IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_Notes
+  W_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 3.2
+    input_variables:
+      W_SIGMA:
+        instrument: Campbell Scientific IRGASON
+        units: m/s
+        file: MyallValeB_EC_Flux_Notes
   Vbat:
     statistic_type: average
     height: 1.0

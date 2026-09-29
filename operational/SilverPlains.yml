@@ -456,6 +456,54 @@ variables:
         instrument: Campbell Scientific CSAT3A
         units: degC
         file: SilverPlains_EC_Flux_CSFormat
+  U_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      U:
+        instrument: Campbell Scientific CSAT3A
+        units: m/s
+        file: SilverPlains_EC_Flux_Notes
+  U_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 2.5
+    input_variables:
+      U_SIGMA:
+        instrument: Campbell Scientific CSAT3A
+        units: m/s
+        file: SilverPlains_EC_Flux_Notes
+  V_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      V:
+        instrument: Campbell Scientific CSAT3A
+        units: m/s
+        file: SilverPlains_EC_Flux_Notes
+  V_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 2.5
+    input_variables:
+      V_SIGMA:
+        instrument: Campbell Scientific CSAT3A
+        units: m/s
+        file: SilverPlains_EC_Flux_Notes
+  W_SONIC_Av:
+    statistic_type: average
+    height: 2.5
+    input_variables:
+      W:
+        instrument: Campbell Scientific CSAT3A
+        units: m/s
+        file: SilverPlains_EC_Flux_Notes
+  W_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 2.5
+    input_variables:
+      W_SIGMA:
+        instrument: Campbell Scientific CSAT3A
+        units: m/s
+        file: SilverPlains_EC_Flux_Notes
   UxA:
     statistic_type: average
     height: 2.5
