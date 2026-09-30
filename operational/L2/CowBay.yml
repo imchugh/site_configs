@@ -1,0 +1,3 @@
+# L2 QC config for CowBay -- no deltas; runs entirely on configs/qc/_range_defaults.yml
+# and configs/qc/_dependency_defaults.yml (flux_system: TERNFLUX, so no flag_check needed).
+# No PyFluxPro source config was ever supplied for this site.
