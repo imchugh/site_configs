@@ -4,14 +4,6 @@ file_formats:
 flux_system: TERNFLUX
 flux_file: Wellington_EC_slow_core
 variables:
-  AC:
-    statistic_type: covariance
-    height: 2.5
-    input_variables:
-      covCcAh:
-        instrument: LI-COR LI-7500RS
-        units: mg.g/m^3
-        file: Wellington_EC_slow_core
   AH_2.5m:
     statistic_type: average
     height: 2.5
@@ -36,16 +28,6 @@ variables:
         instrument: LI-COR LI-7500RS
         units: g^2/m^6
         file: Wellington_EC_slow_core
-  AT:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      covAhTv:
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: K.g/m^3
-        file: Wellington_EC_slow_core
   CO2c_IRGA_Av:
     statistic_type: average
     height: 2.5
@@ -61,16 +43,6 @@ variables:
       covCcCc:
         instrument: LI-COR LI-7500RS
         units: mg^2/m^6
-        file: Wellington_EC_slow_core
-  CT:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      covCcTv:
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: K.mg/m^3
         file: Wellington_EC_slow_core
   Diag_IRGA:
     variable_type: counter
@@ -213,14 +185,6 @@ variables:
       RH_HMP_01_Avg:
         instrument: Vaisala HMP155
         units: frac
-        file: Wellington_EC_slow_core
-  SVP:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      es_HMP_01_Avg:
-        instrument: Vaisala HMP155
-        units: kPa
         file: Wellington_EC_slow_core
   Sig_IRGA:
     statistic_type: average
@@ -558,14 +522,6 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Wellington_EC_slow_core
-  VP:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      e_HMP_01_Avg:
-        instrument: Vaisala HMP155
-        units: kPa
-        file: Wellington_EC_slow_core
   Vbat:
     statistic_type: average
     height: 1.0
@@ -613,22 +569,6 @@ variables:
       ps_7500_filtered:
         instrument: LI-COR LI-7500RS
         units: kPa
-        file: Wellington_EC_slow_core
-  Rhoa:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      rho_a_Avg:
-        instrument: Vaisala HMP155
-        units: kg/m^3
-        file: Wellington_EC_slow_core
-  Rhod:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      rho_d_Avg:
-        instrument: Vaisala HMP155
-        units: kg/m^3
         file: Wellington_EC_slow_core
   ustar:
     statistic_type: average

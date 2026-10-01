@@ -507,22 +507,6 @@ variables:
         instrument: Campbell Scientific CR1000X
         units: V
         file: Ridgefield_EC_slow_all
-  Vbat_2:
-    statistic_type: average
-    height: 1.0
-    input_variables:
-      BattV_Avg:
-        instrument: Campbell Scientific CR800
-        units: V
-        file: Ridgefield_soil1_Table1
-  Vbat_3:
-    statistic_type: average
-    height: 1.0
-    input_variables:
-      TwrBattV_Avg:
-        instrument: Campbell Scientific CR200
-        units: V
-        file: Ridgefield_soil1_Table1
   Wd_SONIC_Av:
     statistic_type: average
     height: 2.5

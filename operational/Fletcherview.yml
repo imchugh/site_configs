@@ -187,14 +187,6 @@ variables:
         instrument: Vaisala HMP155
         units: frac
         file: Fletcherview_EC_slow_core
-  SVP:
-    statistic_type: average
-    height: 24.5
-    input_variables:
-      es_HMP_01_Avg:
-        instrument: Vaisala HMP155
-        units: kPa
-        file: Fletcherview_EC_slow_core
   Sig_IRGA:
     statistic_type: average
     height: 24.5
@@ -271,14 +263,6 @@ variables:
         instrument: Campbell Scientific CR6
         units: degC
         file: Fletcherview_EC_slow_core
-  Tpanel_2:
-    statistic_type: average
-    height: 1.5
-    input_variables:
-      Tpanel_CR1000_Avg:
-        instrument: Campbell Scientific CR1000
-        units: degC
-        file: Fletcherview_soil_slow_soil
   Ts_0.05ma:
     statistic_type: average
     height: -0.05
@@ -539,14 +523,6 @@ variables:
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Fletcherview_EC_slow_core
-  VP:
-    statistic_type: average
-    height: 24.5
-    input_variables:
-      e_HMP_01_Avg:
-        instrument: Vaisala HMP155
-        units: kPa
-        file: Fletcherview_EC_slow_core
   Vbat:
     statistic_type: average
     height: 24.5
@@ -555,14 +531,6 @@ variables:
         instrument: Campbell Scientific CR6
         units: V
         file: Fletcherview_EC_slow_core
-  Vbat_2:
-    statistic_type: average
-    height: 1.5
-    input_variables:
-      Vbat_CR1000_Avg:
-        instrument: Campbell Scientific CR1000
-        units: V
-        file: Fletcherview_soil_slow_soil
   Wd_SONIC_Av:
     statistic_type: average
     height: 24.5

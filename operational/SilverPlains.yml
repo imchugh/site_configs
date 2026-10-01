@@ -352,7 +352,7 @@ variables:
         instrument: Campbell Scientific EE181
         units: degC
         file: SilverPlains_EC_Flux_CSFormat
-  Td:
+  Td_2m:
     statistic_type: average
     height: 2.0
     input_variables:
@@ -360,19 +360,11 @@ variables:
         instrument: Campbell Scientific EE181
         units: degC
         file: SilverPlains_EC_Flux_CSFormat
-  Td_IRGA_a:
+  Td_IRGA_Av:
     statistic_type: average
     height: 2.5
     input_variables:
       T_DP_1_1_1:
-        instrument: Campbell Scientific EC150
-        units: degC
-        file: SilverPlains_EC_Flux_CSFormat
-  Td_IRGA_b:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      T_DP_1_1_2:
         instrument: Campbell Scientific EC150
         units: degC
         file: SilverPlains_EC_Flux_CSFormat
@@ -692,7 +684,7 @@ variables:
         instrument: Campbell Scientific CSAT3A
         units: degrees
         file: SilverPlains_EC_Flux_CSFormat
-  Wd_Av:
+  Wd_2.5m_Av:
     statistic_type: average
     height: 2.5
     input_variables:
@@ -700,7 +692,7 @@ variables:
         instrument: Gill Windsonic
         units: degrees
         file: SilverPlains_EC_Flux_CSFormat
-  Wd_Sd:
+  Wd_2.5m_Sd:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:

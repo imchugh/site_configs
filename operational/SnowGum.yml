@@ -264,7 +264,7 @@ variables:
         instrument: Vaisala HMP155
         units: degC
         file: SnowGum_EC_Flux_CSFormat
-  Td:
+  Td_2m:
     statistic_type: average
     height: 2.0
     input_variables:
