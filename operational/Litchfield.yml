@@ -112,6 +112,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Litchfield_rad_Rad30m
+  Tbody_RAD:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Cnr4_T_C_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: degC
+        file: Litchfield_rad_Rad30m
   Fsd:
     statistic_type: average
     height: 23.0
