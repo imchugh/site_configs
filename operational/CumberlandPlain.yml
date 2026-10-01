@@ -151,6 +151,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
+  Tbody_RAD:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      T_nr_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: K
+        file: CUP_AUTO_climate        
   AH_IRGA_Av:
     statistic_type: average
     height: 30.0

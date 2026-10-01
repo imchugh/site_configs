@@ -143,6 +143,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CowBay_EC_T30min_all
+  Tbody_RAD:
+    statistic_type: average
+    height: 23.0
+    input_variables:
+      Tb_NR01_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: degC
+        file: CowBay_EC_T30min_all        
   Precip:
     statistic_type: sum
     height: 2.0

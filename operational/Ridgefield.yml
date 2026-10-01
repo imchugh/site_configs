@@ -135,6 +135,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Ridgefield_EC_slow_all
+  Tbody_RAD:
+    statistic_type: average
+    height: 8.0
+    input_variables:
+      Lbody_temp_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: K
+        file: Ridgefield_EC_slow_all
   Precip_1.2m:
     statistic_type: sum
     height: 1.2

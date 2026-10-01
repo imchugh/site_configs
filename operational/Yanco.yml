@@ -130,6 +130,22 @@ variables:
         instrument: Kipp&Zonen CMP21
         units: W/m^2
         file: Yanco_Met_AWS_SMTMS_2
+  Tbody_RAD_1:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      LWR1_Temp:
+        instrument: Kipp&Zonen CGR4
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
+  Tbody_RAD_2:
+    statistic_type: average
+    height: 10.0
+    input_variables:
+      LWR2_Temp:
+        instrument: Kipp&Zonen CGR4
+        units: degC
+        file: Yanco_Met_AWS_SMTMS_2
   Precip:
     statistic_type: sum
     height: 1.0

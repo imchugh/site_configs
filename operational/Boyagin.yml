@@ -247,6 +247,14 @@ variables:
         instrument: Kipp&Zonen CG2
         units: W/m^2
         file: Boyagin_rad_Rad_30
+  Tbody_RAD:
+    statistic_type: average
+    height: 30.0
+    input_variables:
+      Rs_cnr4_Avg:
+        instrument: Kipp&Zonen CNR4
+        units: ohms_pt100
+        file: Boyagin_rad_Rad_30
   Fpard:
     statistic_type: average
     height: 30.0

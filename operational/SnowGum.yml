@@ -208,6 +208,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
+  Tbody_RAD:
+    statistic_type: average
+    height: 14.0
+    input_variables:
+      T_nr:
+        instrument: Kipp&Zonen CNR4
+        units: K
+        file: SnowGum_EC_Flux_CSFormat        
   Precip:
     statistic_type: sum
     height: 0.6

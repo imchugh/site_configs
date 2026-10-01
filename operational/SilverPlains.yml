@@ -232,6 +232,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SilverPlains_EC_Flux_CSFormat
+  Tbody_RAD:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+      T_nr:
+        instrument: Kipp&Zonen CNR4
+        units: K
+        file: SilverPlains_EC_Flux_CSFormat        
   Fpard:
     statistic_type: average
     height: 2.0

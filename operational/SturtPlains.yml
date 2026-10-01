@@ -119,6 +119,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SturtPlains_EC_EnrgyBal
+  Tbody_RAD:
+    statistic_type: average
+    height: 5.0
+    input_variables:
+      CNR1_TK:
+        instrument: Kipp&Zonen CNR4
+        units: K
+        file: SturtPlains_EC_EnrgyBal        
   Precip:
     statistic_type: sum
     height: 0.6

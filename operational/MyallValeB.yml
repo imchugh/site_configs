@@ -187,6 +187,14 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: MyallValeB_EC_Flux_CSFormat
+  Tbody_RAD:
+    statistic_type: average
+    height: 3.2
+    input_variables:
+      T_nr:
+        instrument: Kipp&Zonen CNR4
+        units: K
+        file: MyallValeB_EC_Flux_CSFormat        
   AH_IRGA_Ct:
     variable_type: counter
     height: 3.2
