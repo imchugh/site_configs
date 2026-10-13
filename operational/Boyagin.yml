@@ -12,6 +12,11 @@ file_formats:
   Boyagin_soil_S_Twr_gnd_soilEC: CSI
 flux_system: TERNFLUX
 flux_file: Boyagin_EC_slow_all
+custom_metadata:
+  horizontal_location:
+    belowground:
+      a: pit north of tower
+      b: pit south of tower
 variables:
   AH_23m:
     statistic_type: average

@@ -4,6 +4,15 @@ file_formats:
   Ridgefield_soil1_Table1: CSI
 flux_system: TERNFLUX
 flux_file: Ridgefield_EC_slow_all
+custom_metadata:
+  horizontal_location:
+    belowground:
+      a: main tower
+      b: main tower
+      c: main tower
+      d: satellite pit
+      e: satellite pit
+      f: satellite pit
 variables:
   Sig_IRGA:
     statistic_type: average

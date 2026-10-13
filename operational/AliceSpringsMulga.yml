@@ -5,6 +5,15 @@ file_formats:
   AliceSpringsMulga_soil_soil_microsites: CSI
 flux_system: TERNFLUX
 flux_file: AliceSpringsMulga_EC_TERNflux
+custom_metadata:
+  horizontal_location:
+    belowground:
+      a: bare soil array 1
+      b: mulga array 1
+      c: understorey array 1
+      d: bare soil array 2
+      e: mulga array 2
+      f: understorey array 2
 variables:
   Fh:
     statistic_type: average

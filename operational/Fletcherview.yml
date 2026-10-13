@@ -4,6 +4,13 @@ file_formats:
   Fletcherview_soil_slow_soil: CSI
 flux_system: TERNFLUX
 flux_file: Fletcherview_EC_slow_core
+custom_metadata:
+  horizontal_location:
+    belowground:
+      a: shrub
+      b: bare ground
+      c: tree
+      d: grass
 variables:
   AH_25m:
     statistic_type: average
