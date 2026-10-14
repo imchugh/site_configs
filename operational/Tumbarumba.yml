@@ -320,7 +320,7 @@ variables:
         instrument: Vaisala HMP155
         units: degC
         file: Tumbarumba_EC_TERNflux
-  Tbody_RAD_Av:
+  Tbody_RAD:
     statistic_type: average
     height: 20.0
     input_variables:
