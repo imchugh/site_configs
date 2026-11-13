@@ -1,0 +1,389 @@
+level = L2
+[Files]
+    file_path = /mnt/data/OzFlux/Sites/Calperum/Data/Current/daily/
+    in_filename = Calperum_daily_L1.nc
+    out_filename = Calperum_daily_L2.nc
+    plot_path = /home/yishida/Projects/daily/plots/
+[Options]
+    irga_type = Li-7500RS
+    sonic_type = CSAT3B
+    IRGA_Check = Yes
+    SONIC_Check = Yes
+    call_mode = batch
+    show_plots = No
+[Variables]
+    [[AH_2m]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 30
+    [[AH_IRGA_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 30
+    [[AH_IRGA_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 2
+    [[CO2_IRGA_Av]]
+        [[[RangeCheck]]]
+            lower = 500
+            upper = 2000
+    [[CO2_IRGA_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 25
+    [[Diag_IRGA]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 10.5
+    [[Diag_SONIC]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 20.5
+    [[Fco2_DL]]
+        [[[RangeCheck]]]
+            lower = -50
+            upper = 50
+    [[Fe_DL]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 600
+    [[Fg_0.08ma]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_0.08mb]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_0.08mc]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fh_DL]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 600
+    [[Fld]]
+        [[[RangeCheck]]]
+            lower = 200
+            upper = 700
+    [[Flu]]
+        [[[RangeCheck]]]
+            lower = 200
+            upper = 700
+    [[Fsd]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 1500
+    [[Fsd_b]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 1500
+    [[Fsu]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 500
+    [[Precip]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[RH_2m]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 110
+    [[Sig_IRGA]]
+        [[[RangeCheck]]]
+            lower = 80
+            upper = 101
+    [[Sws_0.1ma]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.1mb]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.1mc]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.25ma]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.25mb]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.25mc]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.5ma]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.5mb]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_0.5mc]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_1.8ma]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_1.8mb]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_1.8mc]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_1ma]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_1mb]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Sws_1mc]]
+        [[[RangeCheck]]]
+            lower = 0.001
+            upper = 0.5
+    [[Ta_2m]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 50
+    [[Tpanel]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 60
+    [[Ts_0.08ma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.08mb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.08mc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.1ma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.1mb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.1mc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.25ma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.25mb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.25mc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.5ma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.5mb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_0.5mc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_1.8ma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_1.8mb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_1.8mc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_1ma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_1mb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_1mc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Tv_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 50
+    [[Tv_SONIC_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 3
+    [[UxA]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[UxC]]
+        [[[RangeCheck]]]
+            lower = -4
+            upper = 4
+    [[UxT]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UxUy]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[UxUz]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 10
+    [[Ux_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 20
+    [[Ux_SONIC_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 3
+    [[UyA]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[UyC]]
+        [[[RangeCheck]]]
+            lower = -4
+            upper = 4
+    [[UyT]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UyUz]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 10
+    [[Uy_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 20
+    [[Uy_SONIC_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 3
+    [[UzA]]
+        [[[RangeCheck]]]
+            lower = -0.01
+            upper = 0.5
+    [[UzC]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UzT]]
+        [[[RangeCheck]]]
+            lower = -0.2
+            upper = 1
+    [[Uz_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[Uz_SONIC_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 1.5
+    [[Vbat]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 15
+    [[Vbat_b]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 15
+    [[Wd_2m_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 360
+    [[Wd_8m_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 360
+    [[Wd_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 360
+    [[Ws_2m_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 20
+    [[Ws_8m_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 20
+    [[Ws_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 20
+    [[ps]]
+        [[[RangeCheck]]]
+            lower = 90.55
+            upper = 110.55
+[Plots]
+    [[Radiation]]
+        variables = Fld,Flu,Fsd,Fsd_b,Fsu
+    [[Covariances (SONIC)]]
+        variables = UxT,UxUy,UxUz,UyT,UyUz,UzT
+    [[Covariances (SONIC & IRGA)]]
+        variables = UxA,UxC,UyA,UyC,UzA,UzC
+    [[Turbulent fluxes]]
+        variables = Fco2_DL,Fe_DL,Fh_DL,ustar_DL
+    [[Meteorology]]
+        variables = AH_2m,AH_IRGA_Av,AH_IRGA_Sd,Precip,RH_2m,Ta_2m,Wd_2m_Av,Wd_8m_Av,Wd_SONIC_Av,Ws_2m_Av,Ws_8m_Av,Ws_SONIC_Av,ps
+    [[Soil temperature: Ts_0.08m]]
+        variables = Ts_0.08ma,Ts_0.08mb,Ts_0.08mc
+    [[Soil temperature: Ts_0.1m]]
+        variables = Ts_0.1ma,Ts_0.1mb,Ts_0.1mc
+    [[Soil temperature: Ts_0.25m]]
+        variables = Ts_0.25ma,Ts_0.25mb,Ts_0.25mc
+    [[Soil temperature: Ts_0.5m]]
+        variables = Ts_0.5ma,Ts_0.5mb,Ts_0.5mc
+    [[Soil temperature: Ts_1.8m]]
+        variables = Ts_1.8ma,Ts_1.8mb,Ts_1.8mc
+    [[Soil temperature: Ts_1m]]
+        variables = Ts_1ma,Ts_1mb,Ts_1mc
+    [[Soil moisture: Sws_0.1m]]
+        variables = Sws_0.1ma,Sws_0.1mb,Sws_0.1mc
+    [[Soil moisture: Sws_0.25m]]
+        variables = Sws_0.25ma,Sws_0.25mb,Sws_0.25mc
+    [[Soil moisture: Sws_0.5m]]
+        variables = Sws_0.5ma,Sws_0.5mb,Sws_0.5mc
+    [[Soil moisture: Sws_1.8m]]
+        variables = Sws_1.8ma,Sws_1.8mb,Sws_1.8mc
+    [[Soil moisture: Sws_1m]]
+        variables = Sws_1ma,Sws_1mb,Sws_1mc
+    [[Soil heat flux]]
+        variables = Fg_0.08ma,Fg_0.08mb,Fg_0.08mc
