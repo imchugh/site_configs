@@ -1,0 +1,82 @@
+canonical,old_input,old_file,new_input,new_file,new_units,confidence,note
+AH_10m,Ah_HMP_10m_Avg,-,-,-,-,derived,"removed from config; fluxcore derives AH from Ta, RH and ps over the whole record"
+AH_2m,Ah_HMP_2m_Avg,-,-,-,-,derived,"removed from config; fluxcore derives AH from Ta, RH and ps over the whole record"
+AH_4m,Ah_HMP_4m_Avg,-,-,-,-,derived,"removed from config; fluxcore derives AH from Ta, RH and ps over the whole record"
+AH_7m,Ah_HMP_7m_Avg,-,-,-,-,derived,"removed from config; fluxcore derives AH from Ta, RH and ps over the whole record"
+AH_15m,Ah_HMP_15m_Avg,EC_slow_met,AH_sensor_mean,EC_TERNflux,g/m^3,high,confirmed: EC-height HMP is the old 14.7 m one
+AH_IRGA_Av,Ah_7500_Avg,EC_slow_met,H2O_mean,EC_TERNflux,g/m^3,high,
+AH_IRGA_Sd,covAhAh,EC_slow_flux,H2O_stdev,EC_TERNflux,g/m^3,high,old variance input square-rooted; TERNflux stdev passes through
+CO2c_IRGA_Av,Cc_7500_Avg,EC_slow_met,CO2_mean,EC_TERNflux,mg/m^3,high,
+CO2c_IRGA_Sd,covCcCc,EC_slow_flux,co2_stdev,EC_TERNflux,mg/m^3,high,old variance input square-rooted; TERNflux stdev passes through
+Diag_IRGA,7500_Warn,EC_slow_flux,irga_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (7500_Warn) -> new valid_count; per-input diag_type (fluxcore a1091b8)
+Diag_SONIC,CSAT_Warn,EC_slow_flux,sonic_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (CSAT_Warn) -> new valid_count; per-input diag_type (fluxcore a1091b8)
+Fg_0.08ma,Fg_CN3_8cm_a_Avg,EC_slow_flux,-,-,-,none,
+Fg_0.08mb,Fg_CN3_8cm_b_Avg,EC_slow_flux,-,-,-,none,
+Fg_0.08mc,Fg_CN3_8cm_c_Avg,EC_slow_flux,-,-,-,none,
+Fld,Fld_CNR4_Avg,EC_slow_rad,Fld_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change; new era begins 2026-11-10 13:00 (CNR4 body thermistor miswired before)
+Flu,Flu_CNR4_Avg,EC_slow_rad,Flu_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change; new era begins 2026-11-10 13:00 (CNR4 body thermistor miswired before)
+Tbody_RAD,Tb_CNR4_Avg,EC_slow_rad,Tb_Avg,EC_TERNflux,K,high,confirmed: no height change; new era begins 2026-11-10 13:00 (CNR4 body thermistor miswired before)
+Fsd,Fsd_CNR4_Avg,EC_slow_rad,Fsd_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change
+Fsu,Fsu_CNR4_Avg,EC_slow_rad,Fsu_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change
+Precip,Rain_Tot,EC_slow_met,rain_Tot,EC_TERNflux,mm,high,confirmed: no height change
+RH_10m,RH_HMP_10m_Avg,EC_slow_met,RH_10m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
+RH_15m,RH_HMP_15m_Avg,EC_slow_met,RH_sensor_mean,EC_TERNflux,percent,high,confirmed: EC-height HMP is the old 14.7 m one
+RH_2m,RH_HMP_2m_Avg,EC_slow_met,RH_2m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
+RH_4m,RH_HMP_4m_Avg,EC_slow_met,RH_4m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
+RH_7m,RH_HMP_7m_Avg,EC_slow_met,RH_7m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
+Fg_0.08md,shf_Avg(1),EC_slow_flux,Fg_01,EC_TERNflux,W/m^2,medium,"PROVISIONAL: assumes Fg_01 is old shf_Avg(1) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators"
+Fg_0.08me,shf_Avg(2),EC_slow_flux,Fg_02,EC_TERNflux,W/m^2,medium,"PROVISIONAL: assumes Fg_02 is old shf_Avg(2) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators"
+Fg_0.08mf,shf_Avg(3),EC_slow_flux,Fg_03,EC_TERNflux,W/m^2,medium,"PROVISIONAL: assumes Fg_03 is old shf_Avg(3) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators"
+Sig_IRGA,sig_strn_7500_Avg,EC_slow_flux,sig_str_irga_Avg,EC_TERNflux,percent,high,
+Sws_0.06m,CS650_6cm_VWC_Avg,EC_slow_flux,sws_cs650_Avg(1),EC_TERNflux,m^3/m^3,medium,"PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators"
+Ta_10m,Ta_HMP_10m_Avg,EC_slow_met,Ta_10m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
+Ta_15m,Ta_HMP_15m_Avg,EC_slow_met,Ta_sensor_mean,EC_TERNflux,degC,high,confirmed: EC-height HMP is the old 14.7 m one
+Ta_2m,Ta_HMP_2m_Avg,EC_slow_met,Ta_2m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
+Ta_4m,Ta_HMP_4m_Avg,EC_slow_met,Ta_4m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
+Ta_7m,Ta_HMP_7m_Avg,EC_slow_met,Ta_7m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
+Ts_0.04ma,Ts_TCAVa_4cm_Avg,EC_slow_met,Tsoil_mean(1),EC_TERNflux,degC,medium,PROVISIONAL: assumes Tsoil_mean(1) is old TCAVa at 4 cm; confirm with site operators
+Ts_0.04mb,Ts_TCAVb_4cm_Avg,EC_slow_met,Tsoil_mean(2),EC_TERNflux,degC,medium,PROVISIONAL: assumes Tsoil_mean(2) is old TCAVb at 4 cm; confirm with site operators
+Ts_0.04mc,Ts_T108a_4cm_Avg,EC_slow_met,-,-,-,none,
+Ts_0.04md,Ts_T108b_4cm_Avg,EC_slow_met,-,-,-,none,
+Ts_0.06m,CS650_6cm_Temp_Avg,EC_slow_flux,T_cs650_Avg(1),EC_TERNflux,degC,medium,"PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators"
+Tv_SONIC_Av,Tv_CSAT_Avg,EC_slow_met,Tsonic_Avg,EC_TERNflux,degC,high,
+Tv_SONIC_Sd,covTvTv,EC_slow_flux,Tsonic_stdev,EC_TERNflux,degC,high,old variance input square-rooted; TERNflux stdev passes through
+UxA,covUxAh,EC_slow_flux,H2O_Ux_cov,EC_TERNflux,g/m^2/s,high,
+UxC,covUxCc,EC_slow_flux,CO2_Ux_cov,EC_TERNflux,mg/m^2/s,high,
+UxT,covUxTv,EC_slow_flux,Tsonic_Ux_cov,EC_TERNflux,m.degC/s,high,
+UxUy,covUxUy,EC_slow_flux,Ux_Uy_cov,EC_TERNflux,m^2/s^2,high,
+UxUz,covUzUx,EC_slow_flux,Ux_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Ux_SONIC_Av,Ux_CSAT_Avg,EC_slow_met,Ux_Avg,EC_TERNflux,m/s,high,
+Ux_SONIC_Sd,covUxUx,EC_slow_flux,Ux_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; TERNflux stdev passes through
+UyA,covUyAh,EC_slow_flux,H2O_Uy_cov,EC_TERNflux,g/m^2/s,high,
+UyC,covUyCc,EC_slow_flux,CO2_Uy_cov,EC_TERNflux,mg/m^2/s,high,
+UyT,covUyTv,EC_slow_flux,Tsonic_Uy_cov,EC_TERNflux,m.degC/s,high,
+UyUz,covUzUy,EC_slow_flux,Uy_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Uy_SONIC_Av,Uy_CSAT_Avg,EC_slow_met,Uy_Avg,EC_TERNflux,m/s,high,
+Uy_SONIC_Sd,covUyUy,EC_slow_flux,Uy_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; TERNflux stdev passes through
+UzA,covUzAh,EC_slow_flux,H2O_Uz_cov,EC_TERNflux,g/m^2/s,high,
+UzC,covUzCc,EC_slow_flux,CO2_Uz_cov,EC_TERNflux,mg/m^2/s,high,
+UzT,covUzTv,EC_slow_flux,Tsonic_Uz_cov,EC_TERNflux,m.degC/s,high,
+Uz_SONIC_Av,Uz_CSAT_Avg,EC_slow_met,Uz_Avg,EC_TERNflux,m/s,high,
+Uz_SONIC_Sd,covUzUz,EC_slow_flux,Uz_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; TERNflux stdev passes through
+Wd_SONIC_Av,WD_CSAT_Compass_Avg,EC_slow_met,wnd_dir_compass,EC_TERNflux,degrees,high,
+Wd_SONIC_Sd,WD_CSAT_Sd,EC_slow_met,std_wnd_dir,EC_TERNflux,degrees,high,
+Wd_10m,WD_WS4_10m_Avg,EC_slow_met,Wd_10m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Wd_16m,WD_WS4_16m_Avg,EC_slow_met,Wd_Av,EC_TERNflux,degrees,high,confirmed: Ws_Av/Wd_Av is the old 15.5 m Windsonic
+Wd_2m,WD_WS4_2m_Avg,EC_slow_met,Wd_2m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height
+Wd_4m,WD_WS4_4m_Avg,EC_slow_met,Wd_4m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height
+Wd_7m,WD_WS4_7m_Avg,EC_slow_met,Wd_7m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Ws_SONIC_Av,WS_CSAT_Avg,EC_slow_met,wnd_spd,EC_TERNflux,m/s,high,
+Ws_10m,WS_WS4_10m_Avg,EC_slow_met,Ws_10m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Ws_16m,WS_WS4_16m_Avg,EC_slow_met,Ws_Av,EC_TERNflux,m/s,high,confirmed: Ws_Av/Wd_Av is the old 15.5 m Windsonic
+Ws_2m,WS_WS4_2m_Avg,EC_slow_met,Ws_2m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height
+Ws_4m,WS_WS4_4m_Avg,EC_slow_met,Ws_4m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height
+Ws_7m,WS_WS4_7m_Avg,EC_slow_met,Ws_7m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+ps,ps_7500_Avg,EC_slow_met,amb_press_mean,EC_TERNflux,kPa,high,
+Fco2,Fc_Avg,EC_slow_flux,Fco2,EC_TERNflux,mg/m^2/s,high,
+Fe,Fe_Avg,EC_slow_flux,Fe,EC_TERNflux,W/m^2,high,
+Fh,Fh_Avg,EC_slow_flux,Fh,EC_TERNflux,W/m^2,high,
+Fm,Fm_Avg,EC_slow_flux,tau,EC_TERNflux,kg/m/s^2,high,
+ustar,ustar_Avg,EC_slow_flux,u_star,EC_TERNflux,m/s,high,
+Tpanel,CR3000_PTemp_Avg,EC_slow_met,Tpanel_Avg,EC_TERNflux,degC,high,logger now CR1000X
+Vbat,CR3000_batt_volt_Avg,EC_slow_met,Vbat_Avg,EC_TERNflux,V,high,logger now CR1000X
