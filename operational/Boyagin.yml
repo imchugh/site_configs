@@ -260,7 +260,7 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: ohms_pt100
         file: Boyagin_rad_Rad_30
-  Fpard:
+  Fqd:
     statistic_type: average
     height: 30.0
     input_variables:
@@ -268,7 +268,7 @@ variables:
         instrument: Apogee Instruments SQ-110-SS
         units: umol/m^2/s
         file: Boyagin_rad_Rad_30
-  Fparu:
+  Fqu:
     statistic_type: average
     height: 30.0
     input_variables:

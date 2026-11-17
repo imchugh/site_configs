@@ -240,7 +240,7 @@ variables:
         instrument: Kipp&Zonen CNR4
         units: K
         file: SilverPlains_EC_Flux_CSFormat        
-  Fpard:
+  Fqd:
     statistic_type: average
     height: 2.0
     input_variables:
@@ -248,7 +248,7 @@ variables:
         instrument: Apogee Instruments SQ-110-SS
         units: umol/m^2/s
         file: SilverPlains_EC_Flux_CSFormat
-  Fparu:
+  Fqu:
     statistic_type: average
     height: 2.5
     input_variables:
