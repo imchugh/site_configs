@@ -1462,3 +1462,23 @@ variables:
       units: degC
       file: Gingin_EC_TERNflux
       begin: 2026-10-20 12:00
+  WTD:
+    statistic_type: average
+    height: -13.173
+    input_variables:
+    - name: CS451_Level
+      instrument: Campbell Scientific CS451
+      units: m
+      file: Gingin_EC_slow_met
+      end: 2023-01-25 18:30
+    - name: CS451_Level_Avg
+      instrument: Campbell Scientific CS451
+      units: m
+      file: Gingin_EC_slow_met
+      begin: 2023-01-25 19:00
+      end: 2026-10-20 11:30
+    - name: CS451_Level_Avg
+      instrument: Campbell Scientific CS451
+      units: m
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00

@@ -83,3 +83,4 @@ Vbat,CR3000_batt_volt_Avg,EC_slow_met,Vbat_Avg,EC_TERNflux,V,high,logger now CR1
 Fqd,-,-,Fqd_Avg,EC_TERNflux,umol/m^2/s,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
 Fqu,-,-,Fqu_Avg,EC_TERNflux,umol/m^2/s,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
 Tcanopy,-,-,Ttarg_IR_C_Avg,EC_TERNflux,degC,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
+WTD,CS451_Level / CS451_Level_Avg,EC_slow_met,CS451_Level_Avg,EC_TERNflux,m,new,"raw level (m of water above probe) in every era, incl. the old sampled CS451_Level to 2023-01-25; L2 converts to depth with WTD = 13.173 - level. PROVISIONAL constant: first reading 3.507 vs install 3.363 suggests 13.317; confirm with site operators"

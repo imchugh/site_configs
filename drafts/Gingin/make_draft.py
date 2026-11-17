@@ -100,6 +100,19 @@ NEW={'Fqd':('Fqd_Avg','Apogee Instruments SQ-110-SS','umol/m^2/s'),
      'Fqu':('Fqu_Avg','Apogee Instruments SQ-110-SS','umol/m^2/s'),
      'Tcanopy':('Ttarg_IR_C_Avg','Apogee Instruments SI-111-SS','degC')}
 NEW_HEIGHT=15.0
+# Water table depth from the CS451 in the bore (installed once, never moved;
+# user, 2026-11-17). Every era maps the RAW level -- metres of water above the
+# probe, rising as the water table rises -- so L1 is one measurement end to
+# end. L2 turns it into CF water_table_depth (positive down) with one
+# undated linear correction: WTD = 13.173 - level (L2/Gingin.yml). The new
+# program's WL_CS451_DTW/AHD outputs are left out (derived on the logger; the
+# old program's were 0.0 from 2024). 13.173 = 9.81 m dip to water + 3.363 m
+# above the probe at install, but the first logged reading (2022-08-05) is
+# 3.507, so the true probe depth may be 13.317: to confirm with operators.
+WTD_INPUTS=[('CS451_Level','Gingin_EC_slow_met',None,'2023-01-25 18:30'),
+            ('CS451_Level_Avg','Gingin_EC_slow_met','2023-01-25 19:00',END),
+            ('CS451_Level_Avg',TF,BEGIN,None)]
+WTD_HEIGHT=-13.173
 INST={'Tpanel':'Campbell Scientific CR1000X','Vbat':'Campbell Scientific CR1000X'}
 
 c=yaml.safe_load(open(SRC))
@@ -136,6 +149,14 @@ for k,v in out['variables'].items():
 for k,(raw,inst,u) in NEW.items():
     out['variables'][k]={'statistic_type':'average','height':NEW_HEIGHT,'input_variables':[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]}
     rows.append((k,'-','-',raw,TF[7:],u,'new',f'new sensor, no old counterpart; PROVISIONAL height {NEW_HEIGHT} m (radiation boom assumed); confirm with site operators'))
+ivs=[]
+for raw,f,b,e in WTD_INPUTS:
+    d={'name':raw,'instrument':'Campbell Scientific CS451','units':'m','file':f}
+    if b: d['begin']=b
+    if e: d['end']=e
+    ivs.append(d)
+out['variables']['WTD']={'statistic_type':'average','height':WTD_HEIGHT,'input_variables':ivs}
+rows.append(('WTD','CS451_Level / CS451_Level_Avg','EC_slow_met','CS451_Level_Avg',TF[7:],'m','new','raw level (m of water above probe) in every era, incl. the old sampled CS451_Level to 2023-01-25; L2 converts to depth with WTD = 13.173 - level. PROVISIONAL constant: first reading 3.507 vs install 3.363 suggests 13.317; confirm with site operators'))
 yaml.safe_dump(out,open(OUT,'w'),sort_keys=False,allow_unicode=True,width=200)
 import csv; w=csv.writer(open(OUT.replace('.yml','_review.csv'),'w'))
 w.writerow(['canonical','old_input','old_file','new_input','new_file','new_units','confidence','note']); w.writerows(rows)
