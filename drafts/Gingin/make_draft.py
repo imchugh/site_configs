@@ -90,6 +90,16 @@ NEW_BEGIN={k:'2026-11-10 13:00' for k in ('Tbody_RAD','Fld','Flu')}
 # Dropped so fluxcore derives AH from Ta, RH and ps over the whole record with
 # one method (user, 2026-11-17). The 15 m AH stays: both eras are logged.
 DERIVE={f'AH_{h}' for h in ('2m','4m','7m','10m')}
+# New sensors with no old-logger counterpart, added from the changeover
+# (user, 2026-11-17). Models from the logger program (Apogee SQ-110-SS pair,
+# S/N 31316 in / 31418 out; Apogee SI-111). Heights not in the program:
+# assumed on the 15 m radiation boom, to confirm with the site operators.
+# Note: the program copy in ~/Documents names PAR Fpard/Fparu, but the loaded
+# program writes Fqd/Fqu, so these names change if that copy is ever loaded.
+NEW={'Fqd':('Fqd_Avg','Apogee Instruments SQ-110-SS','umol/m^2/s'),
+     'Fqu':('Fqu_Avg','Apogee Instruments SQ-110-SS','umol/m^2/s'),
+     'Tcanopy':('Ttarg_IR_C_Avg','Apogee Instruments SI-111-SS','degC')}
+NEW_HEIGHT=15.0
 INST={'Tpanel':'Campbell Scientific CR1000X','Vbat':'Campbell Scientific CR1000X'}
 
 c=yaml.safe_load(open(SRC))
@@ -123,6 +133,9 @@ for k,v in out['variables'].items():
         rows.append((k,old_name,old['file'][7:],raw,f[7:],u,conf,note+('; old era ends '+OLD_END[k]+' (sensor dead after)' if k in OLD_END else '')+('; new era begins '+NEW_BEGIN[k]+' (CNR4 body thermistor miswired before)' if k in NEW_BEGIN else '')))
     else:
         rows.append((k,old_name,old['file'][7:],'-','-','-','none',''))
+for k,(raw,inst,u) in NEW.items():
+    out['variables'][k]={'statistic_type':'average','height':NEW_HEIGHT,'input_variables':{raw:{'instrument':inst,'units':u,'file':TF,'begin':BEGIN}}}
+    rows.append((k,'-','-',raw,TF[7:],u,'new',f'new sensor, no old counterpart; PROVISIONAL height {NEW_HEIGHT} m (radiation boom assumed); confirm with site operators'))
 yaml.safe_dump(out,open(OUT,'w'),sort_keys=False,allow_unicode=True,width=200)
 import csv; w=csv.writer(open(OUT.replace('.yml','_review.csv'),'w'))
 w.writerow(['canonical','old_input','old_file','new_input','new_file','new_units','confidence','note']); w.writerows(rows)

@@ -80,3 +80,6 @@ Fm,Fm_Avg,EC_slow_flux,tau,EC_TERNflux,kg/m/s^2,high,
 ustar,ustar_Avg,EC_slow_flux,u_star,EC_TERNflux,m/s,high,
 Tpanel,CR3000_PTemp_Avg,EC_slow_met,Tpanel_Avg,EC_TERNflux,degC,high,logger now CR1000X
 Vbat,CR3000_batt_volt_Avg,EC_slow_met,Vbat_Avg,EC_TERNflux,V,high,logger now CR1000X
+Fqd,-,-,Fqd_Avg,EC_TERNflux,umol/m^2/s,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
+Fqu,-,-,Fqu_Avg,EC_TERNflux,umol/m^2/s,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
+Tcanopy,-,-,Ttarg_IR_C_Avg,EC_TERNflux,degC,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
