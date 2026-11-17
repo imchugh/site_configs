@@ -8,7 +8,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Hs:
+      - name: Hs
         instrument: Campbell Scientific CSAT3A
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -16,7 +16,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ts_Avg:
+      - name: Ts_Avg
         instrument: Campbell Scientific CSAT3A
         units: degC
         file: AlpinePeatland_EC_flux
@@ -24,7 +24,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific CSAT3A
         units: kg/m/s^2
         file: AlpinePeatland_EC_flux
@@ -32,7 +32,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -40,7 +40,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      Ts_stdev:
+      - name: Ts_stdev
         instrument: Campbell Scientific CSAT3A
         units: degC
         file: AlpinePeatland_EC_flux
@@ -48,7 +48,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ts_Ux_cov:
+      - name: Ts_Ux_cov
         instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: AlpinePeatland_EC_flux
@@ -56,7 +56,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ts_Uy_cov:
+      - name: Ts_Uy_cov
         instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: AlpinePeatland_EC_flux
@@ -64,7 +64,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ts_Uz_cov:
+      - name: Ts_Uz_cov
         instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: AlpinePeatland_EC_flux
@@ -72,7 +72,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -80,7 +80,7 @@ variables:
     statistic_type: covariance
     height: 2.5
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: AlpinePeatland_EC_flux
@@ -88,7 +88,7 @@ variables:
     statistic_type: covariance
     height: 2.5
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: AlpinePeatland_EC_flux
@@ -96,7 +96,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -104,7 +104,7 @@ variables:
     statistic_type: covariance
     height: 2.5
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: AlpinePeatland_EC_flux
@@ -112,7 +112,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -120,7 +120,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      WS_CSAT:
+      - name: WS_CSAT
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -128,7 +128,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      WD_CSAT_compass:
+      - name: WD_CSAT_compass
         instrument: Campbell Scientific CSAT3A
         units: degrees
         file: AlpinePeatland_EC_flux
@@ -136,7 +136,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      WD_CSAT_std:
+      - name: WD_CSAT_std
         instrument: Campbell Scientific CSAT3A
         units: degrees
         file: AlpinePeatland_EC_flux
@@ -144,7 +144,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -152,7 +152,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -160,7 +160,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: AlpinePeatland_EC_flux
@@ -168,7 +168,7 @@ variables:
     variable_type: counter
     height: 2.5
     input_variables:
-      f_CSAT_samples_Tot:
+      - name: f_CSAT_samples_Tot
         instrument: Campbell Scientific CSAT3A
         units: dimensionless
         diag_type: valid_count
@@ -177,7 +177,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Fco2_wpl:
+      - name: Fco2_wpl
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -187,7 +187,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      LE_wpl:
+      - name: LE_wpl
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -197,7 +197,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      CO2_stdev:
+      - name: CO2_stdev
         instrument: Campbell Scientific EC150
         units: mg/m^3
         file: AlpinePeatland_EC_flux
@@ -205,7 +205,7 @@ variables:
     statistic_type: covariance
     height: 2.5
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -215,7 +215,7 @@ variables:
     statistic_type: covariance
     height: 2.5
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -225,7 +225,7 @@ variables:
     statistic_type: covariance
     height: 2.5
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -235,7 +235,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.5
     input_variables:
-      H2O_stdev:
+      - name: H2O_stdev
         instrument: Campbell Scientific EC150
         units: g/m^3
         file: AlpinePeatland_EC_flux
@@ -243,7 +243,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -253,7 +253,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -263,7 +263,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC150
@@ -273,7 +273,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      CO2_mean:
+      - name: CO2_mean
         instrument: Campbell Scientific EC150
         units: mg/m^3
         file: AlpinePeatland_EC_flux
@@ -281,7 +281,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      H2O_mean:
+      - name: H2O_mean
         instrument: Campbell Scientific EC150
         units: g/m^3
         file: AlpinePeatland_EC_flux
@@ -289,7 +289,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      PTB110_P_Avg:
+      - name: PTB110_P_Avg
         instrument: Campbell Scientific EC150
         units: kPa
         file: AlpinePeatland_EC_flux
@@ -297,7 +297,7 @@ variables:
     variable_type: counter
     height: 2.5
     input_variables:
-      f_EC150_samples_Tot:
+      - name: f_EC150_samples_Tot
         instrument: Campbell Scientific EC150
         units: dimensionless
         diag_type: valid_count
@@ -306,7 +306,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      CO2_sig_strgth_Avg:
+      - name: CO2_sig_strgth_Avg
         instrument: Campbell Scientific EC150
         units: frac
         file: AlpinePeatland_EC_flux
@@ -314,7 +314,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      H2O_sig_strgth_Avg:
+      - name: H2O_sig_strgth_Avg
         instrument: Campbell Scientific EC150
         units: frac
         file: AlpinePeatland_EC_flux
@@ -322,7 +322,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ta_HMP_Avg:
+      - name: Ta_HMP_Avg
         instrument: Vaisala HMP155
         units: degC
         file: AlpinePeatland_EC_flux
@@ -330,7 +330,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Ah_HMP_Avg:
+      - name: Ah_HMP_Avg
         instrument: Vaisala HMP155
         units: g/m^3
         file: AlpinePeatland_EC_flux
@@ -338,7 +338,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      RH_HMP_Avg:
+      - name: RH_HMP_Avg
         instrument: Vaisala HMP155
         units: percent
         file: AlpinePeatland_EC_flux
@@ -346,7 +346,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Fsd_CNR1_Avg:
+      - name: Fsd_CNR1_Avg
         instrument: Kipp&Zonen CNR1
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -354,7 +354,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Fsu_CNR1_Avg:
+      - name: Fsu_CNR1_Avg
         instrument: Kipp&Zonen CNR1
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -362,7 +362,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Fld_CNR1_Avg:
+      - name: Fld_CNR1_Avg
         instrument: Kipp&Zonen CNR1
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -370,7 +370,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      Flu_CNR1_Avg:
+      - name: Flu_CNR1_Avg
         instrument: Kipp&Zonen CNR1
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -378,7 +378,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      rain:
+      - name: rain
         instrument: Campbell Scientific CS700
         units: mm
         file: AlpinePeatland_EC_flux
@@ -386,7 +386,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      T_panel_Avg:
+      - name: T_panel_Avg
         instrument: Campbell Scientific CR3000
         units: degC
         file: AlpinePeatland_EC_flux
@@ -394,7 +394,7 @@ variables:
     statistic_type: average
     height: 2.5
     input_variables:
-      V_batt_Avg:
+      - name: V_batt_Avg
         instrument: Campbell Scientific CR3000
         units: V
         file: AlpinePeatland_EC_flux
@@ -402,7 +402,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      SHF_H1_Avg:
+      - name: SHF_H1_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -410,7 +410,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      SHF_H2_Avg:
+      - name: SHF_H2_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: AlpinePeatland_EC_flux
@@ -418,7 +418,7 @@ variables:
     statistic_type: average
     height: -0.18
     input_variables:
-      VWC_1_Avg:
+      - name: VWC_1_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: AlpinePeatland_EC_flux
@@ -426,7 +426,7 @@ variables:
     statistic_type: average
     height: -0.18
     input_variables:
-      VWC_2_Avg:
+      - name: VWC_2_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: AlpinePeatland_EC_flux
@@ -437,7 +437,7 @@ variables:
     - -0.02
     - -0.16
     input_variables:
-      SoilT_TCAV1_Avg:
+      - name: SoilT_TCAV1_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: AlpinePeatland_EC_flux
@@ -448,7 +448,7 @@ variables:
     - -0.02
     - -0.16
     input_variables:
-      SoilT_TCAV2_Avg:
+      - name: SoilT_TCAV2_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: AlpinePeatland_EC_flux
@@ -459,7 +459,7 @@ variables:
     - -0.11
     - -0.25
     input_variables:
-      SoilT_CS1_Avg:
+      - name: SoilT_CS1_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: AlpinePeatland_EC_flux
@@ -470,7 +470,7 @@ variables:
     - -0.11
     - -0.25
     input_variables:
-      SoilT_CS2_Avg:
+      - name: SoilT_CS2_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: AlpinePeatland_EC_flux

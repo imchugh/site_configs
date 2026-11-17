@@ -111,30 +111,30 @@ for k,v in list(out['variables'].items()):
     renamed[k[:-2]+'Sd' if k in VR else k]=v
     if k in VR:
         v['statistic_type']='standard_deviation'
-        for d in v['input_variables'].values(): d['statistic_type']='variance'
+        for d in v['input_variables']: d['statistic_type']='variance'
         M[k[:-2]+'Sd']=(TF,VR[k][0],VR[k][1],'high','old variance input square-rooted; TERNflux stdev passes through')
 out['variables']=renamed
 rows=[]
 for k in sorted(DERIVE):
-    old_name=next(iter(out['variables'][k]['input_variables']))
+    old_name=out['variables'][k]['input_variables'][0]['name']
     del out['variables'][k]
     rows.append((k,old_name,'-','-','-','-','derived','removed from config; fluxcore derives AH from Ta, RH and ps over the whole record'))
 for k,v in out['variables'].items():
     ivs=v['input_variables']
-    (old_name,old),=[(n,d) for n,d in ivs.items()][:1] if len(ivs)==1 else [list(ivs.items())[-1]]
+    old=ivs[-1]; old_name=old['name']
     if old['file'].startswith('Gingin_soil'):
         continue
     if k in M:
         f,raw,u,conf,note=M[k]
         old['end']=OLD_END.get(k,END)
-        new={'instrument':copy.deepcopy(INST.get(k,old['instrument'])),'units':u,'file':f,'begin':NEW_BEGIN.get(k,BEGIN)}
+        new={'name':raw,'instrument':copy.deepcopy(INST.get(k,old['instrument'])),'units':u,'file':f,'begin':NEW_BEGIN.get(k,BEGIN)}
         if k.startswith('Diag_'): new['diag_type']='valid_count'
-        ivs[raw]=new
+        ivs.append(new)
         rows.append((k,old_name,old['file'][7:],raw,f[7:],u,conf,note+('; old era ends '+OLD_END[k]+' (sensor dead after)' if k in OLD_END else '')+('; new era begins '+NEW_BEGIN[k]+' (CNR4 body thermistor miswired before)' if k in NEW_BEGIN else '')))
     else:
         rows.append((k,old_name,old['file'][7:],'-','-','-','none',''))
 for k,(raw,inst,u) in NEW.items():
-    out['variables'][k]={'statistic_type':'average','height':NEW_HEIGHT,'input_variables':{raw:{'instrument':inst,'units':u,'file':TF,'begin':BEGIN}}}
+    out['variables'][k]={'statistic_type':'average','height':NEW_HEIGHT,'input_variables':[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]}
     rows.append((k,'-','-',raw,TF[7:],u,'new',f'new sensor, no old counterpart; PROVISIONAL height {NEW_HEIGHT} m (radiation boom assumed); confirm with site operators'))
 yaml.safe_dump(out,open(OUT,'w'),sort_keys=False,allow_unicode=True,width=200)
 import csv; w=csv.writer(open(OUT.replace('.yml','_review.csv'),'w'))

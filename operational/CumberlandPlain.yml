@@ -11,7 +11,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      co2_mixing_ratio:
+      - name: co2_mixing_ratio
         instrument: LI-COR LI-7500RS
         units: umol/mol
         file: CumberlandPlain_EP_MASTER
@@ -19,7 +19,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      co2_molar_density:
+      - name: co2_molar_density
         instrument: LI-COR LI-7500RS
         units: mmol/m^3
         file: CumberlandPlain_EP_MASTER
@@ -27,7 +27,7 @@ variables:
     statistic_type: variance
     height: 30.0
     input_variables:
-      co2_var:
+      - name: co2_var
         instrument: LI-COR LI-7500RS
         units: mmol^2/m^6
         file: CumberlandPlain_EP_MASTER
@@ -35,7 +35,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      co2_flux:
+      - name: co2_flux
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -45,7 +45,7 @@ variables:
     variable_type: quality_flag
     height: 30.0
     input_variables:
-      qc_co2_flux:
+      - name: qc_co2_flux
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -55,7 +55,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      LE:
+      - name: LE
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -65,7 +65,7 @@ variables:
     variable_type: quality_flag
     height: 30.0
     input_variables:
-      qc_LE:
+      - name: qc_LE
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -75,7 +75,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      shf_Avg:
+      - name: shf_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: CUP_AUTO_soil
@@ -83,7 +83,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      shf02_Avg:
+      - name: shf02_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: CUP_AUTO_soil
@@ -91,7 +91,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      H:
+      - name: H
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: CumberlandPlain_EP_MASTER
@@ -99,7 +99,7 @@ variables:
     variable_type: quality_flag
     height: 30.0
     input_variables:
-      qc_H:
+      - name: qc_H
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
@@ -107,7 +107,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      Rl_downwell_Avg:
+      - name: Rl_downwell_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
@@ -115,7 +115,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      Rl_upwell_Avg:
+      - name: Rl_upwell_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
@@ -123,7 +123,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      Tau:
+      - name: Tau
         instrument: Campbell Scientific CSAT3B
         units: kg/m/s^2
         file: CumberlandPlain_EP_MASTER
@@ -131,7 +131,7 @@ variables:
     variable_type: quality_flag
     height: 30.0
     input_variables:
-      qc_Tau:
+      - name: qc_Tau
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         file: CumberlandPlain_EP_MASTER
@@ -139,7 +139,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      Rs_downwell_Avg:
+      - name: Rs_downwell_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
@@ -147,7 +147,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      Rs_upwell_Avg:
+      - name: Rs_upwell_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: CUP_AUTO_climate
@@ -155,7 +155,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      T_nr_Avg:
+      - name: T_nr_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: CUP_AUTO_climate        
@@ -163,7 +163,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      h2o_molar_density:
+      - name: h2o_molar_density
         instrument: LI-COR LI-7500RS
         units: mmol/m^3
         file: CumberlandPlain_EP_MASTER
@@ -171,7 +171,7 @@ variables:
     statistic_type: variance
     height: 30.0
     input_variables:
-      h2o_var:
+      - name: h2o_var
         instrument: LI-COR LI-7500RS
         units: mmol^2/m^6
         file: CumberlandPlain_EP_MASTER
@@ -179,7 +179,7 @@ variables:
     statistic_type: sum
     height: 0.6
     input_variables:
-      rain:
+      - name: rain
         instrument: Campbell Scientific CS700
         units: mm
         file: CUP_AUTO_climate
@@ -187,7 +187,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      RH_HMP_155_Avg:
+      - name: RH_HMP_155_Avg
         instrument: Vaisala HMP155
         units: frac
         file: CUP_AUTO_climate
@@ -195,7 +195,7 @@ variables:
     statistic_type: average
     height: 7.0
     input_variables:
-      RH_HMP_01_Avg:
+      - name: RH_HMP_01_Avg
         instrument: Vaisala HMP45C
         units: frac
         file: CUP_AUTO_climate
@@ -203,7 +203,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      RH:
+      - name: RH
         instrument: LI-COR LI-7500RS
         units: percent
         file: CumberlandPlain_EP_MASTER
@@ -211,7 +211,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      co2_signal_strength_7500_mean:
+      - name: co2_signal_strength_7500_mean
         instrument: LI-COR LI-7500RS
         units: percent
         file: CumberlandPlain_EP_MASTER
@@ -222,7 +222,7 @@ variables:
     - 0.08
     - 0.38
     input_variables:
-      VW_03_Avg:
+      - name: VW_03_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: CUP_AUTO_soil
@@ -233,7 +233,7 @@ variables:
     - 0.08
     - 0.38
     input_variables:
-      VW_04_Avg:
+      - name: VW_04_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: CUP_AUTO_soil
@@ -241,7 +241,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      VW_01_Avg:
+      - name: VW_01_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: CUP_AUTO_soil
@@ -249,7 +249,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      VW_02_Avg:
+      - name: VW_02_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: CUP_AUTO_soil
@@ -257,7 +257,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      Ta_HMP_155_Avg:
+      - name: Ta_HMP_155_Avg
         instrument: Vaisala HMP155
         units: degC
         file: CUP_AUTO_climate
@@ -265,7 +265,7 @@ variables:
     statistic_type: average
     height: 7.0
     input_variables:
-      Ta_HMP_01_Avg:
+      - name: Ta_HMP_01_Avg
         instrument: Vaisala HMP45C
         units: degC
         file: CUP_AUTO_climate
@@ -273,7 +273,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Ts_TCAV_01_Avg:
+      - name: Ts_TCAV_01_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: CUP_AUTO_soil
@@ -281,7 +281,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Ts_TCAV_04_Avg:
+      - name: Ts_TCAV_04_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: CUP_AUTO_soil
@@ -289,7 +289,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      sonic_temperature:
+      - name: sonic_temperature
         instrument: Campbell Scientific CSAT3B
         units: K
         file: CumberlandPlain_EP_MASTER
@@ -297,7 +297,7 @@ variables:
     statistic_type: variance
     height: 30.0
     input_variables:
-      ts_var:
+      - name: ts_var
         instrument: Campbell Scientific CSAT3B
         units: K^2
         file: CumberlandPlain_EP_MASTER
@@ -305,7 +305,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      u_rot:
+      - name: u_rot
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
@@ -313,7 +313,7 @@ variables:
     statistic_type: variance
     height: 30.0
     input_variables:
-      u_var:
+      - name: u_var
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: CumberlandPlain_EP_MASTER
@@ -321,7 +321,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      v_rot:
+      - name: v_rot
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
@@ -329,7 +329,7 @@ variables:
     statistic_type: variance
     height: 30.0
     input_variables:
-      v_var:
+      - name: v_var
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: CumberlandPlain_EP_MASTER
@@ -337,7 +337,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      w_rot:
+      - name: w_rot
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
@@ -345,7 +345,7 @@ variables:
     statistic_type: variance
     height: 30.0
     input_variables:
-      w_var:
+      - name: w_var
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: CumberlandPlain_EP_MASTER
@@ -353,7 +353,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      wind_dir:
+      - name: wind_dir
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: CumberlandPlain_EP_MASTER
@@ -361,7 +361,7 @@ variables:
     statistic_type: average
     height: 7.0
     input_variables:
-      WD_WS4_Avg:
+      - name: WD_WS4_Avg
         instrument: Gill Windsonic4
         units: degrees
         file: CUP_AUTO_climate
@@ -369,7 +369,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      WD_WS4_02_Avg:
+      - name: WD_WS4_02_Avg
         instrument: Gill Windsonic4
         units: degrees
         file: CUP_AUTO_climate
@@ -377,7 +377,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      wind_speed:
+      - name: wind_speed
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
@@ -385,7 +385,7 @@ variables:
     statistic_type: average
     height: 7.0
     input_variables:
-      WS_WS4_Avg:
+      - name: WS_WS4_Avg
         instrument: Gill Windsonic4
         units: m/s
         file: CUP_AUTO_climate
@@ -393,7 +393,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      WS_WS4_02_Avg:
+      - name: WS_WS4_02_Avg
         instrument: Gill Windsonic4
         units: m/s
         file: CUP_AUTO_climate
@@ -401,7 +401,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      air_pressure:
+      - name: air_pressure
         instrument: LI-COR LI-7500RS
         units: Pa
         file: CumberlandPlain_EP_MASTER
@@ -409,7 +409,7 @@ variables:
     statistic_type: average
     height: 30.0
     input_variables:
-      u*:
+      - name: u*
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: CumberlandPlain_EP_MASTER
@@ -417,7 +417,7 @@ variables:
     statistic_type: average
     height: 1.0
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR3000
         units: V
         file: CUP_Top_diagnostic
@@ -425,7 +425,7 @@ variables:
     statistic_type: average
     height: 1.0
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR3000
         units: degC
         file: CUP_Top_diagnostic

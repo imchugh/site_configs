@@ -19,7 +19,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      Fh:
+      - name: Fh
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -27,7 +27,7 @@ variables:
     statistic_type: average
     height: 10
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific CSAT3B
         units: kg/m/s^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -35,7 +35,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -43,7 +43,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      Tsonic_stdev:
+      - name: Tsonic_stdev
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: AliceSpringsMulga_EC_TERNflux
@@ -51,7 +51,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Tsonic_Ux_cov:
+      - name: Tsonic_Ux_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -59,7 +59,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Tsonic_Uy_cov:
+      - name: Tsonic_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -67,7 +67,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Tsonic_Uz_cov:
+      - name: Tsonic_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -75,7 +75,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -83,7 +83,7 @@ variables:
     statistic_type: covariance
     height: 11.6
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -91,7 +91,7 @@ variables:
     statistic_type: covariance
     height: 11.6
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -99,7 +99,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -107,7 +107,7 @@ variables:
     statistic_type: covariance
     height: 11.6
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -115,7 +115,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -123,7 +123,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -131,7 +131,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: AliceSpringsMulga_EC_TERNflux
@@ -139,7 +139,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      std_wnd_dir:
+      - name: std_wnd_dir
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: AliceSpringsMulga_EC_TERNflux
@@ -147,7 +147,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -155,7 +155,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -163,7 +163,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: AliceSpringsMulga_EC_TERNflux
@@ -171,7 +171,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Tsonic_Avg:
+      - name: Tsonic_Avg
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: AliceSpringsMulga_EC_TERNflux
@@ -179,7 +179,7 @@ variables:
     variable_type: counter
     height: 11.6
     input_variables:
-      sonic_samples_Tot:
+      - name: sonic_samples_Tot
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: valid_count
@@ -188,7 +188,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      Fco2:
+      - name: Fco2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -198,7 +198,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      Fe:
+      - name: Fe
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -208,7 +208,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      CO2_stdev:
+      - name: CO2_stdev
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: AliceSpringsMulga_EC_TERNflux
@@ -216,7 +216,7 @@ variables:
     statistic_type: covariance
     height: 10.0
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -226,7 +226,7 @@ variables:
     statistic_type: covariance
     height: 10.0
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -236,7 +236,7 @@ variables:
     statistic_type: covariance
     height: 10.0
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -246,7 +246,7 @@ variables:
     statistic_type: standard_deviation
     height: 11.6
     input_variables:
-      H2O_stdev:
+      - name: H2O_stdev
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: AliceSpringsMulga_EC_TERNflux
@@ -254,7 +254,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -264,7 +264,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -274,7 +274,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -284,7 +284,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      CO2_mean:
+      - name: CO2_mean
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: AliceSpringsMulga_EC_TERNflux
@@ -292,7 +292,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      H2O_mean:
+      - name: H2O_mean
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: AliceSpringsMulga_EC_TERNflux
@@ -300,7 +300,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      amb_press_mean:
+      - name: amb_press_mean
         instrument: LI-COR LI-7500RS
         units: kPa
         file: AliceSpringsMulga_EC_TERNflux
@@ -308,7 +308,7 @@ variables:
     variable_type: counter
     height: 11.6
     input_variables:
-      irga_samples_Tot:
+      - name: irga_samples_Tot
         instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: valid_count
@@ -317,7 +317,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      sig_str_irga_Avg:
+      - name: sig_str_irga_Avg
         instrument: LI-COR LI-7500RS
         units: percent
         file: AliceSpringsMulga_EC_TERNflux
@@ -325,7 +325,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Ta_sensor_mean:
+      - name: Ta_sensor_mean
         instrument: Vaisala HMP155
         units: degC
         file: AliceSpringsMulga_EC_TERNflux
@@ -333,7 +333,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      AH_sensor_mean:
+      - name: AH_sensor_mean
         instrument: Vaisala HMP155
         units: g/m^3
         file: AliceSpringsMulga_EC_TERNflux
@@ -341,7 +341,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      RH_sensor_mean:
+      - name: RH_sensor_mean
         instrument: Vaisala HMP155
         units: percent
         file: AliceSpringsMulga_EC_TERNflux
@@ -349,7 +349,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Fsd_Avg:
+      - name: Fsd_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -357,7 +357,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Fsu_Avg:
+      - name: Fsu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -365,7 +365,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Fld_Avg:
+      - name: Fld_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -373,7 +373,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Flu_Avg:
+      - name: Flu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: AliceSpringsMulga_EC_TERNflux
@@ -381,7 +381,7 @@ variables:
     statistic_type: average
     height: 11.6
     input_variables:
-      Tb_Avg:
+      - name: Tb_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: AliceSpringsMulga_EC_TERNflux
@@ -389,7 +389,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      rain_Tot:
+      - name: rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: AliceSpringsMulga_EC_TERNflux
@@ -397,7 +397,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR1000XE
         units: degC
         file: AliceSpringsMulga_EC_TERNflux
@@ -405,7 +405,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR1000XE
         units: V
         file: AliceSpringsMulga_EC_TERNflux
@@ -413,7 +413,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      Ta_sensor_2m_Avg:
+      - name: Ta_sensor_2m_Avg
         instrument: Vaisala HMP155
         units: degC
         file: AliceSpringsMulga_EC_TERNflux
@@ -421,7 +421,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      RH_sensor_2m_Avg:
+      - name: RH_sensor_2m_Avg
         instrument: Vaisala HMP155
         units: percent
         file: AliceSpringsMulga_EC_TERNflux
@@ -429,7 +429,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_8cma_Avg:
+      - name: Fg_8cma_Avg
         instrument: Middleton CN3
         units: W/m^2
         file: AliceSpringsMulga_soil_soil_microsites
@@ -437,7 +437,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_8cmb_Avg:
+      - name: Fg_8cmb_Avg
         instrument: Middleton CN3
         units: W/m^2
         file: AliceSpringsMulga_soil_soil_microsites
@@ -445,7 +445,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_8cmc_Avg:
+      - name: Fg_8cmc_Avg
         instrument: Middleton CN3
         units: W/m^2
         file: AliceSpringsMulga_soil_soil_microsites
@@ -456,7 +456,7 @@ variables:
     - -0.02
     - -0.06
     input_variables:
-      Ts_8cma_Avg:
+      - name: Ts_8cma_Avg
         instrument: Middleton CN3
         units: degC
         file: AliceSpringsMulga_soil_soil_microsites
@@ -467,7 +467,7 @@ variables:
     - -0.02
     - -0.06
     input_variables:
-      Ts_8cmb_Avg:
+      - name: Ts_8cmb_Avg
         instrument: Middleton CN3
         units: degC
         file: AliceSpringsMulga_soil_soil_microsites
@@ -478,7 +478,7 @@ variables:
     - -0.02
     - -0.06
     input_variables:
-      Ts_8cmc_Avg:
+      - name: Ts_8cmc_Avg
         instrument: Middleton CN3
         units: degC
         file: AliceSpringsMulga_soil_soil_microsites
@@ -489,7 +489,7 @@ variables:
     - 0.0
     - -0.1
     input_variables:
-      Sws_8cma:
+      - name: Sws_8cma
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: AliceSpringsMulga_soil_soil_microsites
@@ -500,7 +500,7 @@ variables:
     - 0.0
     - -0.1
     input_variables:
-      Sws_8cmb:
+      - name: Sws_8cmb
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: AliceSpringsMulga_soil_soil_microsites
@@ -511,7 +511,7 @@ variables:
     - 0.0
     - -0.1
     input_variables:
-      Sws_8cmc:
+      - name: Sws_8cmc
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: AliceSpringsMulga_soil_soil_microsites
@@ -522,7 +522,7 @@ variables:
     - -1.0
     - -1.2
     input_variables:
-      Sws_CS610(3):
+      - name: Sws_CS610(3)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -533,7 +533,7 @@ variables:
     - -1.0
     - -1.2
     input_variables:
-      Sws_CS610(12):
+      - name: Sws_CS610(12)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -544,7 +544,7 @@ variables:
     - -1.0
     - -1.2
     input_variables:
-      Sws_CS610(4):
+      - name: Sws_CS610(4)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -555,7 +555,7 @@ variables:
     - -1.0
     - -1.2
     input_variables:
-      Sws_CS610(19):
+      - name: Sws_CS610(19)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -566,7 +566,7 @@ variables:
     - -1.0
     - -1.2
     input_variables:
-      Sws_CS610(8):
+      - name: Sws_CS610(8)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -577,7 +577,7 @@ variables:
     - -1.0
     - -1.2
     input_variables:
-      Sws_CS610(15):
+      - name: Sws_CS610(15)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -588,7 +588,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(2):
+      - name: Sws_CS610(2)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -599,7 +599,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(14):
+      - name: Sws_CS610(14)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -610,7 +610,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(5):
+      - name: Sws_CS610(5)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -621,7 +621,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(21):
+      - name: Sws_CS610(21)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -632,7 +632,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(22):
+      - name: Sws_CS610(22)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -643,7 +643,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(10):
+      - name: Sws_CS610(10)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -654,7 +654,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(17):
+      - name: Sws_CS610(17)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -665,7 +665,7 @@ variables:
     - -0.1
     - -0.3
     input_variables:
-      Sws_CS610(18):
+      - name: Sws_CS610(18)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -676,7 +676,7 @@ variables:
     - -1.43
     - -1.63
     input_variables:
-      Sws_CS610(11):
+      - name: Sws_CS610(11)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -687,7 +687,7 @@ variables:
     - -0.6
     - -0.8
     input_variables:
-      Sws_CS610(1):
+      - name: Sws_CS610(1)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -698,7 +698,7 @@ variables:
     - -0.6
     - -0.8
     input_variables:
-      Sws_CS610(13):
+      - name: Sws_CS610(13)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -709,7 +709,7 @@ variables:
     - -0.6
     - -0.8
     input_variables:
-      Sws_CS610(6):
+      - name: Sws_CS610(6)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -720,7 +720,7 @@ variables:
     - -0.6
     - -0.8
     input_variables:
-      Sws_CS610(20):
+      - name: Sws_CS610(20)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -731,7 +731,7 @@ variables:
     - -0.6
     - -0.8
     input_variables:
-      Sws_CS610(9):
+      - name: Sws_CS610(9)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param
@@ -742,7 +742,7 @@ variables:
     - -0.6
     - -0.8
     input_variables:
-      Sws_CS610(16):
+      - name: Sws_CS610(16)
         instrument: Campbell Scientific CS605
         units: m^3/m^3
         file: AliceSpringsMulga_soil_VWC_Param

@@ -9,7 +9,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      AH_sensor_mean:
+      - name: AH_sensor_mean
         instrument: Vaisala HMP45C
         units: g/m^3
         file: Calperum_EC_TERNflux
@@ -17,7 +17,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      H2O_mean:
+      - name: H2O_mean
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Calperum_EC_TERNflux
@@ -25,7 +25,7 @@ variables:
     statistic_type: standard_deviation
     height: 20.0
     input_variables:
-      H2O_stdev:
+      - name: H2O_stdev
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Calperum_EC_TERNflux
@@ -33,7 +33,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      CO2_mean:
+      - name: CO2_mean
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Calperum_EC_TERNflux
@@ -41,7 +41,7 @@ variables:
     statistic_type: standard_deviation
     height: 20.0
     input_variables:
-      co2_stdev:
+      - name: co2_stdev
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Calperum_EC_TERNflux
@@ -49,7 +49,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Tcanopy_Avg:
+      - name: Tcanopy_Avg
         instrument: Apogee Instruments SI-111-SS
         units: degC
         file: Calperum_EC_TERNflux
@@ -57,7 +57,7 @@ variables:
     variable_type: counter
     height: 20.0
     input_variables:
-      irga_samples_Tot:
+      - name: irga_samples_Tot
         instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: valid_count
@@ -66,7 +66,7 @@ variables:
     variable_type: counter
     height: 20.0
     input_variables:
-      sonic_samples_Tot:
+      - name: sonic_samples_Tot
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: valid_count
@@ -75,7 +75,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fco2:
+      - name: Fco2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -85,7 +85,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fe:
+      - name: Fe
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -95,7 +95,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fh:
+      - name: Fh
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -103,7 +103,7 @@ variables:
     statistic_type: average
     height: 20
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific CSAT3B
         units: kg/m/s^2
         file: Calperum_EC_TERNflux
@@ -111,7 +111,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_01:
+      - name: Fg_01
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -119,7 +119,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_02:
+      - name: Fg_02
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -127,7 +127,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_03:
+      - name: Fg_03
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -135,7 +135,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fld_Avg:
+      - name: Fld_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -143,7 +143,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Flu_Avg:
+      - name: Flu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -151,7 +151,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fsd_Avg:
+      - name: Fsd_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -159,7 +159,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fsd_aux_Avg:
+      - name: Fsd_aux_Avg
         instrument: LI-COR LI-200X
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -167,7 +167,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Fsu_Avg:
+      - name: Fsu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Calperum_EC_TERNflux
@@ -175,7 +175,7 @@ variables:
     statistic_type: sum
     height: 0.6
     input_variables:
-      rain_Tot:
+      - name: rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: Calperum_EC_TERNflux
@@ -183,7 +183,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      RH_sensor_mean:
+      - name: RH_sensor_mean
         instrument: Vaisala HMP45C
         units: percent
         file: Calperum_EC_TERNflux
@@ -191,7 +191,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      sig_str_irga_Avg:
+      - name: sig_str_irga_Avg
         instrument: LI-COR LI-7500RS
         units: percent
         file: Calperum_EC_TERNflux
@@ -199,7 +199,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_VWC1000_A_Avg:
+      - name: Sws_VWC1000_A_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -207,7 +207,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_VWC1000_B_Avg:
+      - name: Sws_VWC1000_B_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -215,7 +215,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_VWC1000_C_Avg:
+      - name: Sws_VWC1000_C_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -223,7 +223,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_VWC100_A_Avg:
+      - name: Sws_VWC100_A_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -231,7 +231,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_VWC100_B_Avg:
+      - name: Sws_VWC100_B_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -239,7 +239,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_VWC100_C_Avg:
+      - name: Sws_VWC100_C_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -247,7 +247,7 @@ variables:
     statistic_type: average
     height: -1.8
     input_variables:
-      Sws_VWC1800_A_Avg:
+      - name: Sws_VWC1800_A_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -255,7 +255,7 @@ variables:
     statistic_type: average
     height: -1.8
     input_variables:
-      Sws_VWC1800_B_Avg:
+      - name: Sws_VWC1800_B_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -263,7 +263,7 @@ variables:
     statistic_type: average
     height: -1.8
     input_variables:
-      Sws_VWC1800_C_Avg:
+      - name: Sws_VWC1800_C_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -271,7 +271,7 @@ variables:
     statistic_type: average
     height: -0.25
     input_variables:
-      Sws_VWC250_A_Avg:
+      - name: Sws_VWC250_A_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -279,7 +279,7 @@ variables:
     statistic_type: average
     height: -0.25
     input_variables:
-      Sws_VWC250_B_Avg:
+      - name: Sws_VWC250_B_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -287,7 +287,7 @@ variables:
     statistic_type: average
     height: -0.25
     input_variables:
-      Sws_VWC250_C_Avg:
+      - name: Sws_VWC250_C_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -295,7 +295,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_VWC500_A_Avg:
+      - name: Sws_VWC500_A_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -303,7 +303,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_VWC500_B_Avg:
+      - name: Sws_VWC500_B_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -311,7 +311,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_VWC500_C_Avg:
+      - name: Sws_VWC500_C_Avg
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Calperum_soil_slow_soil2
@@ -319,7 +319,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      Ta_sensor_mean:
+      - name: Ta_sensor_mean
         instrument: Vaisala HMP45C
         units: degC
         file: Calperum_EC_TERNflux
@@ -327,7 +327,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tb_Avg:
+      - name: Tb_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: Calperum_EC_TERNflux
@@ -335,7 +335,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR1000X
         units: degC
         file: Calperum_EC_TERNflux
@@ -343,7 +343,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_T1000_A_Avg:
+      - name: Sws_T1000_A_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -351,7 +351,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_T1000_B_Avg:
+      - name: Sws_T1000_B_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -359,7 +359,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_T1000_C_Avg:
+      - name: Sws_T1000_C_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -367,7 +367,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_T100_A_Avg:
+      - name: Sws_T100_A_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -375,7 +375,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_T100_B_Avg:
+      - name: Sws_T100_B_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -383,7 +383,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_T100_C_Avg:
+      - name: Sws_T100_C_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -391,7 +391,7 @@ variables:
     statistic_type: average
     height: -1.8
     input_variables:
-      Sws_T1800_A_Avg:
+      - name: Sws_T1800_A_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -399,7 +399,7 @@ variables:
     statistic_type: average
     height: -1.8
     input_variables:
-      Sws_T1800_B_Avg:
+      - name: Sws_T1800_B_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -407,7 +407,7 @@ variables:
     statistic_type: average
     height: -1.8
     input_variables:
-      Sws_T1800_C_Avg:
+      - name: Sws_T1800_C_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -415,7 +415,7 @@ variables:
     statistic_type: average
     height: -0.25
     input_variables:
-      Sws_T250_A_Avg:
+      - name: Sws_T250_A_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -423,7 +423,7 @@ variables:
     statistic_type: average
     height: -0.25
     input_variables:
-      Sws_T250_B_Avg:
+      - name: Sws_T250_B_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -431,7 +431,7 @@ variables:
     statistic_type: average
     height: -0.25
     input_variables:
-      Sws_T250_C_Avg:
+      - name: Sws_T250_C_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -439,7 +439,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_T500_A_Avg:
+      - name: Sws_T500_A_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -447,7 +447,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_T500_B_Avg:
+      - name: Sws_T500_B_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -455,7 +455,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_T500_C_Avg:
+      - name: Sws_T500_C_Avg
         instrument: Campbell Scientific CS650
         units: degC
         file: Calperum_soil_slow_soil2
@@ -463,7 +463,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Tsoil_mean(1):
+      - name: Tsoil_mean(1)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Calperum_EC_TERNflux
@@ -471,7 +471,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Tsoil_mean(2):
+      - name: Tsoil_mean(2)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Calperum_EC_TERNflux
@@ -479,7 +479,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Tsoil_mean(3):
+      - name: Tsoil_mean(3)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Calperum_EC_TERNflux
@@ -487,7 +487,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tsonic_Avg:
+      - name: Tsonic_Avg
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: Calperum_EC_TERNflux
@@ -495,7 +495,7 @@ variables:
     statistic_type: standard_deviation
     height: 20.0
     input_variables:
-      Tsonic_stdev:
+      - name: Tsonic_stdev
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: Calperum_EC_TERNflux
@@ -503,7 +503,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -511,7 +511,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -521,7 +521,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -531,7 +531,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tsonic_Ux_cov:
+      - name: Tsonic_Ux_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Calperum_EC_TERNflux
@@ -539,7 +539,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Calperum_EC_TERNflux
@@ -547,7 +547,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Calperum_EC_TERNflux
@@ -555,7 +555,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -563,7 +563,7 @@ variables:
     statistic_type: standard_deviation
     height: 20.0
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -571,7 +571,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -581,7 +581,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -591,7 +591,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tsonic_Uy_cov:
+      - name: Tsonic_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Calperum_EC_TERNflux
@@ -599,7 +599,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Calperum_EC_TERNflux
@@ -607,7 +607,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -615,7 +615,7 @@ variables:
     statistic_type: standard_deviation
     height: 20.0
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -623,7 +623,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -633,7 +633,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -643,7 +643,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tsonic_Uz_cov:
+      - name: Tsonic_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Calperum_EC_TERNflux
@@ -651,7 +651,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -659,7 +659,7 @@ variables:
     statistic_type: standard_deviation
     height: 20.0
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -667,7 +667,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR1000X
         units: V
         file: Calperum_EC_TERNflux
@@ -675,7 +675,7 @@ variables:
     statistic_type: average
     height: 8.0
     input_variables:
-      Wd_aux_8m:
+      - name: Wd_aux_8m
         instrument: RM Young WindSentry
         units: degrees
         file: Calperum_EC_TERNflux
@@ -683,7 +683,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      Wd_aux_2m:
+      - name: Wd_aux_2m
         instrument: RM Young WindSentry
         units: degrees
         file: Calperum_EC_TERNflux
@@ -691,7 +691,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Calperum_EC_TERNflux
@@ -699,7 +699,7 @@ variables:
     statistic_type: standard_deviation
     height: 20
     input_variables:
-      std_wnd_dir:
+      - name: std_wnd_dir
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Calperum_EC_TERNflux
@@ -707,7 +707,7 @@ variables:
     statistic_type: average
     height: 8.0
     input_variables:
-      Ws_aux_8m:
+      - name: Ws_aux_8m
         instrument: RM Young WindSentry
         units: m/s
         file: Calperum_EC_TERNflux
@@ -715,7 +715,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      Ws_aux_2m:
+      - name: Ws_aux_2m
         instrument: RM Young WindSentry
         units: m/s
         file: Calperum_EC_TERNflux
@@ -723,7 +723,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Calperum_EC_TERNflux
@@ -731,7 +731,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      amb_press_mean:
+      - name: amb_press_mean
         instrument: LI-COR LI-7500RS
         units: kPa
         file: Calperum_EC_TERNflux

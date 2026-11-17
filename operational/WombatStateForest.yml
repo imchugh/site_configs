@@ -9,7 +9,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      AH_sensor_mean:
+      - name: AH_sensor_mean
         instrument: Vaisala HMP155
         units: g/m^3
         file: WombatStateForest_EC_TERNflux
@@ -17,7 +17,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      H2O_irga_mean:
+      - name: H2O_irga_mean
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: WombatStateForest_EC_TERNflux
@@ -25,7 +25,7 @@ variables:
     statistic_type: standard_deviation
     height: 41.0
     input_variables:
-      H2O_irga_stdev:
+      - name: H2O_irga_stdev
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: WombatStateForest_EC_TERNflux
@@ -33,7 +33,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      CO2_irga_mean:
+      - name: CO2_irga_mean
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: WombatStateForest_EC_TERNflux
@@ -41,7 +41,7 @@ variables:
     statistic_type: standard_deviation
     height: 41.0
     input_variables:
-      CO2_irga_stdev:
+      - name: CO2_irga_stdev
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: WombatStateForest_EC_TERNflux
@@ -49,7 +49,7 @@ variables:
     variable_type: counter
     height: 41.0
     input_variables:
-      irga_samples_Tot:
+      - name: irga_samples_Tot
         instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: valid_count
@@ -58,7 +58,7 @@ variables:
     variable_type: counter
     height: 41.0
     input_variables:
-      sonic_samples_Tot:
+      - name: sonic_samples_Tot
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: valid_count
@@ -67,7 +67,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Fco2:
+      - name: Fco2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -77,7 +77,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Fe:
+      - name: Fe
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -87,7 +87,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Fh:
+      - name: Fh
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: WombatStateForest_EC_TERNflux
@@ -95,7 +95,7 @@ variables:
     statistic_type: average
     height: 41
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific CSAT3B
         units: kg/m/s^2
         file: WombatStateForest_EC_TERNflux
@@ -103,7 +103,7 @@ variables:
     statistic_type: average
     height: -0.13
     input_variables:
-      shf_01_Avg:
+      - name: shf_01_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: WombatStateForest_soil_Soil
@@ -111,7 +111,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      shf_02_Avg:
+      - name: shf_02_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: WombatStateForest_soil_Soil
@@ -119,7 +119,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Fld_Avg:
+      - name: Fld_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: WombatStateForest_EC_TERNflux
@@ -127,7 +127,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Flu_Avg:
+      - name: Flu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: WombatStateForest_EC_TERNflux
@@ -135,7 +135,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Fsd_Avg:
+      - name: Fsd_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: WombatStateForest_EC_TERNflux
@@ -143,7 +143,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Fsu_Avg:
+      - name: Fsu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: WombatStateForest_EC_TERNflux
@@ -151,7 +151,7 @@ variables:
     statistic_type: sum
     height: 41.0
     input_variables:
-      rain_Tot:
+      - name: rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: WombatStateForest_EC_TERNflux
@@ -159,7 +159,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      RH_sensor_mean:
+      - name: RH_sensor_mean
         instrument: Vaisala HMP155
         units: percent
         file: WombatStateForest_EC_TERNflux
@@ -167,7 +167,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      sig_str_irga_Avg:
+      - name: sig_str_irga_Avg
         instrument: LI-COR LI-7500RS
         units: percent
         file: WombatStateForest_EC_TERNflux
@@ -175,7 +175,7 @@ variables:
     statistic_type: average
     height: 0.1
     input_variables:
-      VWC_Avg(1):
+      - name: VWC_Avg(1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -183,7 +183,7 @@ variables:
     statistic_type: average
     height: 0.2
     input_variables:
-      VWC_Avg(2):
+      - name: VWC_Avg(2)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -191,7 +191,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      VWC_Avg(3):
+      - name: VWC_Avg(3)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -199,7 +199,7 @@ variables:
     statistic_type: average
     height: -0.6
     input_variables:
-      VWC_Avg(4):
+      - name: VWC_Avg(4)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -207,7 +207,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      VWC_Avg(5):
+      - name: VWC_Avg(5)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -215,7 +215,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      VWC_Avg(6):
+      - name: VWC_Avg(6)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -223,7 +223,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      VWC_Avg(7):
+      - name: VWC_Avg(7)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -231,7 +231,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      VWC_Avg(8):
+      - name: VWC_Avg(8)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: WombatStateForest_soil_Soil
@@ -239,7 +239,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Ta_sensor_mean:
+      - name: Ta_sensor_mean
         instrument: Vaisala HMP155
         units: degC
         file: WombatStateForest_EC_TERNflux
@@ -247,7 +247,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tb_Avg:
+      - name: Tb_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: WombatStateForest_EC_TERNflux
@@ -255,7 +255,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR6
         units: degC
         file: WombatStateForest_EC_TERNflux
@@ -266,7 +266,7 @@ variables:
     - -0.05
     - -0.18
     input_variables:
-      Tsoil_Avg(1):
+      - name: Tsoil_Avg(1)
         instrument: Campbell Scientific TCAV
         units: degC
         file: WombatStateForest_soil_Soil
@@ -277,7 +277,7 @@ variables:
     - -0.05
     - -0.18
     input_variables:
-      Tsoil_Avg(2):
+      - name: Tsoil_Avg(2)
         instrument: Campbell Scientific TCAV
         units: degC
         file: WombatStateForest_soil_Soil
@@ -285,7 +285,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      TS_Avg(1):
+      - name: TS_Avg(1)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -293,7 +293,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      TS_Avg(2):
+      - name: TS_Avg(2)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -301,7 +301,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      TS_Avg(3):
+      - name: TS_Avg(3)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -309,7 +309,7 @@ variables:
     statistic_type: average
     height: -0.6
     input_variables:
-      TS_Avg(4):
+      - name: TS_Avg(4)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -317,7 +317,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      TS_Avg(5):
+      - name: TS_Avg(5)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -325,7 +325,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      TS_Avg(6):
+      - name: TS_Avg(6)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -333,7 +333,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      TS_Avg(7):
+      - name: TS_Avg(7)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -341,7 +341,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      TS_Avg(8):
+      - name: TS_Avg(8)
         instrument: Campbell Scientific CS650
         units: degC
         file: WombatStateForest_soil_Soil
@@ -349,7 +349,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Tsonic_Avg:
+      - name: Tsonic_Avg
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: WombatStateForest_EC_TERNflux
@@ -357,7 +357,7 @@ variables:
     statistic_type: standard_deviation
     height: 41.0
     input_variables:
-      Tsonic_stdev:
+      - name: Tsonic_stdev
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: WombatStateForest_EC_TERNflux
@@ -365,7 +365,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -373,7 +373,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -383,7 +383,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -393,7 +393,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Tsonic_Ux_cov:
+      - name: Tsonic_Ux_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: WombatStateForest_EC_TERNflux
@@ -401,7 +401,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: WombatStateForest_EC_TERNflux
@@ -409,7 +409,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: WombatStateForest_EC_TERNflux
@@ -417,7 +417,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -425,7 +425,7 @@ variables:
     statistic_type: standard_deviation
     height: 41.0
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -433,7 +433,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -443,7 +443,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -453,7 +453,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Tsonic_Uy_cov:
+      - name: Tsonic_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: WombatStateForest_EC_TERNflux
@@ -461,7 +461,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: WombatStateForest_EC_TERNflux
@@ -469,7 +469,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -477,7 +477,7 @@ variables:
     statistic_type: standard_deviation
     height: 41.0
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -485,7 +485,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -495,7 +495,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -505,7 +505,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Tsonic_Uz_cov:
+      - name: Tsonic_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: WombatStateForest_EC_TERNflux
@@ -513,7 +513,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -521,7 +521,7 @@ variables:
     statistic_type: standard_deviation
     height: 41.0
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -529,7 +529,7 @@ variables:
     statistic_type: average
     height: 70.0
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR6
         units: V
         file: WombatStateForest_EC_TERNflux
@@ -537,7 +537,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: WombatStateForest_EC_TERNflux
@@ -545,7 +545,7 @@ variables:
     statistic_type: standard_deviation
     height: 41
     input_variables:
-      std_wnd_dir:
+      - name: std_wnd_dir
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: WombatStateForest_EC_TERNflux
@@ -553,7 +553,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: WombatStateForest_EC_TERNflux
@@ -561,7 +561,7 @@ variables:
     statistic_type: average
     height: 41.0
     input_variables:
-      amb_press_irga_mean:
+      - name: amb_press_irga_mean
         instrument: LI-COR LI-7500RS
         units: kPa
         file: WombatStateForest_EC_TERNflux

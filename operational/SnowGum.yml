@@ -9,7 +9,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      H2O_density:
+      - name: H2O_density
         instrument: Campbell Scientific EC155
         units: g/m^3
         file: SnowGum_EC_Flux_CSFormat
@@ -17,7 +17,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      H2O_density_SIGMA:
+      - name: H2O_density_SIGMA
         instrument: Campbell Scientific EC155
         units: g/m^3
         file: SnowGum_EC_Flux_CSFormat
@@ -25,7 +25,7 @@ variables:
     variable_type: counter
     height: 14.0
     input_variables:
-      H2O_samples:
+      - name: H2O_samples
         instrument: Campbell Scientific EC155
         units: dimensionless
         diag_type: valid_count
@@ -34,7 +34,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      CO2_density:
+      - name: CO2_density
         instrument: Campbell Scientific EC155
         units: mg/m^3
         file: SnowGum_EC_Flux_CSFormat
@@ -42,7 +42,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      CO2_density_SIGMA:
+      - name: CO2_density_SIGMA
         instrument: Campbell Scientific EC155
         units: mg/m^3
         file: SnowGum_EC_Flux_CSFormat
@@ -50,7 +50,7 @@ variables:
     variable_type: counter
     height: 14.0
     input_variables:
-      CO2_samples:
+      - name: CO2_samples
         instrument: Campbell Scientific EC155
         units: dimensionless
         diag_type: valid_count
@@ -59,7 +59,7 @@ variables:
     variable_type: counter
     height: 14.0
     input_variables:
-      irga_bad_data_f_Tot:
+      - name: irga_bad_data_f_Tot
         instrument: Campbell Scientific EC155
         units: dimensionless
         diag_type: invalid_count
@@ -68,7 +68,7 @@ variables:
     variable_type: counter
     height: 14.0
     input_variables:
-      sonic_samples:
+      - name: sonic_samples
         instrument: Campbell Scientific CSAT3A
         units: dimensionless
         diag_type: valid_count
@@ -77,7 +77,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      FC_mass:
+      - name: FC_mass
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -87,7 +87,7 @@ variables:
     variable_type: counter
     height: 10.0
     input_variables:
-      FC_samples:
+      - name: FC_samples
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -98,7 +98,7 @@ variables:
     variable_type: quality_flag
     height: 10.0
     input_variables:
-      FC_QC:
+      - name: FC_QC
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -108,7 +108,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      LE:
+      - name: LE
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -118,7 +118,7 @@ variables:
     variable_type: counter
     height: 10.0
     input_variables:
-      LE_samples:
+      - name: LE_samples
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -129,7 +129,7 @@ variables:
     variable_type: quality_flag
     height: 10.0
     input_variables:
-      LE_QC:
+      - name: LE_QC
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -139,7 +139,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      H:
+      - name: H
         instrument: Campbell Scientific CSAT3A
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -147,7 +147,7 @@ variables:
     variable_type: counter
     height: 14.0
     input_variables:
-      H_samples:
+      - name: H_samples
         instrument: Campbell Scientific CSAT3A
         units: dimensionless
         diag_type: valid_count
@@ -156,7 +156,7 @@ variables:
     variable_type: quality_flag
     height: 14.0
     input_variables:
-      H_QC:
+      - name: H_QC
         instrument: Campbell Scientific CSAT3A
         units: dimensionless
         file: SnowGum_EC_Flux_CSFormat
@@ -164,7 +164,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      LW_IN:
+      - name: LW_IN
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -172,7 +172,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      LW_OUT:
+      - name: LW_OUT
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -180,7 +180,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      TAU:
+      - name: TAU
         instrument: Campbell Scientific CSAT3A
         units: kg/m/s^2
         file: SnowGum_EC_Flux_CSFormat
@@ -188,7 +188,7 @@ variables:
     variable_type: quality_flag
     height: 14.0
     input_variables:
-      TAU_QC:
+      - name: TAU_QC
         instrument: Campbell Scientific CSAT3A
         units: dimensionless
         file: SnowGum_EC_Flux_CSFormat
@@ -196,7 +196,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      SW_IN:
+      - name: SW_IN
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -204,7 +204,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      SW_OUT:
+      - name: SW_OUT
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -212,7 +212,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      T_nr:
+      - name: T_nr
         instrument: Kipp&Zonen CNR4
         units: K
         file: SnowGum_EC_Flux_CSFormat        
@@ -220,7 +220,7 @@ variables:
     statistic_type: sum
     height: 0.6
     input_variables:
-      P:
+      - name: P
         instrument: RM Young 52203
         units: mm
         file: SnowGum_EC_Flux_CSFormat
@@ -228,7 +228,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      RH_2_1_1:
+      - name: RH_2_1_1
         instrument: Vaisala HMP155
         units: percent
         file: SnowGum_EC_Flux_CSFormat
@@ -236,7 +236,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      RH_1_1_1:
+      - name: RH_1_1_1
         instrument: Campbell Scientific EC155
         units: percent
         file: SnowGum_EC_Flux_CSFormat
@@ -244,7 +244,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      CO2_sig_strgth_Min:
+      - name: CO2_sig_strgth_Min
         instrument: Campbell Scientific EC155
         units: frac
         file: SnowGum_EC_Flux_CSFormat
@@ -252,7 +252,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      H2O_sig_strgth_Min:
+      - name: H2O_sig_strgth_Min
         instrument: Campbell Scientific EC155
         units: frac
         file: SnowGum_EC_Flux_CSFormat
@@ -260,7 +260,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      TA_2_1_1:
+      - name: TA_2_1_1
         instrument: Vaisala HMP155
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -268,7 +268,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      T_DP_2_1_1:
+      - name: T_DP_2_1_1
         instrument: Vaisala HMP155
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -276,7 +276,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      T_DP_1_1_1:
+      - name: T_DP_1_1_1
         instrument: Campbell Scientific EC155
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -284,7 +284,7 @@ variables:
     statistic_type: average
     height: 1.0
     input_variables:
-      T_panel:
+      - name: T_panel
         instrument: Campbell Scientific CR6
         units: degC
         file: SnowGum_EC_Flux_Notes
@@ -292,7 +292,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      TSTAR:
+      - name: TSTAR
         instrument: Campbell Scientific CSAT3A
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -300,7 +300,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      T_SONIC:
+      - name: T_SONIC
         instrument: Campbell Scientific CSAT3A
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -308,7 +308,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      T_SONIC_SIGMA:
+      - name: T_SONIC_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -316,7 +316,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      U:
+      - name: U
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -324,7 +324,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      U_SIGMA:
+      - name: U_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -332,7 +332,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      UxH2O_Cov:
+      - name: UxH2O_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -342,7 +342,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      UxCO2_Cov:
+      - name: UxCO2_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -352,7 +352,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      TsUx_Cov:
+      - name: TsUx_Cov
         instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: SnowGum_EC_Flux_Notes
@@ -360,7 +360,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      UxUy_Cov:
+      - name: UxUy_Cov
         instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: SnowGum_EC_Flux_Notes
@@ -368,7 +368,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      UxUz_Cov:
+      - name: UxUz_Cov
         instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: SnowGum_EC_Flux_Notes
@@ -376,7 +376,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      Ux:
+      - name: Ux
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_Notes
@@ -384,7 +384,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      Ux_SIGMA:
+      - name: Ux_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_Notes
@@ -392,7 +392,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      UyH2O_Cov:
+      - name: UyH2O_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -402,7 +402,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      UyCO2_Cov:
+      - name: UyCO2_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -412,7 +412,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      TsUy_Cov:
+      - name: TsUy_Cov
         instrument: Campbell Scientific CSAT3A
         units: m.degC/s
         file: SnowGum_EC_Flux_Notes
@@ -420,7 +420,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      UyUz_Cov:
+      - name: UyUz_Cov
         instrument: Campbell Scientific CSAT3A
         units: m^2/s^2
         file: SnowGum_EC_Flux_Notes
@@ -428,7 +428,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      Uy:
+      - name: Uy
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_Notes
@@ -436,7 +436,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      Uy_SIGMA:
+      - name: Uy_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_Notes
@@ -444,7 +444,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      UzH2O_Cov:
+      - name: UzH2O_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -454,7 +454,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      UzCO2_Cov:
+      - name: UzCO2_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -464,7 +464,7 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      TsUz_Cov:
+      - name: TsUz_Cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3A
           irga: Campbell Scientific EC155
@@ -474,7 +474,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      Uz:
+      - name: Uz
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_Notes
@@ -482,7 +482,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      Uz_SIGMA:
+      - name: Uz_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_Notes
@@ -490,7 +490,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      V:
+      - name: V
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -498,7 +498,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      V_SIGMA:
+      - name: V_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -506,7 +506,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      W:
+      - name: W
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -514,7 +514,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      W_SIGMA:
+      - name: W_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -522,7 +522,7 @@ variables:
     statistic_type: average
     height: 1.0
     input_variables:
-      batt_volt_min:
+      - name: batt_volt_min
         instrument: Campbell Scientific CR6
         units: V
         file: SnowGum_EC_Flux_Notes
@@ -530,7 +530,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      WD:
+      - name: WD
         instrument: Campbell Scientific CSAT3A
         units: degrees
         file: SnowGum_EC_Flux_CSFormat
@@ -538,7 +538,7 @@ variables:
     statistic_type: standard_deviation
     height: 14.0
     input_variables:
-      WD_SIGMA:
+      - name: WD_SIGMA
         instrument: Campbell Scientific CSAT3A
         units: degrees
         file: SnowGum_EC_Flux_CSFormat
@@ -546,7 +546,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      WS:
+      - name: WS
         instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -554,7 +554,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      PA:
+      - name: PA
         instrument: Campbell Scientific EC155
         units: kPa
         file: SnowGum_EC_Flux_CSFormat
@@ -562,7 +562,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      USTAR:
+      - name: USTAR
         instrument: Campbell Scientific EC155
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
@@ -570,7 +570,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      G_PLATE_1_1_1:
+      - name: G_PLATE_1_1_1
         instrument: Hukseflux HFP01
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -578,7 +578,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      G_PLATE_2_1_1:
+      - name: G_PLATE_2_1_1
         instrument: Hukseflux HFP01
         units: W/m^2
         file: SnowGum_EC_Flux_CSFormat
@@ -586,7 +586,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      TS_1_1_1:
+      - name: TS_1_1_1
         instrument: Campbell Scientific TCAV
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -594,7 +594,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      TS_2_1_1:
+      - name: TS_2_1_1
         instrument: Campbell Scientific CS650
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -602,7 +602,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      TS_3_1_1:
+      - name: TS_3_1_1
         instrument: Campbell Scientific CS650
         units: degC
         file: SnowGum_EC_Flux_CSFormat
@@ -610,7 +610,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      SWC_1_1_1:
+      - name: SWC_1_1_1
         instrument: Campbell Scientific CS650
         units: percent
         file: SnowGum_EC_Flux_CSFormat
@@ -618,7 +618,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      SWC_3_1_1:
+      - name: SWC_3_1_1
         instrument: Campbell Scientific CS650
         units: percent
         file: SnowGum_EC_Flux_CSFormat
@@ -626,7 +626,7 @@ variables:
     statistic_type: average
     height: -0.3
     input_variables:
-      SWC_2_1_1:
+      - name: SWC_2_1_1
         instrument: Campbell Scientific CS616
         units: percent
         file: SnowGum_EC_Flux_CSFormat
@@ -634,7 +634,7 @@ variables:
     statistic_type: average
     height: 14.0
     input_variables:
-      TA_1_1_1:
+      - name: TA_1_1_1
         instrument: Campbell Scientific 107
         units: degC
         file: SnowGum_EC_Flux_CSFormat

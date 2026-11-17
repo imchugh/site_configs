@@ -9,7 +9,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Fh:
+      - name: Fh
         instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: Whroo_EC_TERNflux
@@ -17,7 +17,7 @@ variables:
     statistic_type: average
     height: 37
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific IRGASON
         units: kg/m/s^2
         file: Whroo_EC_TERNflux
@@ -25,7 +25,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -33,7 +33,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      Tsonic_stdev:
+      - name: Tsonic_stdev
         instrument: Campbell Scientific IRGASON
         units: degC
         file: Whroo_EC_TERNflux
@@ -41,7 +41,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Tsonic_Ux_cov:
+      - name: Tsonic_Ux_cov
         instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Whroo_EC_TERNflux
@@ -49,7 +49,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Tsonic_Uy_cov:
+      - name: Tsonic_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Whroo_EC_TERNflux
@@ -57,7 +57,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Tsonic_Uz_cov:
+      - name: Tsonic_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Whroo_EC_TERNflux
@@ -65,7 +65,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -73,7 +73,7 @@ variables:
     statistic_type: covariance
     height: 37.0
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Whroo_EC_TERNflux
@@ -81,7 +81,7 @@ variables:
     statistic_type: covariance
     height: 37.0
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Whroo_EC_TERNflux
@@ -89,7 +89,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -97,7 +97,7 @@ variables:
     statistic_type: covariance
     height: 37.0
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Whroo_EC_TERNflux
@@ -105,7 +105,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -113,7 +113,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -121,7 +121,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific IRGASON
         units: degrees
         file: Whroo_EC_TERNflux
@@ -129,7 +129,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      std_wnd_dir:
+      - name: std_wnd_dir
         instrument: Campbell Scientific IRGASON
         units: degrees
         file: Whroo_EC_TERNflux
@@ -137,7 +137,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -145,7 +145,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -153,7 +153,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Whroo_EC_TERNflux
@@ -161,7 +161,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Tsonic_Avg:
+      - name: Tsonic_Avg
         instrument: Campbell Scientific IRGASON
         units: degC
         file: Whroo_EC_TERNflux
@@ -169,7 +169,7 @@ variables:
     variable_type: counter
     height: 37.0
     input_variables:
-      sonic_samples_Tot:
+      - name: sonic_samples_Tot
         instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
@@ -178,7 +178,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Fco2:
+      - name: Fco2
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Whroo_EC_TERNflux
@@ -186,7 +186,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Fe:
+      - name: Fe
         instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: Whroo_EC_TERNflux
@@ -194,7 +194,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      CO2_stdev:
+      - name: CO2_stdev
         instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: Whroo_EC_TERNflux
@@ -202,7 +202,7 @@ variables:
     statistic_type: covariance
     height: 37.0
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Whroo_EC_TERNflux
@@ -210,7 +210,7 @@ variables:
     statistic_type: covariance
     height: 37.0
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Whroo_EC_TERNflux
@@ -218,7 +218,7 @@ variables:
     statistic_type: covariance
     height: 37.0
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Whroo_EC_TERNflux
@@ -226,7 +226,7 @@ variables:
     statistic_type: standard_deviation
     height: 37.0
     input_variables:
-      H2O_stdev:
+      - name: H2O_stdev
         instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: Whroo_EC_TERNflux
@@ -234,7 +234,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Whroo_EC_TERNflux
@@ -242,7 +242,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Whroo_EC_TERNflux
@@ -250,7 +250,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Whroo_EC_TERNflux
@@ -258,7 +258,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      CO2_mean:
+      - name: CO2_mean
         instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: Whroo_EC_TERNflux
@@ -266,7 +266,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      H2O_mean:
+      - name: H2O_mean
         instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: Whroo_EC_TERNflux
@@ -274,7 +274,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      amb_press_mean:
+      - name: amb_press_mean
         instrument: Campbell Scientific IRGASON
         units: kPa
         file: Whroo_EC_TERNflux
@@ -282,7 +282,7 @@ variables:
     variable_type: counter
     height: 37.0
     input_variables:
-      irga_samples_Tot:
+      - name: irga_samples_Tot
         instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
@@ -291,7 +291,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      CO2_sig_strgth_mean:
+      - name: CO2_sig_strgth_mean
         instrument: Campbell Scientific IRGASON
         units: frac
         file: Whroo_EC_TERNflux
@@ -299,7 +299,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      H2O_sig_strgth_mean:
+      - name: H2O_sig_strgth_mean
         instrument: Campbell Scientific IRGASON
         units: frac
         file: Whroo_EC_TERNflux
@@ -307,7 +307,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Ta_sensor_mean:
+      - name: Ta_sensor_mean
         instrument: Vaisala HMP155
         units: degC
         file: Whroo_EC_TERNflux
@@ -315,7 +315,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      AH_sensor_mean:
+      - name: AH_sensor_mean
         instrument: Vaisala HMP155
         units: g/m^3
         file: Whroo_EC_TERNflux
@@ -323,7 +323,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      RH_sensor_mean:
+      - name: RH_sensor_mean
         instrument: Vaisala HMP155
         units: percent
         file: Whroo_EC_TERNflux
@@ -331,7 +331,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Fsd_Avg:
+      - name: Fsd_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Whroo_EC_TERNflux
@@ -339,7 +339,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Fsu_Avg:
+      - name: Fsu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Whroo_EC_TERNflux
@@ -347,7 +347,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Fld_Avg:
+      - name: Fld_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Whroo_EC_TERNflux
@@ -355,7 +355,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Flu_Avg:
+      - name: Flu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Whroo_EC_TERNflux
@@ -363,7 +363,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      Tbody_RAD_Avg:
+      - name: Tbody_RAD_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: Whroo_EC_TERNflux
@@ -371,7 +371,7 @@ variables:
     statistic_type: average
     height: 37.0
     input_variables:
-      rain_Tot:
+      - name: rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: Whroo_EC_TERNflux
@@ -379,7 +379,7 @@ variables:
     statistic_type: average
     height: 24.0
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR1000XE
         units: degC
         file: Whroo_EC_TERNflux
@@ -387,7 +387,7 @@ variables:
     statistic_type: average
     height: 24.0
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR1000XE
         units: V
         file: Whroo_EC_TERNflux
@@ -395,7 +395,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_8cma_Avg:
+      - name: Fg_8cma_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Whroo_soil_Table1
@@ -403,7 +403,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_8cmb_Avg:
+      - name: Fg_8cmb_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Whroo_soil_Table1
@@ -411,7 +411,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_8cmd_Avg:
+      - name: Fg_8cmd_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Whroo_soil_Table1
@@ -419,7 +419,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Ts_8cma_Avg:
+      - name: Ts_8cma_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: Whroo_soil_Table1
@@ -427,7 +427,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Ts_8cmb_Avg:
+      - name: Ts_8cmb_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: Whroo_soil_Table1
@@ -435,7 +435,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Ts_8cmc_Avg:
+      - name: Ts_8cmc_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: Whroo_soil_Table1
@@ -443,7 +443,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Ts_8cmd_Avg:
+      - name: Ts_8cmd_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: Whroo_soil_Table1
@@ -451,7 +451,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Sws_8cma_Avg:
+      - name: Sws_8cma_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -459,7 +459,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Sws_8cmb_Avg:
+      - name: Sws_8cmb_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -467,7 +467,7 @@ variables:
     statistic_type: average
     height: -0.05
     input_variables:
-      Sws_5cm_Avg:
+      - name: Sws_5cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -475,7 +475,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_10cm_Avg:
+      - name: Sws_10cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -483,7 +483,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      Sws_20cm_Avg:
+      - name: Sws_20cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -491,7 +491,7 @@ variables:
     statistic_type: average
     height: -0.3
     input_variables:
-      Sws_30cm_Avg:
+      - name: Sws_30cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -499,7 +499,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      Sws_40cm_Avg:
+      - name: Sws_40cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -507,7 +507,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Sws_50cm_Avg:
+      - name: Sws_50cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -515,7 +515,7 @@ variables:
     statistic_type: average
     height: -0.6
     input_variables:
-      Sws_60cm_Avg:
+      - name: Sws_60cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -523,7 +523,7 @@ variables:
     statistic_type: average
     height: -0.75
     input_variables:
-      Sws_75cm_Avg:
+      - name: Sws_75cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -531,7 +531,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Sws_100cm_Avg:
+      - name: Sws_100cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: m^3/m^3
         file: Whroo_soil_Table1
@@ -539,7 +539,7 @@ variables:
     statistic_type: average
     height: -0.05
     input_variables:
-      Ts_5cm_Avg:
+      - name: Ts_5cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -547,7 +547,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Ts_10cm_Avg:
+      - name: Ts_10cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -555,7 +555,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      Ts_20cm_Avg:
+      - name: Ts_20cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -563,7 +563,7 @@ variables:
     statistic_type: average
     height: -0.3
     input_variables:
-      Ts_30cm_Avg:
+      - name: Ts_30cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -571,7 +571,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      Ts_40cm_Avg:
+      - name: Ts_40cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -579,7 +579,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      Ts_50cm_Avg:
+      - name: Ts_50cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -587,7 +587,7 @@ variables:
     statistic_type: average
     height: -0.6
     input_variables:
-      Ts_60cm_Avg:
+      - name: Ts_60cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -595,7 +595,7 @@ variables:
     statistic_type: average
     height: -0.75
     input_variables:
-      Ts_75cm_Avg:
+      - name: Ts_75cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1
@@ -603,7 +603,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      Ts_100cm_Avg:
+      - name: Ts_100cm_Avg
         instrument: Campbell Scientific SoilVue 10
         units: degC
         file: Whroo_soil_Table1

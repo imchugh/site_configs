@@ -9,7 +9,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      agc_Avg:
+      - name: agc_Avg
         instrument: LI-COR LI-7500A
         units: percent
         file: HowardSprings_EC_flux
@@ -17,7 +17,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      h2o_hmp_23_Avg:
+      - name: h2o_hmp_23_Avg
         instrument: Vaisala HMP45C
         units: g/m^3
         file: HowardSprings_EC_flux
@@ -25,7 +25,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      h2o_hmp_2_Avg:
+      - name: h2o_hmp_2_Avg
         instrument: Vaisala HMP45C
         units: g/m^3
         file: HowardSprings_EC_flux
@@ -33,7 +33,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      h2o_Avg:
+      - name: h2o_Avg
         instrument: LI-COR LI-7500A
         units: g/m^3
         file: HowardSprings_EC_flux
@@ -41,7 +41,7 @@ variables:
     statistic_type: variance
     height: 23.0
     input_variables:
-      cov_h2o_h2o:
+      - name: cov_h2o_h2o
         instrument: LI-COR LI-7500A
         units: g^2/m^6
         file: HowardSprings_EC_flux
@@ -49,7 +49,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      co2_Avg:
+      - name: co2_Avg
         instrument: LI-COR LI-7500A
         units: mg/m^3
         file: HowardSprings_EC_flux
@@ -57,7 +57,7 @@ variables:
     statistic_type: variance
     height: 23.0
     input_variables:
-      cov_co2_co2:
+      - name: cov_co2_co2
         instrument: LI-COR LI-7500A
         units: mg^2/m^6
         file: HowardSprings_EC_flux
@@ -65,7 +65,7 @@ variables:
     variable_type: counter
     height: 23.0
     input_variables:
-      irga_warnings:
+      - name: irga_warnings
         instrument: LI-COR LI-7500A
         units: dimensionless
         diag_type: invalid_count
@@ -74,7 +74,7 @@ variables:
     variable_type: counter
     height: 23.0
     input_variables:
-      csat_warnings:
+      - name: csat_warnings
         instrument: Campbell Scientific CSAT3
         units: dimensionless
         diag_type: invalid_count
@@ -83,7 +83,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      hfp_1_Avg:
+      - name: hfp_1_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -91,7 +91,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      hfp_2_Avg:
+      - name: hfp_2_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -99,7 +99,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      hfp_3_Avg:
+      - name: hfp_3_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -107,7 +107,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      hfp_4_Avg:
+      - name: hfp_4_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -115,7 +115,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Ldown_Avg:
+      - name: Ldown_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -123,7 +123,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Lup_Avg:
+      - name: Lup_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -131,7 +131,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Kdown_Avg:
+      - name: Kdown_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -139,7 +139,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Kup_Avg:
+      - name: Kup_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: HowardSprings_EC_EnrgyBal
@@ -147,7 +147,7 @@ variables:
     statistic_type: sum
     height: 0.6
     input_variables:
-      Rain_Tot:
+      - name: Rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: HowardSprings_EC_EnrgyBal
@@ -155,7 +155,7 @@ variables:
     statistic_type: average
     height: -1.0
     input_variables:
-      swc_T100_Avg:
+      - name: swc_T100_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -163,7 +163,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      swc_T10a_Avg:
+      - name: swc_T10a_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -171,7 +171,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      swc_T10b_Avg:
+      - name: swc_T10b_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -179,7 +179,7 @@ variables:
     statistic_type: average
     height: -1.2
     input_variables:
-      swc_T120a_Avg:
+      - name: swc_T120a_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -187,7 +187,7 @@ variables:
     statistic_type: average
     height: -1.2
     input_variables:
-      swc_T120b_Avg:
+      - name: swc_T120b_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -195,7 +195,7 @@ variables:
     statistic_type: average
     height: -1.4
     input_variables:
-      swc_T140a_Avg:
+      - name: swc_T140a_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -203,7 +203,7 @@ variables:
     statistic_type: average
     height: -1.4
     input_variables:
-      swc_T140b_Avg:
+      - name: swc_T140b_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -211,7 +211,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      swc_T40_Avg:
+      - name: swc_T40_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: HowardSprings_EC_EnrgyBal
@@ -219,7 +219,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      t_hmp_23_Avg:
+      - name: t_hmp_23_Avg
         instrument: Vaisala HMP45C
         units: degC
         file: HowardSprings_EC_flux
@@ -227,7 +227,7 @@ variables:
     statistic_type: average
     height: 2.0
     input_variables:
-      t_hmp_2_Avg:
+      - name: t_hmp_2_Avg
         instrument: Vaisala HMP45C
         units: degC
         file: HowardSprings_EC_flux
@@ -235,7 +235,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Tsoil_avg:
+      - name: Tsoil_avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: HowardSprings_EC_EnrgyBal
@@ -243,7 +243,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Ts_Avg:
+      - name: Ts_Avg
         instrument: Campbell Scientific CSAT3
         units: degC
         file: HowardSprings_EC_flux
@@ -251,7 +251,7 @@ variables:
     statistic_type: variance
     height: 23.0
     input_variables:
-      cov_Ts_Ts:
+      - name: cov_Ts_Ts
         instrument: Campbell Scientific CSAT3
         units: degC^2
         file: HowardSprings_EC_flux
@@ -259,7 +259,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Ux_h2o:
+      - name: cov_Ux_h2o
         instrument: 
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -269,7 +269,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Ux_co2:
+      - name: cov_Ux_co2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -279,7 +279,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Ux_Ts:
+      - name: cov_Ux_Ts
         instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: HowardSprings_EC_flux
@@ -287,7 +287,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Ux_Uy:
+      - name: cov_Ux_Uy
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: HowardSprings_EC_flux
@@ -295,7 +295,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uz_Ux:
+      - name: cov_Uz_Ux
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: HowardSprings_EC_flux
@@ -303,7 +303,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific CSAT3
         units: m/s
         file: HowardSprings_EC_flux
@@ -311,7 +311,7 @@ variables:
     statistic_type: variance
     height: 23.0
     input_variables:
-      cov_Ux_Ux:
+      - name: cov_Ux_Ux
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: HowardSprings_EC_flux
@@ -319,7 +319,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uy_h2o:
+      - name: cov_Uy_h2o
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -329,7 +329,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uy_co2:
+      - name: cov_Uy_co2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -339,7 +339,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uy_Ts:
+      - name: cov_Uy_Ts
         instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: HowardSprings_EC_flux
@@ -347,7 +347,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uz_Uy:
+      - name: cov_Uz_Uy
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: HowardSprings_EC_flux
@@ -355,7 +355,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific CSAT3
         units: m/s
         file: HowardSprings_EC_flux
@@ -363,7 +363,7 @@ variables:
     statistic_type: variance
     height: 23.0
     input_variables:
-      cov_Uy_Uy:
+      - name: cov_Uy_Uy
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: HowardSprings_EC_flux
@@ -371,7 +371,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uz_h2o:
+      - name: cov_Uz_h2o
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -381,7 +381,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uz_co2:
+      - name: cov_Uz_co2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -391,7 +391,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      cov_Uz_Ts:
+      - name: cov_Uz_Ts
         instrument: Campbell Scientific CSAT3
         units: m.degC/s
         file: HowardSprings_EC_flux
@@ -399,7 +399,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific CSAT3
         units: m/s
         file: HowardSprings_EC_flux
@@ -407,7 +407,7 @@ variables:
     statistic_type: variance
     height: 23.0
     input_variables:
-      cov_Uz_Uz:
+      - name: cov_Uz_Uz
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: HowardSprings_EC_flux
@@ -415,7 +415,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific CSAT3
         units: degrees
         file: HowardSprings_EC_flux
@@ -423,7 +423,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific CSAT3
         units: m/s
         file: HowardSprings_EC_flux
@@ -431,7 +431,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      press_Avg:
+      - name: press_Avg
         instrument: LI-COR LI-7500A
         units: kPa
         file: HowardSprings_EC_flux
@@ -439,7 +439,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Fc_wpl:
+      - name: Fc_wpl
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -449,7 +449,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      Hs:
+      - name: Hs
         instrument: Campbell Scientific CSAT3
         units: W/m^2
         file: HowardSprings_EC_flux
@@ -457,7 +457,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      LE_wpl:
+      - name: LE_wpl
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3
           irga: LI-COR LI-7500A
@@ -467,7 +467,7 @@ variables:
     statistic_type: average
     height: 23.0
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific CSAT3
         units: m/s
         file: HowardSprings_EC_flux
@@ -475,7 +475,7 @@ variables:
     statistic_type: average
     height: 1.0
     input_variables:
-      batt_volt_Avg:
+      - name: batt_volt_Avg
         instrument: Campbell Scientific CR3000
         units: V
         file: HowardSprings_EC_flux
@@ -483,7 +483,7 @@ variables:
     statistic_type: average
     height: 1.0
     input_variables:
-      panel_temp_Avg:
+      - name: panel_temp_Avg
         instrument: Campbell Scientific CR3000
         units: degC
         file: HowardSprings_EC_flux

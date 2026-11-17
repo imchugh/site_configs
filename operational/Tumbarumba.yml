@@ -10,7 +10,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      AH_sensor_mean:
+      - name: AH_sensor_mean
         instrument: Vaisala HMP155
         units: g/m^3
         file: Tumbarumba_EC_TERNflux
@@ -18,7 +18,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      H2O_mean:
+      - name: H2O_mean
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Tumbarumba_EC_TERNflux
@@ -26,7 +26,7 @@ variables:
     statistic_type: standard_deviation
     height: 71.0
     input_variables:
-      H2O_stdev:
+      - name: H2O_stdev
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: Tumbarumba_EC_TERNflux
@@ -34,7 +34,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      CO2_mean:
+      - name: CO2_mean
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Tumbarumba_EC_TERNflux
@@ -42,7 +42,7 @@ variables:
     statistic_type: standard_deviation
     height: 71.0
     input_variables:
-      co2_stdev:
+      - name: co2_stdev
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: Tumbarumba_EC_TERNflux
@@ -50,7 +50,7 @@ variables:
     variable_type: counter
     height: 71.0
     input_variables:
-      irga_samples_Tot:
+      - name: irga_samples_Tot
         instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: valid_count
@@ -59,7 +59,7 @@ variables:
     variable_type: counter
     height: 71.0
     input_variables:
-      sonic_samples_Tot:
+      - name: sonic_samples_Tot
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: valid_count
@@ -68,7 +68,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Fco2:
+      - name: Fco2
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -78,7 +78,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Fe:
+      - name: Fe
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -88,7 +88,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Fh:
+      - name: Fh
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: Tumbarumba_EC_TERNflux
@@ -96,7 +96,7 @@ variables:
     statistic_type: average
     height: 71
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific CSAT3B
         units: kg/m/s^2
         file: Tumbarumba_EC_TERNflux
@@ -104,7 +104,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      shf_plate_Avg(1):
+      - name: shf_plate_Avg(1)
         instrument: Hukseflux HFP01SC
         units: W/m^2
         file: Tumbarumba_soil_soilHFandT
@@ -112,7 +112,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      shf_plate_Avg(2):
+      - name: shf_plate_Avg(2)
         instrument: Hukseflux HFP01SC
         units: W/m^2
         file: Tumbarumba_soil_soilHFandT
@@ -120,7 +120,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Fld_Avg:
+      - name: Fld_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Tumbarumba_EC_TERNflux
@@ -128,7 +128,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Flu_Avg:
+      - name: Flu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Tumbarumba_EC_TERNflux
@@ -136,7 +136,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Fsd_Avg:
+      - name: Fsd_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Tumbarumba_EC_TERNflux
@@ -144,7 +144,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Fsu_Avg:
+      - name: Fsu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Tumbarumba_EC_TERNflux
@@ -152,7 +152,7 @@ variables:
     statistic_type: sum
     height: 71.0
     input_variables:
-      rain_Tot:
+      - name: rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: Tumbarumba_EC_TERNflux
@@ -160,7 +160,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      RH_sensor_mean:
+      - name: RH_sensor_mean
         instrument: Vaisala HMP155
         units: percent
         file: Tumbarumba_EC_TERNflux
@@ -168,7 +168,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      sig_str_irga_Avg:
+      - name: sig_str_irga_Avg
         instrument: LI-COR LI-7500RS
         units: percent
         file: Tumbarumba_EC_TERNflux
@@ -179,7 +179,7 @@ variables:
     - 0.0
     - -0.3
     input_variables:
-      cs650(1,1):
+      - name: cs650(1,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -187,7 +187,7 @@ variables:
     statistic_type: average
     height: -0.05
     input_variables:
-      cs650(2,1):
+      - name: cs650(2,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -195,7 +195,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      cs650(3,1):
+      - name: cs650(3,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -203,7 +203,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      cs650(4,1):
+      - name: cs650(4,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -211,7 +211,7 @@ variables:
     statistic_type: average
     height: -0.3
     input_variables:
-      cs650(5,1):
+      - name: cs650(5,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -219,7 +219,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      cs650(6,1):
+      - name: cs650(6,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -227,7 +227,7 @@ variables:
     statistic_type: average
     height: -0.7
     input_variables:
-      cs650(7,1):
+      - name: cs650(7,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -238,7 +238,7 @@ variables:
     - -1.1
     - -1.4
     input_variables:
-      cs650(8,1):
+      - name: cs650(8,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -249,7 +249,7 @@ variables:
     - 0.0
     - -0.3
     input_variables:
-      cs650(9,1):
+      - name: cs650(9,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -257,7 +257,7 @@ variables:
     statistic_type: average
     height: -0.05
     input_variables:
-      cs650(10,1):
+      - name: cs650(10,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -265,7 +265,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      cs650(11,1):
+      - name: cs650(11,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -273,7 +273,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      cs650(12,1):
+      - name: cs650(12,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -281,7 +281,7 @@ variables:
     statistic_type: average
     height: -0.3
     input_variables:
-      cs650(13,1):
+      - name: cs650(13,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -289,7 +289,7 @@ variables:
     statistic_type: average
     height: -0.5
     input_variables:
-      cs650(14,1):
+      - name: cs650(14,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -297,7 +297,7 @@ variables:
     statistic_type: average
     height: -0.7
     input_variables:
-      cs650(15,1):
+      - name: cs650(15,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -308,7 +308,7 @@ variables:
     - -1.1
     - -1.4
     input_variables:
-      cs650(16,1):
+      - name: cs650(16,1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Tumbarumba_soil_soilMoisture
@@ -316,7 +316,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Ta_sensor_mean:
+      - name: Ta_sensor_mean
         instrument: Vaisala HMP155
         units: degC
         file: Tumbarumba_EC_TERNflux
@@ -324,7 +324,7 @@ variables:
     statistic_type: average
     height: 20.0
     input_variables:
-      Tb_Avg:
+      - name: Tb_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: Tumbarumba_EC_TERNflux
@@ -332,7 +332,7 @@ variables:
     statistic_type: average
     height: 70.0
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR6
         units: degC
         file: Tumbarumba_EC_TERNflux
@@ -343,7 +343,7 @@ variables:
     - -0.02
     - -0.16
     input_variables:
-      tcav_probe_Avg(1):
+      - name: tcav_probe_Avg(1)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Tumbarumba_soil_soilHFandT
@@ -354,7 +354,7 @@ variables:
     - -0.02
     - -0.16
     input_variables:
-      tcav_probe_Avg(2):
+      - name: tcav_probe_Avg(2)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Tumbarumba_soil_soilHFandT
@@ -362,7 +362,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Tsonic_Avg:
+      - name: Tsonic_Avg
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: Tumbarumba_EC_TERNflux
@@ -370,7 +370,7 @@ variables:
     statistic_type: standard_deviation
     height: 71.0
     input_variables:
-      Tsonic_stdev:
+      - name: Tsonic_stdev
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: Tumbarumba_EC_TERNflux
@@ -378,7 +378,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -386,7 +386,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -396,7 +396,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -406,7 +406,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Tsonic_Ux_cov:
+      - name: Tsonic_Ux_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Tumbarumba_EC_TERNflux
@@ -414,7 +414,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Tumbarumba_EC_TERNflux
@@ -422,7 +422,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Tumbarumba_EC_TERNflux
@@ -430,7 +430,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -438,7 +438,7 @@ variables:
     statistic_type: standard_deviation
     height: 71.0
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -446,7 +446,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -456,7 +456,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -466,7 +466,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Tsonic_Uy_cov:
+      - name: Tsonic_Uy_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Tumbarumba_EC_TERNflux
@@ -474,7 +474,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: Tumbarumba_EC_TERNflux
@@ -482,7 +482,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -490,7 +490,7 @@ variables:
     statistic_type: standard_deviation
     height: 71.0
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -498,7 +498,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -508,7 +508,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -518,7 +518,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Tsonic_Uz_cov:
+      - name: Tsonic_Uz_cov
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: Tumbarumba_EC_TERNflux
@@ -526,7 +526,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -534,7 +534,7 @@ variables:
     statistic_type: standard_deviation
     height: 71.0
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -542,7 +542,7 @@ variables:
     statistic_type: average
     height: 70.0
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR6
         units: V
         file: Tumbarumba_EC_TERNflux
@@ -550,7 +550,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Tumbarumba_EC_TERNflux
@@ -558,7 +558,7 @@ variables:
     statistic_type: standard_deviation
     height: 71
     input_variables:
-      std_wnd_dir:
+      - name: std_wnd_dir
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: Tumbarumba_EC_TERNflux
@@ -566,7 +566,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: Tumbarumba_EC_TERNflux
@@ -574,7 +574,7 @@ variables:
     statistic_type: average
     height: 71.0
     input_variables:
-      amb_press_mean:
+      - name: amb_press_mean
         instrument: LI-COR LI-7500RS
         units: kPa
         file: Tumbarumba_EC_TERNflux

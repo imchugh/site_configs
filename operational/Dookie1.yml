@@ -8,7 +8,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Fh:
+      - name: Fh
         instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -16,7 +16,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      tau:
+      - name: tau
         instrument: Campbell Scientific IRGASON
         units: kg/m/s^2
         file: Dookie1_EC_TERNflux
@@ -24,7 +24,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      u_star:
+      - name: u_star
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -32,7 +32,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      Tsonic_stdev:
+      - name: Tsonic_stdev
         instrument: Campbell Scientific IRGASON
         units: degC
         file: Dookie1_EC_TERNflux
@@ -40,7 +40,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Tsonic_Ux_cov:
+      - name: Tsonic_Ux_cov
         instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Dookie1_EC_TERNflux
@@ -48,7 +48,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Tsonic_Uy_cov:
+      - name: Tsonic_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Dookie1_EC_TERNflux
@@ -56,7 +56,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Tsonic_Uz_cov:
+      - name: Tsonic_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: m.degC/s
         file: Dookie1_EC_TERNflux
@@ -64,7 +64,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      Ux_stdev:
+      - name: Ux_stdev
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -72,7 +72,7 @@ variables:
     statistic_type: covariance
     height: 2.95
     input_variables:
-      Ux_Uy_cov:
+      - name: Ux_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Dookie1_EC_TERNflux
@@ -80,7 +80,7 @@ variables:
     statistic_type: covariance
     height: 2.95
     input_variables:
-      Ux_Uz_cov:
+      - name: Ux_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Dookie1_EC_TERNflux
@@ -88,7 +88,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      Uy_stdev:
+      - name: Uy_stdev
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -96,7 +96,7 @@ variables:
     statistic_type: covariance
     height: 2.95
     input_variables:
-      Uy_Uz_cov:
+      - name: Uy_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: m^2/s^2
         file: Dookie1_EC_TERNflux
@@ -104,7 +104,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      Uz_stdev:
+      - name: Uz_stdev
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -112,7 +112,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      wnd_spd:
+      - name: wnd_spd
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -120,7 +120,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      wnd_dir_compass:
+      - name: wnd_dir_compass
         instrument: Campbell Scientific IRGASON
         units: degrees
         file: Dookie1_EC_TERNflux
@@ -128,7 +128,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      std_wnd_dir:
+      - name: std_wnd_dir
         instrument: Campbell Scientific IRGASON
         units: degrees
         file: Dookie1_EC_TERNflux
@@ -136,7 +136,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Ux_Avg:
+      - name: Ux_Avg
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -144,7 +144,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Uy_Avg:
+      - name: Uy_Avg
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -152,7 +152,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Uz_Avg:
+      - name: Uz_Avg
         instrument: Campbell Scientific IRGASON
         units: m/s
         file: Dookie1_EC_TERNflux
@@ -160,7 +160,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Tsonic_Avg:
+      - name: Tsonic_Avg
         instrument: Campbell Scientific IRGASON
         units: degC
         file: Dookie1_EC_TERNflux
@@ -168,7 +168,7 @@ variables:
     variable_type: counter
     height: 2.95
     input_variables:
-      sonic_samples_Tot:
+      - name: sonic_samples_Tot
         instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
@@ -177,7 +177,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Fco2:
+      - name: Fco2
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie1_EC_TERNflux
@@ -185,7 +185,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Fe:
+      - name: Fe
         instrument: Campbell Scientific IRGASON
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -193,7 +193,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      CO2_stdev:
+      - name: CO2_stdev
         instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: Dookie1_EC_TERNflux
@@ -201,7 +201,7 @@ variables:
     statistic_type: covariance
     height: 2.95
     input_variables:
-      CO2_Ux_cov:
+      - name: CO2_Ux_cov
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie1_EC_TERNflux
@@ -209,7 +209,7 @@ variables:
     statistic_type: covariance
     height: 2.95
     input_variables:
-      CO2_Uy_cov:
+      - name: CO2_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie1_EC_TERNflux
@@ -217,7 +217,7 @@ variables:
     statistic_type: covariance
     height: 2.95
     input_variables:
-      CO2_Uz_cov:
+      - name: CO2_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: mg/m^2/s
         file: Dookie1_EC_TERNflux
@@ -225,7 +225,7 @@ variables:
     statistic_type: standard_deviation
     height: 2.95
     input_variables:
-      H2O_stdev:
+      - name: H2O_stdev
         instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: Dookie1_EC_TERNflux
@@ -233,7 +233,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      H2O_Ux_cov:
+      - name: H2O_Ux_cov
         instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Dookie1_EC_TERNflux
@@ -241,7 +241,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      H2O_Uy_cov:
+      - name: H2O_Uy_cov
         instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Dookie1_EC_TERNflux
@@ -249,7 +249,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      H2O_Uz_cov:
+      - name: H2O_Uz_cov
         instrument: Campbell Scientific IRGASON
         units: g/m^2/s
         file: Dookie1_EC_TERNflux
@@ -257,7 +257,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      CO2_mean:
+      - name: CO2_mean
         instrument: Campbell Scientific IRGASON
         units: mg/m^3
         file: Dookie1_EC_TERNflux
@@ -265,7 +265,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      H2O_mean:
+      - name: H2O_mean
         instrument: Campbell Scientific IRGASON
         units: g/m^3
         file: Dookie1_EC_TERNflux
@@ -273,7 +273,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      amb_press_mean:
+      - name: amb_press_mean
         instrument: Campbell Scientific IRGASON
         units: kPa
         file: Dookie1_EC_TERNflux
@@ -281,7 +281,7 @@ variables:
     variable_type: counter
     height: 2.95
     input_variables:
-      irga_samples_Tot:
+      - name: irga_samples_Tot
         instrument: Campbell Scientific IRGASON
         units: dimensionless
         diag_type: valid_count
@@ -290,7 +290,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      CO2_sig_strgth_mean:
+      - name: CO2_sig_strgth_mean
         instrument: Campbell Scientific IRGASON
         units: frac
         file: Dookie1_EC_TERNflux
@@ -298,7 +298,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      H2O_sig_strgth_mean:
+      - name: H2O_sig_strgth_mean
         instrument: Campbell Scientific IRGASON
         units: frac
         file: Dookie1_EC_TERNflux
@@ -306,7 +306,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Ta_sensor_mean:
+      - name: Ta_sensor_mean
         instrument: Vaisala HMP155
         units: degC
         file: Dookie1_EC_TERNflux
@@ -314,7 +314,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      AH_sensor_mean:
+      - name: AH_sensor_mean
         instrument: Vaisala HMP155
         units: g/m^3
         file: Dookie1_EC_TERNflux
@@ -322,7 +322,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      RH_sensor_mean:
+      - name: RH_sensor_mean
         instrument: Vaisala HMP155
         units: percent
         file: Dookie1_EC_TERNflux
@@ -330,7 +330,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Fsd_Avg:
+      - name: Fsd_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -338,7 +338,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Fsu_Avg:
+      - name: Fsu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -346,7 +346,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Fld_Avg:
+      - name: Fld_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -354,7 +354,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Flu_Avg:
+      - name: Flu_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -362,7 +362,7 @@ variables:
     statistic_type: average
     height: 2.95
     input_variables:
-      Tbody_RAD_Avg:
+      - name: Tbody_RAD_Avg
         instrument: Kipp&Zonen CNR4
         units: K
         file: Dookie1_EC_TERNflux
@@ -370,7 +370,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      rain_Tot:
+      - name: rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: Dookie1_EC_TERNflux
@@ -378,7 +378,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR1000XE
         units: degC
         file: Dookie1_EC_TERNflux
@@ -386,7 +386,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Vbat_Avg:
+      - name: Vbat_Avg
         instrument: Campbell Scientific CR1000XE
         units: V
         file: Dookie1_EC_TERNflux
@@ -394,7 +394,7 @@ variables:
     statistic_type: average
     height: -0.14
     input_variables:
-      Fg_01:
+      - name: Fg_01
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -402,7 +402,7 @@ variables:
     statistic_type: average
     height: -0.14
     input_variables:
-      Fg_02:
+      - name: Fg_02
         instrument: Hukseflux HFP01
         units: W/m^2
         file: Dookie1_EC_TERNflux
@@ -410,7 +410,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      sws_cs650_Avg(1):
+      - name: sws_cs650_Avg(1)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Dookie1_EC_TERNflux
@@ -418,7 +418,7 @@ variables:
     statistic_type: average
     height: -0.6
     input_variables:
-      sws_cs650_Avg(2):
+      - name: sws_cs650_Avg(2)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Dookie1_EC_TERNflux
@@ -426,7 +426,7 @@ variables:
     statistic_type: average
     height: -0.16
     input_variables:
-      sws_cs650_Avg(3):
+      - name: sws_cs650_Avg(3)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Dookie1_EC_TERNflux
@@ -434,7 +434,7 @@ variables:
     statistic_type: average
     height: -0.54
     input_variables:
-      sws_cs650_Avg(4):
+      - name: sws_cs650_Avg(4)
         instrument: Campbell Scientific CS650
         units: m^3/m^3
         file: Dookie1_EC_TERNflux
@@ -445,7 +445,7 @@ variables:
     - -0.14
     - -0.32
     input_variables:
-      Tsoil_mean(1):
+      - name: Tsoil_mean(1)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Dookie1_EC_TERNflux
@@ -456,7 +456,7 @@ variables:
     - -0.14
     - -0.32
     input_variables:
-      Tsoil_mean(2):
+      - name: Tsoil_mean(2)
         instrument: Campbell Scientific TCAV
         units: degC
         file: Dookie1_EC_TERNflux

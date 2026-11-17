@@ -9,7 +9,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      SigStr_Li7500_Avg:
+      - name: SigStr_Li7500_Avg
         instrument: LI-COR LI-7500RS
         units: percent
         file: RobsonCreek_EC_T30min_all
@@ -17,7 +17,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Ah_HMP_01_Avg:
+      - name: Ah_HMP_01_Avg
         instrument: Vaisala HMP155
         units: g/m^3
         file: RobsonCreek_EC_T30min_all
@@ -25,7 +25,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Ah_Li7500_Avg:
+      - name: Ah_Li7500_Avg
         instrument: LI-COR LI-7500RS
         units: g/m^3
         file: RobsonCreek_EC_T30min_all
@@ -33,7 +33,7 @@ variables:
     statistic_type: variance
     height: 40.0
     input_variables:
-      covAhAh:
+      - name: covAhAh
         instrument: LI-COR LI-7500RS
         units: g^2/m^6
         file: RobsonCreek_EC_T30min_all
@@ -41,7 +41,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Cc_Li7500_Avg:
+      - name: Cc_Li7500_Avg
         instrument: LI-COR LI-7500RS
         units: mg/m^3
         file: RobsonCreek_EC_T30min_all
@@ -49,7 +49,7 @@ variables:
     statistic_type: variance
     height: 40.0
     input_variables:
-      covCcCc:
+      - name: covCcCc
         instrument: LI-COR LI-7500RS
         units: mg^2/m^6
         file: RobsonCreek_EC_T30min_all
@@ -57,7 +57,7 @@ variables:
     variable_type: counter
     height: 40.0
     input_variables:
-      Li7500_Warn:
+      - name: Li7500_Warn
         instrument: LI-COR LI-7500RS
         units: dimensionless
         diag_type: invalid_count        
@@ -66,7 +66,7 @@ variables:
     variable_type: counter
     height: 40.0
     input_variables:
-      CSAT_Warn:
+      - name: CSAT_Warn
         instrument: Campbell Scientific CSAT3B
         units: dimensionless
         diag_type: invalid_count
@@ -75,7 +75,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_HFP01_01_Avg:
+      - name: Fg_HFP01_01_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: RobsonCreek_soil_T30min_all
@@ -83,7 +83,7 @@ variables:
     statistic_type: average
     height: -0.08
     input_variables:
-      Fg_HFP01_02_Avg:
+      - name: Fg_HFP01_02_Avg
         instrument: Hukseflux HFP01
         units: W/m^2
         file: RobsonCreek_soil_T30min_all
@@ -91,7 +91,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Fld_NR01_Avg:
+      - name: Fld_NR01_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
@@ -99,7 +99,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Flu_NR01_Avg:
+      - name: Flu_NR01_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
@@ -107,7 +107,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Fsd_NR01_Avg:
+      - name: Fsd_NR01_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
@@ -115,7 +115,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Fsu_NR01_Avg:
+      - name: Fsu_NR01_Avg
         instrument: Kipp&Zonen CNR4
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
@@ -123,7 +123,7 @@ variables:
     statistic_type: sum
     height: 2.0
     input_variables:
-      Rain_Tot:
+      - name: Rain_Tot
         instrument: Campbell Scientific CS700
         units: mm
         file: RobsonCreek_EC_T30min_all
@@ -131,7 +131,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Rh_HMP_01_Avg:
+      - name: Rh_HMP_01_Avg
         instrument: Vaisala HMP155
         units: frac
         file: RobsonCreek_EC_T30min_all
@@ -139,7 +139,7 @@ variables:
     statistic_type: average
     height: -0.1
     input_variables:
-      Sws_CS616_01_Avg:
+      - name: Sws_CS616_01_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: RobsonCreek_soil_T30min_all
@@ -147,7 +147,7 @@ variables:
     statistic_type: average
     height: -0.2
     input_variables:
-      Sws_CS616_02_Avg:
+      - name: Sws_CS616_02_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: RobsonCreek_soil_T30min_all
@@ -155,7 +155,7 @@ variables:
     statistic_type: average
     height: -0.3
     input_variables:
-      Sws_CS616_03_Avg:
+      - name: Sws_CS616_03_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: RobsonCreek_soil_T30min_all
@@ -163,7 +163,7 @@ variables:
     statistic_type: average
     height: -0.4
     input_variables:
-      Sws_CS616_04_Avg:
+      - name: Sws_CS616_04_Avg
         instrument: Campbell Scientific CS616
         units: m^3/m^3
         file: RobsonCreek_soil_T30min_all
@@ -171,7 +171,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Ta_HMP_01_Avg:
+      - name: Ta_HMP_01_Avg
         instrument: Vaisala HMP155
         units: degC
         file: RobsonCreek_EC_T30min_all
@@ -179,7 +179,7 @@ variables:
     statistic_type: average
     height: -0.05
     input_variables:
-      Ts_TCAV_01_Avg:
+      - name: Ts_TCAV_01_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: RobsonCreek_soil_T30min_all
@@ -187,7 +187,7 @@ variables:
     statistic_type: average
     height: -0.05
     input_variables:
-      Ts_TCAV_02_Avg:
+      - name: Ts_TCAV_02_Avg
         instrument: Campbell Scientific TCAV
         units: degC
         file: RobsonCreek_soil_T30min_all
@@ -195,7 +195,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Tv_CSAT_Avg:
+      - name: Tv_CSAT_Avg
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: RobsonCreek_EC_T30min_all
@@ -203,7 +203,7 @@ variables:
     statistic_type: variance
     height: 40.0
     input_variables:
-      covTvTv:
+      - name: covTvTv
         instrument: Campbell Scientific CSAT3B
         units: degC^2
         file: RobsonCreek_EC_T30min_all
@@ -211,7 +211,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUxAh:
+      - name: covUxAh
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -221,7 +221,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUxCc:
+      - name: covUxCc
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -231,7 +231,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUxTv:
+      - name: covUxTv
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: RobsonCreek_EC_T30min_all
@@ -239,7 +239,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUxUy:
+      - name: covUxUy
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
@@ -247,7 +247,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUzUx:
+      - name: covUzUx
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
@@ -255,7 +255,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Ux_CSAT_Avg:
+      - name: Ux_CSAT_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
@@ -263,7 +263,7 @@ variables:
     statistic_type: variance
     height: 40.0
     input_variables:
-      covUxUx:
+      - name: covUxUx
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
@@ -271,7 +271,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUyAh:
+      - name: covUyAh
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -281,7 +281,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUyCc:
+      - name: covUyCc
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -291,7 +291,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUyTv:
+      - name: covUyTv
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: RobsonCreek_EC_T30min_all
@@ -299,7 +299,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUzUy:
+      - name: covUzUy
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
@@ -307,7 +307,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Uy_CSAT_Avg:
+      - name: Uy_CSAT_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
@@ -315,7 +315,7 @@ variables:
     statistic_type: variance
     height: 40.0
     input_variables:
-      covUyUy:
+      - name: covUyUy
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
@@ -323,7 +323,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUzAh:
+      - name: covUzAh
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -333,7 +333,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUzCc:
+      - name: covUzCc
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -343,7 +343,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      covUzTv:
+      - name: covUzTv
         instrument: Campbell Scientific CSAT3B
         units: m.degC/s
         file: RobsonCreek_EC_T30min_all
@@ -351,7 +351,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Uz_CSAT_Avg:
+      - name: Uz_CSAT_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
@@ -359,7 +359,7 @@ variables:
     statistic_type: variance
     height: 40.0
     input_variables:
-      covUzUz:
+      - name: covUzUz
         instrument: Campbell Scientific CSAT3B
         units: m^2/s^2
         file: RobsonCreek_EC_T30min_all
@@ -367,7 +367,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Vlogger_Avg:
+      - name: Vlogger_Avg
         instrument: Campbell Scientific CR3000
         units: V
         file: RobsonCreek_EC_T30min_all
@@ -375,7 +375,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      WD_CSAT_Compass_Avg:
+      - name: WD_CSAT_Compass_Avg
         instrument: Campbell Scientific CSAT3B
         units: degrees
         file: RobsonCreek_EC_T30min_all
@@ -383,7 +383,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      WS_CSAT_Avg:
+      - name: WS_CSAT_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
@@ -391,7 +391,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      ps_Li7500_Avg:
+      - name: ps_Li7500_Avg
         instrument: LI-COR LI-7500RS
         units: kPa
         file: RobsonCreek_EC_T30min_all
@@ -399,7 +399,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Fc_Avg:
+      - name: Fc_Avg
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -409,7 +409,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Fh_Avg:
+      - name: Fh_Avg
         instrument: Campbell Scientific CSAT3B
         units: W/m^2
         file: RobsonCreek_EC_T30min_all
@@ -417,7 +417,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Fe_Avg:
+      - name: Fe_Avg
         instrument:
           sonic_anemometer: Campbell Scientific CSAT3B
           irga: LI-COR LI-7500RS
@@ -427,7 +427,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      ustar_Avg:
+      - name: ustar_Avg
         instrument: Campbell Scientific CSAT3B
         units: m/s
         file: RobsonCreek_EC_T30min_all
@@ -435,7 +435,7 @@ variables:
     statistic_type: average
     height: 1.5
     input_variables:
-      Tpanel_Avg:
+      - name: Tpanel_Avg
         instrument: Campbell Scientific CR3000
         units: degC
         file: RobsonCreek_EC_T30min_all
@@ -443,7 +443,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      Tpcb_CSAT:
+      - name: Tpcb_CSAT
         instrument: Campbell Scientific CSAT3B
         units: degC
         file: RobsonCreek_EC_T30min_all
@@ -451,7 +451,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      RHpcb_CSAT:
+      - name: RHpcb_CSAT
         instrument: Campbell Scientific CSAT3B
         units: percent
         file: RobsonCreek_EC_T30min_all
@@ -459,7 +459,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      pitch_CSAT:
+      - name: pitch_CSAT
         instrument: Campbell Scientific CSAT3B
         units: deg
         file: RobsonCreek_EC_T30min_all
@@ -467,7 +467,7 @@ variables:
     statistic_type: average
     height: 40.0
     input_variables:
-      roll_CSAT:
+      - name: roll_CSAT
         instrument: Campbell Scientific CSAT3B
         units: deg
         file: RobsonCreek_EC_T30min_all
