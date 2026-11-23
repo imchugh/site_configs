@@ -563,7 +563,7 @@ variables:
     height: 14.0
     input_variables:
       - name: USTAR
-        instrument: Campbell Scientific EC155
+        instrument: Campbell Scientific CSAT3A
         units: m/s
         file: SnowGum_EC_Flux_CSFormat
   Fg_0.08ma:
