@@ -508,7 +508,7 @@ variables:
         instrument: Campbell Scientific CSAT3
         units: m^2/s^2
         file: Ridgefield_EC_slow_all
-  Vbat_1:
+  Vbat:
     statistic_type: average
     height: 1.0
     input_variables:
@@ -583,12 +583,4 @@ variables:
       - name: Fh_Avg
         instrument: Campbell Scientific CSAT3
         units: W/m^2
-        file: Ridgefield_EC_slow_all
-  Vbat:
-    statistic_type: average
-    height: 2.5
-    input_variables:
-      - name: Vbat_Avg
-        instrument: Campbell Scientific CR3000
-        units: V
         file: Ridgefield_EC_slow_all
