@@ -2,16 +2,18 @@
 # Otherwise as operational/L2/Gingin.yml: no deltas, runs on fluxcore's
 # _range_defaults.yml and _dependency_defaults.yml.
 
-# L1 WTD is the CS451's raw level (metres of water above the probe, rising
-# as the water table rises) in every era. Converted here to CF
-# water_table_depth (metres below ground, positive down):
-#   WTD = probe depth - level = 13.173 - level
-# Probe depth 13.173 = 9.81 m dip to water + 3.363 m above the probe at
-# install (the logger program's constants). The probe was never moved, so
-# one undated correction covers the whole record. PROVISIONAL: the first
-# logged reading (2022-08-05) is 3.507, not 3.363, which would make the
-# probe depth 13.317 -- confirm with the site operators.
-WTD:
-  linear:
-    - slope: -1.0
-      offset: 13.173
+site: Gingin
+variables:
+  # L1 WTD is the CS451's raw level (metres of water above the probe, rising
+  # as the water table rises) in every era. Converted here to CF
+  # water_table_depth (metres below ground, positive down):
+  #   WTD = probe depth - level = 13.173 - level
+  # Probe depth 13.173 = 9.81 m dip to water + 3.363 m above the probe at
+  # install (the logger program's constants). The probe was never moved, so
+  # one undated correction covers the whole record. PROVISIONAL: the first
+  # logged reading (2022-08-05) is 3.507, not 3.363, which would make the
+  # probe depth 13.317 -- confirm with the site operators.
+  WTD:
+    linear:
+      - slope: -1.0
+        offset: 13.173

@@ -5,7 +5,10 @@
 
 # Sparse open-savanna canopy -- persistent, timing-correlated Fg swings exceed
 # the default (-100, 150), same regime as Boolcoomatta/Dookie (2026-09-29 audit).
-Fg_0.08ma:  # default (-100, 150)
-  range_check: {lower: -200, upper: 200}
-Fg_0.08md:  # default (-100, 150)
-  range_check: {lower: -200, upper: 200}
+
+site: Fletcherview
+variables:
+  Fg_0.08ma:  # default (-100, 150)
+    range_check: {lower: -200, upper: 200}
+  Fg_0.08md:  # default (-100, 150)
+    range_check: {lower: -200, upper: 200}

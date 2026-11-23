@@ -14,3 +14,6 @@
 # Not ported: Diag_IRGA / Diag_SONIC -- PyFluxPro's bounds are for averaged
 # diagnostic codes, this pipeline's are raw invalid-sample counts (see
 # _range_defaults.yml's Diag note).
+
+site: Calperum
+variables:

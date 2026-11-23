@@ -5,5 +5,8 @@
 
 # High elevation (1650m) -- clear-sky radiative cooling genuinely dips below the
 # default (200, 700), same regime as WombatStateForest (2026-09-29 audit).
-Fld:  # default (200, 700)
-  range_check: {lower: 150, upper: 700}
+
+site: AlpinePeatland
+variables:
+  Fld:  # default (200, 700)
+    range_check: {lower: 150, upper: 700}

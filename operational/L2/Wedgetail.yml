@@ -4,11 +4,14 @@
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fg_8cm->Fg_0.08ma, Sws_10cm->Sws_0.1mb, Sws_30cm->Sws_0.3mb, Ts_10cm->Ts_0.1mb, Ts_30cm->Ts_0.3mb, Ts_8cm->Ts_0.08ma
 
 # Logger flux QC flags -- EasyFlux 1-9 flag scheme: reject 8 and 9
-Fco2:
-  flag_check: {source: [Fco2_QC], reject: [8, 9]}
-Fe:
-  flag_check: {source: [Fe_QC], reject: [8, 9]}
-Fh:
-  flag_check: {source: [Fh_QC], reject: [8, 9]}
-Fm:
-  flag_check: {source: [Fm_QC], reject: [8, 9]}
+
+site: Wedgetail
+variables:
+  Fco2:
+    flag_check: {source: [Fco2_QC], reject: [8, 9]}
+  Fe:
+    flag_check: {source: [Fe_QC], reject: [8, 9]}
+  Fh:
+    flag_check: {source: [Fh_QC], reject: [8, 9]}
+  Fm:
+    flag_check: {source: [Fm_QC], reject: [8, 9]}

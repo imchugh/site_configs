@@ -3,5 +3,7 @@
 # NOT PORTED: ['Diag_IRGA', 'Diag_SONIC'] -- see _range_defaults.yml's Diag note.
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fco2_DL->Fco2, Fe_DL->Fe, Fh_DL->Fh, Sig_IRGA_Av->Sig_IRGA
 
-Fld:  # default (200, 700)
-  range_check: {lower: 150, upper: 700}
+site: WombatStateForest
+variables:
+  Fld:  # default (200, 700)
+    range_check: {lower: 150, upper: 700}

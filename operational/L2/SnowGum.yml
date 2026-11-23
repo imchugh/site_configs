@@ -5,14 +5,17 @@
 
 # High elevation (1616m) -- clear-sky radiative cooling genuinely dips below the
 # default (200, 700), same regime as WombatStateForest (2026-09-29 audit).
-Fld:  # default (200, 700)
-  range_check: {lower: 150, upper: 700}
-# Logger flux QC flags -- EasyFlux 1-9 flag scheme: reject 8 and 9
-Fco2:
-  flag_check: {source: [Fco2_QC], reject: [8, 9]}
-Fe:
-  flag_check: {source: [Fe_QC], reject: [8, 9]}
-Fh:
-  flag_check: {source: [Fh_QC], reject: [8, 9]}
-Fm:
-  flag_check: {source: [Fm_QC], reject: [8, 9]}
+
+site: SnowGum
+variables:
+  Fld:  # default (200, 700)
+    range_check: {lower: 150, upper: 700}
+  # Logger flux QC flags -- EasyFlux 1-9 flag scheme: reject 8 and 9
+  Fco2:
+    flag_check: {source: [Fco2_QC], reject: [8, 9]}
+  Fe:
+    flag_check: {source: [Fe_QC], reject: [8, 9]}
+  Fh:
+    flag_check: {source: [Fh_QC], reject: [8, 9]}
+  Fm:
+    flag_check: {source: [Fm_QC], reject: [8, 9]}

@@ -2,3 +2,6 @@
 # and configs/qc/_dependency_defaults.yml (flux_system: TERNFLUX, so no flag_check needed).
 # No PyFluxPro source config: the L2_autogen conversion was attempted but the available
 # PyFluxPro control file was too mismatched against current L1 variable names to convert.
+
+site: Gingin
+variables:

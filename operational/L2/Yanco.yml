@@ -3,16 +3,18 @@
 # NOT PORTED: ['Diag_IRGA', 'Diag_SONIC'] -- see _range_defaults.yml's Diag note.
 # RENAMED: CO2_IRGA_Av->CO2c_IRGA_Av, CO2_IRGA_Sd->CO2c_IRGA_Sd, Fco2_DL->Fco2, Fe_DL->Fe, Fh_DL->Fh, RH_1m->RH_16m, Ta_1m->Ta_16m
 
-Sig_IRGA:  # default (80, 102.5)
-  # Lower bound 60 (PyFluxPro's 80 would mask all of 2026): Yanco's raw agc_Avg is
-  # healthy at ~94 to 2025-12-09 and ~63 from 2025-12-11 (IRGA change). One bound
-  # serves both eras; poor states (<60) coincide with bad fluxes in both.
-  range_check: {lower: 60, upper: 101}
-# Pasture site, no canopy -- persistent, timing-correlated Fg swings exceed the
-# default (-100, 150), same regime as Boolcoomatta/Dookie (2026-09-29 audit).
-Fg_0.08mc:  # default (-100, 150)
-  range_check: {lower: -200, upper: 200}
-Fg_0.08md:  # default (-100, 150)
-  range_check: {lower: -200, upper: 200}
-Fg_0.08me:  # default (-100, 150)
-  range_check: {lower: -200, upper: 200}
+site: Yanco
+variables:
+  Sig_IRGA:  # default (80, 102.5)
+    # Lower bound 60 (PyFluxPro's 80 would mask all of 2026): Yanco's raw agc_Avg is
+    # healthy at ~94 to 2025-12-09 and ~63 from 2025-12-11 (IRGA change). One bound
+    # serves both eras; poor states (<60) coincide with bad fluxes in both.
+    range_check: {lower: 60, upper: 101}
+  # Pasture site, no canopy -- persistent, timing-correlated Fg swings exceed the
+  # default (-100, 150), same regime as Boolcoomatta/Dookie (2026-09-29 audit).
+  Fg_0.08mc:  # default (-100, 150)
+    range_check: {lower: -200, upper: 200}
+  Fg_0.08md:  # default (-100, 150)
+    range_check: {lower: -200, upper: 200}
+  Fg_0.08me:  # default (-100, 150)
+    range_check: {lower: -200, upper: 200}
