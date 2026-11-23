@@ -457,7 +457,7 @@ variables:
     - -0.06
     input_variables:
       - name: Ts_8cma_Avg
-        instrument: Middleton CN3
+        instrument: Campbell Scientific TCAV
         units: degC
         file: AliceSpringsMulga_soil_soil_microsites
   Ts_0.04mb:
@@ -468,7 +468,7 @@ variables:
     - -0.06
     input_variables:
       - name: Ts_8cmb_Avg
-        instrument: Middleton CN3
+        instrument: Campbell Scientific TCAV
         units: degC
         file: AliceSpringsMulga_soil_soil_microsites
   Ts_0.04mc:
@@ -479,7 +479,7 @@ variables:
     - -0.06
     input_variables:
       - name: Ts_8cmc_Avg
-        instrument: Middleton CN3
+        instrument: Campbell Scientific TCAV
         units: degC
         file: AliceSpringsMulga_soil_soil_microsites
   Sws_0.05ma:
