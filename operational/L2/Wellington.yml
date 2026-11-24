@@ -5,3 +5,13 @@
 
 site: Wellington
 variables:
+  Fm:
+    exclude_dates:
+      - start: 2023-09-27 12:30
+        end: 2024-01-31 14:00
+        comment: >-
+          The logger program's Fm_Avg is garbage from the first record
+          (78% positive, 22% negative, 1e15 to 1e21, never consistent with
+          rho*u*^2 while u* and the other fluxes are fine). Correct from
+          2024-02-02 (|Fm| = rho*u*^2, ratio 0.996), after a gap: presumably
+          a program update.

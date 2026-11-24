@@ -20,4 +20,12 @@ variables:
   Fh:
     flag_check: {source: [Fh_QC], reject: [8, 9]}
   Fm:
+    exclude_dates:
+      - start: 2025-10-08 12:30
+        end: 2025-12-16 09:30
+        comment: >-
+          IRGA down (Diag_IRGA 36000 every half-hour; ps, Ta, AH and CO2
+          missing; Fh, Fe, Fco2 missing), so EasyFlux's TAU had no valid air
+          density: about -0.003*u*^2 instead of about 1.1*u*^2, nearly always
+          negative. Everything recovers at 2025-12-16 10:00.
     flag_check: {source: [Fm_QC], reject: [8, 9]}
