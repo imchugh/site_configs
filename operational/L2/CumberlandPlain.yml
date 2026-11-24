@@ -14,4 +14,16 @@ variables:
   Fh:
     flag_check: {source: [Fh_QC], reject: [2]}
   Fm:
+    comment: >-
+      Momentum flux from EddyPro's Tau. The network reports Fm as a magnitude
+      (rho * u*^2, as CumberlandPlain did until 2023-04-12).
+    absolute:
+      - start: 2023-04-12 16:30
+        comment: >-
+          EddyPro reports Tau signed from here (negative = downward): the
+          16:00 record is missing (a SmartFlux restart) and Tau is never
+          negative before it. |Tau| = air_density * u*^2 exactly in every
+          quarter 2021-2026, so only the sign changed. About 12% of values
+          after the change are positive: small night-time upward fluxes at
+          low u*.
     flag_check: {source: [Fm_QC], reject: [2]}
