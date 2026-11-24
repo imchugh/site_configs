@@ -24,9 +24,9 @@ RH_15m,RH_HMP_15m_Avg,EC_slow_met,RH_sensor_mean,EC_TERNflux,percent,high,confir
 RH_2m,RH_HMP_2m_Avg,EC_slow_met,RH_2m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
 RH_4m,RH_HMP_4m_Avg,EC_slow_met,RH_4m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
 RH_7m,RH_HMP_7m_Avg,EC_slow_met,RH_7m_Avg,ancillary_ancillary_data,percent,high,ancillary logger; assumes same height
-Fg_0.08md,shf_Avg(1),EC_slow_flux,Fg_01,EC_TERNflux,W/m^2,medium,"PROVISIONAL: assumes Fg_01 is old shf_Avg(1) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators"
-Fg_0.08me,shf_Avg(2),EC_slow_flux,Fg_02,EC_TERNflux,W/m^2,medium,"PROVISIONAL: assumes Fg_02 is old shf_Avg(2) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators"
-Fg_0.08mf,shf_Avg(3),EC_slow_flux,Fg_03,EC_TERNflux,W/m^2,medium,"PROVISIONAL: assumes Fg_03 is old shf_Avg(3) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators"
+Fg_0.08md,shf_Avg(1),EC_slow_flux,-,-,-,none,
+Fg_0.08me,shf_Avg(2),EC_slow_flux,-,-,-,none,
+Fg_0.08mf,shf_Avg(3),EC_slow_flux,-,-,-,none,
 Sig_IRGA,sig_strn_7500_Avg,EC_slow_flux,sig_str_irga_Avg,EC_TERNflux,percent,high,
 Sws_0.06m,CS650_6cm_VWC_Avg,EC_slow_flux,sws_cs650_Avg(1),EC_TERNflux,m^3/m^3,medium,"PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators"
 Ta_10m,Ta_HMP_10m_Avg,EC_slow_met,Ta_10m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
@@ -83,4 +83,7 @@ Vbat,CR3000_batt_volt_Avg,EC_slow_met,Vbat_Avg,EC_TERNflux,V,high,logger now CR1
 Fqd,-,-,Fqd_Avg,EC_TERNflux,umol/m^2/s,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
 Fqu,-,-,Fqu_Avg,EC_TERNflux,umol/m^2/s,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
 Tcanopy,-,-,Ttarg_IR_C_Avg,EC_TERNflux,degC,new,"new sensor, no old counterpart; PROVISIONAL height 15.0 m (radiation boom assumed); confirm with site operators"
+Fg_0.16mg,-,-,Fg_01,EC_TERNflux,W/m^2,new,new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators
+Fg_0.16mh,-,-,Fg_02,EC_TERNflux,W/m^2,new,new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators
+Fg_0.16mi,-,-,Fg_03,EC_TERNflux,W/m^2,new,new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators
 WTD,CS451_Level / CS451_Level_Avg,EC_slow_met,CS451_Level_Avg,EC_TERNflux,m,new,"raw level (m of water above probe) in every era, incl. the old sampled CS451_Level to 2023-01-25; L2 converts to depth with WTD = 13.173 - level. PROVISIONAL constant: first reading 3.507 vs install 3.363 suggests 13.317; confirm with site operators"

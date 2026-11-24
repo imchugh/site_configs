@@ -299,12 +299,6 @@ variables:
       instrument: Hukseflux HFP01SC
       units: W/m^2
       file: Gingin_EC_slow_flux
-      end: 2026-10-20 11:30
-    - name: Fg_01
-      instrument: Hukseflux HFP01SC
-      units: W/m^2
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Fg_0.08me:
     statistic_type: average
     height: -0.08
@@ -313,12 +307,6 @@ variables:
       instrument: Hukseflux HFP01SC
       units: W/m^2
       file: Gingin_EC_slow_flux
-      end: 2026-10-20 11:30
-    - name: Fg_02
-      instrument: Hukseflux HFP01SC
-      units: W/m^2
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Fg_0.08mf:
     statistic_type: average
     height: -0.08
@@ -327,12 +315,6 @@ variables:
       instrument: Hukseflux HFP01SC
       units: W/m^2
       file: Gingin_EC_slow_flux
-      end: 2026-10-20 11:30
-    - name: Fg_03
-      instrument: Hukseflux HFP01SC
-      units: W/m^2
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Sig_IRGA:
     statistic_type: average
     height: 15.0
@@ -1460,6 +1442,33 @@ variables:
     - name: Ttarg_IR_C_Avg
       instrument: Apogee Instruments SI-111-SS
       units: degC
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Fg_0.16mg:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+    - name: Fg_01
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Fg_0.16mh:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+    - name: Fg_02
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Fg_0.16mi:
+    statistic_type: average
+    height: -0.16
+    input_variables:
+    - name: Fg_03
+      instrument: Hukseflux HFP01
+      units: W/m^2
       file: Gingin_EC_TERNflux
       begin: 2026-10-20 12:00
   WTD:

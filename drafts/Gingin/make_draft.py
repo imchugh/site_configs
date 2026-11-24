@@ -52,11 +52,17 @@ M={
  'Ws_16m':(TF,'Ws_Av','m/s','high','confirmed: Ws_Av/Wd_Av is the old 15.5 m Windsonic'),
  'Wd_16m':(TF,'Wd_Av','degrees','high','confirmed: Ws_Av/Wd_Av is the old 15.5 m Windsonic'),
 }
-# Soil heat flux: only the three HFP01SCs remain (CN3s removed). PROVISIONAL:
-# assumes Fg_01..03 are the old shf_Avg(1..3) plates, unmoved -- to confirm
-# with the site operators.
-for n,letter in ((1,'d'),(2,'e'),(3,'f')):
-    M[f'Fg_0.08m{letter}']=(TF,f'Fg_0{n}','W/m^2','medium',f'PROVISIONAL: assumes Fg_0{n} is old shf_Avg({n}) HFP01SC, unmoved; new range ~4x smaller than old plates 2-3 (old CR3000 vs new CR1000X program: check sensitivity/self-cal); confirm with site operators')
+# Soil heat flux (user, 2026-11-24): the new logger's three plates are NOT the
+# old ones. They're Hukseflux HFP01s (not self-calibrating, unlike the old
+# HFP01SCs), buried at 16 cm (old plates: 8 cm) in new locations, so they're
+# new variables with new letters g/h/i, not a continuation of the 8 cm series.
+# The old CN3 (a-c) and HFP01SC (d-f) variables keep their old inputs only.
+# All three new channels give coherent data (r >= 0.978 with each other since
+# 2026-10-20); the user thought only two were operational, so all three are
+# mapped until the operators say which.
+NEW_FG={f'Fg_0.16m{letter}':(f'Fg_0{n}','Hukseflux HFP01','W/m^2')
+        for n,letter in ((1,'g'),(2,'h'),(3,'i'))}
+NEW_FG_HEIGHT=-0.16
 # Shallow soil: PROVISIONAL, to confirm with the site operators. The new
 # logger has two real CS650s (slot 3 exactly duplicates slot 2 in every output
 # except an empty sws -- a program fault, ignored) and two TCAV averages
@@ -149,6 +155,9 @@ for k,v in out['variables'].items():
 for k,(raw,inst,u) in NEW.items():
     out['variables'][k]={'statistic_type':'average','height':NEW_HEIGHT,'input_variables':[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]}
     rows.append((k,'-','-',raw,TF[7:],u,'new',f'new sensor, no old counterpart; PROVISIONAL height {NEW_HEIGHT} m (radiation boom assumed); confirm with site operators'))
+for k,(raw,inst,u) in NEW_FG.items():
+    out['variables'][k]={'statistic_type':'average','height':NEW_FG_HEIGHT,'input_variables':[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]}
+    rows.append((k,'-','-',raw,TF[7:],u,'new','new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators'))
 ivs=[]
 for raw,f,b,e in WTD_INPUTS:
     d={'name':raw,'instrument':'Campbell Scientific CS451','units':'m','file':f}
