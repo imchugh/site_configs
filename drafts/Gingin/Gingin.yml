@@ -417,12 +417,6 @@ variables:
       instrument: Campbell Scientific CS650
       units: m^3/m^3
       file: Gingin_EC_slow_flux
-      end: 2026-10-20 11:30
-    - name: sws_cs650_Avg(1)
-      instrument: Campbell Scientific CS650
-      units: m^3/m^3
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Sws_0.1ma:
     statistic_type: average
     height: -0.1
@@ -669,12 +663,6 @@ variables:
       instrument: Campbell Scientific TCAV
       units: degC
       file: Gingin_EC_slow_met
-      end: 2026-10-20 11:30
-    - name: Tsoil_mean(1)
-      instrument: Campbell Scientific TCAV
-      units: degC
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Ts_0.04mb:
     statistic_type: average
     height: -0.04
@@ -683,12 +671,6 @@ variables:
       instrument: Campbell Scientific TCAV
       units: degC
       file: Gingin_EC_slow_met
-      end: 2026-10-20 11:30
-    - name: Tsoil_mean(2)
-      instrument: Campbell Scientific TCAV
-      units: degC
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Ts_0.04mc:
     statistic_type: average
     height: -0.04
@@ -713,12 +695,6 @@ variables:
       instrument: Campbell Scientific CS650
       units: degC
       file: Gingin_EC_slow_flux
-      end: 2026-10-20 11:30
-    - name: T_cs650_Avg(1)
-      instrument: Campbell Scientific CS650
-      units: degC
-      file: Gingin_EC_TERNflux
-      begin: 2026-10-20 12:00
   Ts_2m:
     statistic_type: average
     height: -2.0
@@ -1469,6 +1445,48 @@ variables:
     - name: Fg_03
       instrument: Hukseflux HFP01
       units: W/m^2
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Sws_0.08mg:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: sws_cs650_Avg(1)
+      instrument: Campbell Scientific CS650
+      units: m^3/m^3
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Ts_0.08mg:
+    statistic_type: average
+    height: -0.0825
+    height_range:
+    - -0.005
+    - -0.16
+    input_variables:
+    - name: Tsoil_mean(1)
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Sws_0.08mh:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: sws_cs650_Avg(2)
+      instrument: Campbell Scientific CS650
+      units: m^3/m^3
+      file: Gingin_EC_TERNflux
+      begin: 2026-10-20 12:00
+  Ts_0.08mh:
+    statistic_type: average
+    height: -0.0825
+    height_range:
+    - -0.005
+    - -0.16
+    input_variables:
+    - name: Tsoil_mean(2)
+      instrument: Campbell Scientific TCAV
+      units: degC
       file: Gingin_EC_TERNflux
       begin: 2026-10-20 12:00
   WTD:

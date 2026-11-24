@@ -60,18 +60,27 @@ M={
 # All three new channels give coherent data (r >= 0.978 with each other since
 # 2026-10-20); the user thought only two were operational, so all three are
 # mapped until the operators say which.
-NEW_FG={f'Fg_0.16m{letter}':(f'Fg_0{n}','Hukseflux HFP01','W/m^2')
-        for n,letter in ((1,'g'),(2,'h'),(3,'i'))}
-NEW_FG_HEIGHT=-0.16
-# Shallow soil: PROVISIONAL, to confirm with the site operators. The new
-# logger has two real CS650s (slot 3 exactly duplicates slot 2 in every output
-# except an empty sws -- a program fault, ignored) and two TCAV averages
-# (Tsoil_mean(3) empty). Assumed: Tsoil_mean(1/2) = old TCAV a/b at 4 cm,
-# cs650(1) = old 6 cm probe; cs650(2) unmapped until its depth is known.
-for n,letter in ((1,'a'),(2,'b')):
-    M[f'Ts_0.04m{letter}']=(TF,f'Tsoil_mean({n})','degC','medium',f'PROVISIONAL: assumes Tsoil_mean({n}) is old TCAV{letter} at 4 cm; confirm with site operators')
-M['Sws_0.06m']=(TF,'sws_cs650_Avg(1)','m^3/m^3','medium','PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators')
-M['Ts_0.06m']=(TF,'T_cs650_Avg(1)','degC','medium','PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators')
+# CS650s (user, 2026-11-24): slots 1 and 2 are new probes at 8 cm, paired with
+# plates 1 and 2 (letters g, h), so they're new variables too; the old 6 cm
+# CS650 (Sws_0.06m / Ts_0.06m) keeps its old inputs only. Slot 3 duplicates
+# slot 2 (program fault) and is ignored. Only VWC is mapped: the CS650's
+# temperature is redundant with the TCAV in the same pit (user, 2026-11-24),
+# and ec/perm/period/VoltR are probe diagnostics, unmapped network-wide.
+# TCAVs (user, 2026-11-24): Tsoil_mean(1/2) are NEW TCAVs paired with plates
+# g/h, four thermocouples at 0.5, 5.5, 10.5 and 16 cm averaged through the
+# column -> Ts_0.08mg/mh, height the range midpoint (as AlpinePeatland). The
+# old 4 cm TCAVs (Ts_0.04ma/mb) keep their old inputs only. del_Tsoil (the
+# plates' storage-term temperature change) is left unmapped.
+# canonical -> (raw name, instrument, units, height, height_range, review note)
+NEW_SOIL={}
+for n,letter in ((1,'g'),(2,'h'),(3,'i')):
+    NEW_SOIL[f'Fg_0.16m{letter}']=(f'Fg_0{n}','Hukseflux HFP01','W/m^2',-0.16,None,
+        'new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators')
+for n,letter in ((1,'g'),(2,'h')):
+    NEW_SOIL[f'Sws_0.08m{letter}']=(f'sws_cs650_Avg({n})','Campbell Scientific CS650','m^3/m^3',-0.08,None,
+        f'new CS650 slot {n} at 8 cm, paired with plate Fg_0.16m{letter} (user 2026-11-24); replaces the old 6 cm probe')
+    NEW_SOIL[f'Ts_0.08m{letter}']=(f'Tsoil_mean({n})','Campbell Scientific TCAV','degC',-0.0825,(-0.005,-0.16),
+        f'new TCAV paired with plate Fg_0.16m{letter}, thermocouples at 0.5/5.5/10.5/16 cm (user 2026-11-24); replaces the old 4 cm TCAV')
 for h in ('2m','4m','7m','10m'):
     M[f'Ta_{h}']=(AN,f'Ta_{h}_Avg','degC','high','ancillary logger; assumes same height')
     M[f'RH_{h}']=(AN,f'RH_{h}_Avg','percent','high','ancillary logger; assumes same height')
@@ -155,9 +164,11 @@ for k,v in out['variables'].items():
 for k,(raw,inst,u) in NEW.items():
     out['variables'][k]={'statistic_type':'average','height':NEW_HEIGHT,'input_variables':[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]}
     rows.append((k,'-','-',raw,TF[7:],u,'new',f'new sensor, no old counterpart; PROVISIONAL height {NEW_HEIGHT} m (radiation boom assumed); confirm with site operators'))
-for k,(raw,inst,u) in NEW_FG.items():
-    out['variables'][k]={'statistic_type':'average','height':NEW_FG_HEIGHT,'input_variables':[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]}
-    rows.append((k,'-','-',raw,TF[7:],u,'new','new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators'))
+for k,(raw,inst,u,height,hrange,note) in NEW_SOIL.items():
+    out['variables'][k]={'statistic_type':'average','height':height}
+    if hrange: out['variables'][k]['height_range']=list(hrange)
+    out['variables'][k]['input_variables']=[{'name':raw,'instrument':inst,'units':u,'file':TF,'begin':BEGIN}]
+    rows.append((k,'-','-',raw,TF[7:],u,'new',note))
 ivs=[]
 for raw,f,b,e in WTD_INPUTS:
     d={'name':raw,'instrument':'Campbell Scientific CS451','units':'m','file':f}

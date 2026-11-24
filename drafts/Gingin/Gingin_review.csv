@@ -28,17 +28,17 @@ Fg_0.08md,shf_Avg(1),EC_slow_flux,-,-,-,none,
 Fg_0.08me,shf_Avg(2),EC_slow_flux,-,-,-,none,
 Fg_0.08mf,shf_Avg(3),EC_slow_flux,-,-,-,none,
 Sig_IRGA,sig_strn_7500_Avg,EC_slow_flux,sig_str_irga_Avg,EC_TERNflux,percent,high,
-Sws_0.06m,CS650_6cm_VWC_Avg,EC_slow_flux,sws_cs650_Avg(1),EC_TERNflux,m^3/m^3,medium,"PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators"
+Sws_0.06m,CS650_6cm_VWC_Avg,EC_slow_flux,-,-,-,none,
 Ta_10m,Ta_HMP_10m_Avg,EC_slow_met,Ta_10m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
 Ta_15m,Ta_HMP_15m_Avg,EC_slow_met,Ta_sensor_mean,EC_TERNflux,degC,high,confirmed: EC-height HMP is the old 14.7 m one
 Ta_2m,Ta_HMP_2m_Avg,EC_slow_met,Ta_2m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
 Ta_4m,Ta_HMP_4m_Avg,EC_slow_met,Ta_4m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
 Ta_7m,Ta_HMP_7m_Avg,EC_slow_met,Ta_7m_Avg,ancillary_ancillary_data,degC,high,ancillary logger; assumes same height
-Ts_0.04ma,Ts_TCAVa_4cm_Avg,EC_slow_met,Tsoil_mean(1),EC_TERNflux,degC,medium,PROVISIONAL: assumes Tsoil_mean(1) is old TCAVa at 4 cm; confirm with site operators
-Ts_0.04mb,Ts_TCAVb_4cm_Avg,EC_slow_met,Tsoil_mean(2),EC_TERNflux,degC,medium,PROVISIONAL: assumes Tsoil_mean(2) is old TCAVb at 4 cm; confirm with site operators
+Ts_0.04ma,Ts_TCAVa_4cm_Avg,EC_slow_met,-,-,-,none,
+Ts_0.04mb,Ts_TCAVb_4cm_Avg,EC_slow_met,-,-,-,none,
 Ts_0.04mc,Ts_T108a_4cm_Avg,EC_slow_met,-,-,-,none,
 Ts_0.04md,Ts_T108b_4cm_Avg,EC_slow_met,-,-,-,none,
-Ts_0.06m,CS650_6cm_Temp_Avg,EC_slow_flux,T_cs650_Avg(1),EC_TERNflux,degC,medium,"PROVISIONAL: assumes CS650 slot 1 is the old 6 cm probe; slot 2 depth unknown, slot 3 duplicates slot 2 (program fault); confirm with site operators"
+Ts_0.06m,CS650_6cm_Temp_Avg,EC_slow_flux,-,-,-,none,
 Tv_SONIC_Av,Tv_CSAT_Avg,EC_slow_met,Tsonic_Avg,EC_TERNflux,degC,high,
 Tv_SONIC_Sd,covTvTv,EC_slow_flux,Tsonic_stdev,EC_TERNflux,degC,high,old variance input square-rooted; TERNflux stdev passes through
 UxA,covUxAh,EC_slow_flux,H2O_Ux_cov,EC_TERNflux,g/m^2/s,high,
@@ -86,4 +86,8 @@ Tcanopy,-,-,Ttarg_IR_C_Avg,EC_TERNflux,degC,new,"new sensor, no old counterpart;
 Fg_0.16mg,-,-,Fg_01,EC_TERNflux,W/m^2,new,new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators
 Fg_0.16mh,-,-,Fg_02,EC_TERNflux,W/m^2,new,new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators
 Fg_0.16mi,-,-,Fg_03,EC_TERNflux,W/m^2,new,new HFP01 (not self-calibrating) at 16 cm in a new location; replaces the 8 cm plates (user 2026-11-24). All 3 channels look live; user thought only 2 operational: confirm with site operators
+Sws_0.08mg,-,-,sws_cs650_Avg(1),EC_TERNflux,m^3/m^3,new,"new CS650 slot 1 at 8 cm, paired with plate Fg_0.16mg (user 2026-11-24); replaces the old 6 cm probe"
+Ts_0.08mg,-,-,Tsoil_mean(1),EC_TERNflux,degC,new,"new TCAV paired with plate Fg_0.16mg, thermocouples at 0.5/5.5/10.5/16 cm (user 2026-11-24); replaces the old 4 cm TCAV"
+Sws_0.08mh,-,-,sws_cs650_Avg(2),EC_TERNflux,m^3/m^3,new,"new CS650 slot 2 at 8 cm, paired with plate Fg_0.16mh (user 2026-11-24); replaces the old 6 cm probe"
+Ts_0.08mh,-,-,Tsoil_mean(2),EC_TERNflux,degC,new,"new TCAV paired with plate Fg_0.16mh, thermocouples at 0.5/5.5/10.5/16 cm (user 2026-11-24); replaces the old 4 cm TCAV"
 WTD,CS451_Level / CS451_Level_Avg,EC_slow_met,CS451_Level_Avg,EC_TERNflux,m,new,"raw level (m of water above probe) in every era, incl. the old sampled CS451_Level to 2023-01-25; L2 converts to depth with WTD = 13.173 - level. PROVISIONAL constant: first reading 3.507 vs install 3.363 suggests 13.317; confirm with site operators"
