@@ -1,0 +1,88 @@
+canonical,old_input,old_file,new_input,new_file,new_units,confidence,note
+Fh,Fh_Avg,EC_slow_core,Fh,EC_TERNflux,W/m^2,high,height 10.0 -> 11.6 m (user 2026-11-25)
+Fm,Fm_Avg,EC_slow_core,tau,EC_TERNflux,kg/m/s^2,high,height 10 -> 11.6 m (user 2026-11-25)
+ustar,ustar_Avg,EC_slow_core,u_star,EC_TERNflux,m/s,high,
+Tv_SONIC_Sd,covTvTv,EC_slow_core,Tsonic_stdev,EC_TERNflux,degC,high,old variance input square-rooted; new stdev passes through
+UxT,covUxTv,EC_slow_core,Tsonic_Ux_cov,EC_TERNflux,m.degC/s,high,
+UyT,covUyTv,EC_slow_core,Tsonic_Uy_cov,EC_TERNflux,m.degC/s,high,
+UzT,covUzTv,EC_slow_core,Tsonic_Uz_cov,EC_TERNflux,m.degC/s,high,
+Ux_SONIC_Sd,covUxUx,EC_slow_core,Ux_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+UxUy,covUxUy,EC_slow_core,Ux_Uy_cov,EC_TERNflux,m^2/s^2,high,
+UxUz,covUzUx,EC_slow_core,Ux_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Uy_SONIC_Sd,covUyUy,EC_slow_core,Uy_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+UyUz,covUzUy,EC_slow_core,Uy_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Uz_SONIC_Sd,covUzUz,EC_slow_core,Uz_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+Ws_SONIC_Av,WS_CSAT_Avg,EC_slow_core,wnd_spd,EC_TERNflux,m/s,high,
+Wd_SONIC_Av,WD_CSAT_Compass_Avg,EC_slow_core,wnd_dir_compass,EC_TERNflux,degrees,high,
+Wd_SONIC_Sd,WD_CSAT_Sd,EC_slow_core,std_wnd_dir,EC_TERNflux,degrees,high,
+Ux_SONIC_Av,Ux_CSAT_Avg,EC_slow_core,Ux_Avg,EC_TERNflux,m/s,high,
+Uy_SONIC_Av,Uy_CSAT_Avg,EC_slow_core,Uy_Avg,EC_TERNflux,m/s,high,
+Uz_SONIC_Av,Uz_CSAT_Avg,EC_slow_core,Uz_Avg,EC_TERNflux,m/s,high,
+Tv_SONIC_Av,Tv_CSAT_Avg,EC_slow_core,Tsonic_Avg,EC_TERNflux,degC,high,
+Diag_SONIC,CSAT_Warn,EC_slow_core,sonic_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (CSAT_Warn) -> new valid_count
+Fco2,-,-,Fco2,EC_TERNflux,mg/m^2/s,new-only,"old era empty: old program logged only uncorrected Fc_raw_Avg (no WPL), as at TiTreeEast; old covariances stitched"
+Fe,-,-,Fe,EC_TERNflux,W/m^2,new-only,"old era empty: old program logged only uncorrected Fe_raw_Avg (no WPL), as at TiTreeEast; old covariances stitched"
+CO2c_IRGA_Sd,covCcCc,EC_slow_core,CO2_stdev,EC_TERNflux,mg/m^3,high,old variance input square-rooted; new stdev passes through
+UxC,covUxCc,EC_slow_core,CO2_Ux_cov,EC_TERNflux,mg/m^2/s,high,height 10.0 -> 11.6 m (user 2026-11-25)
+UyC,covUyCc,EC_slow_core,CO2_Uy_cov,EC_TERNflux,mg/m^2/s,high,height 10.0 -> 11.6 m (user 2026-11-25)
+UzC,covUzCc,EC_slow_core,CO2_Uz_cov,EC_TERNflux,mg/m^2/s,high,height 10.0 -> 11.6 m (user 2026-11-25)
+AH_IRGA_Sd,covAhAh,EC_slow_core,H2O_stdev,EC_TERNflux,g/m^3,high,old variance input square-rooted; new stdev passes through
+UxA,covUxAh,EC_slow_core,H2O_Ux_cov,EC_TERNflux,g/m^2/s,high,height 10.0 -> 11.6 m (user 2026-11-25)
+UyA,covUyAh,EC_slow_core,H2O_Uy_cov,EC_TERNflux,g/m^2/s,high,height 10.0 -> 11.6 m (user 2026-11-25)
+UzA,covUzAh,EC_slow_core,H2O_Uz_cov,EC_TERNflux,g/m^2/s,high,height 10.0 -> 11.6 m (user 2026-11-25)
+CO2c_IRGA_Av,Cc_7500_Avg,EC_slow_core,CO2_mean,EC_TERNflux,mg/m^3,high,
+AH_IRGA_Av,Ah_7500_Avg,EC_slow_core,H2O_mean,EC_TERNflux,g/m^3,high,
+ps,ps_7500_Avg,EC_slow_core,amb_press_mean,EC_TERNflux,kPa,high,
+Diag_IRGA,7500_Warn,EC_slow_core,irga_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (7500_Warn) -> new valid_count
+Sig_IRGA,sig_strn_7500_Avg,EC_slow_core,sig_str_irga_Avg,EC_TERNflux,percent,high,"old sig_strn_7500_Avg (genuine signal strength, median 100); AGC_7500_Avg not used"
+Ta_11.6m,-,-,Ta_sensor_mean,EC_TERNflux,degC,provisional,"old era empty PENDING: old logger had four HMPs (HMP_01-04), heights unknown; confirm with operator (HMP_01 has the smallest diurnal range, so probably the top one)"
+AH_11.6m,-,-,AH_sensor_mean,EC_TERNflux,g/m^3,provisional,old era empty PENDING old HMP heights (see Ta_11.6m)
+RH_11.6m,-,-,RH_sensor_mean,EC_TERNflux,percent,provisional,old era empty PENDING old HMP heights (see Ta_11.6m)
+Fsd,Fsd_CNR4_Avg,EC_slow_core,Fsd_Avg,EC_TERNflux,W/m^2,high,
+Fsu,Fsu_CNR4_Avg,EC_slow_core,Fsu_Avg,EC_TERNflux,W/m^2,high,
+Fld,Fld_CNR4_Avg,EC_slow_core,Fld_Avg,EC_TERNflux,W/m^2,high,
+Flu,Flu_CNR4_Avg,EC_slow_core,Flu_Avg,EC_TERNflux,W/m^2,high,
+Tbody_RAD,Tb_CNR4_Avg,EC_slow_core,Tb_Avg,EC_TERNflux,K,high,old Tb_CNR4_Avg logged in K
+Precip,Rain_Tot,ancl_slow_rain,rain_Tot,EC_TERNflux,mm,provisional,"statistic_type fixed average -> sum; old era from the ancillary CR3000 slow_rain (2024-09-13 on); slow_core Rain_Tot is 0 throughout (gauge never wired to it), so no rain for 2022-09 -> 2024-09; PROVISIONAL gauge model (assumed the same CS700)"
+Tpanel,Tpanel_Avg,EC_slow_core,Tpanel_Avg,EC_TERNflux,degC,high,logger relabelled CR1000XE -> CR6 in both eras: every file header (old and TERNflux) says CR6 serial 18242
+Vbat,Vbat_Avg,EC_slow_core,Vbat_Avg,EC_TERNflux,V,high,logger relabelled CR1000XE -> CR6 in both eras: every file header (old and TERNflux) says CR6 serial 18242
+Ta_2m,-,-,Ta_sensor_2m_Avg,EC_TERNflux,degC,provisional,old era empty PENDING old HMP heights (see Ta_11.6m)
+RH_2m,-,-,RH_sensor_2m_Avg,EC_TERNflux,percent,provisional,old era empty PENDING old HMP heights (see Ta_11.6m)
+Fg_0.08ma,Fg_CN3_01_Avg,EC_slow_core,Fg_8cma_Avg,soil_soil_microsites,W/m^2,high,old CN3 plate 1 continues as microsites a (-2.01 -> -2.02 W/m^2 on the changeover day)
+Fg_0.08mb,Fg_CN3_02_Avg,EC_slow_core,Fg_8cmb_Avg,soil_soil_microsites,W/m^2,provisional,"old CN3 plate 2 -> microsites b: new channel empty on the first day, so continuity unchecked; PROVISIONAL"
+Fg_0.08mc,Fg_CN3_03_Avg,EC_slow_core,Fg_8cmc_Avg,soil_soil_microsites,W/m^2,provisional,"old CN3 plate 3 -> microsites c: new channel empty on the first day, so continuity unchecked; PROVISIONAL"
+Ts_0.04ma,Ts_TCAV_01_Avg,EC_slow_core,Ts_8cma_Avg,soil_soil_microsites,degC,high,old TCAV 1 continues as microsites a (27.8 -> 28.3 degC)
+Ts_0.04mb,Ts_TCAV_02_Avg,EC_slow_core,Ts_8cmb_Avg,soil_soil_microsites,degC,provisional,old TCAV 2 -> microsites b: new channel empty on the first day; PROVISIONAL
+Ts_0.04mc,Ts_TCAV_03_Avg,EC_slow_core,Ts_8cmc_Avg,soil_soil_microsites,degC,provisional,old TCAV 3 -> microsites c: new channel empty on the first day; PROVISIONAL
+Sws_0.05ma,Sws_616_01,EC_slow_core,Sws_8cma,soil_soil_microsites,m^3/m^3,provisional,old CS616 1 -> microsites a; new about 0.004 lower at the changeover (different logger calibration?); PROVISIONAL
+Sws_0.05mb,Sws_616_02,EC_slow_core,Sws_8cmb,soil_soil_microsites,m^3/m^3,provisional,old CS616 2 -> microsites b; new about 0.005 lower at the changeover; PROVISIONAL
+Sws_0.05mc,Sws_616_03,EC_slow_core,Sws_8cmc,soil_soil_microsites,m^3/m^3,provisional,old CS616 3 -> microsites c; new about 0.005 lower at the changeover; PROVISIONAL
+Sws_1.1ma,ToppVWC(3),EC_slow_core,Sws_CS610(3),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(3) continues as Sws_CS610(3) at the changeover
+Sws_1.1md,ToppVWC(12),EC_slow_core,Sws_CS610(12),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(12) continues as Sws_CS610(12) at the changeover
+Sws_1.1mb,ToppVWC(4),EC_slow_core,Sws_CS610(4),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(4) continues as Sws_CS610(4) at the changeover
+Sws_1.1me,ToppVWC(19),EC_slow_core,Sws_CS610(19),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(19) continues as Sws_CS610(19) at the changeover
+Sws_1.1mc,ToppVWC(8),EC_slow_core,Sws_CS610(8),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(8) continues as Sws_CS610(8) at the changeover
+Sws_1.1mf,ToppVWC(15),EC_slow_core,Sws_CS610(15),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(15) continues as Sws_CS610(15) at the changeover
+Sws_0.2ma,ToppVWC(2),EC_slow_core,Sws_CS610(2),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(2) continues as Sws_CS610(2) at the changeover
+Sws_0.2md,ToppVWC(14),EC_slow_core,Sws_CS610(14),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(14) continues as Sws_CS610(14) at the changeover
+Sws_0.2mb,-,-,Sws_CS610(5),soil_VWC_Param,m^3/m^3,new-only,old era left out: old TDR ToppVWC(5) does not continue as Sws_CS610(5) (erratic before the changeover); confirm wiring with operator
+Sws_0.2me1,-,-,Sws_CS610(21),soil_VWC_Param,m^3/m^3,new-only,old era left out: old TDR ToppVWC(21) does not continue as Sws_CS610(21) (erratic before the changeover); confirm wiring with operator
+Sws_0.2me2,ToppVWC(22),EC_slow_core,Sws_CS610(22),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(22) continues as Sws_CS610(22) at the changeover
+Sws_0.2mc,ToppVWC(10),EC_slow_core,Sws_CS610(10),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(10) continues as Sws_CS610(10) at the changeover
+Sws_0.2mf1,ToppVWC(17),EC_slow_core,Sws_CS610(17),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(17) continues as Sws_CS610(17) at the changeover
+Sws_0.2mf2,ToppVWC(18),EC_slow_core,Sws_CS610(18),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(18) continues as Sws_CS610(18) at the changeover
+Sws_1.53md,ToppVWC(11),EC_slow_core,Sws_CS610(11),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(11) continues as Sws_CS610(11) at the changeover
+Sws_0.7ma,ToppVWC(1),EC_slow_core,Sws_CS610(1),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(1) continues as Sws_CS610(1) at the changeover
+Sws_0.7md,ToppVWC(13),EC_slow_core,Sws_CS610(13),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(13) continues as Sws_CS610(13) at the changeover
+Sws_0.7mb,-,-,Sws_CS610(6),soil_VWC_Param,m^3/m^3,new-only,old era left out: old TDR ToppVWC(6) does not continue as Sws_CS610(6) (erratic before the changeover); confirm wiring with operator
+Sws_0.7me,-,-,Sws_CS610(20),soil_VWC_Param,m^3/m^3,new-only,old era left out: old TDR ToppVWC(20) does not continue as Sws_CS610(20) (erratic before the changeover); confirm wiring with operator
+Sws_0.7mc,ToppVWC(9),EC_slow_core,Sws_CS610(9),soil_VWC_Param,m^3/m^3,high,old TDR ToppVWC(9) continues as Sws_CS610(9) at the changeover
+Sws_0.7mf,-,-,Sws_CS610(16),soil_VWC_Param,m^3/m^3,new-only,old era left out: old TDR ToppVWC(16) does not continue as Sws_CS610(16) (erratic before the changeover); confirm wiring with operator
+-,Ta/RH/Ah_HMP_01-04_Avg,-,-,-,-,unmapped,"four old HMPs; heights unknown: confirm with operator, then stitch the 11.6 m / 2 m ones and add the rest as old-only profile variables"
+-,"WS_WS_01-04_Avg, WS_WS4_Avg / WD_*",-,-,-,-,unmapped,"old wind profile, left out (user 2026-11-25); WS_WS_01 reads 0 (dead)"
+-,TC_EC/200cm/425cm/650cm_Avg,-,-,-,-,unmapped,"old profile thermocouples, left out (user 2026-11-25); 200 cm and 650 cm broken"
+-,Fc_raw_Avg / Fe_raw_Avg,-,-,-,-,unmapped,"old uncorrected fluxes, deliberately not mapped"
+-,"ToppVWC(5,6,16,20,21)",-,-,-,-,unmapped,"old TDRs that do not continue at the changeover, left out"
+-,LaL(1-22),-,-,-,-,unmapped,"TDR waveform lengths, unmapped"
+-,"ps_CS106_Avg, Tpanel_CR1000/storage",-,-,-,-,unmapped,"auxiliary barometer / other loggers' panels, unmapped"
+-,UQRDM AliceMulga daily CSVs,-,-,-,-,unmapped,"CR3000 2021-05 -> 2022-07 and CR6 2022-08 -> 2022-09, left for a later patch-file step (user 2026-11-25)"

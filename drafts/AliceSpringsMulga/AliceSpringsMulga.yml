@@ -1,0 +1,1172 @@
+site: AliceSpringsMulga
+file_formats:
+  AliceSpringsMulga_EC_slow_core: CSI
+  AliceSpringsMulga_ancl_slow_rain: CSI
+  AliceSpringsMulga_EC_TERNflux: CSI
+  AliceSpringsMulga_soil_VWC_Param: CSI
+  AliceSpringsMulga_soil_soil_microsites: CSI
+flux_system: TERNFLUX
+flux_file: AliceSpringsMulga_EC_TERNflux
+custom_metadata:
+  horizontal_location:
+    belowground:
+      a: bare soil array 1
+      b: mulga array 1
+      c: understorey array 1
+      d: bare soil array 2
+      e: mulga array 2
+      f: understorey array 2
+variables:
+  Fh:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fh_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fh
+      instrument: Campbell Scientific CSAT3B
+      units: W/m^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Fm:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fm_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: kg/m/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: tau
+      instrument: Campbell Scientific CSAT3B
+      units: kg/m/s^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  ustar:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: ustar_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: u_star
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Tv_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: covTvTv
+      instrument: Campbell Scientific CSAT3B
+      units: degC^2
+      file: AliceSpringsMulga_EC_slow_core
+      statistic_type: variance
+      end: 2025-04-10 07:30
+    - name: Tsonic_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UxT:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: covUxTv
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Tsonic_Ux_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UyT:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: covUyTv
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Tsonic_Uy_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UzT:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: covUzTv
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Tsonic_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Ux_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: covUxUx
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      statistic_type: variance
+      end: 2025-04-10 07:30
+    - name: Ux_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UxUy:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+    - name: covUxUy
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Ux_Uy_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UxUz:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+    - name: covUzUx
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Ux_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Uy_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: covUyUy
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      statistic_type: variance
+      end: 2025-04-10 07:30
+    - name: Uy_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UyUz:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+    - name: covUzUy
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Uy_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Uz_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: covUzUz
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: AliceSpringsMulga_EC_slow_core
+      statistic_type: variance
+      end: 2025-04-10 07:30
+    - name: Uz_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Ws_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: WS_CSAT_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: wnd_spd
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Wd_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: WD_CSAT_Compass_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: wnd_dir_compass
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Wd_SONIC_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: WD_CSAT_Sd
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: std_wnd_dir
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Ux_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Ux_CSAT_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Ux_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Uy_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Uy_CSAT_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Uy_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Uz_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Uz_CSAT_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Uz_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Tv_SONIC_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Tv_CSAT_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Tsonic_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Diag_SONIC:
+    variable_type: counter
+    height: 11.6
+    input_variables:
+    - name: CSAT_Warn
+      instrument: Campbell Scientific CSAT3B
+      units: dimensionless
+      file: AliceSpringsMulga_EC_slow_core
+      diag_type: invalid_count
+      end: 2025-04-10 07:30
+    - name: sonic_samples_Tot
+      instrument: Campbell Scientific CSAT3B
+      units: dimensionless
+      diag_type: valid_count
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Fco2:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fco2
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+  Fe:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fe
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: W/m^2
+      file: AliceSpringsMulga_EC_TERNflux
+  CO2c_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: covCcCc
+      instrument: LI-COR LI-7500RS
+      units: mg^2/m^6
+      file: AliceSpringsMulga_EC_slow_core
+      statistic_type: variance
+      end: 2025-04-10 07:30
+    - name: CO2_stdev
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UxC:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+    - name: covUxCc
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: CO2_Ux_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UyC:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+    - name: covUyCc
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: CO2_Uy_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UzC:
+    statistic_type: covariance
+    height: 11.6
+    input_variables:
+    - name: covUzCc
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: CO2_Uz_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  AH_IRGA_Sd:
+    statistic_type: standard_deviation
+    height: 11.6
+    input_variables:
+    - name: covAhAh
+      instrument: LI-COR LI-7500RS
+      units: g^2/m^6
+      file: AliceSpringsMulga_EC_slow_core
+      statistic_type: variance
+      end: 2025-04-10 07:30
+    - name: H2O_stdev
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UxA:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: covUxAh
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: H2O_Ux_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UyA:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: covUyAh
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: H2O_Uy_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  UzA:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: covUzAh
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: H2O_Uz_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  CO2c_IRGA_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Cc_7500_Avg
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: CO2_mean
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  AH_IRGA_Av:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Ah_7500_Avg
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: H2O_mean
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  ps:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: ps_7500_Avg
+      instrument: LI-COR LI-7500RS
+      units: kPa
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: amb_press_mean
+      instrument: LI-COR LI-7500RS
+      units: kPa
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Diag_IRGA:
+    variable_type: counter
+    height: 11.6
+    input_variables:
+    - name: 7500_Warn
+      instrument: LI-COR LI-7500RS
+      units: dimensionless
+      file: AliceSpringsMulga_EC_slow_core
+      diag_type: invalid_count
+      end: 2025-04-10 07:30
+    - name: irga_samples_Tot
+      instrument: LI-COR LI-7500RS
+      units: dimensionless
+      diag_type: valid_count
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Sig_IRGA:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: sig_strn_7500_Avg
+      instrument: LI-COR LI-7500RS
+      units: percent
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: sig_str_irga_Avg
+      instrument: LI-COR LI-7500RS
+      units: percent
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Ta_11.6m:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Ta_sensor_mean
+      instrument: Vaisala HMP155
+      units: degC
+      file: AliceSpringsMulga_EC_TERNflux
+  AH_11.6m:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: AH_sensor_mean
+      instrument: Vaisala HMP155
+      units: g/m^3
+      file: AliceSpringsMulga_EC_TERNflux
+  RH_11.6m:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: RH_sensor_mean
+      instrument: Vaisala HMP155
+      units: percent
+      file: AliceSpringsMulga_EC_TERNflux
+  Fsd:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fsd_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fsd_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Fsu:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fsu_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fsu_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Fld:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Fld_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fld_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Flu:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Flu_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Flu_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Tbody_RAD:
+    statistic_type: average
+    height: 11.6
+    input_variables:
+    - name: Tb_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: K
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Tb_Avg
+      instrument: Kipp&Zonen CNR4
+      units: K
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Precip:
+    statistic_type: sum
+    height: 1.5
+    input_variables:
+    - name: Rain_Tot
+      instrument: Campbell Scientific CS700
+      units: mm
+      file: AliceSpringsMulga_ancl_slow_rain
+      end: 2025-04-10 07:30
+    - name: rain_Tot
+      instrument: Campbell Scientific CS700
+      units: mm
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Tpanel:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+    - name: Tpanel_Avg
+      instrument: Campbell Scientific CR6
+      units: degC
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Tpanel_Avg
+      instrument: Campbell Scientific CR6
+      units: degC
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Vbat:
+    statistic_type: average
+    height: 1.5
+    input_variables:
+    - name: Vbat_Avg
+      instrument: Campbell Scientific CR6
+      units: V
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Vbat_Avg
+      instrument: Campbell Scientific CR6
+      units: V
+      file: AliceSpringsMulga_EC_TERNflux
+      begin: 2025-04-10 16:30
+  Ta_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+    - name: Ta_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: degC
+      file: AliceSpringsMulga_EC_TERNflux
+  RH_2m:
+    statistic_type: average
+    height: 2.0
+    input_variables:
+    - name: RH_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: percent
+      file: AliceSpringsMulga_EC_TERNflux
+  Fg_0.08ma:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: Fg_CN3_01_Avg
+      instrument: Middleton CN3
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fg_8cma_Avg
+      instrument: Middleton CN3
+      units: W/m^2
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Fg_0.08mb:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: Fg_CN3_02_Avg
+      instrument: Middleton CN3
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fg_8cmb_Avg
+      instrument: Middleton CN3
+      units: W/m^2
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: Fg_CN3_03_Avg
+      instrument: Middleton CN3
+      units: W/m^2
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Fg_8cmc_Avg
+      instrument: Middleton CN3
+      units: W/m^2
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Ts_0.04ma:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+    - name: Ts_TCAV_01_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Ts_8cma_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Ts_0.04mb:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+    - name: Ts_TCAV_02_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Ts_8cmb_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Ts_0.04mc:
+    statistic_type: average
+    height: -0.04
+    height_range:
+    - -0.02
+    - -0.06
+    input_variables:
+    - name: Ts_TCAV_03_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Ts_8cmc_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Sws_0.05ma:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+    - name: Sws_616_01
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_8cma
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Sws_0.05mb:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+    - name: Sws_616_02
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_8cmb
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Sws_0.05mc:
+    statistic_type: average
+    height: -0.05
+    height_range:
+    - 0.0
+    - -0.1
+    input_variables:
+    - name: Sws_616_03
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_8cmc
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_soil_microsites
+      begin: 2025-04-10 13:59
+  Sws_1.1ma:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+    - name: ToppVWC(3)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(3)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_1.1md:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+    - name: ToppVWC(12)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(12)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_1.1mb:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+    - name: ToppVWC(4)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(4)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_1.1me:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+    - name: ToppVWC(19)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(19)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_1.1mc:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+    - name: ToppVWC(8)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(8)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_1.1mf:
+    statistic_type: average
+    height: -1.1
+    height_range:
+    - -1.0
+    - -1.2
+    input_variables:
+    - name: ToppVWC(15)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(15)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.2ma:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: ToppVWC(2)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(2)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.2md:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: ToppVWC(14)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(14)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.2mb:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: Sws_CS610(5)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2me1:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: Sws_CS610(21)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.2me2:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: ToppVWC(22)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(22)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.2mc:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: ToppVWC(10)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(10)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.2mf1:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: ToppVWC(17)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(17)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.2mf2:
+    statistic_type: average
+    height: -0.2
+    height_range:
+    - -0.1
+    - -0.3
+    input_variables:
+    - name: ToppVWC(18)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(18)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_1.53md:
+    statistic_type: average
+    height: -1.5299999999999998
+    height_range:
+    - -1.43
+    - -1.63
+    input_variables:
+    - name: ToppVWC(11)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(11)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.7ma:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+    - name: ToppVWC(1)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(1)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.7md:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+    - name: ToppVWC(13)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(13)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.7mb:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+    - name: Sws_CS610(6)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7me:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+    - name: Sws_CS610(20)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+  Sws_0.7mc:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+    - name: ToppVWC(9)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_EC_slow_core
+      end: 2025-04-10 07:30
+    - name: Sws_CS610(9)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
+      begin: 2025-04-10 14:30
+  Sws_0.7mf:
+    statistic_type: average
+    height: -0.7
+    height_range:
+    - -0.6
+    - -0.8
+    input_variables:
+    - name: Sws_CS610(16)
+      instrument: Campbell Scientific CS605
+      units: m^3/m^3
+      file: AliceSpringsMulga_soil_VWC_Param
