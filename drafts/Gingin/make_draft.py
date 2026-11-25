@@ -1,4 +1,10 @@
-# Regenerates the stitched Gingin draft from the live operational config.
+# RETIRED 2026-11-25: the draft went live as operational/Gingin.yml (and
+# L2/Gingin.yml); edit those directly from now on. Do NOT rerun this script:
+# it reads operational/Gingin.yml as the pre-changeover source, so running
+# it now would stitch the already-stitched config again. Kept as the record
+# of how the stitched config was built.
+#
+# Regenerated the stitched Gingin draft from the live operational config.
 # Usage: python make_draft.py /opt/TERN_EP/site_configs/drafts/Gingin/Gingin.yml
 # (also writes Gingin_review.csv beside it). Open questions: see the review CSV.
 import yaml, copy, sys
