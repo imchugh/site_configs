@@ -13,9 +13,9 @@ Diag_SONIC,CSAT_Warn,EC_slow_flux,sonic_samples_Tot,EC_TERNflux,dimensionless,hi
 Fg_0.08ma,Fg_CN3_8cm_a_Avg,EC_slow_flux,-,-,-,none,
 Fg_0.08mb,Fg_CN3_8cm_b_Avg,EC_slow_flux,-,-,-,none,
 Fg_0.08mc,Fg_CN3_8cm_c_Avg,EC_slow_flux,-,-,-,none,
-Fld,Fld_CNR4_Avg,EC_slow_rad,Fld_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change; new era begins 2026-11-10 13:00 (CNR4 body thermistor miswired before)
-Flu,Flu_CNR4_Avg,EC_slow_rad,Flu_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change; new era begins 2026-11-10 13:00 (CNR4 body thermistor miswired before)
-Tbody_RAD,Tb_CNR4_Avg,EC_slow_rad,Tb_Avg,EC_TERNflux,K,high,confirmed: no height change; new era begins 2026-11-10 13:00 (CNR4 body thermistor miswired before)
+Fld,Fld_CNR4_Avg,EC_slow_rad,Fld_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change
+Flu,Flu_CNR4_Avg,EC_slow_rad,Flu_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change
+Tbody_RAD,Tb_CNR4_Avg,EC_slow_rad,Tb_Avg,EC_TERNflux,K,high,confirmed: no height change
 Fsd,Fsd_CNR4_Avg,EC_slow_rad,Fsd_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change
 Fsu,Fsu_CNR4_Avg,EC_slow_rad,Fsu_Avg,EC_TERNflux,W/m^2,high,confirmed: no height change
 Precip,Rain_Tot,EC_slow_met,rain_Tot,EC_TERNflux,mm,high,confirmed: no height change
@@ -61,17 +61,17 @@ Uz_SONIC_Av,Uz_CSAT_Avg,EC_slow_met,Uz_Avg,EC_TERNflux,m/s,high,
 Uz_SONIC_Sd,covUzUz,EC_slow_flux,Uz_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; TERNflux stdev passes through
 Wd_SONIC_Av,WD_CSAT_Compass_Avg,EC_slow_met,wnd_dir_compass,EC_TERNflux,degrees,high,
 Wd_SONIC_Sd,WD_CSAT_Sd,EC_slow_met,std_wnd_dir,EC_TERNflux,degrees,high,
-Wd_10m,WD_WS4_10m_Avg,EC_slow_met,Wd_10m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Wd_10m,WD_WS4_10m_Avg,EC_slow_met,Wd_10m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height
 Wd_16m,WD_WS4_16m_Avg,EC_slow_met,Wd_Av,EC_TERNflux,degrees,high,confirmed: Ws_Av/Wd_Av is the old 15.5 m Windsonic
 Wd_2m,WD_WS4_2m_Avg,EC_slow_met,Wd_2m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height
 Wd_4m,WD_WS4_4m_Avg,EC_slow_met,Wd_4m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height
-Wd_7m,WD_WS4_7m_Avg,EC_slow_met,Wd_7m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Wd_7m,WD_WS4_7m_Avg,EC_slow_met,Wd_7m_Av,ancillary_ancillary_data,degrees,high,ancillary logger; assumes same height
 Ws_SONIC_Av,WS_CSAT_Avg,EC_slow_met,wnd_spd,EC_TERNflux,m/s,high,
-Ws_10m,WS_WS4_10m_Avg,EC_slow_met,Ws_10m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Ws_10m,WS_WS4_10m_Avg,EC_slow_met,Ws_10m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height
 Ws_16m,WS_WS4_16m_Avg,EC_slow_met,Ws_Av,EC_TERNflux,m/s,high,confirmed: Ws_Av/Wd_Av is the old 15.5 m Windsonic
 Ws_2m,WS_WS4_2m_Avg,EC_slow_met,Ws_2m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height
 Ws_4m,WS_WS4_4m_Avg,EC_slow_met,Ws_4m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height
-Ws_7m,WS_WS4_7m_Avg,EC_slow_met,Ws_7m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height; old era ends 2023-01-25 18:30 (sensor dead after)
+Ws_7m,WS_WS4_7m_Avg,EC_slow_met,Ws_7m_Av,ancillary_ancillary_data,m/s,high,ancillary logger; assumes same height
 ps,ps_7500_Avg,EC_slow_met,amb_press_mean,EC_TERNflux,kPa,high,
 Fco2,Fc_Avg,EC_slow_flux,Fco2,EC_TERNflux,mg/m^2/s,high,
 Fe,Fe_Avg,EC_slow_flux,Fe,EC_TERNflux,W/m^2,high,

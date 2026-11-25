@@ -92,15 +92,11 @@ for h in ('2m','4m','7m','10m'):
 VR={'Tv_SONIC_Vr':('Tsonic_stdev','degC'),'Ux_SONIC_Vr':('Ux_stdev','m/s'),
     'Uy_SONIC_Vr':('Uy_stdev','m/s'),'Uz_SONIC_Vr':('Uz_stdev','m/s'),
     'AH_IRGA_Vr':('H2O_stdev','g/m^3'),'CO2c_IRGA_Vr':('co2_stdev','mg/m^3')}
-# Old inputs that end before the changeover: the 7 m and 10 m WS4 Windsonics
-# died after 2023-01-25 18:30 (logged 0s until removed from the program in
-# Oct 2023), so their old eras stop at the last real reading.
-OLD_END={k:'2023-01-25 18:30' for k in ('Ws_7m','Wd_7m','Ws_10m','Wd_10m')}
-# New inputs that start after the changeover: the new CNR4 body thermistor was
-# miswired until a site visit (last bad reading 2026-11-10 09:30, missing
-# 10:00-12:30, valid from 13:00). Fld/Flu are corrected with it, so all three
-# start at the fix; the miswired period is unsalvageable (user, 2026-11-16).
-NEW_BEGIN={k:'2026-11-10 13:00' for k in ('Tbody_RAD','Fld','Flu')}
+# Every L1 input period follows a change of source only (file, column, units,
+# instrument), so L1 is exactly what the logger wrote. Quality cut-offs --
+# the dead 7 m/10 m WS4 Windsonics from 2023-01-25 and the miswired new CNR4
+# body thermistor to 2026-11-10 -- are commented exclude_dates in
+# L2/Gingin.yml (user, 2026-11-25).
 # Profile AH: the HMP155s measure Ta/RH only; the old logger calculated AH.
 # Dropped so fluxcore derives AH from Ta, RH and ps over the whole record with
 # one method (user, 2026-11-17). The 15 m AH stays: both eras are logged.
@@ -154,11 +150,11 @@ for k,v in out['variables'].items():
         continue
     if k in M:
         f,raw,u,conf,note=M[k]
-        old['end']=OLD_END.get(k,END)
-        new={'name':raw,'instrument':copy.deepcopy(INST.get(k,old['instrument'])),'units':u,'file':f,'begin':NEW_BEGIN.get(k,BEGIN)}
+        old['end']=END
+        new={'name':raw,'instrument':copy.deepcopy(INST.get(k,old['instrument'])),'units':u,'file':f,'begin':BEGIN}
         if k.startswith('Diag_'): new['diag_type']='valid_count'
         ivs.append(new)
-        rows.append((k,old_name,old['file'][7:],raw,f[7:],u,conf,note+('; old era ends '+OLD_END[k]+' (sensor dead after)' if k in OLD_END else '')+('; new era begins '+NEW_BEGIN[k]+' (CNR4 body thermistor miswired before)' if k in NEW_BEGIN else '')))
+        rows.append((k,old_name,old['file'][7:],raw,f[7:],u,conf,note))
     else:
         rows.append((k,old_name,old['file'][7:],'-','-','-','none',''))
 for k,(raw,inst,u) in NEW.items():

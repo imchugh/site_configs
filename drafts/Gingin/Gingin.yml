@@ -150,7 +150,7 @@ variables:
       instrument: Kipp&Zonen CNR4
       units: W/m^2
       file: Gingin_EC_TERNflux
-      begin: 2026-11-10 13:00
+      begin: 2026-10-20 12:00
   Flu:
     statistic_type: average
     height: 15.0
@@ -164,7 +164,7 @@ variables:
       instrument: Kipp&Zonen CNR4
       units: W/m^2
       file: Gingin_EC_TERNflux
-      begin: 2026-11-10 13:00
+      begin: 2026-10-20 12:00
   Tbody_RAD:
     statistic_type: average
     height: 15.0
@@ -178,7 +178,7 @@ variables:
       instrument: Kipp&Zonen CNR4
       units: K
       file: Gingin_EC_TERNflux
-      begin: 2026-11-10 13:00
+      begin: 2026-10-20 12:00
   Fsd:
     statistic_type: average
     height: 15.0
@@ -1127,7 +1127,7 @@ variables:
       instrument: Gill Windsonic4
       units: degrees
       file: Gingin_EC_slow_met
-      end: 2023-01-25 18:30
+      end: 2026-10-20 11:30
     - name: Wd_10m_Av
       instrument: Gill Windsonic4
       units: degrees
@@ -1183,7 +1183,7 @@ variables:
       instrument: Gill Windsonic4
       units: degrees
       file: Gingin_EC_slow_met
-      end: 2023-01-25 18:30
+      end: 2026-10-20 11:30
     - name: Wd_7m_Av
       instrument: Gill Windsonic4
       units: degrees
@@ -1211,7 +1211,7 @@ variables:
       instrument: Gill Windsonic4
       units: m/s
       file: Gingin_EC_slow_met
-      end: 2023-01-25 18:30
+      end: 2026-10-20 11:30
     - name: Ws_10m_Av
       instrument: Gill Windsonic4
       units: m/s
@@ -1267,7 +1267,7 @@ variables:
       instrument: Gill Windsonic4
       units: m/s
       file: Gingin_EC_slow_met
-      end: 2023-01-25 18:30
+      end: 2026-10-20 11:30
     - name: Ws_7m_Av
       instrument: Gill Windsonic4
       units: m/s
