@@ -1,0 +1,70 @@
+canonical,old_input,old_file,new_input,new_file,new_units,confidence,note
+Fh,Hs,EC_flux,Fh,EC_TERNflux,W/m^2,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+Fm,tau,EC_flux,tau,EC_TERNflux,kg/m/s^2,high,height 10 -> 23.0 m: operational config error (user 2026-11-25); old input missing from legacy config; tau added from EC_flux
+ustar,u_star,EC_flux,u_star,EC_TERNflux,m/s,high,
+Tv_SONIC_Sd,cov_Ts_Ts,EC_flux,Tsonic_stdev,EC_TERNflux,degC,high,old variance input square-rooted; new stdev passes through
+UxT,cov_Ux_Ts,EC_flux,Tsonic_Ux_cov,EC_TERNflux,m.degC/s,high,
+UyT,cov_Uy_Ts,EC_flux,Tsonic_Uy_cov,EC_TERNflux,m.degC/s,high,
+UzT,cov_Uz_Ts,EC_flux,Tsonic_Uz_cov,EC_TERNflux,m.degC/s,high,
+Ux_SONIC_Sd,cov_Ux_Ux,EC_flux,Ux_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+UxUy,cov_Ux_Uy,EC_flux,Ux_Uy_cov,EC_TERNflux,m^2/s^2,high,
+UxUz,cov_Uz_Ux,EC_flux,Ux_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Uy_SONIC_Sd,cov_Uy_Uy,EC_flux,Uy_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+UyUz,cov_Uz_Uy,EC_flux,Uy_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Uz_SONIC_Sd,cov_Uz_Uz,EC_flux,Uz_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+Ws_SONIC_Av,wnd_spd,EC_flux,wnd_spd,EC_TERNflux,m/s,high,
+Wd_SONIC_Av,wnd_dir_compass,EC_flux,wnd_dir_compass,EC_TERNflux,degrees,high,
+Wd_SONIC_Sd,std_wnd_dir,EC_flux,std_wnd_dir,EC_TERNflux,degrees,high,old input missing from legacy config; std_wnd_dir added from EC_flux
+Ux_SONIC_Av,Ux_Avg,EC_flux,Ux_Avg,EC_TERNflux,m/s,high,
+Uy_SONIC_Av,Uy_Avg,EC_flux,Uy_Avg,EC_TERNflux,m/s,high,
+Uz_SONIC_Av,Uz_Avg,EC_flux,Uz_Avg,EC_TERNflux,m/s,high,
+Tv_SONIC_Av,Ts_Avg,EC_flux,Tsonic_Avg,EC_TERNflux,degC,high,
+Diag_SONIC,csat_warnings,EC_flux,sonic_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (csat_warnings) -> new valid_count
+Fco2,Fc_wpl,EC_flux,Fco2,EC_TERNflux,mg/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+Fe,LE_wpl,EC_flux,Fe,EC_TERNflux,W/m^2,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+CO2c_IRGA_Sd,cov_co2_co2,EC_flux,co2_stdev,EC_TERNflux,mg/m^3,high,old variance input square-rooted; new stdev passes through
+UxC,cov_Ux_co2,EC_flux,CO2_Ux_cov,EC_TERNflux,mg/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+UyC,cov_Uy_co2,EC_flux,CO2_Uy_cov,EC_TERNflux,mg/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+UzC,cov_Uz_co2,EC_flux,CO2_Uz_cov,EC_TERNflux,mg/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+AH_IRGA_Sd,cov_h2o_h2o,EC_flux,H2O_stdev,EC_TERNflux,g/m^3,high,old variance input square-rooted; new stdev passes through
+UxA,cov_Ux_h2o,EC_flux,H2O_Ux_cov,EC_TERNflux,g/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+UyA,cov_Uy_h2o,EC_flux,H2O_Uy_cov,EC_TERNflux,g/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+UzA,cov_Uz_h2o,EC_flux,H2O_Uz_cov,EC_TERNflux,g/m^2/s,high,height 10 -> 23.0 m: operational config error (user 2026-11-25)
+CO2c_IRGA_Av,co2_Avg,EC_flux,CO2_mean,EC_TERNflux,mg/m^3,high,
+AH_IRGA_Av,h2o_Avg,EC_flux,H2O_mean,EC_TERNflux,g/m^3,high,
+ps,press_Avg,EC_flux,amb_press_mean,EC_TERNflux,kPa,high,
+Diag_IRGA,irga_warnings,EC_flux,irga_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (irga_warnings) -> new valid_count
+Sig_IRGA,agc_Avg,EC_flux,sig_str_irga_Avg,EC_TERNflux,percent,provisional,"PROVISIONAL: old raw column is named agc_Avg (max 88, high = good), read as signal strength as at the other 'AGC' sites; confirm with operator"
+Ta_23m,t_hmp_23_Avg,EC_flux,Ta_sensor_mean,EC_TERNflux,degC,high,
+AH_23m,h2o_hmp_23_Avg,EC_flux,AH_sensor_mean,EC_TERNflux,g/m^3,high,
+RH_23m,calculated,-,RH_sensor_mean,EC_TERNflux,percent,high,old era calculated from AH_23m + Ta_23m (HMP45C RH was measured but only AH was output); recorded in derivation_history
+Fsd,Kdown_Avg,EC_EnrgyBal,Fsd_Avg,EC_TERNflux,W/m^2,high,
+Fsu,Kup_Avg,EC_EnrgyBal,Fsu_Avg,EC_TERNflux,W/m^2,high,
+Fld,Ldown_Avg,EC_EnrgyBal,Fld_Avg,EC_TERNflux,W/m^2,high,
+Flu,Lup_Avg,EC_EnrgyBal,Flu_Avg,EC_TERNflux,W/m^2,high,
+Tbody_RAD,Lbody_temp_Avg,EC_EnrgyBal,Tb_Avg,EC_TERNflux,K,high,old input missing from legacy config; Lbody_temp_Avg (logged in K) added from EC_EnrgyBal
+Precip,Rain_Tot,EC_EnrgyBal,rain_Tot,EC_TERNflux,mm,provisional,statistic_type fixed average -> sum; PROVISIONAL height 0.6 m (old CS700 height) for both eras (user 2026-11-25); confirm new-era height with operator (operational config said 1.0 m)
+Tpanel,panel_temp_Avg,EC_flux,Tpanel_Avg,EC_TERNflux,degC,high,logger CR3000 -> CR1000XE; height 2.0 m (new) for both eras (old config said 1.0 m)
+Vbat,batt_volt_Avg,EC_flux,Vbat_Avg,EC_TERNflux,V,high,logger CR3000 -> CR1000XE; height 2.0 m (new) for both eras (old config said 1.0 m)
+Fg_0.08ma,hfp_1_Avg,EC_EnrgyBal,Fg_01,EC_TERNflux,W/m^2,high,
+Fg_0.08mb,hfp_2_Avg,EC_EnrgyBal,Fg_02,EC_TERNflux,W/m^2,high,
+Ts_0.08ma,Tsoil_avg,EC_EnrgyBal,Tsoil_mean,EC_TERNflux,degC,high,
+Sws_0.1ma,swc_T10a_Avg,EC_EnrgyBal,Sws_10cma_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_0.1mb,swc_T10b_Avg,EC_EnrgyBal,Sws_10cmb_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_0.4ma,swc_T40_Avg,EC_EnrgyBal,Sws_40cm_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_1ma,swc_T100_Avg,EC_EnrgyBal,Sws_100cm_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_1.2ma,swc_T120a_Avg,EC_EnrgyBal,Sws_120cma_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_1.2mb,swc_T120b_Avg,EC_EnrgyBal,Sws_120cmb_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_1.4ma,swc_T140a_Avg,EC_EnrgyBal,Sws_140cma_Avg,EC_TERNflux,m^3/m^3,high,
+Sws_1.4mb,swc_T140b_Avg,EC_EnrgyBal,Sws_140cmb_Avg,EC_TERNflux,m^3/m^3,high,
+Ta_2m,t_hmp_2_Avg,EC_flux,Ta_sensor_2m_Avg,EC_TERNflux,degC,high,
+RH_2m,calculated,-,RH_sensor_2m_Avg,EC_TERNflux,percent,high,old era calculated from AH_2m + Ta_2m (HMP45C RH was measured but only AH was output); recorded in derivation_history
+AH_2m,h2o_hmp_2_Avg,EC_flux,AH_sensor_2m_Avg,EC_TERNflux,g/m^3,high,
+Fg_0.08mc,hfp_3_Avg,EC_EnrgyBal,-,-,-,old-only,old era only: no third plate on the new logger (hfp_3 already all-NaN by Aug 2025)
+Fg_0.08md,hfp_4_Avg,EC_EnrgyBal,-,-,-,old-only,old era only: no fourth plate on the new logger (hfp_4 already all-NaN by Aug 2025)
+-,Quntm_down/up_Avg / Fpard/Fparu_Avg,-,-,-,-,unmapped,"PAR, unmapped in both eras (not in operational config). NB both eras give PAR/Fsd ~0.9 umol/J at midday, physically ~2: calibration to check before mapping"
+-,Rn_Avg / Rn_NR_corr_Avg / Fn_Avg,-,-,-,-,unmapped,"logger net radiation, unmapped (fluxcore always calculates Fn)"
+-,SKYE_* / RED_/NIR_/GREEN_/BLUE_*,-,-,-,-,unmapped,"spectral sensors, unmapped"
+-,CO2_GMM220_Avg,-,-,-,-,unmapped,"GMM220 CO2 probe, unmapped"
+-,Fc_irga / LE_irga / wpl terms,-,-,-,-,unmapped,"uncorrected fluxes and WPL terms, unmapped; corrected Fc_wpl/LE_wpl mapped"
+-,HowardSprings_EC_UWAflux / diagnostic / tip_timer,-,-,-,-,unmapped,"other tables, unmapped"

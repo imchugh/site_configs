@@ -1,512 +1,920 @@
 site: HowardSprings
 file_formats:
+  HowardSprings_EC_EnrgyBal: CSI
+  HowardSprings_EC_flux: CSI
   HowardSprings_EC_TERNflux: CSI
 flux_system: TERNFLUX
 flux_file: HowardSprings_EC_TERNflux
 variables:
   Fh:
     statistic_type: average
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: Fh
-        instrument: Campbell Scientific CSAT3B
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: Hs
+      instrument: Campbell Scientific CSAT3
+      units: W/m^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Fh
+      instrument: Campbell Scientific CSAT3B
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fm:
     statistic_type: average
-    height: 10
+    height: 23.0
     input_variables:
-      - name: tau
-        instrument: Campbell Scientific CSAT3B
-        units: kg/m/s^2
-        file: HowardSprings_EC_TERNflux
+    - name: tau
+      instrument: Campbell Scientific CSAT3
+      units: kg/m/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: tau
+      instrument: Campbell Scientific CSAT3B
+      units: kg/m/s^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   ustar:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: u_star
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: u_star
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: u_star
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Tv_SONIC_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: Tsonic_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: degC
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Ts_Ts
+      instrument: Campbell Scientific CSAT3
+      units: degC^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+      statistic_type: variance
+    - name: Tsonic_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UxT:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Tsonic_Ux_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m.degC/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Ux_Ts
+      instrument: Campbell Scientific CSAT3
+      units: m.degC/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Tsonic_Ux_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UyT:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Tsonic_Uy_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m.degC/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uy_Ts
+      instrument: Campbell Scientific CSAT3
+      units: m.degC/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Tsonic_Uy_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UzT:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Tsonic_Uz_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m.degC/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uz_Ts
+      instrument: Campbell Scientific CSAT3
+      units: m.degC/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Tsonic_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Ux_SONIC_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: Ux_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Ux_Ux
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+      statistic_type: variance
+    - name: Ux_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UxUy:
     statistic_type: covariance
     height: 23.0
     input_variables:
-      - name: Ux_Uy_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m^2/s^2
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Ux_Uy
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Ux_Uy_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UxUz:
     statistic_type: covariance
     height: 23.0
     input_variables:
-      - name: Ux_Uz_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m^2/s^2
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uz_Ux
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Ux_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Uy_SONIC_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: Uy_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uy_Uy
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+      statistic_type: variance
+    - name: Uy_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UyUz:
     statistic_type: covariance
     height: 23.0
     input_variables:
-      - name: Uy_Uz_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m^2/s^2
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uz_Uy
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Uy_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Uz_SONIC_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: Uz_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uz_Uz
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+      statistic_type: variance
+    - name: Uz_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Ws_SONIC_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: wnd_spd
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: wnd_spd
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: wnd_spd
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Wd_SONIC_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: wnd_dir_compass
-        instrument: Campbell Scientific CSAT3B
-        units: degrees
-        file: HowardSprings_EC_TERNflux
+    - name: wnd_dir_compass
+      instrument: Campbell Scientific CSAT3
+      units: degrees
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: wnd_dir_compass
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Wd_SONIC_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: std_wnd_dir
-        instrument: Campbell Scientific CSAT3B
-        units: degrees
-        file: HowardSprings_EC_TERNflux
+    - name: std_wnd_dir
+      instrument: Campbell Scientific CSAT3
+      units: degrees
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: std_wnd_dir
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Ux_SONIC_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Ux_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: Ux_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Ux_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Uy_SONIC_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Uy_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: Uy_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Uy_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Uz_SONIC_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Uz_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: HowardSprings_EC_TERNflux
+    - name: Uz_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Uz_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Tv_SONIC_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Tsonic_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: degC
-        file: HowardSprings_EC_TERNflux
+    - name: Ts_Avg
+      instrument: Campbell Scientific CSAT3
+      units: degC
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Tsonic_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Diag_SONIC:
     variable_type: counter
     height: 23.0
     input_variables:
-      - name: sonic_samples_Tot
-        instrument: Campbell Scientific CSAT3B
-        units: dimensionless
-        diag_type: valid_count
-        file: HowardSprings_EC_TERNflux
+    - name: csat_warnings
+      instrument: Campbell Scientific CSAT3
+      units: dimensionless
+      diag_type: invalid_count
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: sonic_samples_Tot
+      instrument: Campbell Scientific CSAT3B
+      units: dimensionless
+      diag_type: valid_count
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fco2:
     statistic_type: average
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: Fco2
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: Fc_wpl
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Fco2
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fe:
     statistic_type: average
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: Fe
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: LE_wpl
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: W/m^2
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Fe
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   CO2c_IRGA_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: co2_stdev
-        instrument: LI-COR LI-7500RS
-        units: mg/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: cov_co2_co2
+      instrument: LI-COR LI-7500A
+      units: mg^2/m^6
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+      statistic_type: variance
+    - name: co2_stdev
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UxC:
     statistic_type: covariance
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: CO2_Ux_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Ux_co2
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: CO2_Ux_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UyC:
     statistic_type: covariance
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: CO2_Uy_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uy_co2
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: CO2_Uy_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UzC:
     statistic_type: covariance
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: CO2_Uz_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uz_co2
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: CO2_Uz_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   AH_IRGA_Sd:
     statistic_type: standard_deviation
     height: 23.0
     input_variables:
-      - name: H2O_stdev
-        instrument: LI-COR LI-7500RS
-        units: g/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: cov_h2o_h2o
+      instrument: LI-COR LI-7500A
+      units: g^2/m^6
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+      statistic_type: variance
+    - name: H2O_stdev
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UxA:
     statistic_type: average
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: H2O_Ux_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: g/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Ux_h2o
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: g/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: H2O_Ux_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UyA:
     statistic_type: average
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: H2O_Uy_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: g/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uy_h2o
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: g/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: H2O_Uy_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   UzA:
     statistic_type: average
-    height: 10.0
+    height: 23.0
     input_variables:
-      - name: H2O_Uz_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: g/m^2/s
-        file: HowardSprings_EC_TERNflux
+    - name: cov_Uz_h2o
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: g/m^2/s
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: H2O_Uz_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   CO2c_IRGA_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: CO2_mean
-        instrument: LI-COR LI-7500RS
-        units: mg/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: co2_Avg
+      instrument: LI-COR LI-7500A
+      units: mg/m^3
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: CO2_mean
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   AH_IRGA_Av:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: H2O_mean
-        instrument: LI-COR LI-7500RS
-        units: g/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: h2o_Avg
+      instrument: LI-COR LI-7500A
+      units: g/m^3
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: H2O_mean
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   ps:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: amb_press_mean
-        instrument: LI-COR LI-7500RS
-        units: kPa
-        file: HowardSprings_EC_TERNflux
+    - name: press_Avg
+      instrument: LI-COR LI-7500A
+      units: kPa
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: amb_press_mean
+      instrument: LI-COR LI-7500RS
+      units: kPa
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Diag_IRGA:
     variable_type: counter
     height: 23.0
     input_variables:
-      - name: irga_samples_Tot
-        instrument: LI-COR LI-7500RS
-        units: dimensionless
-        diag_type: valid_count
-        file: HowardSprings_EC_TERNflux
+    - name: irga_warnings
+      instrument: LI-COR LI-7500A
+      units: dimensionless
+      diag_type: invalid_count
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: irga_samples_Tot
+      instrument: LI-COR LI-7500RS
+      units: dimensionless
+      diag_type: valid_count
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sig_IRGA:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: sig_str_irga_Avg
-        instrument: LI-COR LI-7500RS
-        units: percent
-        file: HowardSprings_EC_TERNflux
+    - name: agc_Avg
+      instrument: LI-COR LI-7500A
+      units: percent
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: sig_str_irga_Avg
+      instrument: LI-COR LI-7500RS
+      units: percent
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Ta_23m:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Ta_sensor_mean
-        instrument: Vaisala HMP155
-        units: degC
-        file: HowardSprings_EC_TERNflux
+    - name: t_hmp_23_Avg
+      instrument: Vaisala HMP45C
+      units: degC
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Ta_sensor_mean
+      instrument: Vaisala HMP155
+      units: degC
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   AH_23m:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: AH_sensor_mean
-        instrument: Vaisala HMP155
-        units: g/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: h2o_hmp_23_Avg
+      instrument: Vaisala HMP45C
+      units: g/m^3
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: AH_sensor_mean
+      instrument: Vaisala HMP155
+      units: g/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   RH_23m:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: RH_sensor_mean
-        instrument: Vaisala HMP155
-        units: percent
-        file: HowardSprings_EC_TERNflux
+    - calculate_from:
+      - AH_23m
+      - Ta_23m
+      instrument: Vaisala HMP45C
+      end: 2025-09-08 17:30
+    - name: RH_sensor_mean
+      instrument: Vaisala HMP155
+      units: percent
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fsd:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Fsd_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: Kdown_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Fsd_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fsu:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Fsu_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: Kup_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Fsu_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fld:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Fld_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: Ldown_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Fld_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Flu:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Flu_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: Lup_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Flu_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Tbody_RAD:
     statistic_type: average
     height: 23.0
     input_variables:
-      - name: Tb_Avg
-        instrument: Kipp&Zonen CNR4
-        units: K
-        file: HowardSprings_EC_TERNflux
+    - name: Lbody_temp_Avg
+      instrument: Kipp&Zonen CNR4
+      units: K
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Tb_Avg
+      instrument: Kipp&Zonen CNR4
+      units: K
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Precip:
-    statistic_type: average
-    height: 1.0
+    statistic_type: sum
+    height: 0.6
     input_variables:
-      - name: rain_Tot
-        instrument: Campbell Scientific CS700
-        units: mm
-        file: HowardSprings_EC_TERNflux
+    - name: Rain_Tot
+      instrument: Campbell Scientific CS700
+      units: mm
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: rain_Tot
+      instrument: Campbell Scientific CS700
+      units: mm
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Tpanel:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: Tpanel_Avg
-        instrument: Campbell Scientific CR1000XE
-        units: degC
-        file: HowardSprings_EC_TERNflux
+    - name: panel_temp_Avg
+      instrument: Campbell Scientific CR3000
+      units: degC
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Tpanel_Avg
+      instrument: Campbell Scientific CR1000XE
+      units: degC
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Vbat:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: Vbat_Avg
-        instrument: Campbell Scientific CR1000XE
-        units: V
-        file: HowardSprings_EC_TERNflux
+    - name: batt_volt_Avg
+      instrument: Campbell Scientific CR3000
+      units: V
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Vbat_Avg
+      instrument: Campbell Scientific CR1000XE
+      units: V
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fg_0.08ma:
     statistic_type: average
     height: -0.08
     input_variables:
-      - name: Fg_01
-        instrument: Hukseflux HFP01
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: hfp_1_Avg
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Fg_01
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Fg_0.08mb:
     statistic_type: average
     height: -0.08
     input_variables:
-      - name: Fg_02
-        instrument: Hukseflux HFP01
-        units: W/m^2
-        file: HowardSprings_EC_TERNflux
+    - name: hfp_2_Avg
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Fg_02
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Ts_0.08ma:
     statistic_type: average
     height: -0.08
     input_variables:
-      - name: Tsoil_mean
-        instrument: Campbell Scientific TCAV
-        units: degC
-        file: HowardSprings_EC_TERNflux
+    - name: Tsoil_avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Tsoil_mean
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_0.1ma:
     statistic_type: average
     height: -0.1
     input_variables:
-      - name: Sws_10cma_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T10a_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_10cma_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_0.1mb:
     statistic_type: average
     height: -0.1
     input_variables:
-      - name: Sws_10cmb_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T10b_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_10cmb_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_0.4ma:
     statistic_type: average
     height: -0.4
     input_variables:
-      - name: Sws_40cm_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T40_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_40cm_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_1ma:
     statistic_type: average
     height: -1.0
     input_variables:
-      - name: Sws_100cm_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T100_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_100cm_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_1.2ma:
     statistic_type: average
     height: -1.2
     input_variables:
-      - name: Sws_120cma_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T120a_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_120cma_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_1.2mb:
     statistic_type: average
     height: -1.2
     input_variables:
-      - name: Sws_120cmb_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T120b_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_120cmb_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_1.4ma:
     statistic_type: average
     height: -1.4
     input_variables:
-      - name: Sws_140cma_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T140a_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_140cma_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Sws_1.4mb:
     statistic_type: average
     height: -1.4
     input_variables:
-      - name: Sws_140cmb_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: swc_T140b_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_EnrgyBal
+      end: 2025-09-08 17:30
+    - name: Sws_140cmb_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   Ta_2m:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: Ta_sensor_2m_Avg
-        instrument: Vaisala HMP155
-        units: degC
-        file: HowardSprings_EC_TERNflux
+    - name: t_hmp_2_Avg
+      instrument: Vaisala HMP45C
+      units: degC
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: Ta_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: degC
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   RH_2m:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: RH_sensor_2m_Avg
-        instrument: Vaisala HMP155
-        units: percent
-        file: HowardSprings_EC_TERNflux
+    - calculate_from:
+      - AH_2m
+      - Ta_2m
+      instrument: Vaisala HMP45C
+      end: 2025-09-08 17:30
+    - name: RH_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: percent
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
   AH_2m:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: AH_sensor_2m_Avg
-        instrument: Vaisala HMP155
-        units: g/m^3
-        file: HowardSprings_EC_TERNflux
+    - name: h2o_hmp_2_Avg
+      instrument: Vaisala HMP45C
+      units: g/m^3
+      file: HowardSprings_EC_flux
+      end: 2025-09-08 17:30
+    - name: AH_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: g/m^3
+      file: HowardSprings_EC_TERNflux
+      begin: 2025-10-13 14:00
+  Fg_0.08mc:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: hfp_3_Avg
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
+  Fg_0.08md:
+    statistic_type: average
+    height: -0.08
+    input_variables:
+    - name: hfp_4_Avg
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: HowardSprings_EC_EnrgyBal
