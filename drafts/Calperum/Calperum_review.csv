@@ -1,0 +1,65 @@
+canonical,old_input,old_file,new_input,new_file,new_units,confidence,note
+AH_2m,Ah_HMP_01_Avg,EC_slow_met,AH_sensor_mean,EC_TERNflux,g/m^3,high,
+AH_IRGA_Av,Ah_7500_Avg,EC_slow_met,H2O_mean,EC_TERNflux,g/m^3,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+AH_IRGA_Sd,covAhAh,EC_slow_flux,H2O_stdev,EC_TERNflux,g/m^3,high,old variance input square-rooted; new stdev passes through; old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+CO2c_IRGA_Av,Cc_7500_Avg,EC_slow_met,CO2_mean,EC_TERNflux,mg/m^3,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+CO2c_IRGA_Sd,covCcCc,EC_slow_flux,co2_stdev,EC_TERNflux,mg/m^3,high,old variance input square-rooted; new stdev passes through; old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+Tcanopy,Tt_SI131_Avg,EC_slow_extras,Tcanopy_Avg,EC_TERNflux,degC,high,
+Diag_IRGA,7500_Warn,EC_slow_flux,irga_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (7500_Warn) -> new valid_count; old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+Diag_SONIC,CSAT_Warn,EC_slow_flux,sonic_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (CSAT_Warn) -> new valid_count
+Fco2,Fc_Avg,EC_slow_flux,Fco2,EC_TERNflux,mg/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+Fe,Fe_Avg,EC_slow_flux,Fe,EC_TERNflux,W/m^2,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+Fh,Fh_Avg,EC_slow_flux,Fh,EC_TERNflux,W/m^2,high,legacy compound instrument replaced by single CSAT3B (CLAUDE.md rule)
+Fm,Fm_Avg,EC_slow_flux,tau,EC_TERNflux,kg/m/s^2,high,old input missing from legacy config; Fm_Avg added from slow_flux
+Fg_0.08ma,Fg_HFP01_01_Avg,EC_slow_soil,Fg_01,EC_TERNflux,W/m^2,high,
+Fg_0.08mb,Fg_HFP01_02_Avg,EC_slow_soil,Fg_02,EC_TERNflux,W/m^2,high,
+Fg_0.08mc,Fg_HFP01_03_Avg,EC_slow_soil,Fg_03,EC_TERNflux,W/m^2,high,
+Fld,Fld_CNR4_Avg,EC_slow_rad,Fld_Avg,EC_TERNflux,W/m^2,high,
+Flu,Flu_CNR4_Avg,EC_slow_rad,Flu_Avg,EC_TERNflux,W/m^2,high,
+Fsd,Fsd_CNR4_Avg,EC_slow_rad,Fsd_Avg,EC_TERNflux,W/m^2,high,
+Fsd_b,SlrW_Avg,EC_slow_extras,Fsd_aux_Avg,EC_TERNflux,W/m^2,high,
+Fsu,Fsu_CNR4_Avg,EC_slow_rad,Fsu_Avg,EC_TERNflux,W/m^2,high,
+Precip,Rain_Tot,EC_slow_met,rain_Tot,EC_TERNflux,mm,high,
+RH_2m,RH_HMP_01_Avg,EC_slow_met,RH_sensor_mean,EC_TERNflux,percent,high,"old units frac, new percent; converted in L1"
+Sig_IRGA,sig_strn_7500_Avg,EC_slow_flux,sig_str_irga_Avg,EC_TERNflux,percent,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+Ta_2m,Ta_HMP_01_Avg,EC_slow_met,Ta_sensor_mean,EC_TERNflux,degC,high,
+Tbody_RAD,-,-,Tb_Avg,EC_TERNflux,K,none,"new only: old logger stored the CNR4 thermistor resistance (Rs_CNR4_Avg), not a temperature"
+Tpanel,Tpanel_Avg,EC_slow_met,Tpanel_Avg,EC_TERNflux,degC,high,
+Ts_0.08ma,Ts_TCAV_01_Avg,EC_slow_soil,Tsoil_mean(1),EC_TERNflux,degC,high,
+Ts_0.08mb,Ts_TCAV_02_Avg,EC_slow_soil,Tsoil_mean(2),EC_TERNflux,degC,high,
+Ts_0.08mc,Ts_TCAV_03_Avg,EC_slow_soil,Tsoil_mean(3),EC_TERNflux,degC,high,
+Tv_SONIC_Av,Tv_CSAT_Avg,EC_slow_met,Tsonic_Avg,EC_TERNflux,degC,high,
+Tv_SONIC_Sd,covTvTv,EC_slow_flux,Tsonic_stdev,EC_TERNflux,degC,high,old variance input square-rooted; new stdev passes through
+ustar,ustar_Avg,EC_slow_flux,u_star,EC_TERNflux,m/s,high,
+UxA,covUxAh,EC_slow_flux,H2O_Ux_cov,EC_TERNflux,g/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+UxC,covUxCc,EC_slow_flux,CO2_Ux_cov,EC_TERNflux,mg/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+UxT,covUxTv,EC_slow_flux,Tsonic_Ux_cov,EC_TERNflux,m.degC/s,high,
+UxUy,covUxUy,EC_slow_flux,Ux_Uy_cov,EC_TERNflux,m^2/s^2,high,
+UxUz,covUzUx,EC_slow_flux,Ux_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Ux_SONIC_Av,Ux_CSAT_Avg,EC_slow_met,Ux_Avg,EC_TERNflux,m/s,high,
+Ux_SONIC_Sd,covUxUx,EC_slow_flux,Ux_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+UyA,covUyAh,EC_slow_flux,H2O_Uy_cov,EC_TERNflux,g/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+UyC,covUyCc,EC_slow_flux,CO2_Uy_cov,EC_TERNflux,mg/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+UyT,covUyTv,EC_slow_flux,Tsonic_Uy_cov,EC_TERNflux,m.degC/s,high,legacy compound instrument replaced by single CSAT3B
+UyUz,covUzUy,EC_slow_flux,Uy_Uz_cov,EC_TERNflux,m^2/s^2,high,
+Uy_SONIC_Av,Uy_CSAT_Avg,EC_slow_met,Uy_Avg,EC_TERNflux,m/s,high,
+Uy_SONIC_Sd,covUyUy,EC_slow_flux,Uy_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+UzA,covUzAh,EC_slow_flux,H2O_Uz_cov,EC_TERNflux,g/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+UzC,covUzCc,EC_slow_flux,CO2_Uz_cov,EC_TERNflux,mg/m^2/s,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+UzT,covUzTv,EC_slow_flux,Tsonic_Uz_cov,EC_TERNflux,m.degC/s,high,
+Uz_SONIC_Av,Uz_CSAT_Avg,EC_slow_met,Uz_Avg,EC_TERNflux,m/s,high,
+Uz_SONIC_Sd,covUzUz,EC_slow_flux,Uz_stdev,EC_TERNflux,m/s,high,old variance input square-rooted; new stdev passes through
+Vbat,Vbat_Avg,EC_slow_met,Vbat_Avg,EC_TERNflux,V,high,
+Wd_8m_Av,Wind_Dir_mean@7m,EC_slow_extras,Wd_aux_8m,EC_TERNflux,degrees,provisional,old raw column 'Wind_Dir_mean@7m': PROVISIONAL 8 m height kept as in the legacy config (user 2026-11-25); confirm with operator
+Wd_2m_Av,Wind_Dir_mean@2m,EC_slow_extras,Wd_aux_2m,EC_TERNflux,degrees,high,
+Wd_SONIC_Av,WD_CSAT_Compass_Avg,EC_slow_met,wnd_dir_compass,EC_TERNflux,degrees,high,
+Wd_SONIC_Sd,WD_CSAT_Sd,EC_slow_met,std_wnd_dir,EC_TERNflux,degrees,high,old input missing from legacy config; WD_CSAT_Sd added from slow_met
+Ws_8m_Av,Wind_speed_m/s@7m,EC_slow_extras,Ws_aux_8m,EC_TERNflux,m/s,provisional,old raw column 'Wind_speed_m/s@7m': PROVISIONAL 8 m height kept as in the legacy config (user 2026-11-25); confirm with operator
+Ws_2m_Av,Wind_speed_m/s@2m,EC_slow_extras,Ws_aux_2m,EC_TERNflux,m/s,high,
+Ws_SONIC_Av,WS_CSAT_Avg,EC_slow_met,wnd_spd,EC_TERNflux,m/s,high,
+ps,ps_7500_Avg,EC_slow_met,amb_press_mean,EC_TERNflux,kPa,high,old IRGA relabelled LI-7500 -> LI-7500RS (logs signal strength; user 2026-11-25)
+Vbat_b,Vbat_Min,-,-,-,-,dropped,second (soil) logger battery; removed network-wide (see network-variable-standardization)
+-,Calperum_EC_slow_core (all),-,-,-,-,unmapped,subset duplicate of the other slow files; ends 2024-10-15
+-,Pressure106 / press_aux,-,-,-,-,unmapped,"auxiliary barometer, unmapped in both eras"
+-,WindDir_Std_Dev@2m/@7m / Wd_aux_*_Sd,-,-,-,-,unmapped,"WindSentry direction Sd, unmapped in both eras"
+-,Fe_raw_Avg / Fc_raw_Avg,-,-,-,-,unmapped,pre-WPL fluxes; corrected Fe_Avg/Fc_Avg mapped
