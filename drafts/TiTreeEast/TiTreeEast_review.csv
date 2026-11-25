@@ -1,0 +1,62 @@
+canonical,old_input,old_file,new_input,new_file,new_units,confidence,note
+Fh,Fh_Avg,EC_slow_core,Fh,EC_TERNflux,W/m^2,high,
+Fm,Fm_Avg,EC_slow_core,tau,EC_TERNflux,kg/m/s^2,high,old input missing from legacy config; Fm_Avg added
+ustar,ustar_Avg,EC_slow_core,u_star,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Tv_SONIC_Sd,covTvTv,EC_slow_core,Tsonic_stdev,EC_TERNflux,degC,high,height 9.8 -> 10.0 m (user 2026-11-25); old variance input square-rooted; new stdev passes through
+UxT,covUxTv,EC_slow_core,Tsonic_Ux_cov,EC_TERNflux,m.degC/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+UyT,covUyTv,EC_slow_core,Tsonic_Uy_cov,EC_TERNflux,m.degC/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+UzT,covUzTv,EC_slow_core,Tsonic_Uz_cov,EC_TERNflux,m.degC/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Ux_SONIC_Sd,covUxUx,EC_slow_core,Ux_stdev,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25); old variance input square-rooted; new stdev passes through
+UxUy,covUxUy,EC_slow_core,Ux_Uy_cov,EC_TERNflux,m^2/s^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+UxUz,covUzUx,EC_slow_core,Ux_Uz_cov,EC_TERNflux,m^2/s^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Uy_SONIC_Sd,covUyUy,EC_slow_core,Uy_stdev,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25); old variance input square-rooted; new stdev passes through
+UyUz,covUzUy,EC_slow_core,Uy_Uz_cov,EC_TERNflux,m^2/s^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Uz_SONIC_Sd,covUzUz,EC_slow_core,Uz_stdev,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25); old variance input square-rooted; new stdev passes through
+Ws_SONIC_Av,WS_CSAT_Avg,EC_slow_core,wnd_spd,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Wd_SONIC_Av,WD_CSAT_Compass_Avg,EC_slow_core,wnd_dir_compass,EC_TERNflux,degrees,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Wd_SONIC_Sd,WD_CSAT_Sd,EC_slow_core,std_wnd_dir,EC_TERNflux,degrees,high,height 9.8 -> 10.0 m (user 2026-11-25); old input missing from legacy config; WD_CSAT_Sd added
+Ux_SONIC_Av,Ux_CSAT_Avg,EC_slow_core,Ux_Avg,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Uy_SONIC_Av,Uy_CSAT_Avg,EC_slow_core,Uy_Avg,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Uz_SONIC_Av,Uz_CSAT_Avg,EC_slow_core,Uz_Avg,EC_TERNflux,m/s,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Tv_SONIC_Av,Tv_CSAT_Avg,EC_slow_core,Tsonic_Avg,EC_TERNflux,degC,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Diag_SONIC,CSAT_Warn,EC_slow_core,sonic_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (CSAT_Warn) -> new valid_count; height 9.8 -> 10.0 m (user 2026-11-25)
+Fco2,-,-,Fco2,EC_TERNflux,mg/m^2/s,new-only,"old era left empty: the old program logged only uncorrected Fc_raw_Avg (~covUzCc), no WPL (user 2026-11-25); old covariances are stitched"
+Fe,-,-,Fe,EC_TERNflux,W/m^2,new-only,"old era left empty: the old program logged only uncorrected Fe_raw_Avg, no WPL (user 2026-11-25); old covariances are stitched"
+CO2c_IRGA_Sd,covCcCc,EC_slow_core,co2_stdev,EC_TERNflux,mg/m^3,high,height 9.8 -> 10.0 m (user 2026-11-25); old variance input square-rooted; new stdev passes through
+UxC,covUxCc,EC_slow_core,CO2_Ux_cov,EC_TERNflux,mg/m^2/s,high,
+UyC,covUyCc,EC_slow_core,CO2_Uy_cov,EC_TERNflux,mg/m^2/s,high,
+UzC,covUzCc,EC_slow_core,CO2_Uz_cov,EC_TERNflux,mg/m^2/s,high,
+AH_IRGA_Sd,covAhAh,EC_slow_core,H2O_stdev,EC_TERNflux,g/m^3,high,height 9.8 -> 10.0 m (user 2026-11-25); old variance input square-rooted; new stdev passes through
+UxA,covUxAh,EC_slow_core,H2O_Ux_cov,EC_TERNflux,g/m^2/s,high,
+UyA,covUyAh,EC_slow_core,H2O_Uy_cov,EC_TERNflux,g/m^2/s,high,
+UzA,covUzAh,EC_slow_core,H2O_Uz_cov,EC_TERNflux,g/m^2/s,high,
+CO2c_IRGA_Av,Cc_7500_Avg,EC_slow_core,CO2_mean,EC_TERNflux,mg/m^3,high,height 9.8 -> 10.0 m (user 2026-11-25)
+AH_IRGA_Av,Ah_7500_Avg,EC_slow_core,H2O_mean,EC_TERNflux,g/m^3,high,height 9.8 -> 10.0 m (user 2026-11-25)
+ps,ps_7500_Avg,EC_slow_core,amb_press_mean,EC_TERNflux,kPa,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Diag_IRGA,7500_Warn,EC_slow_core,irga_samples_Tot,EC_TERNflux,dimensionless,high,old invalid_count (7500_Warn) -> new valid_count; height 9.8 -> 10.0 m (user 2026-11-25)
+Sig_IRGA,AGC_7500_Avg,EC_slow_core,sig_str_irga_Avg,EC_TERNflux,percent,provisional,"PROVISIONAL: old raw column is AGC_7500_Avg (max 94, high = good), read as signal strength as at the other 'AGC' sites; confirm with operator; height 9.8 -> 10.0 m (user 2026-11-25)"
+Ta_9.8m,Ta_HMP_01_Avg,EC_slow_core,Ta_sensor_mean,EC_TERNflux,degC,high,
+AH_9.8m,Ah_HMP_01_Avg,EC_slow_core,AH_sensor_mean,EC_TERNflux,g/m^3,high,
+RH_9.8m,RH_HMP_01_Avg,EC_slow_core,RH_sensor_mean,EC_TERNflux,percent,high,
+Fsd,Fsd_CNR4_Avg,EC_slow_core,Fsd_Avg,EC_TERNflux,W/m^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Fsu,Fsu_CNR4_Avg,EC_slow_core,Fsu_Avg,EC_TERNflux,W/m^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Fld,Fld_CNR4_Avg,EC_slow_core,Fld_Avg,EC_TERNflux,W/m^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Flu,Flu_CNR4_Avg,EC_slow_core,Flu_Avg,EC_TERNflux,W/m^2,high,height 9.8 -> 10.0 m (user 2026-11-25)
+Tbody_RAD,Tb_CNR4_Avg,EC_slow_core,Tb_Avg,EC_TERNflux,K,high,height 9.8 -> 10.0 m (user 2026-11-25); old input missing from legacy config; Tb_CNR4_Avg (logged in K) added; Tb-Ta within 0.4 K in both eras
+Precip,Rain_Tot,EC_slow_core,rain_Tot,EC_TERNflux,mm,provisional,"statistic_type fixed average -> sum; Rimco RIM-7499-BOM (old, 2.0 m) -> CS700 (new); PROVISIONAL height 1.5 m for both eras (user 2026-11-25)"
+Tpanel,Tpanel_Avg,EC_slow_core,Tpanel_Avg,EC_TERNflux,degC,high,
+Vbat,Vbat_Avg,EC_slow_core,Vbat_Avg,EC_TERNflux,V,high,
+Ta_2m,Ta_HMP_2m_Avg,EC_slow_core,Ta_sensor_2m_Avg,EC_TERNflux,degC,high,
+RH_2m,RH_HMP_2m_Avg,EC_slow_core,RH_sensor_2m_Avg,EC_TERNflux,percent,high,
+Fg_0.16ma,Fg_01_Avg,EC_slow_core,Fg_01,EC_TERNflux,W/m^2,high,
+Ts_0.09ma,Ts_TCAV_01_Avg,EC_slow_core,Tsoil_mean,EC_TERNflux,degC,high,"old Ts_0.1ma (same TCAV, continuous at the changeover: 27.6 -> 27.0 degC) stitched into the operational name"
+Sws_0.1ma,Sws_616_01,EC_slow_core,Sws_8cma_Avg,EC_TERNflux,m^3/m^3,high,same CS616 profile: the new program names the four probes Sws_8cm[a-d] but values continue exactly at the changeover
+Sws_0.35ma,Sws_616_02,EC_slow_core,Sws_8cmb_Avg,EC_TERNflux,m^3/m^3,high,same CS616 profile: the new program names the four probes Sws_8cm[a-d] but values continue exactly at the changeover
+Sws_0.6ma,Sws_616_03,EC_slow_core,Sws_8cmc_Avg,EC_TERNflux,m^3/m^3,high,same CS616 profile: the new program names the four probes Sws_8cm[a-d] but values continue exactly at the changeover
+Sws_0.85ma,Sws_616_04,EC_slow_core,Sws_8cmd_Avg,EC_TERNflux,m^3/m^3,high,same CS616 profile: the new program names the four probes Sws_8cm[a-d] but values continue exactly at the changeover
+-,Fc_raw_Avg / Fe_raw_Avg,-,-,-,-,unmapped,"old uncorrected fluxes, deliberately not mapped (see Fco2/Fe)"
+-,PARin_Avg / Fpard_Avg,-,-,-,-,unmapped,"PAR, unmapped in both eras: PAR/Fsd at midday is 0.07 (old) and negative (new), physically ~2; calibration/wiring to check"
+-,sws_cs650 / ec_cs650 / T_cs650 ...,-,-,-,-,unmapped,"CS650 probe in both eras, unmapped (not in either config)"
+-,Ta_HMP_2m/RH_HMP_2m vs *_2m_Avg,-,-,-,-,unmapped,mapped (Ta_2m/RH_2m)
+-,ps_CS106_Avg,-,-,-,-,unmapped,"auxiliary barometer, unmapped"
+-,UQRDM 2021-05 -> 2022-05 daily slow_core/soil CSVs,-,-,-,-,unmapped,"earlier CR3000 record (program EC-TTE_May2021b), left out (user 2026-11-25)"

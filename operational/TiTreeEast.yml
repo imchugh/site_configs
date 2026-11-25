@@ -1,5 +1,6 @@
 site: TiTreeEast
 file_formats:
+  TiTreeEast_EC_slow_core: CSI
   TiTreeEast_EC_TERNflux: CSI
 flux_system: TERNFLUX
 flux_file: TiTreeEast_EC_TERNflux
@@ -8,420 +9,728 @@ variables:
     statistic_type: average
     height: 10.0
     input_variables:
-      - name: Fh
-        instrument: Campbell Scientific CSAT3B
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fh_Avg
+      instrument: Campbell Scientific CSAT3
+      units: W/m^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Fh
+      instrument: Campbell Scientific CSAT3B
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Fm:
     statistic_type: average
     height: 10
     input_variables:
-      - name: tau
-        instrument: Campbell Scientific CSAT3B
-        units: kg/m/s^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fm_Avg
+      instrument: Campbell Scientific CSAT3
+      units: kg/m/s^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: tau
+      instrument: Campbell Scientific CSAT3B
+      units: kg/m/s^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   ustar:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: u_star
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: ustar_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: u_star
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Tv_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Tsonic_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: degC
-        file: TiTreeEast_EC_TERNflux
+    - name: covTvTv
+      instrument: Campbell Scientific CSAT3
+      units: degC^2
+      file: TiTreeEast_EC_slow_core
+      statistic_type: variance
+      end: 2025-09-24 11:00
+    - name: Tsonic_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UxT:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Tsonic_Ux_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m.degC/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUxTv
+      instrument: Campbell Scientific CSAT3
+      units: m.degC/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tsonic_Ux_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UyT:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Tsonic_Uy_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m.degC/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUyTv
+      instrument: Campbell Scientific CSAT3
+      units: m.degC/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tsonic_Uy_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UzT:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Tsonic_Uz_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m.degC/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUzTv
+      instrument: Campbell Scientific CSAT3
+      units: m.degC/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tsonic_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m.degC/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Ux_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Ux_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUxUx
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: TiTreeEast_EC_slow_core
+      statistic_type: variance
+      end: 2025-09-24 11:00
+    - name: Ux_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UxUy:
     statistic_type: covariance
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Ux_Uy_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m^2/s^2
-        file: TiTreeEast_EC_TERNflux
+    - name: covUxUy
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Ux_Uy_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UxUz:
     statistic_type: covariance
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Ux_Uz_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m^2/s^2
-        file: TiTreeEast_EC_TERNflux
+    - name: covUzUx
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Ux_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Uy_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Uy_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUyUy
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: TiTreeEast_EC_slow_core
+      statistic_type: variance
+      end: 2025-09-24 11:00
+    - name: Uy_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UyUz:
     statistic_type: covariance
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Uy_Uz_cov
-        instrument: Campbell Scientific CSAT3B
-        units: m^2/s^2
-        file: TiTreeEast_EC_TERNflux
+    - name: covUzUy
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Uy_Uz_cov
+      instrument: Campbell Scientific CSAT3B
+      units: m^2/s^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Uz_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Uz_stdev
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUzUz
+      instrument: Campbell Scientific CSAT3
+      units: m^2/s^2
+      file: TiTreeEast_EC_slow_core
+      statistic_type: variance
+      end: 2025-09-24 11:00
+    - name: Uz_stdev
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Ws_SONIC_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: wnd_spd
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: WS_CSAT_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: wnd_spd
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Wd_SONIC_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: wnd_dir_compass
-        instrument: Campbell Scientific CSAT3B
-        units: degrees
-        file: TiTreeEast_EC_TERNflux
+    - name: WD_CSAT_Compass_Avg
+      instrument: Campbell Scientific CSAT3
+      units: degrees
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: wnd_dir_compass
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Wd_SONIC_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: std_wnd_dir
-        instrument: Campbell Scientific CSAT3B
-        units: degrees
-        file: TiTreeEast_EC_TERNflux
+    - name: WD_CSAT_Sd
+      instrument: Campbell Scientific CSAT3
+      units: degrees
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: std_wnd_dir
+      instrument: Campbell Scientific CSAT3B
+      units: degrees
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Ux_SONIC_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Ux_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: Ux_CSAT_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Ux_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Uy_SONIC_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Uy_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: Uy_CSAT_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Uy_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Uz_SONIC_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Uz_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: m/s
-        file: TiTreeEast_EC_TERNflux
+    - name: Uz_CSAT_Avg
+      instrument: Campbell Scientific CSAT3
+      units: m/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Uz_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: m/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Tv_SONIC_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Tsonic_Avg
-        instrument: Campbell Scientific CSAT3B
-        units: degC
-        file: TiTreeEast_EC_TERNflux
+    - name: Tv_CSAT_Avg
+      instrument: Campbell Scientific CSAT3
+      units: degC
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tsonic_Avg
+      instrument: Campbell Scientific CSAT3B
+      units: degC
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Diag_SONIC:
     variable_type: counter
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: sonic_samples_Tot
-        instrument: Campbell Scientific CSAT3B
-        units: dimensionless
-        diag_type: valid_count
-        file: TiTreeEast_EC_TERNflux
+    - name: CSAT_Warn
+      instrument: Campbell Scientific CSAT3
+      units: dimensionless
+      diag_type: invalid_count
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: sonic_samples_Tot
+      instrument: Campbell Scientific CSAT3B
+      units: dimensionless
+      diag_type: valid_count
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Fco2:
     statistic_type: average
     height: 10.0
     input_variables:
-      - name: Fco2
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: Fco2
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: TiTreeEast_EC_TERNflux
   Fe:
     statistic_type: average
     height: 10.0
     input_variables:
-      - name: Fe
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fe
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
   CO2c_IRGA_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: co2_stdev
-        instrument: LI-COR LI-7500RS
-        units: mg/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: covCcCc
+      instrument: LI-COR LI-7500A
+      units: mg^2/m^6
+      file: TiTreeEast_EC_slow_core
+      statistic_type: variance
+      end: 2025-09-24 11:00
+    - name: co2_stdev
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UxC:
     statistic_type: covariance
     height: 10.0
     input_variables:
-      - name: CO2_Ux_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUxCc
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: CO2_Ux_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UyC:
     statistic_type: covariance
     height: 10.0
     input_variables:
-      - name: CO2_Uy_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUyCc
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: CO2_Uy_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UzC:
     statistic_type: covariance
     height: 10.0
     input_variables:
-      - name: CO2_Uz_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: mg/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUzCc
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: mg/m^2/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: CO2_Uz_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: mg/m^2/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   AH_IRGA_Sd:
     statistic_type: standard_deviation
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: H2O_stdev
-        instrument: LI-COR LI-7500RS
-        units: g/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: covAhAh
+      instrument: LI-COR LI-7500A
+      units: g^2/m^6
+      file: TiTreeEast_EC_slow_core
+      statistic_type: variance
+      end: 2025-09-24 11:00
+    - name: H2O_stdev
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UxA:
     statistic_type: average
     height: 10.0
     input_variables:
-      - name: H2O_Ux_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: g/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUxAh
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: g/m^2/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: H2O_Ux_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UyA:
     statistic_type: average
     height: 10.0
     input_variables:
-      - name: H2O_Uy_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: g/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUyAh
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: g/m^2/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: H2O_Uy_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   UzA:
     statistic_type: average
     height: 10.0
     input_variables:
-      - name: H2O_Uz_cov
-        instrument:
-          sonic_anemometer: Campbell Scientific CSAT3B
-          irga: LI-COR LI-7500RS
-        units: g/m^2/s
-        file: TiTreeEast_EC_TERNflux
+    - name: covUzAh
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3
+        irga: LI-COR LI-7500A
+      units: g/m^2/s
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: H2O_Uz_cov
+      instrument:
+        sonic_anemometer: Campbell Scientific CSAT3B
+        irga: LI-COR LI-7500RS
+      units: g/m^2/s
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   CO2c_IRGA_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: CO2_mean
-        instrument: LI-COR LI-7500RS
-        units: mg/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Cc_7500_Avg
+      instrument: LI-COR LI-7500A
+      units: mg/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: CO2_mean
+      instrument: LI-COR LI-7500RS
+      units: mg/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   AH_IRGA_Av:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: H2O_mean
-        instrument: LI-COR LI-7500RS
-        units: g/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Ah_7500_Avg
+      instrument: LI-COR LI-7500A
+      units: g/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: H2O_mean
+      instrument: LI-COR LI-7500RS
+      units: g/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   ps:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: amb_press_mean
-        instrument: LI-COR LI-7500RS
-        units: kPa
-        file: TiTreeEast_EC_TERNflux
+    - name: ps_7500_Avg
+      instrument: LI-COR LI-7500A
+      units: kPa
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: amb_press_mean
+      instrument: LI-COR LI-7500RS
+      units: kPa
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Diag_IRGA:
     variable_type: counter
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: irga_samples_Tot
-        instrument: LI-COR LI-7500RS
-        units: dimensionless
-        diag_type: valid_count
-        file: TiTreeEast_EC_TERNflux
+    - name: 7500_Warn
+      instrument: LI-COR LI-7500A
+      units: dimensionless
+      diag_type: invalid_count
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: irga_samples_Tot
+      instrument: LI-COR LI-7500RS
+      units: dimensionless
+      diag_type: valid_count
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Sig_IRGA:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: sig_str_irga_Avg
-        instrument: LI-COR LI-7500RS
-        units: percent
-        file: TiTreeEast_EC_TERNflux
+    - name: AGC_7500_Avg
+      instrument: LI-COR LI-7500A
+      units: percent
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: sig_str_irga_Avg
+      instrument: LI-COR LI-7500RS
+      units: percent
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Ta_9.8m:
     statistic_type: average
     height: 9.8
     input_variables:
-      - name: Ta_sensor_mean
-        instrument: Vaisala HMP155
-        units: degC
-        file: TiTreeEast_EC_TERNflux
+    - name: Ta_HMP_01_Avg
+      instrument: Vaisala HMP45C
+      units: degC
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Ta_sensor_mean
+      instrument: Vaisala HMP155
+      units: degC
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   AH_9.8m:
     statistic_type: average
     height: 9.8
     input_variables:
-      - name: AH_sensor_mean
-        instrument: Vaisala HMP155
-        units: g/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Ah_HMP_01_Avg
+      instrument: Vaisala HMP45C
+      units: g/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: AH_sensor_mean
+      instrument: Vaisala HMP155
+      units: g/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   RH_9.8m:
     statistic_type: average
     height: 9.8
     input_variables:
-      - name: RH_sensor_mean
-        instrument: Vaisala HMP155
-        units: percent
-        file: TiTreeEast_EC_TERNflux
+    - name: RH_HMP_01_Avg
+      instrument: Vaisala HMP45C
+      units: frac
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: RH_sensor_mean
+      instrument: Vaisala HMP155
+      units: percent
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Fsd:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Fsd_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fsd_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Fsd_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Fsu:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Fsu_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fsu_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Fsu_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Fld:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Fld_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fld_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Fld_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Flu:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Flu_Avg
-        instrument: Kipp&Zonen CNR4
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Flu_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Flu_Avg
+      instrument: Kipp&Zonen CNR4
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Tbody_RAD:
     statistic_type: average
-    height: 9.8
+    height: 10.0
     input_variables:
-      - name: Tb_Avg
-        instrument: Kipp&Zonen CNR4
-        units: K
-        file: TiTreeEast_EC_TERNflux
+    - name: Tb_CNR4_Avg
+      instrument: Kipp&Zonen CNR4
+      units: K
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tb_Avg
+      instrument: Kipp&Zonen CNR4
+      units: K
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Precip:
-    statistic_type: average
+    statistic_type: sum
     height: 1.5
     input_variables:
-      - name: rain_Tot
-        instrument: Campbell Scientific CS700
-        units: mm
-        file: TiTreeEast_EC_TERNflux
+    - name: Rain_Tot
+      instrument: Rimco RIM-7499-BOM
+      units: mm
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: rain_Tot
+      instrument: Campbell Scientific CS700
+      units: mm
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Tpanel:
     statistic_type: average
     height: 1.5
     input_variables:
-      - name: Tpanel_Avg
-        instrument: Campbell Scientific CR1000XE
-        units: degC
-        file: TiTreeEast_EC_TERNflux
+    - name: Tpanel_Avg
+      instrument: Campbell Scientific CR3000
+      units: degC
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tpanel_Avg
+      instrument: Campbell Scientific CR1000XE
+      units: degC
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Vbat:
     statistic_type: average
     height: 1.5
     input_variables:
-      - name: Vbat_Avg
-        instrument: Campbell Scientific CR1000XE
-        units: V
-        file: TiTreeEast_EC_TERNflux
+    - name: Vbat_Avg
+      instrument: Campbell Scientific CR3000
+      units: V
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Vbat_Avg
+      instrument: Campbell Scientific CR1000XE
+      units: V
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Ta_2m:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: Ta_sensor_2m_Avg
-        instrument: Vaisala HMP155
-        units: degC
-        file: TiTreeEast_EC_TERNflux
+    - name: Ta_HMP_2m_Avg
+      instrument: Vaisala HMP45C
+      units: degC
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Ta_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: degC
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   RH_2m:
     statistic_type: average
     height: 2.0
     input_variables:
-      - name: RH_sensor_2m_Avg
-        instrument: Vaisala HMP155
-        units: percent
-        file: TiTreeEast_EC_TERNflux
+    - name: RH_HMP_2m_Avg
+      instrument: Vaisala HMP45C
+      units: frac
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: RH_sensor_2m_Avg
+      instrument: Vaisala HMP155
+      units: percent
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Fg_0.16ma:
     statistic_type: average
     height: -0.16
     input_variables:
-      - name: Fg_01
-        instrument: Hukseflux HFP01
-        units: W/m^2
-        file: TiTreeEast_EC_TERNflux
+    - name: Fg_01_Avg
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Fg_01
+      instrument: Hukseflux HFP01
+      units: W/m^2
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Ts_0.09ma:
     statistic_type: average
     height: -0.1
@@ -429,39 +738,69 @@ variables:
     - -0.02
     - -0.16
     input_variables:
-      - name: Tsoil_mean
-        instrument: Campbell Scientific TCAV
-        units: degC
-        file: TiTreeEast_EC_TERNflux
+    - name: Ts_TCAV_01_Avg
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Tsoil_mean
+      instrument: Campbell Scientific TCAV
+      units: degC
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Sws_0.1ma:
     statistic_type: average
     height: -0.1
     input_variables:
-      - name: Sws_8cma_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Sws_616_01
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Sws_8cma_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Sws_0.35ma:
     statistic_type: average
     height: -0.35
     input_variables:
-      - name: Sws_8cmb_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Sws_616_02
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Sws_8cmb_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Sws_0.6ma:
     statistic_type: average
     height: -0.6
     input_variables:
-      - name: Sws_8cmc_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Sws_616_03
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Sws_8cmc_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
   Sws_0.85ma:
     statistic_type: average
     height: -0.85
     input_variables:
-      - name: Sws_8cmd_Avg
-        instrument: Campbell Scientific CS616
-        units: m^3/m^3
-        file: TiTreeEast_EC_TERNflux
+    - name: Sws_616_04
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_slow_core
+      end: 2025-09-24 11:00
+    - name: Sws_8cmd_Avg
+      instrument: Campbell Scientific CS616
+      units: m^3/m^3
+      file: TiTreeEast_EC_TERNflux
+      begin: 2025-09-24 14:00
