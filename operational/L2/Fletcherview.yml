@@ -12,3 +12,21 @@ variables:
     range_check: {lower: -200, upper: 200}
   Fg_0.08md:  # default (-100, 150)
     range_check: {lower: -200, upper: 200}
+  Tbody_RAD:
+    exclude_dates:
+      - start: 2022-03-08 11:30
+        end: 2022-11-08 14:30
+        comment: &fle_cnr4_2022 >-
+          CNR4 body temperature wrong from the first record to a site visit:
+          531-535 K (about 260 degC), unrelated to air temperature (r -0.31;
+          r 0.975 and median Tb - Ta -0.1 K afterwards). The logger corrects
+          longwave with it (Fld = Fld_raw + sigma*Tb^4), so Fld/Flu are ~4500
+          W/m^2; from 2022-08-24 the raw longwave thermopile signal is bad too
+          (thousands of W/m^2). Normal from 2022-11-08 15:00 (Tb) and
+          2022-11-09 09:30 (raw longwave). Fn follows via its dependency.
+  Fld:
+    exclude_dates:
+      - {start: 2022-03-08 11:30, end: 2022-11-08 14:30, comment: *fle_cnr4_2022}
+  Flu:
+    exclude_dates:
+      - {start: 2022-03-08 11:30, end: 2022-11-08 14:30, comment: *fle_cnr4_2022}

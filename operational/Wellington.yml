@@ -252,7 +252,7 @@ variables:
     input_variables:
       - name: Tb_CNR4_Avg
         instrument: Kipp&Zonen CNR4
-        units: degC
+        units: K
         file: Wellington_EC_slow_core
   Tpanel:
     statistic_type: average
