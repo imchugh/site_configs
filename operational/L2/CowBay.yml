@@ -4,3 +4,38 @@
 
 site: CowBay
 variables:
+  Ta_23m:
+    exclude_dates:
+      - start: 2025-08-23 00:00
+        end: 2026-01-20 13:30
+        comment: &cb_hc2s3 >-
+          Rotronic HC2S3 failing until its replacement by the Vaisala HMP155
+          (2026-01-20 14:00). Against the sonic temperature (normally ~0.5 degC
+          above it): intermittently too warm from 2025-08-23 (up to 77% of a
+          day's half-hours), then failed outright from 2025-10-19 (RH -0.4%,
+          Ta 15-28 degC too warm, up to 58 degC at night). Excluded from the
+          first drift, since none of its readings can be trusted from then.
+  RH_23m:
+    exclude_dates:
+      - {start: 2025-08-23 00:00, end: 2026-01-20 13:30, comment: *cb_hc2s3}
+  AH_23m:
+    exclude_dates:
+      - {start: 2025-08-23 00:00, end: 2026-01-20 13:30, comment: *cb_hc2s3}
+  Fld:
+    exclude_dates:
+      - start: 2025-08-23 00:00
+        end: 2026-01-20 13:30
+        comment: >-
+          The logger corrects longwave with the HC2S3 air temperature in place
+          of the NR01's body temperature (Fld = Fld_raw + sigma*T^4), so Fld
+          and Flu are wrong while the HC2S3 was failing (see Ta_23m): about
+          6 W/m^2 per kelvin of error. Fn follows via its dependency.
+  Flu:
+    exclude_dates:
+      - start: 2025-08-23 00:00
+        end: 2026-01-20 13:30
+        comment: >-
+          The logger corrects longwave with the HC2S3 air temperature in place
+          of the NR01's body temperature (Fld = Fld_raw + sigma*T^4), so Fld
+          and Flu are wrong while the HC2S3 was failing (see Ta_23m): about
+          6 W/m^2 per kelvin of error. Fn follows via its dependency.
